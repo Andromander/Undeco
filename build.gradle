@@ -86,7 +86,7 @@ repositories {
 }
 
 dependencies {
-    implementation fg.deobf("com.androsa.ornamental:ornamental-1.16.3:${ornamental_version}")
+    implementation fg.deobf("com.androsa.ornamental:ornamental-${mc_version}:${ornamental_version}")
 
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 }
