@@ -253,37 +253,37 @@ public class ModBlocks {
 
     private static RegistryObject<OrnamentStairs> registerStairs(OrnamentBuilder builder) {
         AbstractBlock.Properties props = PropertiesHelper.createProps(builder);
-        return registerBlock(builder.name + "_stairs", () -> new OrnamentStairs(props, builder), (item) -> registerBlockItem(item, ItemGroup.BUILDING_BLOCKS, builder, 4));
+        return registerBlock(builder.name + "_stairs", () -> new OrnamentStairs(props, builder), (item) -> registerBlockItem(item, ItemGroup.TAB_BUILDING_BLOCKS, builder, 4));
     }
 
     private static RegistryObject<OrnamentSlab> registerSlab(OrnamentBuilder builder) {
         AbstractBlock.Properties props = PropertiesHelper.createProps(builder);
-        return registerBlock(builder.name + "_slab", () -> new OrnamentSlab(props, builder), (item) -> registerBlockItem(item, ItemGroup.BUILDING_BLOCKS, builder, 3));
+        return registerBlock(builder.name + "_slab", () -> new OrnamentSlab(props, builder), (item) -> registerBlockItem(item, ItemGroup.TAB_BUILDING_BLOCKS, builder, 3));
     }
 
     private static RegistryObject<OrnamentFence> registerFence(OrnamentBuilder builder) {
         AbstractBlock.Properties props = PropertiesHelper.createProps(builder);
-        return registerBlock(builder.name + "_fence", () -> new OrnamentFence(props, builder), item -> registerBlockItem(item, ItemGroup.DECORATIONS, builder, 1));
+        return registerBlock(builder.name + "_fence", () -> new OrnamentFence(props, builder), item -> registerBlockItem(item, ItemGroup.TAB_DECORATIONS, builder, 1));
     }
 
     private static RegistryObject<OrnamentTrapDoor> registerTrapdoor(OrnamentBuilder builder) {
         AbstractBlock.Properties props = PropertiesHelper.createProps(builder)
-                .notSolid()
-                .setAllowsSpawn((state, reader, pos, type) -> false);
+                .noOcclusion()
+                .isValidSpawn((state, reader, pos, type) -> false);
 
         return registerBlock(builder.name + "_trapdoor", () -> new OrnamentTrapDoor(props, builder), item ->
-                registerBlockItem(item, ItemGroup.REDSTONE, builder, 5));
+                registerBlockItem(item, ItemGroup.TAB_REDSTONE, builder, 5));
     }
 
     private static RegistryObject<OrnamentFenceGate> registerFenceGate(OrnamentBuilder builder) {
         AbstractBlock.Properties props = PropertiesHelper.createProps(builder);
 
         return registerBlock(builder.name + "_fence_gate", () -> new OrnamentFenceGate(props, builder), item ->
-                registerBlockItem(item, ItemGroup.REDSTONE, builder, 2));
+                registerBlockItem(item, ItemGroup.TAB_REDSTONE, builder, 2));
     }
 
     private static RegistryObject<OrnamentDoor> registerDoor(OrnamentBuilder builder) {
-        AbstractBlock.Properties props = PropertiesHelper.createProps(builder).notSolid();
+        AbstractBlock.Properties props = PropertiesHelper.createProps(builder).noOcclusion();
 
         return registerBlock(builder.name + "_door", () -> new OrnamentDoor(props, builder), item ->
                 registerBlockItemDoor(item, builder, 0));
@@ -293,14 +293,14 @@ public class ModBlocks {
         AbstractBlock.Properties props = PropertiesHelper.createProps(builder);
 
         return registerBlock(builder.name + "_pole", () -> new OrnamentPole(props, builder), item ->
-                registerBlockItem(item, ItemGroup.BUILDING_BLOCKS, builder, 6));
+                registerBlockItem(item, ItemGroup.TAB_BUILDING_BLOCKS, builder, 6));
     }
 
     private static RegistryObject<OrnamentBeam> registerBeam(OrnamentBuilder builder) {
         AbstractBlock.Properties props = PropertiesHelper.createProps(builder);
 
         return registerBlock(builder.name + "_beam", () -> new OrnamentBeam(props, builder), item ->
-                registerBlockItem(item, ItemGroup.BUILDING_BLOCKS, builder, 7));
+                registerBlockItem(item, ItemGroup.TAB_BUILDING_BLOCKS, builder, 7));
     }
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<? extends T> block, Function<RegistryObject<T>, Supplier<? extends Item>> item) {
@@ -314,6 +314,6 @@ public class ModBlocks {
     }
 
     private static <T extends Block> Supplier<BlockItem> registerBlockItemDoor(final RegistryObject<T> block, OrnamentBuilder ornament, int fuelindex) {
-        return () -> new OrnamentTallBlockItem(block.get(), PropertiesHelper.createProps(ornament, ItemGroup.REDSTONE), ornament, fuelindex);
+        return () -> new OrnamentTallBlockItem(block.get(), PropertiesHelper.createProps(ornament, ItemGroup.TAB_REDSTONE), ornament, fuelindex);
     }
 }

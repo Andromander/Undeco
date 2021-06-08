@@ -70,7 +70,7 @@ public class UDBlockTags extends OrnamentalBlockTagProvider {
     }
 
     @Override
-    protected void registerTags() {
+    protected void addTags() {
         doorTag(doors);
         fenceGateTag(fence_gates);
         fenceTag(fences);
@@ -87,44 +87,44 @@ public class UDBlockTags extends OrnamentalBlockTagProvider {
 
     private void nonFlammableTag(Set<Supplier<? extends Block>> set) {
         for (Supplier<? extends Block> block : set) {
-            getOrCreateBuilder(BlockTags.NON_FLAMMABLE_WOOD).add(block.get());
+            tag(BlockTags.NON_FLAMMABLE_WOOD).add(block.get());
         }
     }
 
     private void woodDoorTag(Set<Supplier<? extends DoorBlock>> set) {
         for (Supplier<? extends Block> block : set) {
-            getOrCreateBuilder(BlockTags.WOODEN_DOORS).add(block.get());
+            tag(BlockTags.WOODEN_DOORS).add(block.get());
         }
     }
 
     private void woodFenceTag(Set<Supplier<? extends FenceBlock>> set) {
         for (Supplier<? extends Block> block : set) {
-            getOrCreateBuilder(BlockTags.WOODEN_FENCES).add(block.get());
-            getOrCreateBuilder(Tags.Blocks.FENCES_WOODEN).add(block.get());
+            tag(BlockTags.WOODEN_FENCES).add(block.get());
+            tag(Tags.Blocks.FENCES_WOODEN).add(block.get());
         }
     }
 
     private void woodSlabTag(Set<Supplier<? extends SlabBlock>> set) {
         for (Supplier<? extends Block> block : set) {
-            getOrCreateBuilder(BlockTags.WOODEN_SLABS).add(block.get());
+            tag(BlockTags.WOODEN_SLABS).add(block.get());
         }
     }
 
     private void woodStairsTag(Set<Supplier<? extends StairsBlock>> set) {
         for (Supplier<? extends Block> block : set) {
-            getOrCreateBuilder(BlockTags.WOODEN_STAIRS).add(block.get());
+            tag(BlockTags.WOODEN_STAIRS).add(block.get());
         }
     }
 
     private void woodTrapdoorTag(Set<Supplier<? extends TrapDoorBlock>> set) {
         for (Supplier<? extends Block> block : set) {
-            getOrCreateBuilder(BlockTags.WOODEN_TRAPDOORS).add(block.get());
+            tag(BlockTags.WOODEN_TRAPDOORS).add(block.get());
         }
     }
 
     private void woodFenceGateTag(Set<Supplier<? extends FenceGateBlock>> set) {
         for (Supplier<? extends Block> block : set) {
-            getOrCreateBuilder(Tags.Blocks.FENCE_GATES_WOODEN).add(block.get());
+            tag(Tags.Blocks.FENCE_GATES_WOODEN).add(block.get());
         }
     }
 }

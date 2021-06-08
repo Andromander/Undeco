@@ -17,7 +17,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
     }
 
     @Override
-    protected void registerRecipes(Consumer<IFinishedRecipe> consumer) {
+    protected void buildShapelessRecipes(Consumer<IFinishedRecipe> consumer) {
         stairs(consumer, ModBlocks.oak_log_stairs, Blocks.OAK_LOG);
         stairs(consumer, ModBlocks.spruce_log_stairs, Blocks.SPRUCE_LOG);
         stairs(consumer, ModBlocks.birch_log_stairs, Blocks.BIRCH_LOG);

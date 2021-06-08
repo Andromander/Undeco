@@ -16,7 +16,7 @@ public class UDItemTags extends OrnamentalItemTagProvider {
     }
 
     @Override
-    protected void registerTags() {
+    protected void addTags() {
         copy(BlockTags.DOORS, ItemTags.DOORS);
         copy(Tags.Blocks.FENCE_GATES, Tags.Items.FENCE_GATES);
         copy(BlockTags.FENCES, ItemTags.FENCES);

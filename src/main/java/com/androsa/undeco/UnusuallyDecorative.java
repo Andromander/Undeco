@@ -56,11 +56,11 @@ public class UnusuallyDecorative {
     }
 
     private static void registerRenderTypes() {
-        RenderTypeLookup.setRenderLayer(ModBlocks.smooth_sandstone_trapdoor.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(ModBlocks.smooth_red_sandstone_trapdoor.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(ModBlocks.purpur_trapdoor.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(ModBlocks.smooth_sandstone_door.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(ModBlocks.smooth_red_sandstone_door.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(ModBlocks.purpur_door.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.smooth_sandstone_trapdoor.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.smooth_red_sandstone_trapdoor.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.purpur_trapdoor.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.smooth_sandstone_door.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.smooth_red_sandstone_door.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.purpur_door.get(), RenderType.cutout());
     }
 }
