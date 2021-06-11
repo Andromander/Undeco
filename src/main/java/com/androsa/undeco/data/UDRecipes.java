@@ -285,5 +285,33 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         convertPoleBeam(consumer, ModBlocks.prismarine_brick_pole, ModBlocks.prismarine_brick_beam);
         convertPoleBeam(consumer, ModBlocks.dark_prismarine_pole, ModBlocks.dark_prismarine_beam);
         convertPoleBeam(consumer, ModBlocks.purpur_pole, ModBlocks.purpur_beam);
+
+		wall(consumer, ModBlocks.oak_wall, Blocks.OAK_PLANKS);
+		wall(consumer, ModBlocks.spruce_wall, Blocks.SPRUCE_PLANKS);
+		wall(consumer, ModBlocks.birch_wall, Blocks.BIRCH_PLANKS);
+		wall(consumer, ModBlocks.jungle_wall, Blocks.JUNGLE_PLANKS);
+		wall(consumer, ModBlocks.acacia_wall, Blocks.ACACIA_PLANKS);
+		wall(consumer, ModBlocks.dark_oak_wall, Blocks.DARK_OAK_PLANKS);
+		wall(consumer, ModBlocks.crimson_wall, Blocks.CRIMSON_PLANKS);
+		wall(consumer, ModBlocks.warped_wall, Blocks.WARPED_PLANKS);
+		wall(consumer, ModBlocks.polished_granite_wall, Blocks.POLISHED_GRANITE);
+		wall(consumer, ModBlocks.polished_diorite_wall, Blocks.POLISHED_DIORITE);
+		wall(consumer, ModBlocks.polished_andesite_wall, Blocks.POLISHED_ANDESITE);
+		wall(consumer, ModBlocks.oak_log_wall, Blocks.OAK_LOG);
+		wall(consumer, ModBlocks.spruce_log_wall, Blocks.SPRUCE_LOG);
+		wall(consumer, ModBlocks.birch_log_wall, Blocks.BIRCH_LOG);
+		wall(consumer, ModBlocks.jungle_log_wall, Blocks.JUNGLE_LOG);
+		wall(consumer, ModBlocks.acacia_log_wall, Blocks.ACACIA_LOG);
+		wall(consumer, ModBlocks.dark_oak_log_wall, Blocks.DARK_OAK_LOG);
+		wall(consumer, ModBlocks.crimson_stem_wall, Blocks.CRIMSON_STEM);
+		wall(consumer, ModBlocks.warped_stem_wall, Blocks.WARPED_STEM);
+		wall(consumer, ModBlocks.stone_wall, Blocks.STONE);
+		wall(consumer, ModBlocks.smooth_stone_wall, Blocks.SMOOTH_STONE);
+		wall(consumer, ModBlocks.smooth_sandstone_wall, Blocks.SMOOTH_SANDSTONE);
+		wall(consumer, ModBlocks.smooth_red_sandstone_wall, Blocks.SMOOTH_RED_SANDSTONE);
+		wall(consumer, ModBlocks.cracked_stone_brick_wall, Blocks.CRACKED_STONE_BRICKS);
+		wall(consumer, ModBlocks.prismarine_brick_wall, Blocks.PRISMARINE_BRICKS);
+		wall(consumer, ModBlocks.dark_prismarine_wall, Blocks.DARK_PRISMARINE);
+		wall(consumer, ModBlocks.purpur_wall, Blocks.PURPUR_BLOCK);
     }
 }

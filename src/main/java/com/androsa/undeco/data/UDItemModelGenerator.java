@@ -245,6 +245,34 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemBeam(ModBlocks.prismarine_brick_beam, "prismarine_bricks");
         blockItemBeam(ModBlocks.dark_prismarine_beam, "dark_prismarine");
         blockItemBeam(ModBlocks.purpur_beam, "purpur_block");
+
+		blockItemWall(ModBlocks.oak_wall, "oak_planks");
+		blockItemWall(ModBlocks.spruce_wall, "spruce_planks");
+		blockItemWall(ModBlocks.birch_wall, "birch_planks");
+		blockItemWall(ModBlocks.jungle_wall, "jungle_planks");
+		blockItemWall(ModBlocks.acacia_wall, "acacia_planks");
+		blockItemWall(ModBlocks.dark_oak_wall, "dark_oak_planks");
+		blockItemWall(ModBlocks.crimson_wall, "crimson_planks");
+		blockItemWall(ModBlocks.warped_wall, "warped_planks");
+		blockItemWall(ModBlocks.polished_granite_wall, "polished_granite");
+		blockItemWall(ModBlocks.polished_diorite_wall, "polished_diorite");
+		blockItemWall(ModBlocks.polished_andesite_wall, "polished_andesite");
+		blockItemWallColumn(ModBlocks.oak_log_wall, "oak_log", "oak_log_top");
+		blockItemWallColumn(ModBlocks.spruce_log_wall, "spruce_log", "spruce_log_top");
+		blockItemWallColumn(ModBlocks.birch_log_wall, "birch_log", "birch_log_top");
+		blockItemWallColumn(ModBlocks.jungle_log_wall, "jungle_log", "jungle_log_top");
+		blockItemWallColumn(ModBlocks.acacia_log_wall, "acacia_log", "acacia_log_top");
+		blockItemWallColumn(ModBlocks.dark_oak_log_wall, "dark_oak_log", "dark_oak_log_top");
+		blockItemWallColumn(ModBlocks.crimson_stem_wall, "crimson_stem", "crimson_stem_top");
+		blockItemWallColumn(ModBlocks.warped_stem_wall, "warped_stem", "warped_stem_top");
+		blockItemWall(ModBlocks.stone_wall, "stone");
+		blockItemWall(ModBlocks.smooth_stone_wall, "smooth_stone");
+		blockItemWall(ModBlocks.smooth_sandstone_wall, "sandstone_top");
+		blockItemWall(ModBlocks.smooth_red_sandstone_wall, "red_sandstone_top");
+		blockItemWall(ModBlocks.cracked_stone_brick_wall, "cracked_stone_bricks");
+		blockItemWall(ModBlocks.prismarine_brick_wall, "prismarine_bricks");
+		blockItemWall(ModBlocks.dark_prismarine_wall, "dark_prismarine");
+		blockItemWall(ModBlocks.purpur_wall, "purpur_block");
     }
 
     public void blockItemFenceTB(Supplier<? extends Block> block, String bottom, String top, String side) {

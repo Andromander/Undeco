@@ -275,6 +275,34 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         beamBasic(ModBlocks.prismarine_brick_beam, "prismarine_brick", "prismarine_bricks", true, true);
         beamBasic(ModBlocks.dark_prismarine_beam, "dark_prismarine", "dark_prismarine", true, true);
         beamBasic(ModBlocks.purpur_beam, "purpur", "purpur_block", true, true);
+
+		wallBasic(ModBlocks.oak_wall, "oak_planks");
+		wallBasic(ModBlocks.spruce_wall, "spruce_planks");
+		wallBasic(ModBlocks.birch_wall, "birch_planks");
+		wallBasic(ModBlocks.jungle_wall, "jungle_planks");
+		wallBasic(ModBlocks.acacia_wall, "acacia_planks");
+		wallBasic(ModBlocks.dark_oak_wall, "dark_oak_planks");
+		wallBasic(ModBlocks.crimson_wall, "crimson_planks");
+		wallBasic(ModBlocks.warped_wall, "warped_planks");
+		wallBasic(ModBlocks.polished_granite_wall, "polished_granite");
+		wallBasic(ModBlocks.polished_diorite_wall, "polished_diorite");
+		wallBasic(ModBlocks.polished_andesite_wall, "polished_andesite");
+		wallColumn(ModBlocks.oak_log_wall, "oak_log", "oak_log_top");
+		wallColumn(ModBlocks.spruce_log_wall, "spruce_log", "spruce_log_top");
+		wallColumn(ModBlocks.birch_log_wall, "birch_log", "birch_log_top");
+		wallColumn(ModBlocks.jungle_log_wall, "jungle_log", "jungle_log_top");
+		wallColumn(ModBlocks.acacia_log_wall, "acacia_log", "acacia_log_top");
+		wallColumn(ModBlocks.dark_oak_log_wall, "dark_oak_log", "dark_oak_log_top");
+		wallColumn(ModBlocks.crimson_stem_wall, "crimson_stem", "crimson_stem_top");
+		wallColumn(ModBlocks.warped_stem_wall, "warped_stem", "warped_stem_top");
+		wallBasic(ModBlocks.stone_wall, "stone");
+		wallBasic(ModBlocks.smooth_stone_wall, "smooth_stone");
+		wallBasic(ModBlocks.smooth_sandstone_wall, "sandstone_top");
+		wallBasic(ModBlocks.smooth_red_sandstone_wall, "red_sandstone_top");
+		wallBasic(ModBlocks.cracked_stone_brick_wall, "cracked_stone_bricks");
+		wallBasic(ModBlocks.prismarine_brick_wall, "prismarine_bricks");
+		wallBasic(ModBlocks.dark_prismarine_wall, "dark_prismarine");
+		wallBasic(ModBlocks.purpur_wall, "purpur_block");
     }
 
     public void fenceTopBottom(RegistryObject<? extends FenceBlock> block, String side, String top, String bottom) {

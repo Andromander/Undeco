@@ -9,6 +9,7 @@
     "undeco:warped_stem_door",
     "undeco:warped_stem_pole",
     "undeco:warped_stem_beam",
+    "undeco:warped_stem_wall",
     "undeco:crimson_stem_stairs",
     "undeco:crimson_stem_slab",
     "undeco:crimson_stem_fence",
@@ -16,6 +17,7 @@
     "undeco:crimson_stem_fence_gate",
     "undeco:crimson_stem_door",
     "undeco:crimson_stem_pole",
-    "undeco:crimson_stem_beam"
+    "undeco:crimson_stem_beam",
+    "undeco:crimson_stem_wall"
   ]
 }

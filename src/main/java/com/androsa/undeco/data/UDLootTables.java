@@ -272,6 +272,34 @@ public class UDLootTables extends LootTableProvider {
             dropBeam(ModBlocks.prismarine_brick_beam);
             dropBeam(ModBlocks.dark_prismarine_beam);
             dropBeam(ModBlocks.purpur_beam);
+
+			dropSelf(ModBlocks.oak_wall);
+			dropSelf(ModBlocks.spruce_wall);
+			dropSelf(ModBlocks.birch_wall);
+			dropSelf(ModBlocks.jungle_wall);
+			dropSelf(ModBlocks.acacia_wall);
+			dropSelf(ModBlocks.dark_oak_wall);
+			dropSelf(ModBlocks.crimson_wall);
+			dropSelf(ModBlocks.warped_wall);
+			dropSelf(ModBlocks.polished_granite_wall);
+			dropSelf(ModBlocks.polished_diorite_wall);
+			dropSelf(ModBlocks.polished_andesite_wall);
+			dropSelf(ModBlocks.oak_log_wall);
+			dropSelf(ModBlocks.spruce_log_wall);
+			dropSelf(ModBlocks.birch_log_wall);
+			dropSelf(ModBlocks.jungle_log_wall);
+			dropSelf(ModBlocks.acacia_log_wall);
+			dropSelf(ModBlocks.dark_oak_log_wall);
+			dropSelf(ModBlocks.crimson_stem_wall);
+			dropSelf(ModBlocks.warped_stem_wall);
+			dropSelf(ModBlocks.stone_wall);
+			dropSelf(ModBlocks.smooth_stone_wall);
+			dropSelf(ModBlocks.smooth_sandstone_wall);
+			dropSelf(ModBlocks.smooth_red_sandstone_wall);
+			dropSelf(ModBlocks.cracked_stone_brick_wall);
+			dropSelf(ModBlocks.prismarine_brick_wall);
+			dropSelf(ModBlocks.dark_prismarine_wall);
+			dropSelf(ModBlocks.purpur_wall);
         }
 
         @Override

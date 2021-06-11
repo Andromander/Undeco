@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "undeco:oak_wall",
+    "undeco:spruce_wall",
+    "undeco:birch_wall",
+    "undeco:jungle_wall",
+    "undeco:acacia_wall",
+    "undeco:dark_oak_wall",
+    "undeco:crimson_wall",
+    "undeco:warped_wall",
+    "undeco:polished_granite_wall",
+    "undeco:polished_diorite_wall",
+    "undeco:polished_andesite_wall",
+    "undeco:oak_log_wall",
+    "undeco:spruce_log_wall",
+    "undeco:birch_log_wall",
+    "undeco:jungle_log_wall",
+    "undeco:acacia_log_wall",
+    "undeco:dark_oak_log_wall",
+    "undeco:crimson_stem_wall",
+    "undeco:warped_stem_wall",
+    "undeco:stone_wall",
+    "undeco:smooth_stone_wall",
+    "undeco:smooth_sandstone_wall",
+    "undeco:smooth_red_sandstone_wall",
+    "undeco:cracked_stone_brick_wall",
+    "undeco:prismarine_brick_wall",
+    "undeco:dark_prismarine_wall",
+    "undeco:purpur_wall"
+  ]
+}

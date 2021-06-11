@@ -31,5 +31,6 @@ public class UDItemTags extends OrnamentalItemTagProvider {
         copy(BlockTags.WOODEN_STAIRS, ItemTags.WOODEN_STAIRS);
         copy(BlockTags.WOODEN_TRAPDOORS, ItemTags.WOODEN_TRAPDOORS);
         copy(Tags.Blocks.FENCE_GATES_WOODEN, Tags.Items.FENCE_GATES_WOODEN);
+        copy(BlockTags.WALLS, ItemTags.WALLS);
     }
 }

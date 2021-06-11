@@ -251,6 +251,34 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentBeam> dark_prismarine_beam = registerBeam(UDBuilders.DARK_PRISMARINE);
     public static final RegistryObject<OrnamentBeam> purpur_beam = registerBeam(UDBuilders.PURPUR);
 
+	public static final RegistryObject<OrnamentWall> oak_wall = registerWall(UDBuilders.OAK_PLANKS);
+	public static final RegistryObject<OrnamentWall> spruce_wall = registerWall(UDBuilders.SPRUCE_PLANKS);
+	public static final RegistryObject<OrnamentWall> birch_wall = registerWall(UDBuilders.BIRCH_PLANKS);
+	public static final RegistryObject<OrnamentWall> jungle_wall = registerWall(UDBuilders.JUNGLE_PLANKS);
+	public static final RegistryObject<OrnamentWall> acacia_wall = registerWall(UDBuilders.ACACIA_PLANKS);
+	public static final RegistryObject<OrnamentWall> dark_oak_wall = registerWall(UDBuilders.DARK_OAK_PLANKS);
+	public static final RegistryObject<OrnamentWall> crimson_wall = registerWall(UDBuilders.CRIMSON_PLANKS);
+	public static final RegistryObject<OrnamentWall> warped_wall = registerWall(UDBuilders.WARPED_PLANKS);
+	public static final RegistryObject<OrnamentWall> polished_granite_wall = registerWall(UDBuilders.POLISHED_GRANITE);
+	public static final RegistryObject<OrnamentWall> polished_diorite_wall = registerWall(UDBuilders.POLISHED_DIORITE);
+	public static final RegistryObject<OrnamentWall> polished_andesite_wall = registerWall(UDBuilders.POLISHED_ANDESITE);
+	public static final RegistryObject<OrnamentWall> oak_log_wall = registerWall(UDBuilders.OAK_LOG);
+	public static final RegistryObject<OrnamentWall> spruce_log_wall = registerWall(UDBuilders.SPRUCE_LOG);
+	public static final RegistryObject<OrnamentWall> birch_log_wall = registerWall(UDBuilders.BIRCH_LOG);
+	public static final RegistryObject<OrnamentWall> jungle_log_wall = registerWall(UDBuilders.JUNGLE_LOG);
+	public static final RegistryObject<OrnamentWall> acacia_log_wall = registerWall(UDBuilders.ACACIA_LOG);
+	public static final RegistryObject<OrnamentWall> dark_oak_log_wall = registerWall(UDBuilders.DARK_OAK_LOG);
+	public static final RegistryObject<OrnamentWall> crimson_stem_wall = registerWall(UDBuilders.CRIMSON_STEM);
+	public static final RegistryObject<OrnamentWall> warped_stem_wall = registerWall(UDBuilders.WARPED_STEM);
+	public static final RegistryObject<OrnamentWall> stone_wall = registerWall(UDBuilders.STONE);
+	public static final RegistryObject<OrnamentWall> smooth_stone_wall = registerWall(UDBuilders.SMOOTH_STONE);
+	public static final RegistryObject<OrnamentWall> smooth_sandstone_wall = registerWall(UDBuilders.SMOOTH_SANDSTONE);
+	public static final RegistryObject<OrnamentWall> smooth_red_sandstone_wall = registerWall(UDBuilders.SMOOTH_RED_SANDSTONE);
+	public static final RegistryObject<OrnamentWall> cracked_stone_brick_wall = registerWall(UDBuilders.CRACKED_STONE_BRICKS);
+	public static final RegistryObject<OrnamentWall> prismarine_brick_wall = registerWall(UDBuilders.PRISMARINE_BRICKS);
+	public static final RegistryObject<OrnamentWall> dark_prismarine_wall = registerWall(UDBuilders.DARK_PRISMARINE);
+	public static final RegistryObject<OrnamentWall> purpur_wall = registerWall(UDBuilders.PURPUR);
+
     private static RegistryObject<OrnamentStairs> registerStairs(OrnamentBuilder builder) {
         AbstractBlock.Properties props = PropertiesHelper.createProps(builder);
         return registerBlock(builder.name + "_stairs", () -> new OrnamentStairs(props, builder), (item) -> registerBlockItem(item, ItemGroup.TAB_BUILDING_BLOCKS, builder, 4));
@@ -302,6 +330,12 @@ public class ModBlocks {
         return registerBlock(builder.name + "_beam", () -> new OrnamentBeam(props, builder), item ->
                 registerBlockItem(item, ItemGroup.TAB_BUILDING_BLOCKS, builder, 7));
     }
+
+	private static RegistryObject<OrnamentWall> registerWall(OrnamentBuilder builder) {
+		AbstractBlock.Properties props = PropertiesHelper.createProps(builder);
+		return registerBlock(builder.name + "_wall", () -> new OrnamentWall(props, builder), (item) ->
+				registerBlockItem(item, ItemGroup.TAB_DECORATIONS, builder, 8));
+	}
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<? extends T> block, Function<RegistryObject<T>, Supplier<? extends Item>> item) {
         RegistryObject<T> reg = BLOCKS.register(name, block);
