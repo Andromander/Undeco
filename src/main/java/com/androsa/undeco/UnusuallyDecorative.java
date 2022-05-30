@@ -2,9 +2,9 @@ package com.androsa.undeco;
 
 import com.androsa.undeco.data.*;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.RenderTypeLookup;
-import net.minecraft.data.BlockTagsProvider;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -12,8 +12,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -56,11 +56,11 @@ public class UnusuallyDecorative {
     }
 
     private static void registerRenderTypes() {
-        RenderTypeLookup.setRenderLayer(ModBlocks.smooth_sandstone_trapdoor.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(ModBlocks.smooth_red_sandstone_trapdoor.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(ModBlocks.purpur_trapdoor.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(ModBlocks.smooth_sandstone_door.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(ModBlocks.smooth_red_sandstone_door.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(ModBlocks.purpur_door.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.smooth_sandstone_trapdoor.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.smooth_red_sandstone_trapdoor.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.purpur_trapdoor.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.smooth_sandstone_door.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.smooth_red_sandstone_door.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.purpur_door.get(), RenderType.cutout());
     }
 }

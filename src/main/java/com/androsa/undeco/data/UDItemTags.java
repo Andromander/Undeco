@@ -2,8 +2,8 @@ package com.androsa.undeco.data;
 
 import com.androsa.ornamental.data.provider.OrnamentalItemTagProvider;
 import com.androsa.undeco.UnusuallyDecorative;
-import net.minecraft.data.BlockTagsProvider;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraftforge.common.Tags;

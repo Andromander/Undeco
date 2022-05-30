@@ -3,8 +3,8 @@ package com.androsa.undeco.data;
 import com.androsa.ornamental.data.provider.OrnamentalItemModelProvider;
 import com.androsa.undeco.ModBlocks;
 import com.androsa.undeco.UnusuallyDecorative;
-import net.minecraft.block.Block;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 import java.util.function.Supplier;

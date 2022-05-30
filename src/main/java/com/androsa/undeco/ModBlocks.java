@@ -5,14 +5,14 @@ import com.androsa.ornamental.builder.OrnamentBuilder;
 import com.androsa.ornamental.items.OrnamentBlockItem;
 import com.androsa.ornamental.items.OrnamentTallBlockItem;
 import com.androsa.ornamental.registry.PropertiesHelper;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraftforge.fml.RegistryObject;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -22,16 +22,16 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, UnusuallyDecorative.MODID);
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, UnusuallyDecorative.MODID);
 
-    public static final RegistryObject<OrnamentStairs> oak_log_stairs = registerStairs(UDBuilders.OAK_LOG);
-    public static final RegistryObject<OrnamentStairs> spruce_log_stairs = registerStairs(UDBuilders.SPRUCE_LOG);
-    public static final RegistryObject<OrnamentStairs> birch_log_stairs = registerStairs(UDBuilders.BIRCH_LOG);
-    public static final RegistryObject<OrnamentStairs> jungle_log_stairs = registerStairs(UDBuilders.JUNGLE_LOG);
-    public static final RegistryObject<OrnamentStairs> acacia_log_stairs = registerStairs(UDBuilders.ACACIA_LOG);
-    public static final RegistryObject<OrnamentStairs> dark_oak_log_stairs = registerStairs(UDBuilders.DARK_OAK_LOG);
-    public static final RegistryObject<OrnamentStairs> crimson_stem_stairs = registerStairs(UDBuilders.CRIMSON_STEM);
-    public static final RegistryObject<OrnamentStairs> warped_stem_stairs = registerStairs(UDBuilders.WARPED_STEM);
-    public static final RegistryObject<OrnamentStairs> smooth_stone_stairs = registerStairs(UDBuilders.SMOOTH_STONE);
-    public static final RegistryObject<OrnamentStairs> cracked_stone_brick_stairs = registerStairs(UDBuilders.CRACKED_STONE_BRICKS);
+    public static final RegistryObject<OrnamentStair> oak_log_stairs = registerStairs(UDBuilders.OAK_LOG);
+    public static final RegistryObject<OrnamentStair> spruce_log_stairs = registerStairs(UDBuilders.SPRUCE_LOG);
+    public static final RegistryObject<OrnamentStair> birch_log_stairs = registerStairs(UDBuilders.BIRCH_LOG);
+    public static final RegistryObject<OrnamentStair> jungle_log_stairs = registerStairs(UDBuilders.JUNGLE_LOG);
+    public static final RegistryObject<OrnamentStair> acacia_log_stairs = registerStairs(UDBuilders.ACACIA_LOG);
+    public static final RegistryObject<OrnamentStair> dark_oak_log_stairs = registerStairs(UDBuilders.DARK_OAK_LOG);
+    public static final RegistryObject<OrnamentStair> crimson_stem_stairs = registerStairs(UDBuilders.CRIMSON_STEM);
+    public static final RegistryObject<OrnamentStair> warped_stem_stairs = registerStairs(UDBuilders.WARPED_STEM);
+    public static final RegistryObject<OrnamentStair> smooth_stone_stairs = registerStairs(UDBuilders.SMOOTH_STONE);
+    public static final RegistryObject<OrnamentStair> cracked_stone_brick_stairs = registerStairs(UDBuilders.CRACKED_STONE_BRICKS);
 
     public static final RegistryObject<OrnamentSlab> oak_log_slab = registerSlab(UDBuilders.OAK_LOG);
     public static final RegistryObject<OrnamentSlab> spruce_log_slab = registerSlab(UDBuilders.SPRUCE_LOG);
@@ -279,62 +279,62 @@ public class ModBlocks {
 	public static final RegistryObject<OrnamentWall> dark_prismarine_wall = registerWall(UDBuilders.DARK_PRISMARINE);
 	public static final RegistryObject<OrnamentWall> purpur_wall = registerWall(UDBuilders.PURPUR);
 
-    private static RegistryObject<OrnamentStairs> registerStairs(OrnamentBuilder builder) {
-        AbstractBlock.Properties props = PropertiesHelper.createProps(builder);
-        return registerBlock(builder.name + "_stairs", () -> new OrnamentStairs(props, builder), (item) -> registerBlockItem(item, ItemGroup.TAB_BUILDING_BLOCKS, builder, 4));
+    private static RegistryObject<OrnamentStair> registerStairs(OrnamentBuilder builder) {
+        BlockBehaviour.Properties props = PropertiesHelper.createProps(builder);
+        return registerBlock(builder.name + "_stairs", () -> new OrnamentStair(props, builder), (item) -> registerBlockItem(item, CreativeModeTab.TAB_BUILDING_BLOCKS, builder, 4));
     }
 
     private static RegistryObject<OrnamentSlab> registerSlab(OrnamentBuilder builder) {
-        AbstractBlock.Properties props = PropertiesHelper.createProps(builder);
-        return registerBlock(builder.name + "_slab", () -> new OrnamentSlab(props, builder), (item) -> registerBlockItem(item, ItemGroup.TAB_BUILDING_BLOCKS, builder, 3));
+        BlockBehaviour.Properties props = PropertiesHelper.createProps(builder);
+        return registerBlock(builder.name + "_slab", () -> new OrnamentSlab(props, builder), (item) -> registerBlockItem(item, CreativeModeTab.TAB_BUILDING_BLOCKS, builder, 3));
     }
 
     private static RegistryObject<OrnamentFence> registerFence(OrnamentBuilder builder) {
-        AbstractBlock.Properties props = PropertiesHelper.createProps(builder);
-        return registerBlock(builder.name + "_fence", () -> new OrnamentFence(props, builder), item -> registerBlockItem(item, ItemGroup.TAB_DECORATIONS, builder, 1));
+        BlockBehaviour.Properties props = PropertiesHelper.createProps(builder);
+        return registerBlock(builder.name + "_fence", () -> new OrnamentFence(props, builder), item -> registerBlockItem(item, CreativeModeTab.TAB_DECORATIONS, builder, 1));
     }
 
     private static RegistryObject<OrnamentTrapDoor> registerTrapdoor(OrnamentBuilder builder) {
-        AbstractBlock.Properties props = PropertiesHelper.createProps(builder)
+        BlockBehaviour.Properties props = PropertiesHelper.createProps(builder)
                 .noOcclusion()
                 .isValidSpawn((state, reader, pos, type) -> false);
 
         return registerBlock(builder.name + "_trapdoor", () -> new OrnamentTrapDoor(props, builder), item ->
-                registerBlockItem(item, ItemGroup.TAB_REDSTONE, builder, 5));
+                registerBlockItem(item, CreativeModeTab.TAB_REDSTONE, builder, 5));
     }
 
     private static RegistryObject<OrnamentFenceGate> registerFenceGate(OrnamentBuilder builder) {
-        AbstractBlock.Properties props = PropertiesHelper.createProps(builder);
+        BlockBehaviour.Properties props = PropertiesHelper.createProps(builder);
 
         return registerBlock(builder.name + "_fence_gate", () -> new OrnamentFenceGate(props, builder), item ->
-                registerBlockItem(item, ItemGroup.TAB_REDSTONE, builder, 2));
+                registerBlockItem(item, CreativeModeTab.TAB_REDSTONE, builder, 2));
     }
 
     private static RegistryObject<OrnamentDoor> registerDoor(OrnamentBuilder builder) {
-        AbstractBlock.Properties props = PropertiesHelper.createProps(builder).noOcclusion();
+        BlockBehaviour.Properties props = PropertiesHelper.createProps(builder).noOcclusion();
 
         return registerBlock(builder.name + "_door", () -> new OrnamentDoor(props, builder), item ->
                 registerBlockItemDoor(item, builder, 0));
     }
 
     private static RegistryObject<OrnamentPole> registerPole(OrnamentBuilder builder) {
-        AbstractBlock.Properties props = PropertiesHelper.createProps(builder);
+        BlockBehaviour.Properties props = PropertiesHelper.createProps(builder);
 
         return registerBlock(builder.name + "_pole", () -> new OrnamentPole(props, builder), item ->
-                registerBlockItem(item, ItemGroup.TAB_BUILDING_BLOCKS, builder, 6));
+                registerBlockItem(item, CreativeModeTab.TAB_BUILDING_BLOCKS, builder, 6));
     }
 
     private static RegistryObject<OrnamentBeam> registerBeam(OrnamentBuilder builder) {
-        AbstractBlock.Properties props = PropertiesHelper.createProps(builder);
+        BlockBehaviour.Properties props = PropertiesHelper.createProps(builder);
 
         return registerBlock(builder.name + "_beam", () -> new OrnamentBeam(props, builder), item ->
-                registerBlockItem(item, ItemGroup.TAB_BUILDING_BLOCKS, builder, 7));
+                registerBlockItem(item, CreativeModeTab.TAB_BUILDING_BLOCKS, builder, 7));
     }
 
 	private static RegistryObject<OrnamentWall> registerWall(OrnamentBuilder builder) {
-		AbstractBlock.Properties props = PropertiesHelper.createProps(builder);
+		BlockBehaviour.Properties props = PropertiesHelper.createProps(builder);
 		return registerBlock(builder.name + "_wall", () -> new OrnamentWall(props, builder), (item) ->
-				registerBlockItem(item, ItemGroup.TAB_DECORATIONS, builder, 8));
+				registerBlockItem(item, CreativeModeTab.TAB_DECORATIONS, builder, 8));
 	}
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<? extends T> block, Function<RegistryObject<T>, Supplier<? extends Item>> item) {
@@ -343,11 +343,11 @@ public class ModBlocks {
         return reg;
     }
 
-    private static <T extends Block> Supplier<BlockItem> registerBlockItem(RegistryObject<T> block, ItemGroup group, OrnamentBuilder ornament, int fuelindex) {
+    private static <T extends Block> Supplier<BlockItem> registerBlockItem(RegistryObject<T> block, CreativeModeTab group, OrnamentBuilder ornament, int fuelindex) {
         return () -> new OrnamentBlockItem(block.get(), PropertiesHelper.createProps(ornament, group), ornament, fuelindex);
     }
 
     private static <T extends Block> Supplier<BlockItem> registerBlockItemDoor(final RegistryObject<T> block, OrnamentBuilder ornament, int fuelindex) {
-        return () -> new OrnamentTallBlockItem(block.get(), PropertiesHelper.createProps(ornament, ItemGroup.TAB_REDSTONE), ornament, fuelindex);
+        return () -> new OrnamentTallBlockItem(block.get(), PropertiesHelper.createProps(ornament, CreativeModeTab.TAB_REDSTONE), ornament, fuelindex);
     }
 }

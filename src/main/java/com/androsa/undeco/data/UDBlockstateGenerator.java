@@ -5,13 +5,13 @@ import com.androsa.ornamental.blocks.OrnamentPole;
 import com.androsa.ornamental.data.provider.OrnamentalBlockStateProvider;
 import com.androsa.undeco.ModBlocks;
 import com.androsa.undeco.UnusuallyDecorative;
-import net.minecraft.block.DoorBlock;
-import net.minecraft.block.FenceBlock;
-import net.minecraft.block.FenceGateBlock;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.world.level.block.DoorBlock;
+import net.minecraft.world.level.block.FenceBlock;
+import net.minecraft.world.level.block.FenceGateBlock;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.registries.RegistryObject;
 
 import javax.annotation.Nonnull;
 

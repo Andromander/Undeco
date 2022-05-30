@@ -3,10 +3,10 @@ package com.androsa.undeco.data;
 import com.androsa.ornamental.data.provider.OrnamentalRecipeProvider;
 import com.androsa.undeco.ModBlocks;
 import com.androsa.undeco.UnusuallyDecorative;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.IFinishedRecipe;
-import net.minecraft.item.Items;
+import net.minecraft.data.recipes.FinishedRecipe;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.function.Consumer;
 
@@ -17,7 +17,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
     }
 
     @Override
-    protected void buildShapelessRecipes(Consumer<IFinishedRecipe> consumer) {
+    protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer) {
         stairs(consumer, ModBlocks.oak_log_stairs, Blocks.OAK_LOG);
         stairs(consumer, ModBlocks.spruce_log_stairs, Blocks.SPRUCE_LOG);
         stairs(consumer, ModBlocks.birch_log_stairs, Blocks.BIRCH_LOG);

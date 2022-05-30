@@ -1,10 +1,9 @@
 package com.androsa.undeco;
 
 import com.androsa.ornamental.builder.OrnamentBuilder;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialColor;
-import net.minecraftforge.common.ToolType;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 
 public class UDBuilders {
 
@@ -57,7 +56,7 @@ public class UDBuilders {
                 .properties(material, color)
                 .hardnessAndResistance(2.0F, 3.0F)
                 .sound(SoundType.WOOD)
-                .tool(ToolType.AXE, false)
+                //.tool(ToolType.AXE, false)
                 .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300)
                 .canOpen();
     }
@@ -66,16 +65,16 @@ public class UDBuilders {
         return new OrnamentBuilder(name)
                 .properties(Material.STONE, color)
                 .hardnessAndResistance(1.5F, 6.0F)
-                .sound(SoundType.STONE)
-                .tool(ToolType.PICKAXE, 0, true);
+                .sound(SoundType.STONE);
+                //.tool(ToolType.PICKAXE, 0, true)
     }
 
     private static OrnamentBuilder createStoneToughOrnament(String name, MaterialColor color) {
         return new OrnamentBuilder(name)
                 .properties(Material.STONE, color)
                 .hardnessAndResistance(2.0F, 6.0F)
-                .sound(SoundType.STONE)
-                .tool(ToolType.PICKAXE, 0, true);
+                .sound(SoundType.STONE);
+                //.tool(ToolType.PICKAXE, 0, true)
     }
 
     private static OrnamentBuilder createLogOrnament(String name, MaterialColor color) {
@@ -83,7 +82,7 @@ public class UDBuilders {
                 .properties(Material.WOOD, color)
                 .hardnessAndResistance(2.0F)
                 .sound(SoundType.WOOD)
-                .tool(ToolType.AXE, false)
+                //.tool(ToolType.AXE, false)
                 .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300)
                 .canOpen();
     }
@@ -93,7 +92,7 @@ public class UDBuilders {
                 .properties(Material.NETHER_WOOD, color)
                 .hardnessAndResistance(2.0F)
                 .sound(SoundType.STEM)
-                .tool(ToolType.AXE, false)
+                //.tool(ToolType.AXE, false)
                 .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300)
                 .canOpen();
     }
@@ -102,8 +101,8 @@ public class UDBuilders {
         return new OrnamentBuilder(name)
                 .properties(Material.STONE, color)
                 .hardnessAndResistance(0.8F)
-                .sound(SoundType.STONE)
-                .tool(ToolType.PICKAXE, true);
+                .sound(SoundType.STONE);
+                //.tool(ToolType.PICKAXE, true)
 
     }
 }
