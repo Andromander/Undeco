@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "undeco:crimson_stem_trapdoor"
+    }
+  },
+  "result": {
+    "item": "undeco:crimson_stem_saddle_door",
+    "count": 2
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "undeco:prismarine_brick_beam_to_pole"
+    ]
+  },
+  "criteria": {
+    "has_prismarine_brick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "undeco:prismarine_brick_beam"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "undeco:prismarine_brick_beam_to_pole"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_prismarine_brick",
+      "has_the_recipe"
+    ]
+  ]
+}

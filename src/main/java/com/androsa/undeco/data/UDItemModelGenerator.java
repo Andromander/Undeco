@@ -1,11 +1,14 @@
 package com.androsa.undeco.data;
 
+import com.androsa.ornamental.blocks.OrnamentSaddleDoor;
 import com.androsa.ornamental.data.provider.OrnamentalItemModelProvider;
 import com.androsa.undeco.ModBlocks;
+import com.androsa.undeco.UDBuilders;
 import com.androsa.undeco.UnusuallyDecorative;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
@@ -273,6 +276,46 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
 		blockItemWall(ModBlocks.prismarine_brick_wall, "prismarine_bricks");
 		blockItemWall(ModBlocks.dark_prismarine_wall, "dark_prismarine");
 		blockItemWall(ModBlocks.purpur_wall, "purpur_block");
+
+        blockItemSaddleDoorV(ModBlocks.oak_saddle_door, "oak_trapdoor");
+        blockItemSaddleDoorV(ModBlocks.spruce_saddle_door, "spruce_trapdoor");
+        blockItemSaddleDoorV(ModBlocks.birch_saddle_door, "birch_trapdoor");
+        blockItemSaddleDoorV(ModBlocks.jungle_saddle_door, "jungle_trapdoor");
+        blockItemSaddleDoorV(ModBlocks.acacia_saddle_door, "acacia_trapdoor");
+        blockItemSaddleDoorV(ModBlocks.dark_oak_saddle_door, "dark_oak_trapdoor");
+        blockItemSaddleDoorV(ModBlocks.crimson_saddle_door, "crimson_trapdoor");
+        blockItemSaddleDoorV(ModBlocks.warped_saddle_door, "warped_trapdoor");
+        blockItemSaddleDoorV(ModBlocks.granite_saddle_door, "granite");
+        blockItemSaddleDoor(ModBlocks.polished_granite_saddle_door, "polished_granite");
+        blockItemSaddleDoorV(ModBlocks.diorite_saddle_door, "diorite");
+        blockItemSaddleDoor(ModBlocks.polished_diorite_saddle_door, "polished_diorite");
+        blockItemSaddleDoorV(ModBlocks.andesite_saddle_door, "andesite");
+        blockItemSaddleDoor(ModBlocks.polished_andesite_saddle_door, "polished_andesite");
+        blockItemSaddleDoorV(ModBlocks.oak_log_saddle_door, "oak_log");
+        blockItemSaddleDoorV(ModBlocks.spruce_log_saddle_door, "spruce_log");
+        blockItemSaddleDoorV(ModBlocks.birch_log_saddle_door, "birch_log");
+        blockItemSaddleDoorV(ModBlocks.jungle_log_saddle_door, "jungle_log");
+        blockItemSaddleDoorV(ModBlocks.acacia_log_saddle_door, "acacia_log");
+        blockItemSaddleDoorV(ModBlocks.dark_oak_log_saddle_door, "dark_oak_log");
+        blockItemSaddleDoorV(ModBlocks.crimson_stem_saddle_door, "crimson_stem");
+        blockItemSaddleDoorV(ModBlocks.warped_stem_saddle_door, "warped_stem");
+        blockItemSaddleDoorV(ModBlocks.blackstone_saddle_door, "blackstone");
+        blockItemSaddleDoor(ModBlocks.polished_blackstone_saddle_door, "polished_blackstone");
+        blockItemSaddleDoorV(ModBlocks.stone_saddle_door, "stone");
+        blockItemSaddleDoor(ModBlocks.smooth_stone_saddle_door, "smooth_stone");
+        blockItemSaddleDoorV(ModBlocks.cobblestone_saddle_door, "cobblestone");
+        blockItemSaddleDoorV(ModBlocks.mossy_cobblestone_saddle_door, "mossy_cobblestone");
+        blockItemSaddleDoorV(ModBlocks.sandstone_saddle_door, "sandstone");
+        blockItemSaddleDoor(ModBlocks.smooth_sandstone_saddle_door, "smooth_sandstone");
+        blockItemSaddleDoorV(ModBlocks.red_sandstone_saddle_door, "red_sandstone");
+        blockItemSaddleDoor(ModBlocks.smooth_red_sandstone_saddle_door, "smooth_red_sandstone");
+        blockItemSaddleDoorV(ModBlocks.stone_brick_saddle_door, "stone_bricks");
+        blockItemSaddleDoorV(ModBlocks.cracked_stone_brick_saddle_door, "cracked_stone_bricks");
+        blockItemSaddleDoorV(ModBlocks.mossy_stone_brick_saddle_door, "mossy_stone_bricks");
+        blockItemSaddleDoorV(ModBlocks.prismarine_saddle_door, "prismarine");
+        blockItemSaddleDoor(ModBlocks.prismarine_brick_saddle_door, "prismarine_brick");
+        blockItemSaddleDoor(ModBlocks.dark_prismarine_saddle_door, "dark_prismarine");
+        blockItemSaddleDoor(ModBlocks.purpur_saddle_door, "purpur");
     }
 
     public void blockItemFenceTB(Supplier<? extends Block> block, String bottom, String top, String side) {

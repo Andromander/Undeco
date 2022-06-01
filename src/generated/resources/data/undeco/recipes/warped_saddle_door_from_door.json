@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:warped_trapdoor"
+    }
+  ],
+  "result": {
+    "item": "undeco:warped_saddle_door",
+    "count": 2
+  }
+}

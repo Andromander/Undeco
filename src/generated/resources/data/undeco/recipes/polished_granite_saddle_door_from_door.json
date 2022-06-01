@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "undeco:polished_granite_door"
+    }
+  ],
+  "result": {
+    "item": "undeco:polished_granite_saddle_door",
+    "count": 2
+  }
+}

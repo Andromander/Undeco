@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "undeco:granite_trapdoor",
+    "undeco:polished_granite_trapdoor",
+    "undeco:diorite_trapdoor",
+    "undeco:polished_diorite_trapdoor",
+    "undeco:andesite_trapdoor",
+    "undeco:polished_andesite_trapdoor",
+    "undeco:blackstone_trapdoor",
+    "undeco:polished_blackstone_trapdoor",
+    "undeco:stone_trapdoor",
+    "undeco:smooth_stone_trapdoor",
+    "undeco:cobblestone_trapdoor",
+    "undeco:mossy_cobblestone_trapdoor",
+    "undeco:sandstone_trapdoor",
+    "undeco:smooth_sandstone_trapdoor",
+    "undeco:red_sandstone_trapdoor",
+    "undeco:smooth_red_sandstone_trapdoor",
+    "undeco:stone_brick_trapdoor",
+    "undeco:cracked_stone_brick_trapdoor",
+    "undeco:mossy_stone_brick_trapdoor",
+    "undeco:prismarine_trapdoor",
+    "undeco:prismarine_brick_trapdoor",
+    "undeco:dark_prismarine_trapdoor",
+    "undeco:purpur_trapdoor"
+  ]
+}

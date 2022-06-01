@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "undeco:diorite_trapdoor"
+    }
+  },
+  "result": {
+    "item": "undeco:diorite_saddle_door",
+    "count": 2
+  }
+}

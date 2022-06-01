@@ -38,7 +38,7 @@ public class UDLootTables extends LootTableProvider {
 
     @Override
     protected void validate(Map<ResourceLocation, LootTable> map, ValidationContext validationtracker) {
-        super.validate(map, validationtracker);
+
     }
 
     public static class BlockTables extends OrnamentLootTableProvider {
@@ -301,6 +301,46 @@ public class UDLootTables extends LootTableProvider {
 			dropSelf(ModBlocks.prismarine_brick_wall);
 			dropSelf(ModBlocks.dark_prismarine_wall);
 			dropSelf(ModBlocks.purpur_wall);
+
+            dropSelf(ModBlocks.oak_saddle_door);
+            dropSelf(ModBlocks.spruce_saddle_door);
+            dropSelf(ModBlocks.birch_saddle_door);
+            dropSelf(ModBlocks.jungle_saddle_door);
+            dropSelf(ModBlocks.acacia_saddle_door);
+            dropSelf(ModBlocks.dark_oak_saddle_door);
+            dropSelf(ModBlocks.crimson_saddle_door);
+            dropSelf(ModBlocks.warped_saddle_door);
+            dropSelf(ModBlocks.granite_saddle_door);
+            dropSelf(ModBlocks.polished_granite_saddle_door);
+            dropSelf(ModBlocks.diorite_saddle_door);
+            dropSelf(ModBlocks.polished_diorite_saddle_door);
+            dropSelf(ModBlocks.andesite_saddle_door);
+            dropSelf(ModBlocks.polished_andesite_saddle_door);
+            dropSelf(ModBlocks.oak_log_saddle_door);
+            dropSelf(ModBlocks.spruce_log_saddle_door);
+            dropSelf(ModBlocks.birch_log_saddle_door);
+            dropSelf(ModBlocks.jungle_log_saddle_door);
+            dropSelf(ModBlocks.acacia_log_saddle_door);
+            dropSelf(ModBlocks.dark_oak_log_saddle_door);
+            dropSelf(ModBlocks.crimson_stem_saddle_door);
+            dropSelf(ModBlocks.warped_stem_saddle_door);
+            dropSelf(ModBlocks.blackstone_saddle_door);
+            dropSelf(ModBlocks.polished_blackstone_saddle_door);
+            dropSelf(ModBlocks.stone_saddle_door);
+            dropSelf(ModBlocks.smooth_stone_saddle_door);
+            dropSelf(ModBlocks.cobblestone_saddle_door);
+            dropSelf(ModBlocks.mossy_cobblestone_saddle_door);
+            dropSelf(ModBlocks.sandstone_saddle_door);
+            dropSelf(ModBlocks.smooth_sandstone_saddle_door);
+            dropSelf(ModBlocks.red_sandstone_saddle_door);
+            dropSelf(ModBlocks.smooth_red_sandstone_saddle_door);
+            dropSelf(ModBlocks.stone_brick_saddle_door);
+            dropSelf(ModBlocks.cracked_stone_brick_saddle_door);
+            dropSelf(ModBlocks.mossy_stone_brick_saddle_door);
+            dropSelf(ModBlocks.prismarine_saddle_door);
+            dropSelf(ModBlocks.prismarine_brick_saddle_door);
+            dropSelf(ModBlocks.dark_prismarine_saddle_door);
+            dropSelf(ModBlocks.purpur_saddle_door);
         }
 
         @Override

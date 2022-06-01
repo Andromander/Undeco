@@ -57,7 +57,7 @@ public class UDBuilders {
                 .hardnessAndResistance(2.0F, 3.0F)
                 .sound(SoundType.WOOD)
                 //.tool(ToolType.AXE, false)
-                .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300)
+                .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300, 100)
                 .canOpen();
     }
 
@@ -83,7 +83,7 @@ public class UDBuilders {
                 .hardnessAndResistance(2.0F)
                 .sound(SoundType.WOOD)
                 //.tool(ToolType.AXE, false)
-                .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300)
+                .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300, 100)
                 .canOpen();
     }
 
@@ -93,7 +93,7 @@ public class UDBuilders {
                 .hardnessAndResistance(2.0F)
                 .sound(SoundType.STEM)
                 //.tool(ToolType.AXE, false)
-                .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300)
+                .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300, 100)
                 .canOpen();
     }
 

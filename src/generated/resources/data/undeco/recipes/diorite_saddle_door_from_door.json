@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "undeco:diorite_door"
+    }
+  ],
+  "result": {
+    "item": "undeco:diorite_saddle_door",
+    "count": 2
+  }
+}

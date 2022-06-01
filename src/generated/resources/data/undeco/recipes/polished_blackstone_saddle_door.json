@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "undeco:polished_blackstone_trapdoor"
+    }
+  },
+  "result": {
+    "item": "undeco:polished_blackstone_saddle_door",
+    "count": 2
+  }
+}

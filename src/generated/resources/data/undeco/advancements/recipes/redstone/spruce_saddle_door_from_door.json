@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "undeco:spruce_saddle_door_from_door"
+    ]
+  },
+  "criteria": {
+    "has_spruce": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:spruce_trapdoor"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "undeco:spruce_saddle_door_from_door"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_spruce",
+      "has_the_recipe"
+    ]
+  ]
+}

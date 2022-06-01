@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "undeco:polished_andesite_beam_to_pole"
+    ]
+  },
+  "criteria": {
+    "has_polished_andesite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "undeco:polished_andesite_beam"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "undeco:polished_andesite_beam_to_pole"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_polished_andesite",
+      "has_the_recipe"
+    ]
+  ]
+}

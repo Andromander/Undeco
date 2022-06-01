@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "undeco:purpur_trapdoor"
+    }
+  },
+  "result": {
+    "item": "undeco:purpur_saddle_door",
+    "count": 2
+  }
+}

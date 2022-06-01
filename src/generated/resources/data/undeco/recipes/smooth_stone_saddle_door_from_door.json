@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "undeco:smooth_stone_door"
+    }
+  ],
+  "result": {
+    "item": "undeco:smooth_stone_saddle_door",
+    "count": 2
+  }
+}

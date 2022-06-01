@@ -1,12 +1,15 @@
 package com.androsa.undeco.data;
 
+import com.androsa.ornamental.blocks.OrnamentSaddleDoor;
 import com.androsa.ornamental.data.provider.OrnamentalRecipeProvider;
 import com.androsa.undeco.ModBlocks;
+import com.androsa.undeco.UDBuilders;
 import com.androsa.undeco.UnusuallyDecorative;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Consumer;
 
@@ -313,5 +316,86 @@ public class UDRecipes extends OrnamentalRecipeProvider {
 		wall(consumer, ModBlocks.prismarine_brick_wall, Blocks.PRISMARINE_BRICKS);
 		wall(consumer, ModBlocks.dark_prismarine_wall, Blocks.DARK_PRISMARINE);
 		wall(consumer, ModBlocks.purpur_wall, Blocks.PURPUR_BLOCK);
+
+        saddleDoor(consumer, ModBlocks.oak_saddle_door, Blocks.OAK_TRAPDOOR);
+        saddleDoor(consumer, ModBlocks.spruce_saddle_door, Blocks.SPRUCE_TRAPDOOR);
+        saddleDoor(consumer, ModBlocks.birch_saddle_door, Blocks.BIRCH_TRAPDOOR);
+        saddleDoor(consumer, ModBlocks.jungle_saddle_door, Blocks.JUNGLE_TRAPDOOR);
+        saddleDoor(consumer, ModBlocks.acacia_saddle_door, Blocks.ACACIA_TRAPDOOR);
+        saddleDoor(consumer, ModBlocks.dark_oak_saddle_door, Blocks.DARK_OAK_TRAPDOOR);
+        saddleDoor(consumer, ModBlocks.crimson_saddle_door, Blocks.CRIMSON_TRAPDOOR);
+        saddleDoor(consumer, ModBlocks.warped_saddle_door, Blocks.WARPED_TRAPDOOR);
+        saddleDoor(consumer, ModBlocks.granite_saddle_door, ModBlocks.granite_trapdoor);
+        saddleDoor(consumer, ModBlocks.polished_granite_saddle_door, ModBlocks.polished_granite_trapdoor);
+        saddleDoor(consumer, ModBlocks.diorite_saddle_door, ModBlocks.diorite_trapdoor);
+        saddleDoor(consumer, ModBlocks.polished_diorite_saddle_door, ModBlocks.polished_diorite_trapdoor);
+        saddleDoor(consumer, ModBlocks.andesite_saddle_door, ModBlocks.andesite_trapdoor);
+        saddleDoor(consumer, ModBlocks.polished_andesite_saddle_door, ModBlocks.polished_andesite_trapdoor);
+        saddleDoor(consumer, ModBlocks.oak_log_saddle_door, ModBlocks.oak_log_trapdoor);
+        saddleDoor(consumer, ModBlocks.spruce_log_saddle_door, ModBlocks.spruce_log_trapdoor);
+        saddleDoor(consumer, ModBlocks.birch_log_saddle_door, ModBlocks.birch_log_trapdoor);
+        saddleDoor(consumer, ModBlocks.jungle_log_saddle_door, ModBlocks.jungle_log_trapdoor);
+        saddleDoor(consumer, ModBlocks.acacia_log_saddle_door, ModBlocks.acacia_log_trapdoor);
+        saddleDoor(consumer, ModBlocks.dark_oak_log_saddle_door, ModBlocks.dark_oak_log_trapdoor);
+        saddleDoor(consumer, ModBlocks.crimson_stem_saddle_door, ModBlocks.crimson_stem_trapdoor);
+        saddleDoor(consumer, ModBlocks.warped_stem_saddle_door, ModBlocks.warped_stem_trapdoor);
+        saddleDoor(consumer, ModBlocks.blackstone_saddle_door, ModBlocks.blackstone_trapdoor);
+        saddleDoor(consumer, ModBlocks.polished_blackstone_saddle_door, ModBlocks.polished_blackstone_trapdoor);
+        saddleDoor(consumer, ModBlocks.stone_saddle_door, ModBlocks.stone_trapdoor);
+        saddleDoor(consumer, ModBlocks.smooth_stone_saddle_door, ModBlocks.smooth_stone_trapdoor);
+        saddleDoor(consumer, ModBlocks.cobblestone_saddle_door, ModBlocks.cobblestone_trapdoor);
+        saddleDoor(consumer, ModBlocks.mossy_cobblestone_saddle_door, ModBlocks.mossy_cobblestone_trapdoor);
+        saddleDoor(consumer, ModBlocks.sandstone_saddle_door, ModBlocks.sandstone_trapdoor);
+        saddleDoor(consumer, ModBlocks.smooth_sandstone_saddle_door, ModBlocks.smooth_sandstone_trapdoor);
+        saddleDoor(consumer, ModBlocks.red_sandstone_saddle_door, ModBlocks.red_sandstone_trapdoor);
+        saddleDoor(consumer, ModBlocks.smooth_red_sandstone_saddle_door, ModBlocks.smooth_red_sandstone_trapdoor);
+        saddleDoor(consumer, ModBlocks.stone_brick_saddle_door, ModBlocks.stone_brick_trapdoor);
+        saddleDoor(consumer, ModBlocks.cracked_stone_brick_saddle_door, ModBlocks.cracked_stone_brick_trapdoor);
+        saddleDoor(consumer, ModBlocks.mossy_stone_brick_saddle_door, ModBlocks.mossy_stone_brick_trapdoor);
+        saddleDoor(consumer, ModBlocks.prismarine_saddle_door, ModBlocks.prismarine_trapdoor);
+        saddleDoor(consumer, ModBlocks.prismarine_brick_saddle_door, ModBlocks.prismarine_brick_trapdoor);
+        saddleDoor(consumer, ModBlocks.dark_prismarine_saddle_door, ModBlocks.dark_prismarine_trapdoor);
+        saddleDoor(consumer, ModBlocks.purpur_saddle_door, ModBlocks.purpur_trapdoor);
+
+        saddleDoorFromDoor(consumer, ModBlocks.oak_saddle_door, Blocks.OAK_TRAPDOOR);
+        saddleDoorFromDoor(consumer, ModBlocks.spruce_saddle_door, Blocks.SPRUCE_TRAPDOOR);
+        saddleDoorFromDoor(consumer, ModBlocks.birch_saddle_door, Blocks.BIRCH_TRAPDOOR);
+        saddleDoorFromDoor(consumer, ModBlocks.jungle_saddle_door, Blocks.JUNGLE_TRAPDOOR);
+        saddleDoorFromDoor(consumer, ModBlocks.acacia_saddle_door, Blocks.ACACIA_TRAPDOOR);
+        saddleDoorFromDoor(consumer, ModBlocks.dark_oak_saddle_door, Blocks.DARK_OAK_TRAPDOOR);
+        saddleDoorFromDoor(consumer, ModBlocks.crimson_saddle_door, Blocks.CRIMSON_TRAPDOOR);
+        saddleDoorFromDoor(consumer, ModBlocks.warped_saddle_door, Blocks.WARPED_TRAPDOOR);
+
+        saddleDoorFromDoor(consumer, ModBlocks.granite_saddle_door, ModBlocks.granite_door);
+        saddleDoorFromDoor(consumer, ModBlocks.polished_granite_saddle_door, ModBlocks.polished_granite_door);
+        saddleDoorFromDoor(consumer, ModBlocks.diorite_saddle_door, ModBlocks.diorite_door);
+        saddleDoorFromDoor(consumer, ModBlocks.polished_diorite_saddle_door, ModBlocks.polished_diorite_door);
+        saddleDoorFromDoor(consumer, ModBlocks.andesite_saddle_door, ModBlocks.andesite_door);
+        saddleDoorFromDoor(consumer, ModBlocks.polished_andesite_saddle_door, ModBlocks.polished_andesite_door);
+        saddleDoorFromDoor(consumer, ModBlocks.oak_log_saddle_door, ModBlocks.oak_log_door);
+        saddleDoorFromDoor(consumer, ModBlocks.spruce_log_saddle_door, ModBlocks.spruce_log_door);
+        saddleDoorFromDoor(consumer, ModBlocks.birch_log_saddle_door, ModBlocks.birch_log_door);
+        saddleDoorFromDoor(consumer, ModBlocks.jungle_log_saddle_door, ModBlocks.jungle_log_door);
+        saddleDoorFromDoor(consumer, ModBlocks.acacia_log_saddle_door, ModBlocks.acacia_log_door);
+        saddleDoorFromDoor(consumer, ModBlocks.dark_oak_log_saddle_door, ModBlocks.dark_oak_log_door);
+        saddleDoorFromDoor(consumer, ModBlocks.crimson_stem_saddle_door, ModBlocks.crimson_stem_door);
+        saddleDoorFromDoor(consumer, ModBlocks.warped_stem_saddle_door, ModBlocks.warped_stem_door);
+        saddleDoorFromDoor(consumer, ModBlocks.blackstone_saddle_door, ModBlocks.blackstone_door);
+        saddleDoorFromDoor(consumer, ModBlocks.polished_blackstone_saddle_door, ModBlocks.polished_blackstone_door);
+        saddleDoorFromDoor(consumer, ModBlocks.stone_saddle_door, ModBlocks.stone_door);
+        saddleDoorFromDoor(consumer, ModBlocks.smooth_stone_saddle_door, ModBlocks.smooth_stone_door);
+        saddleDoorFromDoor(consumer, ModBlocks.cobblestone_saddle_door, ModBlocks.cobblestone_door);
+        saddleDoorFromDoor(consumer, ModBlocks.mossy_cobblestone_saddle_door, ModBlocks.mossy_cobblestone_door);
+        saddleDoorFromDoor(consumer, ModBlocks.sandstone_saddle_door, ModBlocks.sandstone_door);
+        saddleDoorFromDoor(consumer, ModBlocks.smooth_sandstone_saddle_door, ModBlocks.smooth_sandstone_door);
+        saddleDoorFromDoor(consumer, ModBlocks.red_sandstone_saddle_door, ModBlocks.red_sandstone_door);
+        saddleDoorFromDoor(consumer, ModBlocks.smooth_red_sandstone_saddle_door, ModBlocks.smooth_red_sandstone_door);
+        saddleDoorFromDoor(consumer, ModBlocks.stone_brick_saddle_door, ModBlocks.stone_brick_door);
+        saddleDoorFromDoor(consumer, ModBlocks.cracked_stone_brick_saddle_door, ModBlocks.cracked_stone_brick_door);
+        saddleDoorFromDoor(consumer, ModBlocks.mossy_stone_brick_saddle_door, ModBlocks.mossy_stone_brick_door);
+        saddleDoorFromDoor(consumer, ModBlocks.prismarine_saddle_door, ModBlocks.prismarine_door);
+        saddleDoorFromDoor(consumer, ModBlocks.prismarine_brick_saddle_door, ModBlocks.prismarine_brick_door);
+        saddleDoorFromDoor(consumer, ModBlocks.dark_prismarine_saddle_door, ModBlocks.dark_prismarine_door);
+        saddleDoorFromDoor(consumer, ModBlocks.purpur_saddle_door, ModBlocks.purpur_door);
     }
 }

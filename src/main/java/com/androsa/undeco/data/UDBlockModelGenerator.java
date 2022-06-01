@@ -114,4 +114,18 @@ public abstract class UDBlockModelGenerator extends OrnamentalBlockModelProvider
                 .texture("side", side)
                 .texture("bottom", end);
     }
+
+    public BlockModelBuilder saddleDoorTB(String name, ResourceLocation side, ResourceLocation end, ResourceLocation top) {
+        return withExistingParent(name, UD_MODELS + "saddle_door_top_bottom")
+                .texture("top", top)
+                .texture("side", side)
+                .texture("bottom", end);
+    }
+
+    public BlockModelBuilder saddleDoorHingeTB(String name, ResourceLocation side, ResourceLocation end, ResourceLocation top) {
+        return withExistingParent(name, UD_MODELS + "saddle_door_hinge_top_bottom")
+                .texture("top", top)
+                .texture("side", side)
+                .texture("bottom", end);
+    }
 }

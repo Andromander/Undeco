@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "undeco:spruce_wall"
+    ]
+  },
+  "criteria": {
+    "has_spruce": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:spruce_planks"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "undeco:spruce_wall"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_spruce",
+      "has_the_recipe"
+    ]
+  ]
+}

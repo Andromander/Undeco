@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "undeco:mossy_cobblestone_beam_to_pole"
+    ]
+  },
+  "criteria": {
+    "has_mossy_cobblestone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "undeco:mossy_cobblestone_beam"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "undeco:mossy_cobblestone_beam_to_pole"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_mossy_cobblestone",
+      "has_the_recipe"
+    ]
+  ]
+}

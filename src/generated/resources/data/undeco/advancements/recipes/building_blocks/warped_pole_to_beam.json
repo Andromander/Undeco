@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "undeco:warped_pole_to_beam"
+    ]
+  },
+  "criteria": {
+    "has_warped": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "undeco:warped_pole"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "undeco:warped_pole_to_beam"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_warped",
+      "has_the_recipe"
+    ]
+  ]
+}

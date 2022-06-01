@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "undeco:prismarine_brick_saddle_door_from_door"
+    ]
+  },
+  "criteria": {
+    "has_prismarine_brick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "undeco:prismarine_brick_door"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "undeco:prismarine_brick_saddle_door_from_door"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_prismarine_brick",
+      "has_the_recipe"
+    ]
+  ]
+}

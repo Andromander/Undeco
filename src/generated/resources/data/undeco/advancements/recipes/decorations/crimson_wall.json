@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "undeco:crimson_wall"
+    ]
+  },
+  "criteria": {
+    "has_crimson": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:crimson_planks"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "undeco:crimson_wall"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_crimson",
+      "has_the_recipe"
+    ]
+  ]
+}

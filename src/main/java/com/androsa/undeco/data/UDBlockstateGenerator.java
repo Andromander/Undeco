@@ -2,6 +2,7 @@ package com.androsa.undeco.data;
 
 import com.androsa.ornamental.blocks.OrnamentBeam;
 import com.androsa.ornamental.blocks.OrnamentPole;
+import com.androsa.ornamental.blocks.OrnamentSaddleDoor;
 import com.androsa.ornamental.data.provider.OrnamentalBlockStateProvider;
 import com.androsa.undeco.ModBlocks;
 import com.androsa.undeco.UnusuallyDecorative;
@@ -9,6 +10,8 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.FenceGateBlock;
+import net.minecraft.world.level.block.state.properties.DoorHingeSide;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
@@ -303,6 +306,46 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
 		wallBasic(ModBlocks.prismarine_brick_wall, "prismarine_bricks");
 		wallBasic(ModBlocks.dark_prismarine_wall, "dark_prismarine");
 		wallBasic(ModBlocks.purpur_wall, "purpur_block");
+
+        saddleDoorVanilla(ModBlocks.oak_saddle_door, "oak_trapdoor");
+        saddleDoorVanilla(ModBlocks.spruce_saddle_door, "spruce_trapdoor");
+        saddleDoorVanilla(ModBlocks.birch_saddle_door, "birch_trapdoor");
+        saddleDoorVanilla(ModBlocks.jungle_saddle_door, "jungle_trapdoor");
+        saddleDoorVanilla(ModBlocks.acacia_saddle_door, "acacia_trapdoor");
+        saddleDoorVanilla(ModBlocks.dark_oak_saddle_door, "dark_oak_trapdoor");
+        saddleDoorVanilla(ModBlocks.crimson_saddle_door, "crimson_trapdoor");
+        saddleDoorVanilla(ModBlocks.warped_saddle_door, "warped_trapdoor");
+        saddleDoorVanilla(ModBlocks.granite_saddle_door, "granite");
+        saddleDoorBasic(ModBlocks.polished_granite_saddle_door, "polished_granite");
+        saddleDoorVanilla(ModBlocks.diorite_saddle_door, "diorite");
+        saddleDoorBasic(ModBlocks.polished_diorite_saddle_door, "polished_diorite");
+        saddleDoorVanilla(ModBlocks.andesite_saddle_door, "andesite");
+        saddleDoorBasic(ModBlocks.polished_andesite_saddle_door, "polished_andesite");
+        saddleDoorVanilla(ModBlocks.oak_log_saddle_door, "oak_log");
+        saddleDoorVanilla(ModBlocks.spruce_log_saddle_door, "spruce_log");
+        saddleDoorVanilla(ModBlocks.birch_log_saddle_door, "birch_log");
+        saddleDoorVanilla(ModBlocks.jungle_log_saddle_door, "jungle_log");
+        saddleDoorVanilla(ModBlocks.acacia_log_saddle_door, "acacia_log");
+        saddleDoorVanilla(ModBlocks.dark_oak_log_saddle_door, "dark_oak_log");
+        saddleDoorVanilla(ModBlocks.crimson_stem_saddle_door, "crimson_stem");
+        saddleDoorVanilla(ModBlocks.warped_stem_saddle_door, "warped_stem");
+        saddleDoorVanilla(ModBlocks.blackstone_saddle_door, "blackstone");
+        saddleDoorBasic(ModBlocks.polished_blackstone_saddle_door, "polished_blackstone");
+        saddleDoorVanilla(ModBlocks.stone_saddle_door, "stone");
+        saddleDoorBasic(ModBlocks.smooth_stone_saddle_door, "smooth_stone");
+        saddleDoorVanilla(ModBlocks.cobblestone_saddle_door, "cobblestone");
+        saddleDoorVanilla(ModBlocks.mossy_cobblestone_saddle_door, "mossy_cobblestone");
+        saddleDoorTopBottom(ModBlocks.sandstone_saddle_door, "sandstone", "sandstone_top", "sandstone_bottom");
+        saddleDoorBasic(ModBlocks.smooth_sandstone_saddle_door, "smooth_sandstone");
+        saddleDoorTopBottom(ModBlocks.red_sandstone_saddle_door, "red_sandstone", "red_sandstone_top", "red_sandstone_bottom");
+        saddleDoorBasic(ModBlocks.smooth_red_sandstone_saddle_door, "smooth_red_sandstone");
+        saddleDoorVanilla(ModBlocks.stone_brick_saddle_door, "stone_bricks");
+        saddleDoorVanilla(ModBlocks.cracked_stone_brick_saddle_door, "cracked_stone_bricks");
+        saddleDoorVanilla(ModBlocks.mossy_stone_brick_saddle_door, "mossy_stone_bricks");
+        saddleDoorVanilla(ModBlocks.prismarine_saddle_door, "prismarine");
+        saddleDoorBasic(ModBlocks.prismarine_brick_saddle_door, "prismarine_brick");
+        saddleDoorBasic(ModBlocks.dark_prismarine_saddle_door, "dark_prismarine");
+        saddleDoorBasic(ModBlocks.purpur_saddle_door, "purpur");
     }
 
     public void fenceTopBottom(RegistryObject<? extends FenceBlock> block, String side, String top, String bottom) {
@@ -386,5 +429,27 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         ModelFile full   = models().getExistingFile(locVanilla(name));
 
         beamBlock(block, corner, top, bottom, side, cross, fill, full);
+    }
+
+    public void saddleDoorTopBottom(RegistryObject<? extends OrnamentSaddleDoor> block, String side, String top, String bottom) {
+        String name = block.getId().toString();
+        ModelFile bottomLeft = this.models().saddleDoorTB(name, locVanilla(side), locVanilla(bottom), locVanilla(top));
+        ModelFile bottomRight = this.models().saddleDoorHingeTB(name + "_hinge", locVanilla(side), locVanilla(bottom), locVanilla(top));
+        this.getVariantBuilder(block.get()).forAllStatesExcept((state) -> {
+            int yRot = ((int)state.getValue(OrnamentSaddleDoor.FACING).toYRot()) + 90;
+            boolean rh = state.getValue(OrnamentSaddleDoor.HINGE) == DoorHingeSide.RIGHT;
+            boolean open = state.getValue(OrnamentSaddleDoor.OPEN);
+            boolean right = rh ^ open;
+            if (open) {
+                yRot += 90;
+            }
+
+            if (rh && open) {
+                yRot += 180;
+            }
+
+            yRot %= 360;
+            return ConfiguredModel.builder().modelFile(right ? bottomRight : bottomLeft).rotationY(yRot).build();
+        }, OrnamentSaddleDoor.POWERED);
     }
 }

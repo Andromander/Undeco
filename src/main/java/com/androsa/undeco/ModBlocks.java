@@ -279,6 +279,46 @@ public class ModBlocks {
 	public static final RegistryObject<OrnamentWall> dark_prismarine_wall = registerWall(UDBuilders.DARK_PRISMARINE);
 	public static final RegistryObject<OrnamentWall> purpur_wall = registerWall(UDBuilders.PURPUR);
 
+    public static final RegistryObject<OrnamentSaddleDoor> oak_saddle_door = registerSaddleDoor(UDBuilders.OAK_PLANKS);
+    public static final RegistryObject<OrnamentSaddleDoor> spruce_saddle_door = registerSaddleDoor(UDBuilders.SPRUCE_PLANKS);
+    public static final RegistryObject<OrnamentSaddleDoor> birch_saddle_door = registerSaddleDoor(UDBuilders.BIRCH_PLANKS);
+    public static final RegistryObject<OrnamentSaddleDoor> jungle_saddle_door = registerSaddleDoor(UDBuilders.JUNGLE_PLANKS);
+    public static final RegistryObject<OrnamentSaddleDoor> acacia_saddle_door = registerSaddleDoor(UDBuilders.ACACIA_PLANKS);
+    public static final RegistryObject<OrnamentSaddleDoor> dark_oak_saddle_door = registerSaddleDoor(UDBuilders.DARK_OAK_PLANKS);
+    public static final RegistryObject<OrnamentSaddleDoor> crimson_saddle_door = registerSaddleDoor(UDBuilders.CRIMSON_PLANKS);
+    public static final RegistryObject<OrnamentSaddleDoor> warped_saddle_door = registerSaddleDoor(UDBuilders.WARPED_PLANKS);
+    public static final RegistryObject<OrnamentSaddleDoor> granite_saddle_door = registerSaddleDoor(UDBuilders.GRANITE);
+    public static final RegistryObject<OrnamentSaddleDoor> polished_granite_saddle_door = registerSaddleDoor(UDBuilders.POLISHED_GRANITE);
+    public static final RegistryObject<OrnamentSaddleDoor> diorite_saddle_door = registerSaddleDoor(UDBuilders.DIORITE);
+    public static final RegistryObject<OrnamentSaddleDoor> polished_diorite_saddle_door = registerSaddleDoor(UDBuilders.POLISHED_DIORITE);
+    public static final RegistryObject<OrnamentSaddleDoor> andesite_saddle_door = registerSaddleDoor(UDBuilders.ANDESITE);
+    public static final RegistryObject<OrnamentSaddleDoor> polished_andesite_saddle_door = registerSaddleDoor(UDBuilders.POLISHED_ANDESITE);
+    public static final RegistryObject<OrnamentSaddleDoor> oak_log_saddle_door = registerSaddleDoor(UDBuilders.OAK_LOG);
+    public static final RegistryObject<OrnamentSaddleDoor> spruce_log_saddle_door = registerSaddleDoor(UDBuilders.SPRUCE_LOG);
+    public static final RegistryObject<OrnamentSaddleDoor> birch_log_saddle_door = registerSaddleDoor(UDBuilders.BIRCH_LOG);
+    public static final RegistryObject<OrnamentSaddleDoor> jungle_log_saddle_door = registerSaddleDoor(UDBuilders.JUNGLE_LOG);
+    public static final RegistryObject<OrnamentSaddleDoor> acacia_log_saddle_door = registerSaddleDoor(UDBuilders.ACACIA_LOG);
+    public static final RegistryObject<OrnamentSaddleDoor> dark_oak_log_saddle_door = registerSaddleDoor(UDBuilders.DARK_OAK_LOG);
+    public static final RegistryObject<OrnamentSaddleDoor> crimson_stem_saddle_door = registerSaddleDoor(UDBuilders.CRIMSON_STEM);
+    public static final RegistryObject<OrnamentSaddleDoor> warped_stem_saddle_door = registerSaddleDoor(UDBuilders.WARPED_STEM);
+    public static final RegistryObject<OrnamentSaddleDoor> blackstone_saddle_door = registerSaddleDoor(UDBuilders.BLACKSTONE);
+    public static final RegistryObject<OrnamentSaddleDoor> polished_blackstone_saddle_door = registerSaddleDoor(UDBuilders.POLISHED_BLACKSTONE);
+    public static final RegistryObject<OrnamentSaddleDoor> stone_saddle_door = registerSaddleDoor(UDBuilders.STONE);
+    public static final RegistryObject<OrnamentSaddleDoor> smooth_stone_saddle_door = registerSaddleDoor(UDBuilders.SMOOTH_STONE);
+    public static final RegistryObject<OrnamentSaddleDoor> cobblestone_saddle_door = registerSaddleDoor(UDBuilders.COBBLESTONE);
+    public static final RegistryObject<OrnamentSaddleDoor> mossy_cobblestone_saddle_door = registerSaddleDoor(UDBuilders.MOSSY_COBBLESTONE);
+    public static final RegistryObject<OrnamentSaddleDoor> sandstone_saddle_door = registerSaddleDoor(UDBuilders.SANDSTONE);
+    public static final RegistryObject<OrnamentSaddleDoor> smooth_sandstone_saddle_door = registerSaddleDoor(UDBuilders.SMOOTH_SANDSTONE);
+    public static final RegistryObject<OrnamentSaddleDoor> red_sandstone_saddle_door = registerSaddleDoor(UDBuilders.RED_SANDSTONE);
+    public static final RegistryObject<OrnamentSaddleDoor> smooth_red_sandstone_saddle_door = registerSaddleDoor(UDBuilders.SMOOTH_RED_SANDSTONE);
+    public static final RegistryObject<OrnamentSaddleDoor> stone_brick_saddle_door = registerSaddleDoor(UDBuilders.STONE_BRICKS);
+    public static final RegistryObject<OrnamentSaddleDoor> cracked_stone_brick_saddle_door = registerSaddleDoor(UDBuilders.CRACKED_STONE_BRICKS);
+    public static final RegistryObject<OrnamentSaddleDoor> mossy_stone_brick_saddle_door = registerSaddleDoor(UDBuilders.MOSSY_STONE_BRICKS);
+    public static final RegistryObject<OrnamentSaddleDoor> prismarine_saddle_door = registerSaddleDoor(UDBuilders.PRISMARINE);
+    public static final RegistryObject<OrnamentSaddleDoor> prismarine_brick_saddle_door = registerSaddleDoor(UDBuilders.PRISMARINE_BRICKS);
+    public static final RegistryObject<OrnamentSaddleDoor> dark_prismarine_saddle_door = registerSaddleDoor(UDBuilders.DARK_PRISMARINE);
+    public static final RegistryObject<OrnamentSaddleDoor> purpur_saddle_door = registerSaddleDoor(UDBuilders.PURPUR);
+
     private static RegistryObject<OrnamentStair> registerStairs(OrnamentBuilder builder) {
         BlockBehaviour.Properties props = PropertiesHelper.createProps(builder);
         return registerBlock(builder.name + "_stairs", () -> new OrnamentStair(props, builder), (item) -> registerBlockItem(item, CreativeModeTab.TAB_BUILDING_BLOCKS, builder, 4));
@@ -336,6 +376,12 @@ public class ModBlocks {
 		return registerBlock(builder.name + "_wall", () -> new OrnamentWall(props, builder), (item) ->
 				registerBlockItem(item, CreativeModeTab.TAB_DECORATIONS, builder, 8));
 	}
+
+    private static RegistryObject<OrnamentSaddleDoor> registerSaddleDoor(OrnamentBuilder builder) {
+        BlockBehaviour.Properties props = PropertiesHelper.createProps(builder).noOcclusion();
+        return registerBlock(builder.name + "_saddle_door", () -> new OrnamentSaddleDoor(props, builder), (item) ->
+                registerBlockItem(item, CreativeModeTab.TAB_REDSTONE, builder, 9));
+    }
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<? extends T> block, Function<RegistryObject<T>, Supplier<? extends Item>> item) {
         RegistryObject<T> reg = BLOCKS.register(name, block);

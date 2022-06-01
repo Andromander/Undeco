@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "undeco:purpur_pole"
+    ]
+  },
+  "criteria": {
+    "has_purpur": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:purpur_slab"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "undeco:purpur_pole"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_purpur",
+      "has_the_recipe"
+    ]
+  ]
+}

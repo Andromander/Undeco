@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "undeco:dark_oak_saddle_door_from_door"
+    ]
+  },
+  "criteria": {
+    "has_dark_oak": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:dark_oak_trapdoor"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "undeco:dark_oak_saddle_door_from_door"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_dark_oak",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "undeco:oak_pole"
+    ]
+  },
+  "criteria": {
+    "has_oak": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:oak_slab"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "undeco:oak_pole"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_oak",
+      "has_the_recipe"
+    ]
+  ]
+}

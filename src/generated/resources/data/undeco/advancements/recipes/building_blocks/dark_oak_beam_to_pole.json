@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "undeco:dark_oak_beam_to_pole"
+    ]
+  },
+  "criteria": {
+    "has_dark_oak": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "undeco:dark_oak_beam"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "undeco:dark_oak_beam_to_pole"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_dark_oak",
+      "has_the_recipe"
+    ]
+  ]
+}

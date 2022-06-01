@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "undeco:mossy_cobblestone_trapdoor"
+    }
+  },
+  "result": {
+    "item": "undeco:mossy_cobblestone_saddle_door",
+    "count": 2
+  }
+}
