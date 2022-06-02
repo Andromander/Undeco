@@ -12,7 +12,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = project.mod_version
+version = project.mc_version + "-" + project.mod_version
 group = project.mod_group
 archivesBaseName = project.archives_base_name
 

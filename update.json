@@ -4,9 +4,14 @@
     "1.0": "Initial release of Ornamental: Unusually Decorative, or Undeco for short.",
     "1.1": " • Added Walls for materials supported in Unusually Decorative.\n • Fixed model errors with various Beams under certain conditions.\n • Fixed recipe conflicts caused by incorrect ingredients.\n • Fixed a typo for Smooth Red Sandstone Trapdoor.\n • Dependency for Ornamental has been updated. Version 4.5 is required, and supported Minecraft version is now only 1.16.5."
   },
+  "1.18.2": {
+    "1.2": "Ported to 1.18.2. Requires Ornamental 4.8.\n • Added Saddle Doors for materials supported in Unusually Decorative.\n • Versions on the jar file now list the Minecraft version."
+  },
 
   "promos": {
     "1.16.5-latest": "1.1.0",
-    "1.16.5-recommended": "1.1.0"
+    "1.16.5-recommended": "1.1.0",
+    "1.18.2-latest": "1.2.0",
+    "1.18.2-recommended": "1.2.0"
   }
 }
