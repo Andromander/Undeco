@@ -9,6 +9,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -22,16 +23,16 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, UnusuallyDecorative.MODID);
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, UnusuallyDecorative.MODID);
 
-    public static final RegistryObject<OrnamentStair> oak_log_stairs = registerStairs(UDBuilders.OAK_LOG);
-    public static final RegistryObject<OrnamentStair> spruce_log_stairs = registerStairs(UDBuilders.SPRUCE_LOG);
-    public static final RegistryObject<OrnamentStair> birch_log_stairs = registerStairs(UDBuilders.BIRCH_LOG);
-    public static final RegistryObject<OrnamentStair> jungle_log_stairs = registerStairs(UDBuilders.JUNGLE_LOG);
-    public static final RegistryObject<OrnamentStair> acacia_log_stairs = registerStairs(UDBuilders.ACACIA_LOG);
-    public static final RegistryObject<OrnamentStair> dark_oak_log_stairs = registerStairs(UDBuilders.DARK_OAK_LOG);
-    public static final RegistryObject<OrnamentStair> crimson_stem_stairs = registerStairs(UDBuilders.CRIMSON_STEM);
-    public static final RegistryObject<OrnamentStair> warped_stem_stairs = registerStairs(UDBuilders.WARPED_STEM);
-    public static final RegistryObject<OrnamentStair> smooth_stone_stairs = registerStairs(UDBuilders.SMOOTH_STONE);
-    public static final RegistryObject<OrnamentStair> cracked_stone_brick_stairs = registerStairs(UDBuilders.CRACKED_STONE_BRICKS);
+    public static final RegistryObject<OrnamentStair> oak_log_stairs = registerStairs(Blocks.OAK_LOG, UDBuilders.OAK_LOG);
+    public static final RegistryObject<OrnamentStair> spruce_log_stairs = registerStairs(Blocks.SPRUCE_LOG, UDBuilders.SPRUCE_LOG);
+    public static final RegistryObject<OrnamentStair> birch_log_stairs = registerStairs(Blocks.BIRCH_LOG, UDBuilders.BIRCH_LOG);
+    public static final RegistryObject<OrnamentStair> jungle_log_stairs = registerStairs(Blocks.JUNGLE_LOG, UDBuilders.JUNGLE_LOG);
+    public static final RegistryObject<OrnamentStair> acacia_log_stairs = registerStairs(Blocks.ACACIA_LOG, UDBuilders.ACACIA_LOG);
+    public static final RegistryObject<OrnamentStair> dark_oak_log_stairs = registerStairs(Blocks.DARK_OAK_LOG, UDBuilders.DARK_OAK_LOG);
+    public static final RegistryObject<OrnamentStair> crimson_stem_stairs = registerStairs(Blocks.CRIMSON_STEM, UDBuilders.CRIMSON_STEM);
+    public static final RegistryObject<OrnamentStair> warped_stem_stairs = registerStairs(Blocks.WARPED_STEM, UDBuilders.WARPED_STEM);
+    public static final RegistryObject<OrnamentStair> smooth_stone_stairs = registerStairs(Blocks.SMOOTH_STONE, UDBuilders.SMOOTH_STONE);
+    public static final RegistryObject<OrnamentStair> cracked_stone_brick_stairs = registerStairs(Blocks.CRACKED_STONE_BRICKS, UDBuilders.CRACKED_STONE_BRICKS);
 
     public static final RegistryObject<OrnamentSlab> oak_log_slab = registerSlab(UDBuilders.OAK_LOG);
     public static final RegistryObject<OrnamentSlab> spruce_log_slab = registerSlab(UDBuilders.SPRUCE_LOG);
@@ -319,9 +320,9 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentSaddleDoor> dark_prismarine_saddle_door = registerSaddleDoor(UDBuilders.DARK_PRISMARINE);
     public static final RegistryObject<OrnamentSaddleDoor> purpur_saddle_door = registerSaddleDoor(UDBuilders.PURPUR);
 
-    private static RegistryObject<OrnamentStair> registerStairs(OrnamentBuilder builder) {
+    private static RegistryObject<OrnamentStair> registerStairs(Block base, OrnamentBuilder builder) {
         BlockBehaviour.Properties props = PropertiesHelper.createProps(builder);
-        return registerBlock(builder.name + "_stairs", () -> new OrnamentStair(props, builder), (item) -> registerBlockItem(item, CreativeModeTab.TAB_BUILDING_BLOCKS, builder, 4));
+        return registerBlock(builder.name + "_stairs", () -> new OrnamentStair(base::defaultBlockState, props, builder), (item) -> registerBlockItem(item, CreativeModeTab.TAB_BUILDING_BLOCKS, builder, 4));
     }
 
     private static RegistryObject<OrnamentSlab> registerSlab(OrnamentBuilder builder) {
