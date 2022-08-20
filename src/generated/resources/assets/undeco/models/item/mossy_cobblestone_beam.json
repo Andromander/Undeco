@@ -1,7 +1,8 @@
 {
   "parent": "ornamental:block/util/beam_inventory",
   "textures": {
-    "end": "minecraft:block/mossy_cobblestone",
-    "side": "minecraft:block/mossy_cobblestone"
+    "bottom": "minecraft:block/mossy_cobblestone",
+    "side": "minecraft:block/mossy_cobblestone",
+    "top": "minecraft:block/mossy_cobblestone"
   }
 }

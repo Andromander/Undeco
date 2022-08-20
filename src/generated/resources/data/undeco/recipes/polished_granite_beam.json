@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###"
-  ],
   "key": {
     "#": {
       "item": "minecraft:polished_granite_slab"
     }
   },
+  "pattern": [
+    "###"
+  ],
   "result": {
-    "item": "undeco:polished_granite_beam",
-    "count": 6
+    "count": 6,
+    "item": "undeco:polished_granite_beam"
   }
 }

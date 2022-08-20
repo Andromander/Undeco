@@ -1,9 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "#/#",
-    "#/#"
-  ],
   "key": {
     "#": {
       "item": "minecraft:andesite"
@@ -12,8 +8,12 @@
       "item": "minecraft:andesite_slab"
     }
   },
+  "pattern": [
+    "#/#",
+    "#/#"
+  ],
   "result": {
-    "item": "undeco:andesite_fence",
-    "count": 3
+    "count": 3,
+    "item": "undeco:andesite_fence"
   }
 }

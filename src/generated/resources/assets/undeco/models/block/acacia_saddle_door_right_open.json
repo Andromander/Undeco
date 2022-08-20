@@ -1,0 +1,9 @@
+{
+  "parent": "ornamental:block/util/saddle_door_right_open",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "minecraft:block/acacia_trapdoor",
+    "side": "minecraft:block/acacia_trapdoor",
+    "top": "minecraft:block/acacia_trapdoor"
+  }
+}

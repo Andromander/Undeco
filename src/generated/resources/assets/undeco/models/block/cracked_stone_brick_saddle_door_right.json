@@ -1,0 +1,9 @@
+{
+  "parent": "ornamental:block/util/saddle_door_right",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "minecraft:block/cracked_stone_bricks",
+    "side": "minecraft:block/cracked_stone_bricks",
+    "top": "minecraft:block/cracked_stone_bricks"
+  }
+}

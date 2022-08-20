@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/door_bottom_rh",
-  "textures": {
-    "bottom": "undeco:block/polished_diorite_door_bottom",
-    "top": "undeco:block/polished_diorite_door_top"
-  }
-}

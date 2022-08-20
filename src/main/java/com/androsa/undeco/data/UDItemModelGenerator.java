@@ -1,15 +1,13 @@
 package com.androsa.undeco.data;
 
-import com.androsa.ornamental.blocks.OrnamentSaddleDoor;
 import com.androsa.ornamental.data.provider.OrnamentalItemModelProvider;
 import com.androsa.undeco.ModBlocks;
-import com.androsa.undeco.UDBuilders;
 import com.androsa.undeco.UnusuallyDecorative;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.registries.RegistryObject;
 
+import java.util.Optional;
 import java.util.function.Supplier;
 
 public class UDItemModelGenerator extends OrnamentalItemModelProvider {
@@ -47,23 +45,23 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemFence(ModBlocks.polished_diorite_fence, "polished_diorite");
         blockItemFence(ModBlocks.andesite_fence, "andesite");
         blockItemFence(ModBlocks.polished_andesite_fence, "polished_andesite");
-        blockItemFenceColumn(ModBlocks.oak_log_fence, "oak_log", "oak_log_top");
-        blockItemFenceColumn(ModBlocks.spruce_log_fence, "spruce_log", "spruce_log_top");
-        blockItemFenceColumn(ModBlocks.birch_log_fence, "birch_log", "birch_log_top");
-        blockItemFenceColumn(ModBlocks.jungle_log_fence, "jungle_log", "jungle_log_top");
-        blockItemFenceColumn(ModBlocks.acacia_log_fence, "acacia_log", "acacia_log_top");
-        blockItemFenceColumn(ModBlocks.dark_oak_log_fence, "dark_oak_log", "dark_oak_log_top");
-        blockItemFenceColumn(ModBlocks.crimson_stem_fence, "crimson_stem", "crimson_stem_top");
-        blockItemFenceColumn(ModBlocks.warped_stem_fence, "warped_stem", "warped_stem_top");
+        blockItemFence(ModBlocks.oak_log_fence, "oak_log", "oak_log_top");
+        blockItemFence(ModBlocks.spruce_log_fence, "spruce_log", "spruce_log_top");
+        blockItemFence(ModBlocks.birch_log_fence, "birch_log", "birch_log_top");
+        blockItemFence(ModBlocks.jungle_log_fence, "jungle_log", "jungle_log_top");
+        blockItemFence(ModBlocks.acacia_log_fence, "acacia_log", "acacia_log_top");
+        blockItemFence(ModBlocks.dark_oak_log_fence, "dark_oak_log", "dark_oak_log_top");
+        blockItemFence(ModBlocks.crimson_stem_fence, "crimson_stem", "crimson_stem_top");
+        blockItemFence(ModBlocks.warped_stem_fence, "warped_stem", "warped_stem_top");
         blockItemFence(ModBlocks.blackstone_fence, "blackstone");
         blockItemFence(ModBlocks.polished_blackstone_fence, "polished_blackstone");
         blockItemFence(ModBlocks.stone_fence, "stone");
         blockItemFence(ModBlocks.smooth_stone_fence, "smooth_stone");
         blockItemFence(ModBlocks.cobblestone_fence, "cobblestone");
         blockItemFence(ModBlocks.mossy_cobblestone_fence, "mossy_cobblestone");
-        blockItemFenceTB(ModBlocks.sandstone_fence, "sandstone_bottom", "sandstone_top", "sandstone");
+        blockItemFence(ModBlocks.sandstone_fence, "sandstone_bottom", "sandstone_top", "sandstone");
         blockItemFence(ModBlocks.smooth_sandstone_fence, "sandstone_top");
-        blockItemFenceTB(ModBlocks.red_sandstone_fence, "red_sandstone_bottom", "red_sandstone_top", "red_sandstone");
+        blockItemFence(ModBlocks.red_sandstone_fence, "red_sandstone_bottom", "red_sandstone_top", "red_sandstone");
         blockItemFence(ModBlocks.smooth_red_sandstone_fence, "red_sandstone_top");
         blockItemFence(ModBlocks.stone_brick_fence, "stone_bricks");
         blockItemFence(ModBlocks.cracked_stone_brick_fence, "cracked_stone_bricks");
@@ -260,14 +258,14 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
 		blockItemWall(ModBlocks.polished_granite_wall, "polished_granite");
 		blockItemWall(ModBlocks.polished_diorite_wall, "polished_diorite");
 		blockItemWall(ModBlocks.polished_andesite_wall, "polished_andesite");
-		blockItemWallColumn(ModBlocks.oak_log_wall, "oak_log", "oak_log_top");
-		blockItemWallColumn(ModBlocks.spruce_log_wall, "spruce_log", "spruce_log_top");
-		blockItemWallColumn(ModBlocks.birch_log_wall, "birch_log", "birch_log_top");
-		blockItemWallColumn(ModBlocks.jungle_log_wall, "jungle_log", "jungle_log_top");
-		blockItemWallColumn(ModBlocks.acacia_log_wall, "acacia_log", "acacia_log_top");
-		blockItemWallColumn(ModBlocks.dark_oak_log_wall, "dark_oak_log", "dark_oak_log_top");
-		blockItemWallColumn(ModBlocks.crimson_stem_wall, "crimson_stem", "crimson_stem_top");
-		blockItemWallColumn(ModBlocks.warped_stem_wall, "warped_stem", "warped_stem_top");
+		blockItemWall(ModBlocks.oak_log_wall, "oak_log", "oak_log_top");
+		blockItemWall(ModBlocks.spruce_log_wall, "spruce_log", "spruce_log_top");
+		blockItemWall(ModBlocks.birch_log_wall, "birch_log", "birch_log_top");
+		blockItemWall(ModBlocks.jungle_log_wall, "jungle_log", "jungle_log_top");
+		blockItemWall(ModBlocks.acacia_log_wall, "acacia_log", "acacia_log_top");
+		blockItemWall(ModBlocks.dark_oak_log_wall, "dark_oak_log", "dark_oak_log_top");
+		blockItemWall(ModBlocks.crimson_stem_wall, "crimson_stem", "crimson_stem_top");
+		blockItemWall(ModBlocks.warped_stem_wall, "warped_stem", "warped_stem_top");
 		blockItemWall(ModBlocks.stone_wall, "stone");
 		blockItemWall(ModBlocks.smooth_stone_wall, "smooth_stone");
 		blockItemWall(ModBlocks.smooth_sandstone_wall, "sandstone_top");
@@ -318,24 +316,15 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemSaddleDoor(ModBlocks.purpur_saddle_door, "purpur");
     }
 
-    public void blockItemFenceTB(Supplier<? extends Block> block, String bottom, String top, String side) {
-        withExistingParent(blockName(block), modLoc("block/fence_inventory_top_bottom"))
-                .texture("bottom", mcLoc("block/" + bottom))
-                .texture("top", mcLoc("block/" + top))
-                .texture("side", mcLoc("block/" + side));
+    public void blockItemFence(Supplier<? extends Block> block, String bottom, String top, String side) {
+        blockItemFence(block, mcLoc("block/" + side), mcLoc("block/" + top), mcLoc("block/" + bottom));
     }
 
     public void blockItemPole(Supplier<? extends Block> block, String bottom, String top, String side) {
-        withExistingParent(blockName(block), modLoc("block/pole_top_bottom_inventory"))
-                .texture("bottom", mcLoc("block/" + bottom))
-                .texture("top", mcLoc("block/" + top))
-                .texture("side", mcLoc("block/" + side));
+        blockItemPole(block, mcLoc("block/" + top), mcLoc("block/" + bottom), mcLoc("block/" + side), Optional.empty());
     }
 
     public void blockItemBeam(Supplier<? extends Block> block, String bottom, String top, String side) {
-        withExistingParent(blockName(block), modLoc("block/beam_top_bottom_inventory"))
-                .texture("bottom", mcLoc("block/" + bottom))
-                .texture("top", mcLoc("block/" + top))
-                .texture("side", mcLoc("block/" + side));
+        blockItemBeam(block, mcLoc("block/" + top), mcLoc("block/" + bottom), mcLoc("block/" + side));
     }
 }

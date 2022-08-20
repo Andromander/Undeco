@@ -1,0 +1,9 @@
+{
+  "parent": "ornamental:block/util/saddle_door_left",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "undeco:block/purpur_trapdoor",
+    "side": "undeco:block/purpur_trapdoor",
+    "top": "undeco:block/purpur_trapdoor"
+  }
+}

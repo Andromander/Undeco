@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###"
-  ],
   "key": {
     "#": {
       "item": "minecraft:andesite_slab"
     }
   },
+  "pattern": [
+    "###"
+  ],
   "result": {
-    "item": "undeco:andesite_beam",
-    "count": 6
+    "count": 6,
+    "item": "undeco:andesite_beam"
   }
 }

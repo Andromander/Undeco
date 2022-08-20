@@ -10,9 +10,6 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.FenceGateBlock;
-import net.minecraft.world.level.block.state.properties.DoorHingeSide;
-import net.minecraftforge.client.model.generators.ConfiguredModel;
-import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -20,26 +17,8 @@ import javax.annotation.Nonnull;
 
 public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
 
-    private final UDBlockModelGenerator blockModels;
-
     public UDBlockstateGenerator(DataGenerator generator, ExistingFileHelper helper) {
         super(generator, UnusuallyDecorative.MODID, helper);
-
-        blockModels = new UDBlockModelGenerator(generator, helper) {
-            @Override
-            protected void registerModels() { }
-
-            @Nonnull
-            @Override
-            public String getName() {
-                return UDBlockstateGenerator.this.getName();
-            }
-        };
-    }
-
-    @Override
-    public UDBlockModelGenerator models() {
-        return blockModels;
     }
 
     @Nonnull
@@ -228,9 +207,9 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         poleBasic(ModBlocks.cobblestone_pole, "cobblestone");
         poleBasic(ModBlocks.mossy_cobblestone_pole, "mossy_cobblestone");
         poleTopBottom(ModBlocks.sandstone_pole, "sandstone", "sandstone_top", "sandstone_bottom");
-        poleBasic(ModBlocks.smooth_sandstone_pole, "sandstone_top", "smooth_sandstone");
+        poleBasic(ModBlocks.smooth_sandstone_pole, "smooth_sandstone", "sandstone_top", SOLID);
         poleTopBottom(ModBlocks.red_sandstone_pole, "red_sandstone", "red_sandstone_top", "red_sandstone_bottom");
-        poleBasic(ModBlocks.smooth_red_sandstone_pole, "red_sandstone_top", "smooth_red_sandstone");
+        poleBasic(ModBlocks.smooth_red_sandstone_pole, "smooth_red_sandstone", "red_sandstone_top", SOLID);
         poleBasic(ModBlocks.stone_brick_pole, "stone_bricks");
         poleBasic(ModBlocks.cracked_stone_brick_pole, "cracked_stone_bricks");
         poleBasic(ModBlocks.mossy_stone_brick_pole, "mossy_stone_bricks");
@@ -239,20 +218,20 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         poleBasic(ModBlocks.dark_prismarine_pole, "dark_prismarine");
         poleBasic(ModBlocks.purpur_pole, "purpur_block");
 
-        beamBasic(ModBlocks.oak_beam, "oak", "oak_planks", true, true);
-        beamBasic(ModBlocks.spruce_beam, "spruce", "spruce_planks", true, true);
-        beamBasic(ModBlocks.birch_beam, "birch", "birch_planks", true, true);
-        beamBasic(ModBlocks.jungle_beam, "jungle", "jungle_planks", true, true);
-        beamBasic(ModBlocks.acacia_beam, "acacia", "acacia_planks", true, true);
-        beamBasic(ModBlocks.dark_oak_beam, "dark_oak", "dark_oak_planks", true, true);
-        beamBasic(ModBlocks.crimson_beam, "crimson", "crimson_planks", true, true);
-        beamBasic(ModBlocks.warped_beam, "warped", "warped_planks", true, true);
-        beamBasic(ModBlocks.granite_beam, "granite", "granite", true, true);
-        beamBasic(ModBlocks.polished_granite_beam, "polished_granite", "polished_granite", true, true);
-        beamBasic(ModBlocks.diorite_beam, "diorite", "diorite", true, true);
-        beamBasic(ModBlocks.polished_diorite_beam, "polished_diorite", "polished_diorite", true, true);
-        beamBasic(ModBlocks.andesite_beam, "andesite", "andesite", true, true);
-        beamBasic(ModBlocks.polished_andesite_beam, "polished_andesite", "polished_andesite", true, true);
+        beamBasic(ModBlocks.oak_beam, "oak_planks");
+        beamBasic(ModBlocks.spruce_beam, "spruce_planks");
+        beamBasic(ModBlocks.birch_beam, "birch_planks");
+        beamBasic(ModBlocks.jungle_beam, "jungle_planks");
+        beamBasic(ModBlocks.acacia_beam, "acacia_planks");
+        beamBasic(ModBlocks.dark_oak_beam, "dark_oak_planks");
+        beamBasic(ModBlocks.crimson_beam, "crimson_planks");
+        beamBasic(ModBlocks.warped_beam, "warped_planks");
+        beamBasic(ModBlocks.granite_beam, "granite");
+        beamBasic(ModBlocks.polished_granite_beam, "polished_granite");
+        beamBasic(ModBlocks.diorite_beam, "diorite");
+        beamBasic(ModBlocks.polished_diorite_beam, "polished_diorite");
+        beamBasic(ModBlocks.andesite_beam, "andesite");
+        beamBasic(ModBlocks.polished_andesite_beam, "polished_andesite");
         beamLog(ModBlocks.oak_log_beam, "oak_log");
         beamLog(ModBlocks.spruce_log_beam, "spruce_log");
         beamLog(ModBlocks.birch_log_beam, "birch_log");
@@ -261,23 +240,23 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         beamLog(ModBlocks.dark_oak_log_beam, "dark_oak_log");
         beamLog(ModBlocks.crimson_stem_beam, "crimson_stem");
         beamLog(ModBlocks.warped_stem_beam, "warped_stem");
-        beamBasic(ModBlocks.blackstone_beam, "blackstone", "blackstone", true, true);
-        beamBasic(ModBlocks.polished_blackstone_beam, "polished_blackstone", "polished_blackstone", true, true);
-        beamBasic(ModBlocks.stone_beam, "stone", "stone", true, true);
-        beamBasic(ModBlocks.smooth_stone_beam, "smooth_stone", "smooth_stone", false, true);
-        beamBasic(ModBlocks.cobblestone_beam, "cobblestone", "cobblestone", true, true);
-        beamBasic(ModBlocks.mossy_cobblestone_beam, "mossy_cobblestone", "mossy_cobblestone", true, true);
-        beamTopBottom(ModBlocks.sandstone_beam, "sandstone", "sandstone", true, true);
-        beamBasic(ModBlocks.smooth_sandstone_beam, "smooth_sandstone", "sandstone_top", "smooth_sandstone", true, true);
-        beamTopBottom(ModBlocks.red_sandstone_beam, "red_sandstone", "red_sandstone", true, true);
-        beamBasic(ModBlocks.smooth_red_sandstone_beam, "smooth_red_sandstone", "red_sandstone_top", "smooth_red_sandstone", true, true);
-        beamBasic(ModBlocks.stone_brick_beam, "stone_brick", "stone_bricks", true, true);
-        beamBasic(ModBlocks.cracked_stone_brick_beam, "cracked_stone_brick", "cracked_stone_bricks", false, false);
-        beamBasic(ModBlocks.mossy_stone_brick_beam, "mossy_stone_brick", "mossy_stone_bricks", true, true);
-        beamBasic(ModBlocks.prismarine_beam, "prismarine", "prismarine", true, true);
-        beamBasic(ModBlocks.prismarine_brick_beam, "prismarine_brick", "prismarine_bricks", true, true);
-        beamBasic(ModBlocks.dark_prismarine_beam, "dark_prismarine", "dark_prismarine", true, true);
-        beamBasic(ModBlocks.purpur_beam, "purpur", "purpur_block", true, true);
+        beamBasic(ModBlocks.blackstone_beam, "blackstone");
+        beamBasic(ModBlocks.polished_blackstone_beam, "polished_blackstone");
+        beamBasic(ModBlocks.stone_beam, "stone");
+        beamBasic(ModBlocks.smooth_stone_beam, "smooth_stone");
+        beamBasic(ModBlocks.cobblestone_beam, "cobblestone");
+        beamBasic(ModBlocks.mossy_cobblestone_beam, "mossy_cobblestone");
+        beamTopBottom(ModBlocks.sandstone_beam, "sandstone");
+        beamBasic(ModBlocks.smooth_sandstone_beam, "sandstone_top", "smooth_sandstone", SOLID);
+        beamTopBottom(ModBlocks.red_sandstone_beam, "red_sandstone");
+        beamBasic(ModBlocks.smooth_red_sandstone_beam, "red_sandstone_top", "smooth_red_sandstone", SOLID);
+        beamBasic(ModBlocks.stone_brick_beam, "stone_bricks");
+        beamBasic(ModBlocks.cracked_stone_brick_beam, "cracked_stone_bricks");
+        beamBasic(ModBlocks.mossy_stone_brick_beam, "mossy_stone_bricks");
+        beamBasic(ModBlocks.prismarine_beam, "prismarine");
+        beamBasic(ModBlocks.prismarine_brick_beam, "prismarine_bricks");
+        beamBasic(ModBlocks.dark_prismarine_beam, "dark_prismarine");
+        beamBasic(ModBlocks.purpur_beam, "purpur_block");
 
 		wallBasic(ModBlocks.oak_wall, "oak_planks");
 		wallBasic(ModBlocks.spruce_wall, "spruce_planks");
@@ -349,107 +328,34 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
     }
 
     public void fenceTopBottom(RegistryObject<? extends FenceBlock> block, String side, String top, String bottom) {
-        String baseName = block.getId().getPath();
-        fourWayBlock(block.get(),
-                models().fencePostTopBottom(baseName + "_post", this.locVanilla(side), this.locVanilla(top), this.locVanilla(bottom)),
-                models().fenceSide(baseName + "_side", this.locVanilla(side)));
+        fence(block, this.locVanilla(side), this.locVanilla(top), this.locVanilla(bottom), SOLID);
     }
 
     public void fenceGateTopBottom(RegistryObject<? extends FenceGateBlock> block, String side, String top, String bottom) {
-        String name = block.getId().toString();
-        ModelFile gate =         models().fenceGateTopBottom(name, locVanilla(side), locVanilla(top), locVanilla(bottom));
-        ModelFile gateOpen =     models().fenceGateOpenTopBottom(name + "_open", locVanilla(side), locVanilla(top), locVanilla(bottom));
-        ModelFile gateWall =     models().fenceGateWallTopBottom(name + "_wall", locVanilla(side), locVanilla(top), locVanilla(bottom));
-        ModelFile gateWallOpen = models().fenceGateWallOpenTopBottom(name + "_wall_open", locVanilla(side), locVanilla(top), locVanilla(bottom));
-
-        fenceGateBlock(block.get(), gate, gateOpen, gateWall, gateWallOpen);
+        fenceGate(block, locVanilla(side), locVanilla(top), locVanilla(bottom), SOLID);
     }
 
     public void doorBlockTopBottom(RegistryObject<? extends DoorBlock> block, String side, String top, String bottom) {
-        String name = block.getId().toString();
-        ModelFile bottomLeft = models().doorBottomLeftTB(name + "_bottom", locVanilla(side), locVanilla(bottom), locVanilla(top));
-        ModelFile bottomRight = models().doorBottomRightTB(name + "_bottom_hinge", locVanilla(side), locVanilla(bottom), locVanilla(top));
-        ModelFile topLeft = models().doorTopLeftTB(name + "_top", locVanilla(side), locVanilla(bottom), locVanilla(top));
-        ModelFile topRight = models().doorTopRightTB(name + "_top_hinge", locVanilla(side), locVanilla(bottom), locVanilla(top));
-        
-        doorBlock(block.get(), bottomLeft, bottomRight, topLeft, topRight);
+        door(block, locVanilla(side), locVanilla(bottom), locVanilla(top), locVanilla(side), CUTOUT);
     }
 
     public void poleLog(RegistryObject<? extends OrnamentPole> block, String name) {
-        String blockname = block.getId().toString();
-        ModelFile corner = models().poleCornerColumn(blockname + "_corner", locVanilla(name), locVanilla(name + "_top"));
-        ModelFile half = models().slabVerticalColumn(blockname + "_half", locVanilla(name), locVanilla(name + "_top"));
-        ModelFile cross = models().poleCrossColumn(blockname + "_cross", locVanilla(name), locVanilla(name + "_top"));
-        ModelFile fill = models().stairsStraightSideColumn(blockname + "_fill", locVanilla(name), locVanilla(name + "_top"));
-        ModelFile full = models().getExistingFile(locVanilla(name));
-
-        this.poleBlock(block, corner, half, cross, fill, full);
+        this.poleColumn(block, name, name, name + "_top");
     }
 
     public void poleTopBottom(RegistryObject<? extends OrnamentPole> block, String side, String top, String bottom) {
-        String blockname = block.getId().toString();
-        ModelFile corner = models().poleCornerTB(blockname + "_corner", locVanilla(side), locVanilla(bottom), locVanilla(top));
-        ModelFile half = models().slabVerticalTB(blockname + "_half", locVanilla(side), locVanilla(bottom), locVanilla(top));
-        ModelFile cross = models().poleCrossTB(blockname + "_cross", locVanilla(side), locVanilla(bottom), locVanilla(top));
-        ModelFile fill = models().stairsStraightSideTB(blockname + "_fill", locVanilla(side), locVanilla(bottom), locVanilla(top));
-        ModelFile full = models().getExistingFile(locVanilla(side));
-
-        this.poleBlock(block, corner, half, cross, fill, full);
+        this.pole(block, locVanilla(side), locVanilla(top), locVanilla(bottom), locVanilla(side), SOLID);
     }
 
     public void beamLog(RegistryObject<? extends OrnamentBeam> block, String name) {
-        String namebottom = name + "_slab";
-        String nametop = namebottom + "_top";
-        String namehalf = name + "_pole_half";
-        String stairs = name + "_stairs";
-
-        ModelFile corner = models().beamCornerColumn(block.getId().toString() + "_corner", locVanilla(name), locVanilla(name + "_top"));
-        ModelFile top = models().getExistingFile(locOrnament(nametop));
-        ModelFile bottom = models().getExistingFile(locOrnament(namebottom));
-        ModelFile side = models().getExistingFile(locOrnament(namehalf));
-        ModelFile cross  = models().beamCrossColumn(block.getId().toString() + "_cross", locVanilla(name), locVanilla(name + "_top"));
-        ModelFile fill   = models().getExistingFile(locOrnament(stairs));
-        ModelFile full   = models().getExistingFile(locVanilla(name));
-
-        beamBlock(block, corner, top, bottom, side, cross, fill, full);
+        beamColumn(block, name, name + "_top", name);
     }
 
-    public void beamTopBottom(RegistryObject<? extends OrnamentBeam> block, String base, String name, boolean vstairs, boolean vslab) {
-        String namebottom = base + "_slab";
-        String nametop = namebottom + "_top";
-        String namehalf = base + "_pole_half";
-        String stairs = base + "_stairs";
-
-        ModelFile corner = models().beamCornerTB(block.getId().toString() + "_corner", locVanilla(name), locVanilla(name + "_bottom"), locVanilla(name + "_top"));
-        ModelFile top = models().getExistingFile(vslab ? locVanilla(nametop) : locOrnament(nametop));
-        ModelFile bottom = models().getExistingFile(vslab ? locVanilla(namebottom) : locOrnament(namebottom));
-        ModelFile side = models().getExistingFile(vslab ? locVanilla(namebottom) : locOrnament(namehalf));
-        ModelFile cross  = models().beamCrossTB(block.getId().toString() + "_cross", locVanilla(name), locVanilla(name + "_bottom"), locVanilla(name + "_top"));
-        ModelFile fill   = models().getExistingFile(vstairs ? locVanilla(stairs) : locOrnament(stairs));
-        ModelFile full   = models().getExistingFile(locVanilla(name));
-
-        beamBlock(block, corner, top, bottom, side, cross, fill, full);
+    public void beamTopBottom(RegistryObject<? extends OrnamentBeam> block, String name) {
+        beam(block, locVanilla(name), locVanilla(name + "_top"), locVanilla(name + "_bottom"), locVanilla(name), SOLID);
     }
 
     public void saddleDoorTopBottom(RegistryObject<? extends OrnamentSaddleDoor> block, String side, String top, String bottom) {
-        String name = block.getId().toString();
-        ModelFile bottomLeft = this.models().saddleDoorTB(name, locVanilla(side), locVanilla(bottom), locVanilla(top));
-        ModelFile bottomRight = this.models().saddleDoorHingeTB(name + "_hinge", locVanilla(side), locVanilla(bottom), locVanilla(top));
-        this.getVariantBuilder(block.get()).forAllStatesExcept((state) -> {
-            int yRot = ((int)state.getValue(OrnamentSaddleDoor.FACING).toYRot()) + 90;
-            boolean rh = state.getValue(OrnamentSaddleDoor.HINGE) == DoorHingeSide.RIGHT;
-            boolean open = state.getValue(OrnamentSaddleDoor.OPEN);
-            boolean right = rh ^ open;
-            if (open) {
-                yRot += 90;
-            }
-
-            if (rh && open) {
-                yRot += 180;
-            }
-
-            yRot %= 360;
-            return ConfiguredModel.builder().modelFile(right ? bottomRight : bottomLeft).rotationY(yRot).build();
-        }, OrnamentSaddleDoor.POWERED);
+        saddleDoor(block, locVanilla(side), locVanilla(bottom), locVanilla(top), CUTOUT);
     }
 }

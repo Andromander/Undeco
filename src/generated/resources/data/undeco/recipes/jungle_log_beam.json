@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###"
-  ],
   "key": {
     "#": {
       "item": "undeco:jungle_log_slab"
     }
   },
+  "pattern": [
+    "###"
+  ],
   "result": {
-    "item": "undeco:jungle_log_beam",
-    "count": 6
+    "count": 6,
+    "item": "undeco:jungle_log_beam"
   }
 }

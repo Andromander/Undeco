@@ -1,9 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "/#/",
-    "/#/"
-  ],
   "key": {
     "#": {
       "item": "minecraft:blackstone"
@@ -12,6 +8,10 @@
       "item": "minecraft:blackstone_slab"
     }
   },
+  "pattern": [
+    "/#/",
+    "/#/"
+  ],
   "result": {
     "item": "undeco:blackstone_fence_gate"
   }

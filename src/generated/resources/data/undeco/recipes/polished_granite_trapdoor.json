@@ -1,14 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###",
-    "###"
-  ],
   "key": {
     "#": {
       "item": "minecraft:polished_granite_slab"
     }
   },
+  "pattern": [
+    "###",
+    "###"
+  ],
   "result": {
     "item": "undeco:polished_granite_trapdoor"
   }

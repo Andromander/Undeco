@@ -1,0 +1,9 @@
+{
+  "parent": "ornamental:block/util/saddle_door_left_open",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "undeco:block/dark_prismarine_trapdoor",
+    "side": "undeco:block/dark_prismarine_trapdoor",
+    "top": "undeco:block/dark_prismarine_trapdoor"
+  }
+}

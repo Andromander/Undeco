@@ -1,0 +1,20 @@
+// 1.19	2022-08-17T17:44:30.6946582	Tags for minecraft:block
+7eaa5037b9d5616e68433bd6b07fc447599bb7ad data/forge/tags/blocks/fences.json
+e8a1976065602c16178a5fc37f3cd89223169c69 data/forge/tags/blocks/fences/wooden.json
+2d267ea08e59e872c33b2b5b74b36dfe01eb6bfa data/forge/tags/blocks/fence_gates.json
+e295574c5eb39c3a7e3504914678383b7c67ca2d data/forge/tags/blocks/fence_gates/wooden.json
+1892fb8ac453c82cd4a35ed0ce98b83fa5e80fb2 data/minecraft/tags/blocks/doors.json
+7eaa5037b9d5616e68433bd6b07fc447599bb7ad data/minecraft/tags/blocks/fences.json
+2d267ea08e59e872c33b2b5b74b36dfe01eb6bfa data/minecraft/tags/blocks/fence_gates.json
+b237a8e703c14b342095c51687950f5f8a531ea3 data/minecraft/tags/blocks/mineable/axe.json
+45532351d399d05bc50c23b54b7d71126433b97e data/minecraft/tags/blocks/mineable/pickaxe.json
+9f2866ea795fccc85c12de7d998b9d6d37d8e9b7 data/minecraft/tags/blocks/non_flammable_wood.json
+879b0e8d0561606b315ac42f58405405a3332ce9 data/minecraft/tags/blocks/slabs.json
+5ddf41afa88eb4f2cfb0cfd433e1b93bae4a6d5e data/minecraft/tags/blocks/stairs.json
+dd4f40e80925483e713d3f0f71d6e78d8fbce5f3 data/minecraft/tags/blocks/trapdoors.json
+45dda39c851edd8abbbab3968498332595e03578 data/minecraft/tags/blocks/walls.json
+fd9edc2ef4f1f9504d01045b313d0a1fdfe85e39 data/minecraft/tags/blocks/wooden_doors.json
+e8a1976065602c16178a5fc37f3cd89223169c69 data/minecraft/tags/blocks/wooden_fences.json
+9942b66d5600b0a835b9159352a69ec456084c0c data/minecraft/tags/blocks/wooden_slabs.json
+0ac4c6cdff392b6a2809cd8cc99cabfb0d51b550 data/minecraft/tags/blocks/wooden_stairs.json
+9816c39b1e4c699c3106f9ea81ef1fd79d5c3b95 data/minecraft/tags/blocks/wooden_trapdoors.json

@@ -1,17 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "#",
-    "#",
-    "#"
-  ],
   "key": {
     "#": {
       "item": "minecraft:smooth_red_sandstone_slab"
     }
   },
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
   "result": {
-    "item": "undeco:smooth_red_sandstone_pole",
-    "count": 6
+    "count": 6,
+    "item": "undeco:smooth_red_sandstone_pole"
   }
 }

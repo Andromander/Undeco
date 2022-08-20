@@ -1,9 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "/#/",
-    "/#/"
-  ],
   "key": {
     "#": {
       "item": "minecraft:smooth_stone"
@@ -12,6 +8,10 @@
       "item": "minecraft:smooth_stone_slab"
     }
   },
+  "pattern": [
+    "/#/",
+    "/#/"
+  ],
   "result": {
     "item": "undeco:smooth_stone_fence_gate"
   }

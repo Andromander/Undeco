@@ -1,9 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "/#/",
-    "/#/"
-  ],
   "key": {
     "#": {
       "item": "minecraft:red_sandstone"
@@ -12,6 +8,10 @@
       "item": "minecraft:red_sandstone_slab"
     }
   },
+  "pattern": [
+    "/#/",
+    "/#/"
+  ],
   "result": {
     "item": "undeco:red_sandstone_fence_gate"
   }

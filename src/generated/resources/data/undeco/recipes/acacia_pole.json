@@ -1,17 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "#",
-    "#",
-    "#"
-  ],
   "key": {
     "#": {
       "item": "minecraft:acacia_slab"
     }
   },
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
   "result": {
-    "item": "undeco:acacia_pole",
-    "count": 6
+    "count": 6,
+    "item": "undeco:acacia_pole"
   }
 }

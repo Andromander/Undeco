@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "#",
-    "#"
-  ],
   "key": {
     "#": {
       "item": "undeco:polished_granite_trapdoor"
     }
   },
+  "pattern": [
+    "#",
+    "#"
+  ],
   "result": {
-    "item": "undeco:polished_granite_saddle_door",
-    "count": 2
+    "count": 2,
+    "item": "undeco:polished_granite_saddle_door"
   }
 }

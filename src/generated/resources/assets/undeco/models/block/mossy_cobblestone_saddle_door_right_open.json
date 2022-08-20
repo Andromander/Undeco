@@ -1,0 +1,9 @@
+{
+  "parent": "ornamental:block/util/saddle_door_right_open",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "minecraft:block/mossy_cobblestone",
+    "side": "minecraft:block/mossy_cobblestone",
+    "top": "minecraft:block/mossy_cobblestone"
+  }
+}

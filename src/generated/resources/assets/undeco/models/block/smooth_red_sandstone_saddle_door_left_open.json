@@ -1,0 +1,9 @@
+{
+  "parent": "ornamental:block/util/saddle_door_left_open",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "undeco:block/smooth_red_sandstone_trapdoor",
+    "side": "undeco:block/smooth_red_sandstone_trapdoor",
+    "top": "undeco:block/smooth_red_sandstone_trapdoor"
+  }
+}

@@ -1,17 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "#",
-    "#",
-    "#"
-  ],
   "key": {
     "#": {
       "item": "minecraft:polished_andesite_slab"
     }
   },
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
   "result": {
-    "item": "undeco:polished_andesite_pole",
-    "count": 6
+    "count": 6,
+    "item": "undeco:polished_andesite_pole"
   }
 }

@@ -1,6 +1,0 @@
-{
-  "parent": "ornamental:block/util/saddle_door",
-  "textures": {
-    "texture": "undeco:block/polished_granite_trapdoor"
-  }
-}

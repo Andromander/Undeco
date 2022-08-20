@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/template_fence_gate_wall",
+  "parent": "ornamental:block/util/fence_gate_wall",
   "textures": {
-    "texture": "minecraft:block/purpur_block"
+    "bottom": "minecraft:block/purpur_block",
+    "side": "minecraft:block/purpur_block",
+    "top": "minecraft:block/purpur_block"
   }
 }

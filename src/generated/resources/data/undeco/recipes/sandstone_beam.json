@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###"
-  ],
   "key": {
     "#": {
       "item": "minecraft:sandstone_slab"
     }
   },
+  "pattern": [
+    "###"
+  ],
   "result": {
-    "item": "undeco:sandstone_beam",
-    "count": 6
+    "count": 6,
+    "item": "undeco:sandstone_beam"
   }
 }

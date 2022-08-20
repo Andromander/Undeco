@@ -1,6 +1,8 @@
 {
   "parent": "ornamental:block/util/saddle_door_inventory",
   "textures": {
-    "texture": "undeco:block/purpur_trapdoor"
+    "bottom": "undeco:block/purpur_trapdoor",
+    "side": "undeco:block/purpur_trapdoor",
+    "top": "undeco:block/purpur_trapdoor"
   }
 }
