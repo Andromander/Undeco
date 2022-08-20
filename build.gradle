@@ -79,13 +79,13 @@ sourceSets.main.resources {
 }
 
 repositories {
-    flatDir {
-        dirs "libs"
+    maven {
+        url 'https://maven.tamaized.com/releases/'
     }
 }
 
 dependencies {
-    implementation fg.deobf("com.androsa.ornamental:ornamental-${mc_version}:${ornamental_version}")
+    implementation fg.deobf("androsa:ornamental:${ornamental_version}")
 
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 }
