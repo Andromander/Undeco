@@ -66,9 +66,9 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         fence(consumer, ModBlocks.stone_brick_fence, Blocks.STONE_BRICKS, Blocks.STONE_BRICK_SLAB);
         fence(consumer, ModBlocks.cracked_stone_brick_fence, Blocks.CRACKED_STONE_BRICKS, ModBlocks.cracked_stone_brick_slab);
         fence(consumer, ModBlocks.mossy_stone_brick_fence, Blocks.MOSSY_STONE_BRICKS, Blocks.MOSSY_STONE_BRICK_SLAB);
-        fence(consumer, ModBlocks.prismarine_fence, Blocks.PRISMARINE, Items.PRISMARINE);
-        fence(consumer, ModBlocks.prismarine_brick_fence, Blocks.PRISMARINE_BRICKS, Items.PRISMARINE);
-        fence(consumer, ModBlocks.dark_prismarine_fence, Blocks.DARK_PRISMARINE, Items.PRISMARINE);
+        fence(consumer, ModBlocks.prismarine_fence, Blocks.PRISMARINE, Items.PRISMARINE_SHARD);
+        fence(consumer, ModBlocks.prismarine_brick_fence, Blocks.PRISMARINE_BRICKS, Items.PRISMARINE_SHARD);
+        fence(consumer, ModBlocks.dark_prismarine_fence, Blocks.DARK_PRISMARINE, Items.PRISMARINE_SHARD);
         fence(consumer, ModBlocks.purpur_fence, Blocks.PURPUR_BLOCK, Blocks.PURPUR_SLAB);
 
         trapdoorWide(consumer, ModBlocks.granite_trapdoor, Blocks.GRANITE_SLAB);
@@ -98,7 +98,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         trapdoorWide(consumer, ModBlocks.stone_brick_trapdoor, Blocks.STONE_BRICK_SLAB);
         trapdoorWide(consumer, ModBlocks.cracked_stone_brick_trapdoor, ModBlocks.cracked_stone_brick_slab);
         trapdoorWide(consumer, ModBlocks.mossy_stone_brick_trapdoor, Blocks.MOSSY_STONE_BRICK_SLAB);
-        trapdoorWide(consumer, ModBlocks.prismarine_trapdoor, Items.PRISMARINE);
+        trapdoorWide(consumer, ModBlocks.prismarine_trapdoor, Items.PRISMARINE_SHARD);
         trapdoorWide(consumer, ModBlocks.prismarine_brick_trapdoor, Blocks.PRISMARINE_BRICK_SLAB);
         trapdoorWide(consumer, ModBlocks.dark_prismarine_trapdoor, Blocks.DARK_PRISMARINE_SLAB);
         trapdoorWide(consumer, ModBlocks.purpur_trapdoor, Blocks.PURPUR_SLAB);
@@ -130,9 +130,9 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         fencegate(consumer, ModBlocks.stone_brick_fence_gate, Blocks.STONE_BRICKS, Blocks.STONE_BRICK_SLAB);
         fencegate(consumer, ModBlocks.cracked_stone_brick_fence_gate, Blocks.CRACKED_STONE_BRICKS, ModBlocks.cracked_stone_brick_slab);
         fencegate(consumer, ModBlocks.mossy_stone_brick_fence_gate, Blocks.MOSSY_STONE_BRICKS, Blocks.MOSSY_STONE_BRICK_SLAB);
-        fencegate(consumer, ModBlocks.prismarine_fence_gate, Blocks.PRISMARINE, Items.PRISMARINE);
-        fencegate(consumer, ModBlocks.prismarine_brick_fence_gate, Blocks.PRISMARINE_BRICKS, Items.PRISMARINE);
-        fencegate(consumer, ModBlocks.dark_prismarine_fence_gate, Blocks.DARK_PRISMARINE, Items.PRISMARINE);
+        fencegate(consumer, ModBlocks.prismarine_fence_gate, Blocks.PRISMARINE, Items.PRISMARINE_SHARD);
+        fencegate(consumer, ModBlocks.prismarine_brick_fence_gate, Blocks.PRISMARINE_BRICKS, Items.PRISMARINE_SHARD);
+        fencegate(consumer, ModBlocks.dark_prismarine_fence_gate, Blocks.DARK_PRISMARINE, Items.PRISMARINE_SHARD);
         fencegate(consumer, ModBlocks.purpur_fence_gate, Blocks.PURPUR_BLOCK, Blocks.PURPUR_SLAB);
 
         door(consumer, ModBlocks.granite_door, Blocks.GRANITE_SLAB);
@@ -162,7 +162,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         door(consumer, ModBlocks.stone_brick_door, Blocks.STONE_BRICK_SLAB);
         door(consumer, ModBlocks.cracked_stone_brick_door, ModBlocks.cracked_stone_brick_slab);
         door(consumer, ModBlocks.mossy_stone_brick_door, Blocks.MOSSY_STONE_BRICK_SLAB);
-        door(consumer, ModBlocks.prismarine_door, Items.PRISMARINE);
+        door(consumer, ModBlocks.prismarine_door, Items.PRISMARINE_SHARD);
         door(consumer, ModBlocks.prismarine_brick_door, Blocks.PRISMARINE_BRICK_SLAB);
         door(consumer, ModBlocks.dark_prismarine_door, Blocks.DARK_PRISMARINE_SLAB);
         door(consumer, ModBlocks.purpur_door, Blocks.PURPUR_SLAB);
@@ -202,7 +202,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         pole(consumer, ModBlocks.stone_brick_pole, Blocks.STONE_BRICK_SLAB);
         pole(consumer, ModBlocks.cracked_stone_brick_pole, ModBlocks.cracked_stone_brick_slab);
         pole(consumer, ModBlocks.mossy_stone_brick_pole, Blocks.MOSSY_STONE_BRICK_SLAB);
-        pole(consumer, ModBlocks.prismarine_pole, Items.PRISMARINE);
+        pole(consumer, ModBlocks.prismarine_pole, Items.PRISMARINE_SHARD);
         pole(consumer, ModBlocks.prismarine_brick_pole, Blocks.PRISMARINE_BRICK_SLAB);
         pole(consumer, ModBlocks.dark_prismarine_pole, Blocks.DARK_PRISMARINE_SLAB);
         pole(consumer, ModBlocks.purpur_pole, Blocks.PURPUR_SLAB);
@@ -242,7 +242,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         beam(consumer, ModBlocks.stone_brick_beam, Blocks.STONE_BRICK_SLAB);
         beam(consumer, ModBlocks.cracked_stone_brick_beam, ModBlocks.cracked_stone_brick_slab);
         beam(consumer, ModBlocks.mossy_stone_brick_beam, Blocks.MOSSY_STONE_BRICK_SLAB);
-        beam(consumer, ModBlocks.prismarine_beam, Items.PRISMARINE);
+        beam(consumer, ModBlocks.prismarine_beam, Items.PRISMARINE_SHARD);
         beam(consumer, ModBlocks.prismarine_brick_beam, Blocks.PRISMARINE_BRICK_SLAB);
         beam(consumer, ModBlocks.dark_prismarine_beam, Blocks.DARK_PRISMARINE_SLAB);
         beam(consumer, ModBlocks.purpur_beam, Blocks.PURPUR_SLAB);
