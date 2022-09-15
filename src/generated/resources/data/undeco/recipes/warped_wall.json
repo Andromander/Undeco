@@ -3,9 +3,13 @@
   "key": {
     "#": {
       "item": "minecraft:warped_planks"
+    },
+    "/": {
+      "tag": "minecraft:walls"
     }
   },
   "pattern": [
+    " / ",
     "###",
     "###"
   ],

@@ -3,9 +3,13 @@
   "key": {
     "#": {
       "item": "minecraft:acacia_planks"
+    },
+    "/": {
+      "tag": "minecraft:walls"
     }
   },
   "pattern": [
+    " / ",
     "###",
     "###"
   ],

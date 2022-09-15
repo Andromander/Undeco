@@ -286,14 +286,14 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         convertPoleBeam(consumer, ModBlocks.dark_prismarine_pole, ModBlocks.dark_prismarine_beam);
         convertPoleBeam(consumer, ModBlocks.purpur_pole, ModBlocks.purpur_beam);
 
-		wall(consumer, ModBlocks.oak_wall, Blocks.OAK_PLANKS);
-		wall(consumer, ModBlocks.spruce_wall, Blocks.SPRUCE_PLANKS);
-		wall(consumer, ModBlocks.birch_wall, Blocks.BIRCH_PLANKS);
-		wall(consumer, ModBlocks.jungle_wall, Blocks.JUNGLE_PLANKS);
-		wall(consumer, ModBlocks.acacia_wall, Blocks.ACACIA_PLANKS);
-		wall(consumer, ModBlocks.dark_oak_wall, Blocks.DARK_OAK_PLANKS);
-		wall(consumer, ModBlocks.crimson_wall, Blocks.CRIMSON_PLANKS);
-		wall(consumer, ModBlocks.warped_wall, Blocks.WARPED_PLANKS);
+		wallOverride(consumer, ModBlocks.oak_wall, Blocks.OAK_PLANKS);
+		wallOverride(consumer, ModBlocks.spruce_wall, Blocks.SPRUCE_PLANKS);
+		wallOverride(consumer, ModBlocks.birch_wall, Blocks.BIRCH_PLANKS);
+		wallOverride(consumer, ModBlocks.jungle_wall, Blocks.JUNGLE_PLANKS);
+		wallOverride(consumer, ModBlocks.acacia_wall, Blocks.ACACIA_PLANKS);
+		wallOverride(consumer, ModBlocks.dark_oak_wall, Blocks.DARK_OAK_PLANKS);
+		wallOverride(consumer, ModBlocks.crimson_wall, Blocks.CRIMSON_PLANKS);
+		wallOverride(consumer, ModBlocks.warped_wall, Blocks.WARPED_PLANKS);
 		wall(consumer, ModBlocks.polished_granite_wall, Blocks.POLISHED_GRANITE);
 		wall(consumer, ModBlocks.polished_diorite_wall, Blocks.POLISHED_DIORITE);
 		wall(consumer, ModBlocks.polished_andesite_wall, Blocks.POLISHED_ANDESITE);

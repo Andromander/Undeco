@@ -3,9 +3,13 @@
   "key": {
     "#": {
       "item": "minecraft:dark_oak_planks"
+    },
+    "/": {
+      "tag": "minecraft:walls"
     }
   },
   "pattern": [
+    " / ",
     "###",
     "###"
   ],
