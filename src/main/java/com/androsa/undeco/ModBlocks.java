@@ -29,6 +29,7 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentStair> jungle_log_stairs = registerStairs(Blocks.JUNGLE_LOG, UDBuilders.JUNGLE_LOG);
     public static final RegistryObject<OrnamentStair> acacia_log_stairs = registerStairs(Blocks.ACACIA_LOG, UDBuilders.ACACIA_LOG);
     public static final RegistryObject<OrnamentStair> dark_oak_log_stairs = registerStairs(Blocks.DARK_OAK_LOG, UDBuilders.DARK_OAK_LOG);
+    public static final RegistryObject<OrnamentStair> mangrove_log_stairs = registerStairs(Blocks.MANGROVE_LOG, UDBuilders.MANGROVE_LOG);
     public static final RegistryObject<OrnamentStair> crimson_stem_stairs = registerStairs(Blocks.CRIMSON_STEM, UDBuilders.CRIMSON_STEM);
     public static final RegistryObject<OrnamentStair> warped_stem_stairs = registerStairs(Blocks.WARPED_STEM, UDBuilders.WARPED_STEM);
     public static final RegistryObject<OrnamentStair> smooth_stone_stairs = registerStairs(Blocks.SMOOTH_STONE, UDBuilders.SMOOTH_STONE);
@@ -40,6 +41,7 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentSlab> jungle_log_slab = registerSlab(UDBuilders.JUNGLE_LOG);
     public static final RegistryObject<OrnamentSlab> acacia_log_slab = registerSlab(UDBuilders.ACACIA_LOG);
     public static final RegistryObject<OrnamentSlab> dark_oak_log_slab = registerSlab(UDBuilders.DARK_OAK_LOG);
+    public static final RegistryObject<OrnamentSlab> mangrove_log_slab = registerSlab(UDBuilders.MANGROVE_LOG);
     public static final RegistryObject<OrnamentSlab> crimson_stem_slab = registerSlab(UDBuilders.CRIMSON_STEM);
     public static final RegistryObject<OrnamentSlab> warped_stem_slab = registerSlab(UDBuilders.WARPED_STEM);
     public static final RegistryObject<OrnamentSlab> cracked_stone_brick_slab = registerSlab(UDBuilders.CRACKED_STONE_BRICKS);
@@ -56,6 +58,7 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentFence> jungle_log_fence = registerFence(UDBuilders.JUNGLE_LOG);
     public static final RegistryObject<OrnamentFence> acacia_log_fence = registerFence(UDBuilders.ACACIA_LOG);
     public static final RegistryObject<OrnamentFence> dark_oak_log_fence = registerFence(UDBuilders.DARK_OAK_LOG);
+    public static final RegistryObject<OrnamentFence> mangrove_log_fence = registerFence(UDBuilders.MANGROVE_LOG);
     public static final RegistryObject<OrnamentFence> crimson_stem_fence = registerFence(UDBuilders.CRIMSON_STEM);
     public static final RegistryObject<OrnamentFence> warped_stem_fence = registerFence(UDBuilders.WARPED_STEM);
     public static final RegistryObject<OrnamentFence> blackstone_fence = registerFence(UDBuilders.BLACKSTONE);
@@ -88,6 +91,7 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentTrapDoor> jungle_log_trapdoor = registerTrapdoor(UDBuilders.JUNGLE_LOG);
     public static final RegistryObject<OrnamentTrapDoor> acacia_log_trapdoor = registerTrapdoor(UDBuilders.ACACIA_LOG);
     public static final RegistryObject<OrnamentTrapDoor> dark_oak_log_trapdoor = registerTrapdoor(UDBuilders.DARK_OAK_LOG);
+    public static final RegistryObject<OrnamentTrapDoor> mangrove_log_trapdoor = registerTrapdoor(UDBuilders.MANGROVE_LOG);
     public static final RegistryObject<OrnamentTrapDoor> crimson_stem_trapdoor = registerTrapdoor(UDBuilders.CRIMSON_STEM);
     public static final RegistryObject<OrnamentTrapDoor> warped_stem_trapdoor = registerTrapdoor(UDBuilders.WARPED_STEM);
     public static final RegistryObject<OrnamentTrapDoor> blackstone_trapdoor = registerTrapdoor(UDBuilders.BLACKSTONE);
@@ -120,6 +124,7 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentFenceGate> jungle_log_fence_gate = registerFenceGate(UDBuilders.JUNGLE_LOG);
     public static final RegistryObject<OrnamentFenceGate> acacia_log_fence_gate = registerFenceGate(UDBuilders.ACACIA_LOG);
     public static final RegistryObject<OrnamentFenceGate> dark_oak_log_fence_gate = registerFenceGate(UDBuilders.DARK_OAK_LOG);
+    public static final RegistryObject<OrnamentFenceGate> mangrove_log_fence_gate = registerFenceGate(UDBuilders.MANGROVE_LOG);
     public static final RegistryObject<OrnamentFenceGate> crimson_stem_fence_gate = registerFenceGate(UDBuilders.CRIMSON_STEM);
     public static final RegistryObject<OrnamentFenceGate> warped_stem_fence_gate = registerFenceGate(UDBuilders.WARPED_STEM);
     public static final RegistryObject<OrnamentFenceGate> blackstone_fence_gate = registerFenceGate(UDBuilders.BLACKSTONE);
@@ -152,6 +157,7 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentDoor> jungle_log_door = registerDoor(UDBuilders.JUNGLE_LOG);
     public static final RegistryObject<OrnamentDoor> acacia_log_door = registerDoor(UDBuilders.ACACIA_LOG);
     public static final RegistryObject<OrnamentDoor> dark_oak_log_door = registerDoor(UDBuilders.DARK_OAK_LOG);
+    public static final RegistryObject<OrnamentDoor> mangrove_log_door = registerDoor(UDBuilders.MANGROVE_LOG);
     public static final RegistryObject<OrnamentDoor> crimson_stem_door = registerDoor(UDBuilders.CRIMSON_STEM);
     public static final RegistryObject<OrnamentDoor> warped_stem_door = registerDoor(UDBuilders.WARPED_STEM);
     public static final RegistryObject<OrnamentDoor> blackstone_door = registerDoor(UDBuilders.BLACKSTONE);
@@ -178,6 +184,7 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentPole> jungle_pole = registerPole(UDBuilders.JUNGLE_PLANKS);
     public static final RegistryObject<OrnamentPole> acacia_pole = registerPole(UDBuilders.ACACIA_PLANKS);
     public static final RegistryObject<OrnamentPole> dark_oak_pole = registerPole(UDBuilders.DARK_OAK_PLANKS);
+    public static final RegistryObject<OrnamentPole> mangrove_pole = registerPole(UDBuilders.MANGROVE_PLANKS);
     public static final RegistryObject<OrnamentPole> crimson_pole = registerPole(UDBuilders.CRIMSON_PLANKS);
     public static final RegistryObject<OrnamentPole> warped_pole = registerPole(UDBuilders.WARPED_PLANKS);
     public static final RegistryObject<OrnamentPole> granite_pole = registerPole(UDBuilders.GRANITE);
@@ -192,6 +199,7 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentPole> jungle_log_pole = registerPole(UDBuilders.JUNGLE_LOG);
     public static final RegistryObject<OrnamentPole> acacia_log_pole = registerPole(UDBuilders.ACACIA_LOG);
     public static final RegistryObject<OrnamentPole> dark_oak_log_pole = registerPole(UDBuilders.DARK_OAK_LOG);
+    public static final RegistryObject<OrnamentPole> mangrove_log_pole = registerPole(UDBuilders.MANGROVE_LOG);
     public static final RegistryObject<OrnamentPole> crimson_stem_pole = registerPole(UDBuilders.CRIMSON_STEM);
     public static final RegistryObject<OrnamentPole> warped_stem_pole = registerPole(UDBuilders.WARPED_STEM);
     public static final RegistryObject<OrnamentPole> blackstone_pole = registerPole(UDBuilders.BLACKSTONE);
@@ -218,6 +226,7 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentBeam> jungle_beam = registerBeam(UDBuilders.JUNGLE_PLANKS);
     public static final RegistryObject<OrnamentBeam> acacia_beam = registerBeam(UDBuilders.ACACIA_PLANKS);
     public static final RegistryObject<OrnamentBeam> dark_oak_beam = registerBeam(UDBuilders.DARK_OAK_PLANKS);
+    public static final RegistryObject<OrnamentBeam> mangrove_beam = registerBeam(UDBuilders.MANGROVE_PLANKS);
     public static final RegistryObject<OrnamentBeam> crimson_beam = registerBeam(UDBuilders.CRIMSON_PLANKS);
     public static final RegistryObject<OrnamentBeam> warped_beam = registerBeam(UDBuilders.WARPED_PLANKS);
     public static final RegistryObject<OrnamentBeam> granite_beam = registerBeam(UDBuilders.GRANITE);
@@ -232,6 +241,7 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentBeam> jungle_log_beam = registerBeam(UDBuilders.JUNGLE_LOG);
     public static final RegistryObject<OrnamentBeam> acacia_log_beam = registerBeam(UDBuilders.ACACIA_LOG);
     public static final RegistryObject<OrnamentBeam> dark_oak_log_beam = registerBeam(UDBuilders.DARK_OAK_LOG);
+    public static final RegistryObject<OrnamentBeam> mangrove_log_beam = registerBeam(UDBuilders.MANGROVE_LOG);
     public static final RegistryObject<OrnamentBeam> crimson_stem_beam = registerBeam(UDBuilders.CRIMSON_STEM);
     public static final RegistryObject<OrnamentBeam> warped_stem_beam = registerBeam(UDBuilders.WARPED_STEM);
     public static final RegistryObject<OrnamentBeam> blackstone_beam = registerBeam(UDBuilders.BLACKSTONE);
@@ -258,6 +268,7 @@ public class ModBlocks {
 	public static final RegistryObject<OrnamentWall> jungle_wall = registerWall(UDBuilders.JUNGLE_PLANKS);
 	public static final RegistryObject<OrnamentWall> acacia_wall = registerWall(UDBuilders.ACACIA_PLANKS);
 	public static final RegistryObject<OrnamentWall> dark_oak_wall = registerWall(UDBuilders.DARK_OAK_PLANKS);
+    public static final RegistryObject<OrnamentWall> mangrove_wall = registerWall(UDBuilders.MANGROVE_PLANKS);
 	public static final RegistryObject<OrnamentWall> crimson_wall = registerWall(UDBuilders.CRIMSON_PLANKS);
 	public static final RegistryObject<OrnamentWall> warped_wall = registerWall(UDBuilders.WARPED_PLANKS);
 	public static final RegistryObject<OrnamentWall> polished_granite_wall = registerWall(UDBuilders.POLISHED_GRANITE);
@@ -269,6 +280,7 @@ public class ModBlocks {
 	public static final RegistryObject<OrnamentWall> jungle_log_wall = registerWall(UDBuilders.JUNGLE_LOG);
 	public static final RegistryObject<OrnamentWall> acacia_log_wall = registerWall(UDBuilders.ACACIA_LOG);
 	public static final RegistryObject<OrnamentWall> dark_oak_log_wall = registerWall(UDBuilders.DARK_OAK_LOG);
+    public static final RegistryObject<OrnamentWall> mangrove_log_wall = registerWall(UDBuilders.MANGROVE_LOG);
 	public static final RegistryObject<OrnamentWall> crimson_stem_wall = registerWall(UDBuilders.CRIMSON_STEM);
 	public static final RegistryObject<OrnamentWall> warped_stem_wall = registerWall(UDBuilders.WARPED_STEM);
 	public static final RegistryObject<OrnamentWall> stone_wall = registerWall(UDBuilders.STONE);
@@ -286,6 +298,7 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentSaddleDoor> jungle_saddle_door = registerSaddleDoor(UDBuilders.JUNGLE_PLANKS);
     public static final RegistryObject<OrnamentSaddleDoor> acacia_saddle_door = registerSaddleDoor(UDBuilders.ACACIA_PLANKS);
     public static final RegistryObject<OrnamentSaddleDoor> dark_oak_saddle_door = registerSaddleDoor(UDBuilders.DARK_OAK_PLANKS);
+    public static final RegistryObject<OrnamentSaddleDoor> mangrove_saddle_door = registerSaddleDoor(UDBuilders.MANGROVE_PLANKS);
     public static final RegistryObject<OrnamentSaddleDoor> crimson_saddle_door = registerSaddleDoor(UDBuilders.CRIMSON_PLANKS);
     public static final RegistryObject<OrnamentSaddleDoor> warped_saddle_door = registerSaddleDoor(UDBuilders.WARPED_PLANKS);
     public static final RegistryObject<OrnamentSaddleDoor> granite_saddle_door = registerSaddleDoor(UDBuilders.GRANITE);
@@ -300,6 +313,7 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentSaddleDoor> jungle_log_saddle_door = registerSaddleDoor(UDBuilders.JUNGLE_LOG);
     public static final RegistryObject<OrnamentSaddleDoor> acacia_log_saddle_door = registerSaddleDoor(UDBuilders.ACACIA_LOG);
     public static final RegistryObject<OrnamentSaddleDoor> dark_oak_log_saddle_door = registerSaddleDoor(UDBuilders.DARK_OAK_LOG);
+    public static final RegistryObject<OrnamentSaddleDoor> mangrove_log_saddle_door = registerSaddleDoor(UDBuilders.MANGROVE_LOG);
     public static final RegistryObject<OrnamentSaddleDoor> crimson_stem_saddle_door = registerSaddleDoor(UDBuilders.CRIMSON_STEM);
     public static final RegistryObject<OrnamentSaddleDoor> warped_stem_saddle_door = registerSaddleDoor(UDBuilders.WARPED_STEM);
     public static final RegistryObject<OrnamentSaddleDoor> blackstone_saddle_door = registerSaddleDoor(UDBuilders.BLACKSTONE);

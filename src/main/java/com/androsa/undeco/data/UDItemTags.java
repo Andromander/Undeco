@@ -1,6 +1,7 @@
 package com.androsa.undeco.data;
 
 import com.androsa.ornamental.data.provider.OrnamentalItemTagProvider;
+import com.androsa.ornamental.registry.ModTags;
 import com.androsa.undeco.UnusuallyDecorative;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
@@ -17,11 +18,14 @@ public class UDItemTags extends OrnamentalItemTagProvider {
 
     @Override
     protected void addTags() {
+        copy(ModTags.Blocks.BEAMS, ModTags.Items.BEAMS);
         copy(BlockTags.DOORS, ItemTags.DOORS);
         copy(Tags.Blocks.FENCE_GATES, Tags.Items.FENCE_GATES);
         copy(BlockTags.FENCES, ItemTags.FENCES);
         copy(Tags.Blocks.FENCES, Tags.Items.FENCES);
         copy(BlockTags.NON_FLAMMABLE_WOOD, ItemTags.NON_FLAMMABLE_WOOD);
+        copy(ModTags.Blocks.POLES, ModTags.Items.POLES);
+        copy(ModTags.Blocks.SADDLE_DOORS, ModTags.Items.SADDLE_DOORS);
         copy(BlockTags.SLABS, ItemTags.SLABS);
         copy(BlockTags.STAIRS, ItemTags.STAIRS);
         copy(BlockTags.WOODEN_DOORS, ItemTags.WOODEN_DOORS);

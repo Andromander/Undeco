@@ -35,6 +35,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         stairsColumn(ModBlocks.jungle_log_stairs, "jungle_log", "jungle_log_top");
         stairsColumn(ModBlocks.acacia_log_stairs, "acacia_log", "acacia_log_top");
         stairsColumn(ModBlocks.dark_oak_log_stairs, "dark_oak_log", "dark_oak_log_top");
+        stairsColumn(ModBlocks.mangrove_log_stairs, "mangrove_log", "mangrove_log_top");
         stairsColumn(ModBlocks.crimson_stem_stairs, "crimson_stem", "crimson_stem_top");
         stairsColumn(ModBlocks.warped_stem_stairs, "warped_stem", "warped_stem_top");
         stairsBasic(ModBlocks.smooth_stone_stairs, "smooth_stone");
@@ -46,6 +47,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         slabColumn(ModBlocks.jungle_log_slab, "jungle_log", "jungle_log", "jungle_log_top");
         slabColumn(ModBlocks.acacia_log_slab, "acacia_log", "acacia_log", "acacia_log_top");
         slabColumn(ModBlocks.dark_oak_log_slab, "dark_oak_log", "dark_oak_log", "dark_oak_log_top");
+        slabColumn(ModBlocks.mangrove_log_slab, "mangrove_log", "mangrove_log", "mangrove_log_top");
         slabColumn(ModBlocks.crimson_stem_slab, "crimson_stem", "crimson_stem", "crimson_stem_top");
         slabColumn(ModBlocks.warped_stem_slab, "warped_stem", "warped_stem", "warped_stem_top");
         slabBasic(ModBlocks.cracked_stone_brick_slab, "cracked_stone_bricks");
@@ -62,6 +64,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         fenceColumn(ModBlocks.jungle_log_fence, "jungle_log", "jungle_log_top");
         fenceColumn(ModBlocks.acacia_log_fence, "acacia_log", "acacia_log_top");
         fenceColumn(ModBlocks.dark_oak_log_fence, "dark_oak_log", "dark_oak_log_top");
+        fenceColumn(ModBlocks.mangrove_log_fence, "mangrove_log", "mangrove_log_top");
         fenceColumn(ModBlocks.crimson_stem_fence, "crimson_stem", "crimson_stem_top");
         fenceColumn(ModBlocks.warped_stem_fence, "warped_stem", "warped_stem_top");
         fenceBasic(ModBlocks.blackstone_fence, "blackstone");
@@ -94,6 +97,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         trapdoorVanilla(ModBlocks.jungle_log_trapdoor, "jungle_log");
         trapdoorVanilla(ModBlocks.acacia_log_trapdoor, "acacia_log");
         trapdoorVanilla(ModBlocks.dark_oak_log_trapdoor, "dark_oak_log");
+        trapdoorVanilla(ModBlocks.mangrove_log_trapdoor, "mangrove_log");
         trapdoorVanilla(ModBlocks.crimson_stem_trapdoor, "crimson_stem");
         trapdoorVanilla(ModBlocks.warped_stem_trapdoor, "warped_stem");
         trapdoorVanilla(ModBlocks.blackstone_trapdoor, "blackstone");
@@ -126,6 +130,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         fenceGateColumn(ModBlocks.jungle_log_fence_gate, "jungle_log", "jungle_log_top");
         fenceGateColumn(ModBlocks.acacia_log_fence_gate, "acacia_log", "acacia_log_top");
         fenceGateColumn(ModBlocks.dark_oak_log_fence_gate, "dark_oak_log", "dark_oak_log_top");
+        fenceGateColumn(ModBlocks.mangrove_log_fence_gate, "mangrove_log", "mangrove_log_top");
         fenceGateColumn(ModBlocks.crimson_stem_fence_gate, "crimson_stem", "crimson_stem_top");
         fenceGateColumn(ModBlocks.warped_stem_fence_gate, "warped_stem", "warped_stem_top");
         fenceGateBasic(ModBlocks.blackstone_fence_gate, "blackstone");
@@ -158,6 +163,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         doorBasicVanilla(ModBlocks.jungle_log_door, "jungle_log");
         doorBasicVanilla(ModBlocks.acacia_log_door, "acacia_log");
         doorBasicVanilla(ModBlocks.dark_oak_log_door, "dark_oak_log");
+        doorBasicVanilla(ModBlocks.mangrove_log_door, "mangrove_log");
         doorBasicVanilla(ModBlocks.crimson_stem_door, "crimson_stem");
         doorBasicVanilla(ModBlocks.warped_stem_door, "warped_stem");
         doorBasicVanilla(ModBlocks.blackstone_door, "blackstone");
@@ -184,6 +190,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         poleBasic(ModBlocks.jungle_pole, "jungle_planks");
         poleBasic(ModBlocks.acacia_pole, "acacia_planks");
         poleBasic(ModBlocks.dark_oak_pole, "dark_oak_planks");
+        poleBasic(ModBlocks.mangrove_pole, "mangrove_planks");
         poleBasic(ModBlocks.crimson_pole, "crimson_planks");
         poleBasic(ModBlocks.warped_pole, "warped_planks");
         poleBasic(ModBlocks.granite_pole, "granite");
@@ -198,6 +205,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         poleLog(ModBlocks.jungle_log_pole, "jungle_log");
         poleLog(ModBlocks.acacia_log_pole, "acacia_log");
         poleLog(ModBlocks.dark_oak_log_pole, "dark_oak_log");
+        poleLog(ModBlocks.mangrove_log_pole, "mangrove_log");
         poleLog(ModBlocks.crimson_stem_pole, "crimson_stem");
         poleLog(ModBlocks.warped_stem_pole, "warped_stem");
         poleBasic(ModBlocks.blackstone_pole, "blackstone");
@@ -224,6 +232,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         beamBasic(ModBlocks.jungle_beam, "jungle_planks");
         beamBasic(ModBlocks.acacia_beam, "acacia_planks");
         beamBasic(ModBlocks.dark_oak_beam, "dark_oak_planks");
+        beamBasic(ModBlocks.mangrove_beam, "mangrove_planks");
         beamBasic(ModBlocks.crimson_beam, "crimson_planks");
         beamBasic(ModBlocks.warped_beam, "warped_planks");
         beamBasic(ModBlocks.granite_beam, "granite");
@@ -238,6 +247,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         beamLog(ModBlocks.jungle_log_beam, "jungle_log");
         beamLog(ModBlocks.acacia_log_beam, "acacia_log");
         beamLog(ModBlocks.dark_oak_log_beam, "dark_oak_log");
+        beamLog(ModBlocks.mangrove_log_beam, "mangrove_log");
         beamLog(ModBlocks.crimson_stem_beam, "crimson_stem");
         beamLog(ModBlocks.warped_stem_beam, "warped_stem");
         beamBasic(ModBlocks.blackstone_beam, "blackstone");
@@ -264,6 +274,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
 		wallBasic(ModBlocks.jungle_wall, "jungle_planks");
 		wallBasic(ModBlocks.acacia_wall, "acacia_planks");
 		wallBasic(ModBlocks.dark_oak_wall, "dark_oak_planks");
+		wallBasic(ModBlocks.mangrove_wall, "mangrove_planks");
 		wallBasic(ModBlocks.crimson_wall, "crimson_planks");
 		wallBasic(ModBlocks.warped_wall, "warped_planks");
 		wallBasic(ModBlocks.polished_granite_wall, "polished_granite");
@@ -275,6 +286,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
 		wallColumn(ModBlocks.jungle_log_wall, "jungle_log", "jungle_log_top");
 		wallColumn(ModBlocks.acacia_log_wall, "acacia_log", "acacia_log_top");
 		wallColumn(ModBlocks.dark_oak_log_wall, "dark_oak_log", "dark_oak_log_top");
+		wallColumn(ModBlocks.mangrove_log_wall, "mangrove_log", "mangrove_log_top");
 		wallColumn(ModBlocks.crimson_stem_wall, "crimson_stem", "crimson_stem_top");
 		wallColumn(ModBlocks.warped_stem_wall, "warped_stem", "warped_stem_top");
 		wallBasic(ModBlocks.stone_wall, "stone");
@@ -292,6 +304,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         saddleDoorVanilla(ModBlocks.jungle_saddle_door, "jungle_trapdoor");
         saddleDoorVanilla(ModBlocks.acacia_saddle_door, "acacia_trapdoor");
         saddleDoorVanilla(ModBlocks.dark_oak_saddle_door, "dark_oak_trapdoor");
+        saddleDoorVanilla(ModBlocks.mangrove_saddle_door, "mangrove_trapdoor");
         saddleDoorVanilla(ModBlocks.crimson_saddle_door, "crimson_trapdoor");
         saddleDoorVanilla(ModBlocks.warped_saddle_door, "warped_trapdoor");
         saddleDoorVanilla(ModBlocks.granite_saddle_door, "granite");
@@ -306,6 +319,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         saddleDoorVanilla(ModBlocks.jungle_log_saddle_door, "jungle_log");
         saddleDoorVanilla(ModBlocks.acacia_log_saddle_door, "acacia_log");
         saddleDoorVanilla(ModBlocks.dark_oak_log_saddle_door, "dark_oak_log");
+        saddleDoorVanilla(ModBlocks.mangrove_log_saddle_door, "mangrove_log");
         saddleDoorVanilla(ModBlocks.crimson_stem_saddle_door, "crimson_stem");
         saddleDoorVanilla(ModBlocks.warped_stem_saddle_door, "warped_stem");
         saddleDoorVanilla(ModBlocks.blackstone_saddle_door, "blackstone");

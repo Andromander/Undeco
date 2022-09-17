@@ -1,0 +1,9 @@
+{
+  "parent": "ornamental:block/util/saddle_door_left",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "minecraft:block/mangrove_trapdoor",
+    "side": "minecraft:block/mangrove_trapdoor",
+    "top": "minecraft:block/mangrove_trapdoor"
+  }
+}

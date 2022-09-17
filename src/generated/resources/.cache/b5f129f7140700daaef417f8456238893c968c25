@@ -1,4 +1,4 @@
-// 1.19	2022-08-17T17:44:30.6896539	Item Models: undeco
+// 1.19	2022-09-17T20:42:51.4598634	Item Models: undeco
 52fdd52cf6bd57603b33905f13c7760025b51970 assets/undeco/models/item/acacia_beam.json
 e1e7986ce44d74e89506449a1573d40e91e3261b assets/undeco/models/item/acacia_log_beam.json
 c0628a9671633bb8b3671c621d5ff7c29ed4f25e assets/undeco/models/item/acacia_log_door.json
@@ -122,6 +122,20 @@ d8a65bb9f7d1e4740eb47f75a74a295c57d5fd14 assets/undeco/models/item/jungle_log_wa
 be3749813a222054801e1555c483de3b1fc511fa assets/undeco/models/item/jungle_pole.json
 4b46802c9ed02cc0d9ac1708426baf771feff2c9 assets/undeco/models/item/jungle_saddle_door.json
 5d75c0901c95482944c4f63a55d7c6035b8e82ca assets/undeco/models/item/jungle_wall.json
+707b016835492d9e5f817880ef228c66492e1b87 assets/undeco/models/item/mangrove_beam.json
+816c846b93b86fceb26a3549a2d54b3278e181a3 assets/undeco/models/item/mangrove_log_beam.json
+764b7ae0e0a35ffd6e634d727c8da6597685dc75 assets/undeco/models/item/mangrove_log_door.json
+fb07540a14c9661026cbdd52f7aef34a79d5afdc assets/undeco/models/item/mangrove_log_fence.json
+5692a8900211f3dd764d186da2fd5d5a076ec04f assets/undeco/models/item/mangrove_log_fence_gate.json
+51fda943ac7d9f083b647df080c4180577475b28 assets/undeco/models/item/mangrove_log_pole.json
+711f4b44417d895b1087c5547c4f2507d5451add assets/undeco/models/item/mangrove_log_saddle_door.json
+ae50f1834668a69786901d4a070fe367047ca6ae assets/undeco/models/item/mangrove_log_slab.json
+75953efc346ced1971e339a1dddf06661aa85777 assets/undeco/models/item/mangrove_log_stairs.json
+622b5e7bedbb718a9146505d267b8156bbe5e39e assets/undeco/models/item/mangrove_log_trapdoor.json
+64bda259ca931679ef1c4c69e88acda63d678ea7 assets/undeco/models/item/mangrove_log_wall.json
+adb171fbcf9b28d3b578cd8a155e011ce1d987ec assets/undeco/models/item/mangrove_pole.json
+ce067756af7d2c74ffaeffcf8f6d06aed8146603 assets/undeco/models/item/mangrove_saddle_door.json
+1cbdb322423c85dc0d5ffc72f5a926482ba3d7c7 assets/undeco/models/item/mangrove_wall.json
 a658094d5b5f062a2b4b4ec83b71a6c365f89649 assets/undeco/models/item/mossy_cobblestone_beam.json
 3f8f71cb860e4845294be2f51ffbf977d7f5915f assets/undeco/models/item/mossy_cobblestone_door.json
 40db85a2d42f96e0effbace37b06d81f82de9b6d assets/undeco/models/item/mossy_cobblestone_fence.json

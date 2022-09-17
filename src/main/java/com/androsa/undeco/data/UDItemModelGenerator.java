@@ -24,6 +24,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItem(ModBlocks.jungle_log_stairs);
         blockItem(ModBlocks.acacia_log_stairs);
         blockItem(ModBlocks.dark_oak_log_stairs);
+        blockItem(ModBlocks.mangrove_log_stairs);
         blockItem(ModBlocks.crimson_stem_stairs);
         blockItem(ModBlocks.warped_stem_stairs);
         blockItem(ModBlocks.smooth_stone_stairs);
@@ -35,6 +36,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItem(ModBlocks.jungle_log_slab);
         blockItem(ModBlocks.acacia_log_slab);
         blockItem(ModBlocks.dark_oak_log_slab);
+        blockItem(ModBlocks.mangrove_log_slab);
         blockItem(ModBlocks.crimson_stem_slab);
         blockItem(ModBlocks.warped_stem_slab);
         blockItem(ModBlocks.cracked_stone_brick_slab);
@@ -51,6 +53,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemFence(ModBlocks.jungle_log_fence, "jungle_log", "jungle_log_top");
         blockItemFence(ModBlocks.acacia_log_fence, "acacia_log", "acacia_log_top");
         blockItemFence(ModBlocks.dark_oak_log_fence, "dark_oak_log", "dark_oak_log_top");
+        blockItemFence(ModBlocks.mangrove_log_fence, "mangrove_log", "mangrove_log_top");
         blockItemFence(ModBlocks.crimson_stem_fence, "crimson_stem", "crimson_stem_top");
         blockItemFence(ModBlocks.warped_stem_fence, "warped_stem", "warped_stem_top");
         blockItemFence(ModBlocks.blackstone_fence, "blackstone");
@@ -83,6 +86,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemTrapdoor(ModBlocks.jungle_log_trapdoor);
         blockItemTrapdoor(ModBlocks.acacia_log_trapdoor);
         blockItemTrapdoor(ModBlocks.dark_oak_log_trapdoor);
+        blockItemTrapdoor(ModBlocks.mangrove_log_trapdoor);
         blockItemTrapdoor(ModBlocks.crimson_stem_trapdoor);
         blockItemTrapdoor(ModBlocks.warped_stem_trapdoor);
         blockItemTrapdoor(ModBlocks.blackstone_trapdoor);
@@ -115,6 +119,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItem(ModBlocks.jungle_log_fence_gate);
         blockItem(ModBlocks.acacia_log_fence_gate);
         blockItem(ModBlocks.dark_oak_log_fence_gate);
+        blockItem(ModBlocks.mangrove_log_fence_gate);
         blockItem(ModBlocks.crimson_stem_fence_gate);
         blockItem(ModBlocks.warped_stem_fence_gate);
         blockItem(ModBlocks.blackstone_fence_gate);
@@ -147,6 +152,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemModel(ModBlocks.jungle_log_door);
         blockItemModel(ModBlocks.acacia_log_door);
         blockItemModel(ModBlocks.dark_oak_log_door);
+        blockItemModel(ModBlocks.mangrove_log_door);
         blockItemModel(ModBlocks.crimson_stem_door);
         blockItemModel(ModBlocks.warped_stem_door);
         blockItemModel(ModBlocks.blackstone_door);
@@ -173,6 +179,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemPole(ModBlocks.jungle_pole, "jungle_planks");
         blockItemPole(ModBlocks.acacia_pole, "acacia_planks");
         blockItemPole(ModBlocks.dark_oak_pole, "dark_oak_planks");
+        blockItemPole(ModBlocks.mangrove_pole, "mangrove_planks");
         blockItemPole(ModBlocks.crimson_pole, "crimson_planks");
         blockItemPole(ModBlocks.warped_pole, "warped_planks");
         blockItemPole(ModBlocks.granite_pole, "granite");
@@ -187,6 +194,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemPole(ModBlocks.jungle_log_pole, "jungle_log_top", "jungle_log");
         blockItemPole(ModBlocks.acacia_log_pole, "acacia_log_top", "acacia_log");
         blockItemPole(ModBlocks.dark_oak_log_pole, "dark_oak_log_top", "dark_oak_log");
+        blockItemPole(ModBlocks.mangrove_log_pole, "mangrove_log_top", "mangrove_log");
         blockItemPole(ModBlocks.crimson_stem_pole, "crimson_stem_top", "crimson_stem");
         blockItemPole(ModBlocks.warped_stem_pole, "warped_stem_top", "warped_stem");
         blockItemPole(ModBlocks.blackstone_pole, "blackstone");
@@ -213,6 +221,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemBeam(ModBlocks.jungle_beam, "jungle_planks");
         blockItemBeam(ModBlocks.acacia_beam, "acacia_planks");
         blockItemBeam(ModBlocks.dark_oak_beam, "dark_oak_planks");
+        blockItemBeam(ModBlocks.mangrove_beam, "mangrove_planks");
         blockItemBeam(ModBlocks.crimson_beam, "crimson_planks");
         blockItemBeam(ModBlocks.warped_beam, "warped_planks");
         blockItemBeam(ModBlocks.granite_beam, "granite");
@@ -227,6 +236,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemBeam(ModBlocks.jungle_log_beam, "jungle_log_top", "jungle_log");
         blockItemBeam(ModBlocks.acacia_log_beam, "acacia_log_top", "acacia_log");
         blockItemBeam(ModBlocks.dark_oak_log_beam, "dark_oak_log_top", "dark_oak_log");
+        blockItemBeam(ModBlocks.mangrove_log_beam, "mangrove_log_top", "mangrove_log");
         blockItemBeam(ModBlocks.crimson_stem_beam, "crimson_stem_top", "crimson_stem");
         blockItemBeam(ModBlocks.warped_stem_beam, "warped_stem_top", "warped_stem");
         blockItemBeam(ModBlocks.blackstone_beam, "blackstone");
@@ -253,6 +263,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
 		blockItemWall(ModBlocks.jungle_wall, "jungle_planks");
 		blockItemWall(ModBlocks.acacia_wall, "acacia_planks");
 		blockItemWall(ModBlocks.dark_oak_wall, "dark_oak_planks");
+		blockItemWall(ModBlocks.mangrove_wall, "mangrove_planks");
 		blockItemWall(ModBlocks.crimson_wall, "crimson_planks");
 		blockItemWall(ModBlocks.warped_wall, "warped_planks");
 		blockItemWall(ModBlocks.polished_granite_wall, "polished_granite");
@@ -264,6 +275,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
 		blockItemWall(ModBlocks.jungle_log_wall, "jungle_log", "jungle_log_top");
 		blockItemWall(ModBlocks.acacia_log_wall, "acacia_log", "acacia_log_top");
 		blockItemWall(ModBlocks.dark_oak_log_wall, "dark_oak_log", "dark_oak_log_top");
+		blockItemWall(ModBlocks.mangrove_log_wall, "mangrove_log", "mangrove_log_top");
 		blockItemWall(ModBlocks.crimson_stem_wall, "crimson_stem", "crimson_stem_top");
 		blockItemWall(ModBlocks.warped_stem_wall, "warped_stem", "warped_stem_top");
 		blockItemWall(ModBlocks.stone_wall, "stone");
@@ -281,6 +293,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemSaddleDoorV(ModBlocks.jungle_saddle_door, "jungle_trapdoor");
         blockItemSaddleDoorV(ModBlocks.acacia_saddle_door, "acacia_trapdoor");
         blockItemSaddleDoorV(ModBlocks.dark_oak_saddle_door, "dark_oak_trapdoor");
+        blockItemSaddleDoorV(ModBlocks.mangrove_saddle_door, "mangrove_trapdoor");
         blockItemSaddleDoorV(ModBlocks.crimson_saddle_door, "crimson_trapdoor");
         blockItemSaddleDoorV(ModBlocks.warped_saddle_door, "warped_trapdoor");
         blockItemSaddleDoorV(ModBlocks.granite_saddle_door, "granite");
@@ -295,6 +308,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemSaddleDoorV(ModBlocks.jungle_log_saddle_door, "jungle_log");
         blockItemSaddleDoorV(ModBlocks.acacia_log_saddle_door, "acacia_log");
         blockItemSaddleDoorV(ModBlocks.dark_oak_log_saddle_door, "dark_oak_log");
+        blockItemSaddleDoorV(ModBlocks.mangrove_log_saddle_door, "mangrove_log");
         blockItemSaddleDoorV(ModBlocks.crimson_stem_saddle_door, "crimson_stem");
         blockItemSaddleDoorV(ModBlocks.warped_stem_saddle_door, "warped_stem");
         blockItemSaddleDoorV(ModBlocks.blackstone_saddle_door, "blackstone");

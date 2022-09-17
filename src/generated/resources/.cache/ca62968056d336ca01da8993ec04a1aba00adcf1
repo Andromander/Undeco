@@ -1,4 +1,4 @@
-// 1.19	2022-08-17T17:44:30.6926562	Ornamental: Unusually Decorative Loot Tables
+// 1.19	2022-09-17T20:42:51.4558596	Ornamental: Unusually Decorative Loot Tables
 a1d6d44a54bb90b28a026d39709c70506bc5f848 data/undeco/loot_tables/blocks/acacia_beam.json
 c4e0b9c202c94a36c885ac1634ffd41388b5f0c4 data/undeco/loot_tables/blocks/acacia_log_beam.json
 86f15482bedcb335cfe41f8ddba182bf773014f7 data/undeco/loot_tables/blocks/acacia_log_door.json
@@ -122,6 +122,20 @@ bb2aec9a77456dfeb6ac2988bc626a4cac031ca9 data/undeco/loot_tables/blocks/jungle_l
 95828c8cc2078c80a164b914e09de62ae922a945 data/undeco/loot_tables/blocks/jungle_pole.json
 68eef725ce0844e93b12e363285d30f6e4c72498 data/undeco/loot_tables/blocks/jungle_saddle_door.json
 77fc4bcbfb7b194537ba82ba5808a2c8067ebee1 data/undeco/loot_tables/blocks/jungle_wall.json
+7d24ad3035662dfdd7473feb0ab8af6ba533e259 data/undeco/loot_tables/blocks/mangrove_beam.json
+198304265e77092aa63af3105542d64eb1303ab8 data/undeco/loot_tables/blocks/mangrove_log_beam.json
+47ed7f64b7302632b4db13ac1adb9e67a5eaee6f data/undeco/loot_tables/blocks/mangrove_log_door.json
+fd42977e1b948e09716901be75051ff9854dabcc data/undeco/loot_tables/blocks/mangrove_log_fence.json
+9e2591ee2e00d584b4219dae0d96742bf8f0ea78 data/undeco/loot_tables/blocks/mangrove_log_fence_gate.json
+86cf7b2d4a22728aa041802d2cc08cca2b30188c data/undeco/loot_tables/blocks/mangrove_log_pole.json
+eabf264d85e375139a0dc3c39ac797a87876aab9 data/undeco/loot_tables/blocks/mangrove_log_saddle_door.json
+7d1f36cdf9bef612ec2fca8119005a972e466c5d data/undeco/loot_tables/blocks/mangrove_log_slab.json
+746caa582a84cb8fe320505e6bee877804dee2ca data/undeco/loot_tables/blocks/mangrove_log_stairs.json
+a95a841decc8d02d7213da26127baa0b8dd89722 data/undeco/loot_tables/blocks/mangrove_log_trapdoor.json
+719228d5769c9f1c645aeaff8415b27aa36c5f91 data/undeco/loot_tables/blocks/mangrove_log_wall.json
+2aedc09049101b3103a06687604ba3891b5e4a10 data/undeco/loot_tables/blocks/mangrove_pole.json
+db32eff04381927100d2ba59b75ab25d77ea6ce5 data/undeco/loot_tables/blocks/mangrove_saddle_door.json
+b1e83250c75ef321bf0e431172fa33c649e7f4ab data/undeco/loot_tables/blocks/mangrove_wall.json
 da1a7ce90bf83c390803fff0cb34916645a04f3d data/undeco/loot_tables/blocks/mossy_cobblestone_beam.json
 8dfe6f633579e75fc00aec1b69492068ca8b68ba data/undeco/loot_tables/blocks/mossy_cobblestone_door.json
 e6813624630a4641ca155cd3f9b2481fb45e43bc data/undeco/loot_tables/blocks/mossy_cobblestone_fence.json

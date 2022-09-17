@@ -24,6 +24,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         stairs(consumer, ModBlocks.jungle_log_stairs, Blocks.JUNGLE_LOG);
         stairs(consumer, ModBlocks.acacia_log_stairs, Blocks.ACACIA_LOG);
         stairs(consumer, ModBlocks.dark_oak_log_stairs, Blocks.DARK_OAK_LOG);
+        stairs(consumer, ModBlocks.mangrove_log_stairs, Blocks.MANGROVE_LOG);
         stairs(consumer, ModBlocks.crimson_stem_stairs, Blocks.CRIMSON_STEM);
         stairs(consumer, ModBlocks.warped_stem_stairs, Blocks.WARPED_STEM);
         stairs(consumer, ModBlocks.smooth_stone_stairs, Blocks.SMOOTH_STONE);
@@ -35,6 +36,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         slab(consumer, ModBlocks.jungle_log_slab, Blocks.JUNGLE_LOG);
         slab(consumer, ModBlocks.acacia_log_slab, Blocks.ACACIA_LOG);
         slab(consumer, ModBlocks.dark_oak_log_slab, Blocks.DARK_OAK_LOG);
+        slab(consumer, ModBlocks.mangrove_log_slab, Blocks.MANGROVE_LOG);
         slab(consumer, ModBlocks.crimson_stem_slab, Blocks.CRIMSON_STEM);
         slab(consumer, ModBlocks.warped_stem_slab, Blocks.WARPED_STEM);
         slab(consumer, ModBlocks.cracked_stone_brick_slab, Blocks.CRACKED_STONE_BRICKS);
@@ -51,6 +53,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         fence(consumer, ModBlocks.jungle_log_fence, Blocks.JUNGLE_LOG, Items.STICK);
         fence(consumer, ModBlocks.acacia_log_fence, Blocks.ACACIA_LOG, Items.STICK);
         fence(consumer, ModBlocks.dark_oak_log_fence, Blocks.DARK_OAK_LOG, Items.STICK);
+        fence(consumer, ModBlocks.mangrove_log_fence, Blocks.MANGROVE_LOG, Items.STICK);
         fence(consumer, ModBlocks.crimson_stem_fence, Blocks.CRIMSON_STEM, Items.STICK);
         fence(consumer, ModBlocks.warped_stem_fence, Blocks.WARPED_STEM, Items.STICK);
         fence(consumer, ModBlocks.blackstone_fence, Blocks.BLACKSTONE, Blocks.BLACKSTONE_SLAB);
@@ -83,6 +86,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         trapdoorWide(consumer, ModBlocks.jungle_log_trapdoor, Blocks.JUNGLE_LOG);
         trapdoorWide(consumer, ModBlocks.acacia_log_trapdoor, Blocks.ACACIA_LOG);
         trapdoorWide(consumer, ModBlocks.dark_oak_log_trapdoor, Blocks.DARK_OAK_LOG);
+        trapdoorWide(consumer, ModBlocks.mangrove_log_trapdoor, Blocks.MANGROVE_LOG);
         trapdoorWide(consumer, ModBlocks.crimson_stem_trapdoor, Blocks.CRIMSON_STEM);
         trapdoorWide(consumer, ModBlocks.warped_stem_trapdoor, Blocks.WARPED_STEM);
         trapdoorWide(consumer, ModBlocks.blackstone_trapdoor, Blocks.BLACKSTONE_SLAB);
@@ -115,6 +119,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         fencegate(consumer, ModBlocks.jungle_log_fence_gate, Blocks.JUNGLE_LOG, Items.STICK);
         fencegate(consumer, ModBlocks.acacia_log_fence_gate, Blocks.ACACIA_LOG, Items.STICK);
         fencegate(consumer, ModBlocks.dark_oak_log_fence_gate, Blocks.DARK_OAK_LOG, Items.STICK);
+        fencegate(consumer, ModBlocks.mangrove_log_fence_gate, Blocks.MANGROVE_LOG, Items.STICK);
         fencegate(consumer, ModBlocks.crimson_stem_fence_gate, Blocks.CRIMSON_STEM, Items.STICK);
         fencegate(consumer, ModBlocks.warped_stem_fence_gate, Blocks.WARPED_STEM, Items.STICK);
         fencegate(consumer, ModBlocks.blackstone_fence_gate, Blocks.BLACKSTONE, Blocks.BLACKSTONE_SLAB);
@@ -147,6 +152,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         door(consumer, ModBlocks.jungle_log_door, Blocks.JUNGLE_LOG);
         door(consumer, ModBlocks.acacia_log_door, Blocks.ACACIA_LOG);
         door(consumer, ModBlocks.dark_oak_log_door, Blocks.DARK_OAK_LOG);
+        door(consumer, ModBlocks.mangrove_log_door, Blocks.MANGROVE_LOG);
         door(consumer, ModBlocks.crimson_stem_door, Blocks.CRIMSON_STEM);
         door(consumer, ModBlocks.warped_stem_door, Blocks.WARPED_STEM);
         door(consumer, ModBlocks.blackstone_door, Blocks.BLACKSTONE_SLAB);
@@ -173,6 +179,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         pole(consumer, ModBlocks.jungle_pole, Blocks.JUNGLE_SLAB);
         pole(consumer, ModBlocks.acacia_pole, Blocks.ACACIA_SLAB);
         pole(consumer, ModBlocks.dark_oak_pole, Blocks.DARK_OAK_SLAB);
+        pole(consumer, ModBlocks.mangrove_pole, Blocks.MANGROVE_SLAB);
         pole(consumer, ModBlocks.crimson_pole, Blocks.CRIMSON_SLAB);
         pole(consumer, ModBlocks.warped_pole, Blocks.WARPED_SLAB);
         pole(consumer, ModBlocks.granite_pole, Blocks.GRANITE_SLAB);
@@ -187,6 +194,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         pole(consumer, ModBlocks.jungle_log_pole, ModBlocks.jungle_log_slab);
         pole(consumer, ModBlocks.acacia_log_pole, ModBlocks.acacia_log_slab);
         pole(consumer, ModBlocks.dark_oak_log_pole, ModBlocks.dark_oak_log_slab);
+        pole(consumer, ModBlocks.mangrove_log_pole, ModBlocks.mangrove_log_slab);
         pole(consumer, ModBlocks.crimson_stem_pole, ModBlocks.crimson_stem_slab);
         pole(consumer, ModBlocks.warped_stem_pole, ModBlocks.warped_stem_slab);
         pole(consumer, ModBlocks.blackstone_pole, Blocks.BLACKSTONE_SLAB);
@@ -213,6 +221,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         beam(consumer, ModBlocks.jungle_beam, Blocks.JUNGLE_SLAB);
         beam(consumer, ModBlocks.acacia_beam, Blocks.ACACIA_SLAB);
         beam(consumer, ModBlocks.dark_oak_beam, Blocks.DARK_OAK_SLAB);
+        beam(consumer, ModBlocks.mangrove_beam, Blocks.MANGROVE_SLAB);
         beam(consumer, ModBlocks.crimson_beam, Blocks.CRIMSON_SLAB);
         beam(consumer, ModBlocks.warped_beam, Blocks.WARPED_SLAB);
         beam(consumer, ModBlocks.granite_beam, Blocks.GRANITE_SLAB);
@@ -227,6 +236,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         beam(consumer, ModBlocks.jungle_log_beam, ModBlocks.jungle_log_slab);
         beam(consumer, ModBlocks.acacia_log_beam, ModBlocks.acacia_log_slab);
         beam(consumer, ModBlocks.dark_oak_log_beam, ModBlocks.dark_oak_log_slab);
+        beam(consumer, ModBlocks.mangrove_log_beam, ModBlocks.mangrove_log_slab);
         beam(consumer, ModBlocks.crimson_stem_beam, ModBlocks.crimson_stem_slab);
         beam(consumer, ModBlocks.warped_stem_beam, ModBlocks.warped_stem_slab);
         beam(consumer, ModBlocks.blackstone_beam, Blocks.BLACKSTONE_SLAB);
@@ -253,6 +263,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         convertPoleBeam(consumer, ModBlocks.jungle_pole, ModBlocks.jungle_beam);
         convertPoleBeam(consumer, ModBlocks.acacia_pole, ModBlocks.acacia_beam);
         convertPoleBeam(consumer, ModBlocks.dark_oak_pole, ModBlocks.dark_oak_beam);
+        convertPoleBeam(consumer, ModBlocks.mangrove_pole, ModBlocks.mangrove_beam);
         convertPoleBeam(consumer, ModBlocks.crimson_pole, ModBlocks.crimson_beam);
         convertPoleBeam(consumer, ModBlocks.warped_pole, ModBlocks.warped_beam);
         convertPoleBeam(consumer, ModBlocks.granite_pole, ModBlocks.granite_beam);
@@ -266,6 +277,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         convertPoleBeam(consumer, ModBlocks.birch_log_pole, ModBlocks.birch_log_beam);
         convertPoleBeam(consumer, ModBlocks.jungle_log_pole, ModBlocks.jungle_log_beam);
         convertPoleBeam(consumer, ModBlocks.dark_oak_log_pole, ModBlocks.dark_oak_log_beam);
+        convertPoleBeam(consumer, ModBlocks.mangrove_log_pole, ModBlocks.mangrove_log_beam);
         convertPoleBeam(consumer, ModBlocks.crimson_stem_pole, ModBlocks.crimson_stem_beam);
         convertPoleBeam(consumer, ModBlocks.warped_stem_pole, ModBlocks.warped_stem_beam);
         convertPoleBeam(consumer, ModBlocks.blackstone_pole, ModBlocks.blackstone_beam);
@@ -292,6 +304,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
 		wallOverride(consumer, ModBlocks.jungle_wall, Blocks.JUNGLE_PLANKS);
 		wallOverride(consumer, ModBlocks.acacia_wall, Blocks.ACACIA_PLANKS);
 		wallOverride(consumer, ModBlocks.dark_oak_wall, Blocks.DARK_OAK_PLANKS);
+		wallOverride(consumer, ModBlocks.mangrove_wall, Blocks.MANGROVE_PLANKS);
 		wallOverride(consumer, ModBlocks.crimson_wall, Blocks.CRIMSON_PLANKS);
 		wallOverride(consumer, ModBlocks.warped_wall, Blocks.WARPED_PLANKS);
 		wall(consumer, ModBlocks.polished_granite_wall, Blocks.POLISHED_GRANITE);
@@ -303,6 +316,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
 		wall(consumer, ModBlocks.jungle_log_wall, Blocks.JUNGLE_LOG);
 		wall(consumer, ModBlocks.acacia_log_wall, Blocks.ACACIA_LOG);
 		wall(consumer, ModBlocks.dark_oak_log_wall, Blocks.DARK_OAK_LOG);
+		wall(consumer, ModBlocks.mangrove_log_wall, Blocks.MANGROVE_LOG);
 		wall(consumer, ModBlocks.crimson_stem_wall, Blocks.CRIMSON_STEM);
 		wall(consumer, ModBlocks.warped_stem_wall, Blocks.WARPED_STEM);
 		wall(consumer, ModBlocks.stone_wall, Blocks.STONE);
@@ -320,6 +334,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         saddleDoor(consumer, ModBlocks.jungle_saddle_door, Blocks.JUNGLE_TRAPDOOR);
         saddleDoor(consumer, ModBlocks.acacia_saddle_door, Blocks.ACACIA_TRAPDOOR);
         saddleDoor(consumer, ModBlocks.dark_oak_saddle_door, Blocks.DARK_OAK_TRAPDOOR);
+        saddleDoor(consumer, ModBlocks.mangrove_saddle_door, Blocks.MANGROVE_TRAPDOOR);
         saddleDoor(consumer, ModBlocks.crimson_saddle_door, Blocks.CRIMSON_TRAPDOOR);
         saddleDoor(consumer, ModBlocks.warped_saddle_door, Blocks.WARPED_TRAPDOOR);
         saddleDoor(consumer, ModBlocks.granite_saddle_door, ModBlocks.granite_trapdoor);
@@ -334,6 +349,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         saddleDoor(consumer, ModBlocks.jungle_log_saddle_door, ModBlocks.jungle_log_trapdoor);
         saddleDoor(consumer, ModBlocks.acacia_log_saddle_door, ModBlocks.acacia_log_trapdoor);
         saddleDoor(consumer, ModBlocks.dark_oak_log_saddle_door, ModBlocks.dark_oak_log_trapdoor);
+        saddleDoor(consumer, ModBlocks.mangrove_log_saddle_door, ModBlocks.mangrove_log_trapdoor);
         saddleDoor(consumer, ModBlocks.crimson_stem_saddle_door, ModBlocks.crimson_stem_trapdoor);
         saddleDoor(consumer, ModBlocks.warped_stem_saddle_door, ModBlocks.warped_stem_trapdoor);
         saddleDoor(consumer, ModBlocks.blackstone_saddle_door, ModBlocks.blackstone_trapdoor);
@@ -360,6 +376,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         saddleDoorFromDoor(consumer, ModBlocks.jungle_saddle_door, Blocks.JUNGLE_TRAPDOOR);
         saddleDoorFromDoor(consumer, ModBlocks.acacia_saddle_door, Blocks.ACACIA_TRAPDOOR);
         saddleDoorFromDoor(consumer, ModBlocks.dark_oak_saddle_door, Blocks.DARK_OAK_TRAPDOOR);
+        saddleDoorFromDoor(consumer, ModBlocks.mangrove_saddle_door, Blocks.MANGROVE_TRAPDOOR);
         saddleDoorFromDoor(consumer, ModBlocks.crimson_saddle_door, Blocks.CRIMSON_TRAPDOOR);
         saddleDoorFromDoor(consumer, ModBlocks.warped_saddle_door, Blocks.WARPED_TRAPDOOR);
         saddleDoorFromDoor(consumer, ModBlocks.granite_saddle_door, ModBlocks.granite_door);

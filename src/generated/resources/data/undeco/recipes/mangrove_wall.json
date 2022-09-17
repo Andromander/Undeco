@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:mangrove_planks"
+    },
+    "/": {
+      "tag": "minecraft:walls"
+    }
+  },
+  "pattern": [
+    " / ",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "undeco:mangrove_wall"
+  }
+}

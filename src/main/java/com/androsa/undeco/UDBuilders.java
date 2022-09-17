@@ -13,6 +13,7 @@ public class UDBuilders {
     public static final OrnamentBuilder JUNGLE_PLANKS = createPlankOrnament("jungle", MaterialColor.DIRT);
     public static final OrnamentBuilder ACACIA_PLANKS = createPlankOrnament("acacia", MaterialColor.COLOR_ORANGE);
     public static final OrnamentBuilder DARK_OAK_PLANKS = createPlankOrnament("dark_oak", MaterialColor.COLOR_BROWN);
+    public static final OrnamentBuilder MANGROVE_PLANKS = createPlankOrnament("mangrove", MaterialColor.COLOR_RED);
     public static final OrnamentBuilder CRIMSON_PLANKS = createPlankOrnament("crimson", Material.NETHER_WOOD, MaterialColor.CRIMSON_STEM);
     public static final OrnamentBuilder WARPED_PLANKS = createPlankOrnament("warped", Material.NETHER_WOOD, MaterialColor.WARPED_STEM);
     public static final OrnamentBuilder GRANITE = createStoneOrnament("granite", MaterialColor.DIRT);
@@ -27,6 +28,7 @@ public class UDBuilders {
     public static final OrnamentBuilder JUNGLE_LOG = createLogOrnament("jungle_log", MaterialColor.DIRT);
     public static final OrnamentBuilder ACACIA_LOG = createLogOrnament("acacia_log", MaterialColor.COLOR_ORANGE);
     public static final OrnamentBuilder DARK_OAK_LOG = createLogOrnament("dark_oak_log", MaterialColor.COLOR_BROWN);
+    public static final OrnamentBuilder MANGROVE_LOG = createLogOrnament("mangrove_log", MaterialColor.COLOR_RED);
     public static final OrnamentBuilder CRIMSON_STEM = createStemOrnament("crimson_stem", MaterialColor.CRIMSON_STEM);
     public static final OrnamentBuilder WARPED_STEM = createStemOrnament("warped_stem", MaterialColor.WARPED_STEM);
     public static final OrnamentBuilder BLACKSTONE = createStoneOrnament("blackstone", MaterialColor.COLOR_BLACK);
@@ -56,7 +58,6 @@ public class UDBuilders {
                 .properties(material, color)
                 .hardnessAndResistance(2.0F, 3.0F)
                 .sound(SoundType.WOOD)
-                //.tool(ToolType.AXE, false)
                 .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300, 100)
                 .canOpen();
     }
@@ -66,7 +67,6 @@ public class UDBuilders {
                 .properties(Material.STONE, color)
                 .hardnessAndResistance(1.5F, 6.0F)
                 .sound(SoundType.STONE);
-                //.tool(ToolType.PICKAXE, 0, true)
     }
 
     private static OrnamentBuilder createStoneToughOrnament(String name, MaterialColor color) {
@@ -74,7 +74,6 @@ public class UDBuilders {
                 .properties(Material.STONE, color)
                 .hardnessAndResistance(2.0F, 6.0F)
                 .sound(SoundType.STONE);
-                //.tool(ToolType.PICKAXE, 0, true)
     }
 
     private static OrnamentBuilder createLogOrnament(String name, MaterialColor color) {
@@ -82,7 +81,6 @@ public class UDBuilders {
                 .properties(Material.WOOD, color)
                 .hardnessAndResistance(2.0F)
                 .sound(SoundType.WOOD)
-                //.tool(ToolType.AXE, false)
                 .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300, 100)
                 .canOpen();
     }
@@ -92,7 +90,6 @@ public class UDBuilders {
                 .properties(Material.NETHER_WOOD, color)
                 .hardnessAndResistance(2.0F)
                 .sound(SoundType.STEM)
-                //.tool(ToolType.AXE, false)
                 .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300, 100)
                 .canOpen();
     }
@@ -102,7 +99,6 @@ public class UDBuilders {
                 .properties(Material.STONE, color)
                 .hardnessAndResistance(0.8F)
                 .sound(SoundType.STONE);
-                //.tool(ToolType.PICKAXE, true)
 
     }
 }
