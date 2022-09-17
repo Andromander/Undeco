@@ -181,14 +181,14 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         pole(consumer, ModBlocks.polished_diorite_pole, Blocks.POLISHED_DIORITE_SLAB);
         pole(consumer, ModBlocks.andesite_pole, Blocks.ANDESITE_SLAB);
         pole(consumer, ModBlocks.polished_andesite_pole, Blocks.POLISHED_ANDESITE_SLAB);
-        pole(consumer, ModBlocks.oak_log_pole, Blocks.OAK_LOG);
-        pole(consumer, ModBlocks.spruce_log_pole, Blocks.SPRUCE_LOG);
-        pole(consumer, ModBlocks.birch_log_pole, Blocks.BIRCH_LOG);
-        pole(consumer, ModBlocks.jungle_log_pole, Blocks.JUNGLE_LOG);
-        pole(consumer, ModBlocks.acacia_log_pole, Blocks.ACACIA_LOG);
-        pole(consumer, ModBlocks.dark_oak_log_pole, Blocks.DARK_OAK_LOG);
-        pole(consumer, ModBlocks.crimson_stem_pole, Blocks.CRIMSON_STEM);
-        pole(consumer, ModBlocks.warped_stem_pole, Blocks.WARPED_STEM);
+        pole(consumer, ModBlocks.oak_log_pole, ModBlocks.oak_log_slab);
+        pole(consumer, ModBlocks.spruce_log_pole, ModBlocks.spruce_log_slab);
+        pole(consumer, ModBlocks.birch_log_pole, ModBlocks.birch_log_slab);
+        pole(consumer, ModBlocks.jungle_log_pole, ModBlocks.jungle_log_slab);
+        pole(consumer, ModBlocks.acacia_log_pole, ModBlocks.acacia_log_slab);
+        pole(consumer, ModBlocks.dark_oak_log_pole, ModBlocks.dark_oak_log_slab);
+        pole(consumer, ModBlocks.crimson_stem_pole, ModBlocks.crimson_stem_slab);
+        pole(consumer, ModBlocks.warped_stem_pole, ModBlocks.warped_stem_slab);
         pole(consumer, ModBlocks.blackstone_pole, Blocks.BLACKSTONE_SLAB);
         pole(consumer, ModBlocks.polished_blackstone_pole, Blocks.POLISHED_BLACKSTONE_SLAB);
         pole(consumer, ModBlocks.stone_pole, Blocks.STONE_SLAB);
@@ -362,7 +362,6 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         saddleDoorFromDoor(consumer, ModBlocks.dark_oak_saddle_door, Blocks.DARK_OAK_TRAPDOOR);
         saddleDoorFromDoor(consumer, ModBlocks.crimson_saddle_door, Blocks.CRIMSON_TRAPDOOR);
         saddleDoorFromDoor(consumer, ModBlocks.warped_saddle_door, Blocks.WARPED_TRAPDOOR);
-
         saddleDoorFromDoor(consumer, ModBlocks.granite_saddle_door, ModBlocks.granite_door);
         saddleDoorFromDoor(consumer, ModBlocks.polished_granite_saddle_door, ModBlocks.polished_granite_door);
         saddleDoorFromDoor(consumer, ModBlocks.diorite_saddle_door, ModBlocks.diorite_door);

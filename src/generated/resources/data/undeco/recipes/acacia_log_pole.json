@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:acacia_log"
+      "item": "undeco:acacia_log_slab"
     }
   },
   "pattern": [

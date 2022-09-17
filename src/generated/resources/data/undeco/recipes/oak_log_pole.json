@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:oak_log"
+      "item": "undeco:oak_log_slab"
     }
   },
   "pattern": [
