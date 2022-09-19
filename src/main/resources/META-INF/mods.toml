@@ -38,6 +38,6 @@ See new materials such as Logs, Stone, Planks, and anything else that you might 
 [[dependencies.undeco]]
     modId="ornamental"
     mandatory=true
-    versionRange="[1.19.1-4.9.4,]"
+    versionRange="[1.19.1-4.9.13,]"
     ordering="NONE"
     side="BOTH"
