@@ -3,7 +3,7 @@ package com.androsa.undeco.data;
 import com.androsa.ornamental.data.provider.OrnamentalItemModelProvider;
 import com.androsa.undeco.ModBlocks;
 import com.androsa.undeco.UnusuallyDecorative;
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -12,8 +12,8 @@ import java.util.function.Supplier;
 
 public class UDItemModelGenerator extends OrnamentalItemModelProvider {
 
-    public UDItemModelGenerator(DataGenerator generator, ExistingFileHelper helper) {
-        super(generator, UnusuallyDecorative.MODID, helper);
+    public UDItemModelGenerator(PackOutput output, ExistingFileHelper helper) {
+        super(output, UnusuallyDecorative.MODID, helper);
     }
 
     @Override

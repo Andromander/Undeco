@@ -6,7 +6,7 @@ import com.androsa.ornamental.blocks.OrnamentSaddleDoor;
 import com.androsa.ornamental.data.provider.OrnamentalBlockStateProvider;
 import com.androsa.undeco.ModBlocks;
 import com.androsa.undeco.UnusuallyDecorative;
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.FenceGateBlock;
@@ -17,8 +17,8 @@ import javax.annotation.Nonnull;
 
 public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
 
-    public UDBlockstateGenerator(DataGenerator generator, ExistingFileHelper helper) {
-        super(generator, UnusuallyDecorative.MODID, helper);
+    public UDBlockstateGenerator(PackOutput output, ExistingFileHelper helper) {
+        super(output, UnusuallyDecorative.MODID, helper);
     }
 
     @Nonnull

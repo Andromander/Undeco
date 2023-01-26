@@ -1,17 +1,16 @@
-// 1.19	2022-09-17T20:42:51.4588624	Tags for minecraft:block
-7eaa5037b9d5616e68433bd6b07fc447599bb7ad data/forge/tags/blocks/fences.json
+// 1.19.3	2023-01-26T09:56:57.1695738	Tags for minecraft:block mod id undeco
+cd6290b8993c920475ff4ad61e4930834e36ef2a data/forge/tags/blocks/fences.json
 70f02039c9cde47117f58187bf81afaa33cb3a34 data/forge/tags/blocks/fences/wooden.json
 548a922813ddf5bbc3aa223959b93f602bea0fdd data/forge/tags/blocks/fence_gates.json
 6aa38803daf4eea45a6ca975f3989f7371ad1df0 data/forge/tags/blocks/fence_gates/wooden.json
-1892fb8ac453c82cd4a35ed0ce98b83fa5e80fb2 data/minecraft/tags/blocks/doors.json
-7eaa5037b9d5616e68433bd6b07fc447599bb7ad data/minecraft/tags/blocks/fences.json
+7ead69023b1aed7b7a7940415a5192bf0ed7ec96 data/minecraft/tags/blocks/doors.json
+cd6290b8993c920475ff4ad61e4930834e36ef2a data/minecraft/tags/blocks/fences.json
 548a922813ddf5bbc3aa223959b93f602bea0fdd data/minecraft/tags/blocks/fence_gates.json
-f9002f17da99a6f31e9aa8815d39d1c43e4edbd8 data/minecraft/tags/blocks/mineable/axe.json
-45532351d399d05bc50c23b54b7d71126433b97e data/minecraft/tags/blocks/mineable/pickaxe.json
-9f2866ea795fccc85c12de7d998b9d6d37d8e9b7 data/minecraft/tags/blocks/non_flammable_wood.json
-879b0e8d0561606b315ac42f58405405a3332ce9 data/minecraft/tags/blocks/slabs.json
-5ddf41afa88eb4f2cfb0cfd433e1b93bae4a6d5e data/minecraft/tags/blocks/stairs.json
-dd4f40e80925483e713d3f0f71d6e78d8fbce5f3 data/minecraft/tags/blocks/trapdoors.json
+2011bf35b2ba4450f34af5aa07200997f13abfe4 data/minecraft/tags/blocks/mineable/axe.json
+37738bc880fb140db8739d239f032b078432739b data/minecraft/tags/blocks/mineable/pickaxe.json
+9ef247ce22b9fa70d00ad9ce23176272049baa19 data/minecraft/tags/blocks/slabs.json
+5a502349dc616879530e67ee05624d866899e310 data/minecraft/tags/blocks/stairs.json
+fce8dc5005a2f08af39a1d35c7fe9339cf7b9f1a data/minecraft/tags/blocks/trapdoors.json
 b1a038646ad92549966507b13d0419cd247179ee data/minecraft/tags/blocks/walls.json
 2fab3652eb1191287fe9a462b7b2fa8299a5c620 data/minecraft/tags/blocks/wooden_doors.json
 70f02039c9cde47117f58187bf81afaa33cb3a34 data/minecraft/tags/blocks/wooden_fences.json

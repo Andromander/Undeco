@@ -1,19 +1,22 @@
 package com.androsa.undeco;
 
 import com.androsa.ornamental.builder.OrnamentBuilder;
+import com.androsa.undeco.data.UDBlockTags;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 
+import java.util.List;
+
 public class UDBuilders {
 
-    public static final OrnamentBuilder OAK_PLANKS = createPlankOrnament("oak", MaterialColor.WOOD);
-    public static final OrnamentBuilder SPRUCE_PLANKS = createPlankOrnament("spruce", MaterialColor.PODZOL);
-    public static final OrnamentBuilder BIRCH_PLANKS = createPlankOrnament("birch", MaterialColor.SAND);
-    public static final OrnamentBuilder JUNGLE_PLANKS = createPlankOrnament("jungle", MaterialColor.DIRT);
-    public static final OrnamentBuilder ACACIA_PLANKS = createPlankOrnament("acacia", MaterialColor.COLOR_ORANGE);
-    public static final OrnamentBuilder DARK_OAK_PLANKS = createPlankOrnament("dark_oak", MaterialColor.COLOR_BROWN);
-    public static final OrnamentBuilder MANGROVE_PLANKS = createPlankOrnament("mangrove", MaterialColor.COLOR_RED);
+    public static final OrnamentBuilder OAK_PLANKS = createPlankOrnament("oak", Material.WOOD, MaterialColor.WOOD);
+    public static final OrnamentBuilder SPRUCE_PLANKS = createPlankOrnament("spruce", Material.WOOD, MaterialColor.PODZOL);
+    public static final OrnamentBuilder BIRCH_PLANKS = createPlankOrnament("birch", Material.WOOD, MaterialColor.SAND);
+    public static final OrnamentBuilder JUNGLE_PLANKS = createPlankOrnament("jungle", Material.WOOD, MaterialColor.DIRT);
+    public static final OrnamentBuilder ACACIA_PLANKS = createPlankOrnament("acacia", Material.WOOD, MaterialColor.COLOR_ORANGE);
+    public static final OrnamentBuilder DARK_OAK_PLANKS = createPlankOrnament("dark_oak", Material.WOOD, MaterialColor.COLOR_BROWN);
+    public static final OrnamentBuilder MANGROVE_PLANKS = createPlankOrnament("mangrove", Material.WOOD, MaterialColor.COLOR_RED);
     public static final OrnamentBuilder CRIMSON_PLANKS = createPlankOrnament("crimson", Material.NETHER_WOOD, MaterialColor.CRIMSON_STEM);
     public static final OrnamentBuilder WARPED_PLANKS = createPlankOrnament("warped", Material.NETHER_WOOD, MaterialColor.WARPED_STEM);
     public static final OrnamentBuilder GRANITE = createStoneOrnament("granite", MaterialColor.DIRT);
@@ -49,31 +52,30 @@ public class UDBuilders {
     public static final OrnamentBuilder DARK_PRISMARINE = createStoneOrnament("dark_prismarine", MaterialColor.DIAMOND);
     public static final OrnamentBuilder PURPUR = createStoneOrnament("purpur", MaterialColor.COLOR_MAGENTA);
 
-    private static OrnamentBuilder createPlankOrnament(String name, MaterialColor color) {
-        return createPlankOrnament(name, Material.WOOD, color);
-    }
-
     private static OrnamentBuilder createPlankOrnament(String name, Material material, MaterialColor color) {
         return new OrnamentBuilder(name)
                 .properties(material, color)
                 .hardnessAndResistance(2.0F, 3.0F)
                 .sound(SoundType.WOOD)
                 .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300, 100)
-                .canOpen();
+                .canOpen()
+                .addBlockTags(List.of(UDBlockTags.AXE_TOOL));
     }
 
     private static OrnamentBuilder createStoneOrnament(String name, MaterialColor color) {
         return new OrnamentBuilder(name)
                 .properties(Material.STONE, color)
                 .hardnessAndResistance(1.5F, 6.0F)
-                .sound(SoundType.STONE);
+                .sound(SoundType.STONE)
+                .addBlockTags(List.of(UDBlockTags.PICKAXE_TOOL));
     }
 
     private static OrnamentBuilder createStoneToughOrnament(String name, MaterialColor color) {
         return new OrnamentBuilder(name)
                 .properties(Material.STONE, color)
                 .hardnessAndResistance(2.0F, 6.0F)
-                .sound(SoundType.STONE);
+                .sound(SoundType.STONE)
+                .addBlockTags(List.of(UDBlockTags.PICKAXE_TOOL));
     }
 
     private static OrnamentBuilder createLogOrnament(String name, MaterialColor color) {
@@ -82,7 +84,8 @@ public class UDBuilders {
                 .hardnessAndResistance(2.0F)
                 .sound(SoundType.WOOD)
                 .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300, 100)
-                .canOpen();
+                .canOpen()
+                .addBlockTags(List.of(UDBlockTags.AXE_TOOL));
     }
 
     private static OrnamentBuilder createStemOrnament(String name, MaterialColor color) {
@@ -91,14 +94,16 @@ public class UDBuilders {
                 .hardnessAndResistance(2.0F)
                 .sound(SoundType.STEM)
                 .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300, 100)
-                .canOpen();
+                .canOpen()
+                .addBlockTags(List.of(UDBlockTags.AXE_TOOL));
     }
 
     private static OrnamentBuilder createSandstoneOrnament(String name, MaterialColor color) {
         return new OrnamentBuilder(name)
                 .properties(Material.STONE, color)
                 .hardnessAndResistance(0.8F)
-                .sound(SoundType.STONE);
+                .sound(SoundType.STONE)
+                .addBlockTags(List.of(UDBlockTags.PICKAXE_TOOL));
 
     }
 }

@@ -1,13 +1,13 @@
-// 1.19	2022-09-17T20:42:51.4598634	Tags for minecraft:item
-7eaa5037b9d5616e68433bd6b07fc447599bb7ad data/forge/tags/items/fences.json
+// 1.19.3	2023-01-26T09:59:21.0069176	Tags for minecraft:item mod id undeco
+cd6290b8993c920475ff4ad61e4930834e36ef2a data/forge/tags/items/fences.json
 70f02039c9cde47117f58187bf81afaa33cb3a34 data/forge/tags/items/fences/wooden.json
 548a922813ddf5bbc3aa223959b93f602bea0fdd data/forge/tags/items/fence_gates.json
 6aa38803daf4eea45a6ca975f3989f7371ad1df0 data/forge/tags/items/fence_gates/wooden.json
-1892fb8ac453c82cd4a35ed0ce98b83fa5e80fb2 data/minecraft/tags/items/doors.json
-7eaa5037b9d5616e68433bd6b07fc447599bb7ad data/minecraft/tags/items/fences.json
-9f2866ea795fccc85c12de7d998b9d6d37d8e9b7 data/minecraft/tags/items/non_flammable_wood.json
-879b0e8d0561606b315ac42f58405405a3332ce9 data/minecraft/tags/items/slabs.json
-5ddf41afa88eb4f2cfb0cfd433e1b93bae4a6d5e data/minecraft/tags/items/stairs.json
+7ead69023b1aed7b7a7940415a5192bf0ed7ec96 data/minecraft/tags/items/doors.json
+cd6290b8993c920475ff4ad61e4930834e36ef2a data/minecraft/tags/items/fences.json
+548a922813ddf5bbc3aa223959b93f602bea0fdd data/minecraft/tags/items/fence_gates.json
+9ef247ce22b9fa70d00ad9ce23176272049baa19 data/minecraft/tags/items/slabs.json
+5a502349dc616879530e67ee05624d866899e310 data/minecraft/tags/items/stairs.json
 b1a038646ad92549966507b13d0419cd247179ee data/minecraft/tags/items/walls.json
 2fab3652eb1191287fe9a462b7b2fa8299a5c620 data/minecraft/tags/items/wooden_doors.json
 70f02039c9cde47117f58187bf81afaa33cb3a34 data/minecraft/tags/items/wooden_fences.json
