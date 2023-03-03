@@ -3,6 +3,7 @@ package com.androsa.undeco.data;
 import com.androsa.ornamental.data.provider.OrnamentalItemTagProvider;
 import com.androsa.ornamental.registry.ModTags;
 import com.androsa.undeco.UnusuallyDecorative;
+import com.google.common.collect.Lists;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.ItemTags;
@@ -11,7 +12,6 @@ import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
-import org.apache.commons.compress.utils.Lists;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
