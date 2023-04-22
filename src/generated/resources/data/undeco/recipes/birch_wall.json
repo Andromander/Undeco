@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "undeco:birch_wall"
-  }
+  },
+  "show_notification": true
 }

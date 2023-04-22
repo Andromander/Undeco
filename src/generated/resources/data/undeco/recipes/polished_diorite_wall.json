@@ -12,5 +12,6 @@
   ],
   "result": {
     "item": "undeco:polished_diorite_wall"
-  }
+  },
+  "show_notification": true
 }

@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "undeco:diorite_door"
-  }
+  },
+  "show_notification": true
 }

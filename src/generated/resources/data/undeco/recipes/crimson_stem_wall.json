@@ -12,5 +12,6 @@
   ],
   "result": {
     "item": "undeco:crimson_stem_wall"
-  }
+  },
+  "show_notification": true
 }

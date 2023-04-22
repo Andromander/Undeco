@@ -12,5 +12,6 @@
   ],
   "result": {
     "item": "undeco:diorite_trapdoor"
-  }
+  },
+  "show_notification": true
 }

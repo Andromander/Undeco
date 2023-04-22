@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "undeco:polished_diorite_door"
-  }
+  },
+  "show_notification": true
 }

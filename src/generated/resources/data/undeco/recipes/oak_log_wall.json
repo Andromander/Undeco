@@ -12,5 +12,6 @@
   ],
   "result": {
     "item": "undeco:oak_log_wall"
-  }
+  },
+  "show_notification": true
 }

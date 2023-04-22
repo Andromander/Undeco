@@ -12,5 +12,6 @@
   ],
   "result": {
     "item": "undeco:purpur_wall"
-  }
+  },
+  "show_notification": true
 }

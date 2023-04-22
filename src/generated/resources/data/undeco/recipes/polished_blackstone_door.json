@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "undeco:polished_blackstone_door"
-  }
+  },
+  "show_notification": true
 }

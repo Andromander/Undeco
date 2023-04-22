@@ -12,5 +12,6 @@
   "result": {
     "count": 6,
     "item": "undeco:mossy_cobblestone_beam"
-  }
+  },
+  "show_notification": true
 }

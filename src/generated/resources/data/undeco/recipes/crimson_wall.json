@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "undeco:crimson_wall"
-  }
+  },
+  "show_notification": true
 }

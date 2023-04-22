@@ -1,4 +1,4 @@
-// 1.19.3	2023-01-26T09:56:57.1695738	Tags for minecraft:block mod id undeco
+// 1.19.4	2023-04-19T21:37:08.0804829	Tags for minecraft:block mod id undeco
 cd6290b8993c920475ff4ad61e4930834e36ef2a data/forge/tags/blocks/fences.json
 70f02039c9cde47117f58187bf81afaa33cb3a34 data/forge/tags/blocks/fences/wooden.json
 548a922813ddf5bbc3aa223959b93f602bea0fdd data/forge/tags/blocks/fence_gates.json

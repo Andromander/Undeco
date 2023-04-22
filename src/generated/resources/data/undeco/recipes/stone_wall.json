@@ -12,5 +12,6 @@
   ],
   "result": {
     "item": "undeco:stone_wall"
-  }
+  },
+  "show_notification": true
 }

@@ -14,5 +14,6 @@
   "result": {
     "count": 8,
     "item": "undeco:birch_log_stairs"
-  }
+  },
+  "show_notification": true
 }

@@ -15,5 +15,6 @@
   ],
   "result": {
     "item": "undeco:mangrove_log_fence_gate"
-  }
+  },
+  "show_notification": true
 }

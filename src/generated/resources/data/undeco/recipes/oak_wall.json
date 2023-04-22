@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "undeco:oak_wall"
-  }
+  },
+  "show_notification": true
 }

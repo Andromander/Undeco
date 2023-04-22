@@ -15,5 +15,6 @@
   ],
   "result": {
     "item": "undeco:oak_log_fence_gate"
-  }
+  },
+  "show_notification": true
 }

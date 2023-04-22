@@ -6,7 +6,6 @@ import com.androsa.undeco.data.UDBlockTags;
 import com.androsa.undeco.data.UDItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -17,17 +16,17 @@ public class ModBlocks {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, UnusuallyDecorative.MODID);
     public static final RegistryHelper HELPER = new UDRegistryHelper(BLOCKS, ITEMS);
 
-    public static final RegistryObject<OrnamentStair> oak_log_stairs = HELPER.stairs(Blocks.OAK_LOG, UDBuilders.OAK_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
-    public static final RegistryObject<OrnamentStair> spruce_log_stairs = HELPER.stairs(Blocks.SPRUCE_LOG, UDBuilders.SPRUCE_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
-    public static final RegistryObject<OrnamentStair> birch_log_stairs = HELPER.stairs(Blocks.BIRCH_LOG, UDBuilders.BIRCH_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
-    public static final RegistryObject<OrnamentStair> jungle_log_stairs = HELPER.stairs(Blocks.JUNGLE_LOG, UDBuilders.JUNGLE_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
-    public static final RegistryObject<OrnamentStair> acacia_log_stairs = HELPER.stairs(Blocks.ACACIA_LOG, UDBuilders.ACACIA_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
-    public static final RegistryObject<OrnamentStair> dark_oak_log_stairs = HELPER.stairs(Blocks.DARK_OAK_LOG, UDBuilders.DARK_OAK_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
-    public static final RegistryObject<OrnamentStair> mangrove_log_stairs = HELPER.stairs(Blocks.MANGROVE_LOG, UDBuilders.MANGROVE_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
-    public static final RegistryObject<OrnamentStair> crimson_stem_stairs = HELPER.stairs(Blocks.CRIMSON_STEM, UDBuilders.CRIMSON_STEM, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
-    public static final RegistryObject<OrnamentStair> warped_stem_stairs = HELPER.stairs(Blocks.WARPED_STEM, UDBuilders.WARPED_STEM, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
-    public static final RegistryObject<OrnamentStair> smooth_stone_stairs = HELPER.stairs(Blocks.SMOOTH_STONE, UDBuilders.SMOOTH_STONE);
-    public static final RegistryObject<OrnamentStair> cracked_stone_brick_stairs = HELPER.stairs(Blocks.CRACKED_STONE_BRICKS, UDBuilders.CRACKED_STONE_BRICKS);
+    public static final RegistryObject<OrnamentStair> oak_log_stairs = HELPER.stairs(UDBuilders.OAK_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
+    public static final RegistryObject<OrnamentStair> spruce_log_stairs = HELPER.stairs(UDBuilders.SPRUCE_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
+    public static final RegistryObject<OrnamentStair> birch_log_stairs = HELPER.stairs(UDBuilders.BIRCH_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
+    public static final RegistryObject<OrnamentStair> jungle_log_stairs = HELPER.stairs(UDBuilders.JUNGLE_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
+    public static final RegistryObject<OrnamentStair> acacia_log_stairs = HELPER.stairs(UDBuilders.ACACIA_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
+    public static final RegistryObject<OrnamentStair> dark_oak_log_stairs = HELPER.stairs(UDBuilders.DARK_OAK_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
+    public static final RegistryObject<OrnamentStair> mangrove_log_stairs = HELPER.stairs(UDBuilders.MANGROVE_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
+    public static final RegistryObject<OrnamentStair> crimson_stem_stairs = HELPER.stairs(UDBuilders.CRIMSON_STEM, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
+    public static final RegistryObject<OrnamentStair> warped_stem_stairs = HELPER.stairs(UDBuilders.WARPED_STEM, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
+    public static final RegistryObject<OrnamentStair> smooth_stone_stairs = HELPER.stairs(UDBuilders.SMOOTH_STONE);
+    public static final RegistryObject<OrnamentStair> cracked_stone_brick_stairs = HELPER.stairs(UDBuilders.CRACKED_STONE_BRICKS);
 
     public static final RegistryObject<OrnamentSlab> oak_log_slab = HELPER.slab(UDBuilders.OAK_LOG, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
     public static final RegistryObject<OrnamentSlab> spruce_log_slab = HELPER.slab(UDBuilders.SPRUCE_LOG, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));

@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "undeco:birch_log_door"
-  }
+  },
+  "show_notification": true
 }

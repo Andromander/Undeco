@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "undeco:warped_wall"
-  }
+  },
+  "show_notification": true
 }

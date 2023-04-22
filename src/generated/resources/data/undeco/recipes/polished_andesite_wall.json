@@ -12,5 +12,6 @@
   ],
   "result": {
     "item": "undeco:polished_andesite_wall"
-  }
+  },
+  "show_notification": true
 }

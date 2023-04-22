@@ -12,5 +12,6 @@
   ],
   "result": {
     "item": "undeco:mossy_stone_brick_trapdoor"
-  }
+  },
+  "show_notification": true
 }

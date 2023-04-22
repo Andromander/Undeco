@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "undeco:cobblestone_door"
-  }
+  },
+  "show_notification": true
 }

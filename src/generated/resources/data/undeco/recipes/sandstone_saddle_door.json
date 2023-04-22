@@ -13,5 +13,6 @@
   "result": {
     "count": 2,
     "item": "undeco:sandstone_saddle_door"
-  }
+  },
+  "show_notification": true
 }

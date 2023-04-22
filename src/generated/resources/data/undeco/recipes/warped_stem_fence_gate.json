@@ -15,5 +15,6 @@
   ],
   "result": {
     "item": "undeco:warped_stem_fence_gate"
-  }
+  },
+  "show_notification": true
 }

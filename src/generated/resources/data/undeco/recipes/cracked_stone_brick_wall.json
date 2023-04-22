@@ -12,5 +12,6 @@
   ],
   "result": {
     "item": "undeco:cracked_stone_brick_wall"
-  }
+  },
+  "show_notification": true
 }

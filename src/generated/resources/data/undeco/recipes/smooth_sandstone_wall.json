@@ -12,5 +12,6 @@
   ],
   "result": {
     "item": "undeco:smooth_sandstone_wall"
-  }
+  },
+  "show_notification": true
 }

@@ -15,5 +15,6 @@
   ],
   "result": {
     "item": "undeco:polished_granite_fence_gate"
-  }
+  },
+  "show_notification": true
 }

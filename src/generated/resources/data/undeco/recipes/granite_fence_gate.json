@@ -15,5 +15,6 @@
   ],
   "result": {
     "item": "undeco:granite_fence_gate"
-  }
+  },
+  "show_notification": true
 }

@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "undeco:mangrove_wall"
-  }
+  },
+  "show_notification": true
 }

@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "undeco:jungle_log_door"
-  }
+  },
+  "show_notification": true
 }

@@ -12,5 +12,6 @@
   ],
   "result": {
     "item": "undeco:polished_blackstone_trapdoor"
-  }
+  },
+  "show_notification": true
 }

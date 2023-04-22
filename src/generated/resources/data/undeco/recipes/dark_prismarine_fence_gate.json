@@ -15,5 +15,6 @@
   ],
   "result": {
     "item": "undeco:dark_prismarine_fence_gate"
-  }
+  },
+  "show_notification": true
 }

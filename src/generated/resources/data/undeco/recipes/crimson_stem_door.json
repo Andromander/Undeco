@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "undeco:crimson_stem_door"
-  }
+  },
+  "show_notification": true
 }
