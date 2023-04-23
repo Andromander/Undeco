@@ -1,4 +1,4 @@
-// 1.19.4	2023-04-19T21:37:08.0744775	Loot Tables
+// 1.19.4	2023-04-23T20:17:35.1249936	Loot Tables
 a1d6d44a54bb90b28a026d39709c70506bc5f848 data/undeco/loot_tables/blocks/acacia_beam.json
 c4e0b9c202c94a36c885ac1634ffd41388b5f0c4 data/undeco/loot_tables/blocks/acacia_log_beam.json
 86f15482bedcb335cfe41f8ddba182bf773014f7 data/undeco/loot_tables/blocks/acacia_log_door.json
@@ -286,6 +286,16 @@ bd9f786bddfa47646be87303caac2acb374adf0a data/undeco/loot_tables/blocks/stone_fe
 5195f86c16249784a38cc3ca99b39a4ddd5978a1 data/undeco/loot_tables/blocks/stone_saddle_door.json
 e565ce6fac46d2d5a290b110f0df64a8f7326e71 data/undeco/loot_tables/blocks/stone_trapdoor.json
 99ba9adbb6b515781b4c2799837b858dc8bec1a4 data/undeco/loot_tables/blocks/stone_wall.json
+54823062a42149d6c314f624bced182cc9f5abb0 data/undeco/loot_tables/blocks/tuff_beam.json
+56ce6f98fb43d79d3133cad5b4cd1fe3b4e72910 data/undeco/loot_tables/blocks/tuff_door.json
+6aef08d2d8f17b82082dac0440d8ab71758a5437 data/undeco/loot_tables/blocks/tuff_fence.json
+b79bf6441a75b8a138030f7d471ca650043dae01 data/undeco/loot_tables/blocks/tuff_fence_gate.json
+a3f4441131943374591da139924bb22391b0073c data/undeco/loot_tables/blocks/tuff_pole.json
+ce832b2111fe7056860b5c1918a737b67c7de884 data/undeco/loot_tables/blocks/tuff_saddle_door.json
+ecf29ad7f326d6978ce858dabc2a0d833b085394 data/undeco/loot_tables/blocks/tuff_slab.json
+b173a57c8f0d30193627f5e216b718079d8b4aa2 data/undeco/loot_tables/blocks/tuff_stairs.json
+8063753cfc3dc0b5d24f920a23946c63f547e09a data/undeco/loot_tables/blocks/tuff_trapdoor.json
+779820d521fc05fa95336604d3ce951688157d9f data/undeco/loot_tables/blocks/tuff_wall.json
 f114c1a466a73ca80ee5ec1323f5c0121f2d520d data/undeco/loot_tables/blocks/warped_beam.json
 530194bc266c5e05be19b51bf23f334cd983ec33 data/undeco/loot_tables/blocks/warped_pole.json
 9e01640d3f11e454e5597f0ebba0b8def40f0cac data/undeco/loot_tables/blocks/warped_saddle_door.json

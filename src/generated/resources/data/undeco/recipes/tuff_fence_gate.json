@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "minecraft:tuff"
+    },
+    "/": {
+      "item": "undeco:tuff_slab"
+    }
+  },
+  "pattern": [
+    "/#/",
+    "/#/"
+  ],
+  "result": {
+    "item": "undeco:tuff_fence_gate"
+  },
+  "show_notification": true
+}

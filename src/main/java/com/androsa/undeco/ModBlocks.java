@@ -27,6 +27,7 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentStair> warped_stem_stairs = HELPER.stairs(UDBuilders.WARPED_STEM, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
     public static final RegistryObject<OrnamentStair> smooth_stone_stairs = HELPER.stairs(UDBuilders.SMOOTH_STONE);
     public static final RegistryObject<OrnamentStair> cracked_stone_brick_stairs = HELPER.stairs(UDBuilders.CRACKED_STONE_BRICKS);
+    public static final RegistryObject<OrnamentStair> tuff_stairs = HELPER.stairs(UDBuilders.TUFF);
 
     public static final RegistryObject<OrnamentSlab> oak_log_slab = HELPER.slab(UDBuilders.OAK_LOG, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
     public static final RegistryObject<OrnamentSlab> spruce_log_slab = HELPER.slab(UDBuilders.SPRUCE_LOG, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
@@ -38,6 +39,7 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentSlab> crimson_stem_slab = HELPER.slab(UDBuilders.CRIMSON_STEM, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
     public static final RegistryObject<OrnamentSlab> warped_stem_slab = HELPER.slab(UDBuilders.WARPED_STEM, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
     public static final RegistryObject<OrnamentSlab> cracked_stone_brick_slab = HELPER.slab(UDBuilders.CRACKED_STONE_BRICKS);
+    public static final RegistryObject<OrnamentSlab> tuff_slab = HELPER.slab(UDBuilders.TUFF);
 
     public static final RegistryObject<OrnamentFence> granite_fence = HELPER.fence(UDBuilders.GRANITE);
     public static final RegistryObject<OrnamentFence> polished_granite_fence = HELPER.fence(UDBuilders.POLISHED_GRANITE);
@@ -71,6 +73,7 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentFence> prismarine_brick_fence = HELPER.fence(UDBuilders.PRISMARINE_BRICKS);
     public static final RegistryObject<OrnamentFence> dark_prismarine_fence = HELPER.fence(UDBuilders.DARK_PRISMARINE);
     public static final RegistryObject<OrnamentFence> purpur_fence = HELPER.fence(UDBuilders.PURPUR);
+    public static final RegistryObject<OrnamentFence> tuff_fence = HELPER.fence(UDBuilders.TUFF);
 
     public static final RegistryObject<OrnamentTrapDoor> granite_trapdoor = HELPER.trapdoor(UDBuilders.GRANITE);
     public static final RegistryObject<OrnamentTrapDoor> polished_granite_trapdoor = HELPER.trapdoor(UDBuilders.POLISHED_GRANITE);
@@ -104,6 +107,7 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentTrapDoor> prismarine_brick_trapdoor = HELPER.trapdoor(UDBuilders.PRISMARINE_BRICKS);
     public static final RegistryObject<OrnamentTrapDoor> dark_prismarine_trapdoor = HELPER.trapdoor(UDBuilders.DARK_PRISMARINE);
     public static final RegistryObject<OrnamentTrapDoor> purpur_trapdoor = HELPER.trapdoor(UDBuilders.PURPUR);
+    public static final RegistryObject<OrnamentTrapDoor> tuff_trapdoor = HELPER.trapdoor(UDBuilders.TUFF);
 
     public static final RegistryObject<OrnamentFenceGate> granite_fence_gate = HELPER.fencegate(UDBuilders.GRANITE);
     public static final RegistryObject<OrnamentFenceGate> polished_granite_fence_gate = HELPER.fencegate(UDBuilders.POLISHED_GRANITE);
@@ -137,6 +141,7 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentFenceGate> prismarine_brick_fence_gate = HELPER.fencegate(UDBuilders.PRISMARINE_BRICKS);
     public static final RegistryObject<OrnamentFenceGate> dark_prismarine_fence_gate = HELPER.fencegate(UDBuilders.DARK_PRISMARINE);
     public static final RegistryObject<OrnamentFenceGate> purpur_fence_gate = HELPER.fencegate(UDBuilders.PURPUR);
+    public static final RegistryObject<OrnamentFenceGate> tuff_fence_gate = HELPER.fencegate(UDBuilders.TUFF);
 
     public static final RegistryObject<OrnamentDoor> granite_door = HELPER.door(UDBuilders.GRANITE);
     public static final RegistryObject<OrnamentDoor> polished_granite_door = HELPER.door(UDBuilders.POLISHED_GRANITE);
@@ -170,6 +175,7 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentDoor> prismarine_brick_door = HELPER.door(UDBuilders.PRISMARINE_BRICKS);
     public static final RegistryObject<OrnamentDoor> dark_prismarine_door = HELPER.door(UDBuilders.DARK_PRISMARINE);
     public static final RegistryObject<OrnamentDoor> purpur_door = HELPER.door(UDBuilders.PURPUR);
+    public static final RegistryObject<OrnamentDoor> tuff_door = HELPER.door(UDBuilders.TUFF);
 
     public static final RegistryObject<OrnamentPole> oak_pole = HELPER.pole(UDBuilders.OAK_PLANKS);
     public static final RegistryObject<OrnamentPole> spruce_pole = HELPER.pole(UDBuilders.SPRUCE_PLANKS);
@@ -212,6 +218,7 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentPole> prismarine_brick_pole = HELPER.pole(UDBuilders.PRISMARINE_BRICKS);
     public static final RegistryObject<OrnamentPole> dark_prismarine_pole = HELPER.pole(UDBuilders.DARK_PRISMARINE);
     public static final RegistryObject<OrnamentPole> purpur_pole = HELPER.pole(UDBuilders.PURPUR);
+    public static final RegistryObject<OrnamentPole> tuff_pole = HELPER.pole(UDBuilders.TUFF);
 
     public static final RegistryObject<OrnamentBeam> oak_beam = HELPER.beam(UDBuilders.OAK_PLANKS);
     public static final RegistryObject<OrnamentBeam> spruce_beam = HELPER.beam(UDBuilders.SPRUCE_PLANKS);
@@ -254,6 +261,7 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentBeam> prismarine_brick_beam = HELPER.beam(UDBuilders.PRISMARINE_BRICKS);
     public static final RegistryObject<OrnamentBeam> dark_prismarine_beam = HELPER.beam(UDBuilders.DARK_PRISMARINE);
     public static final RegistryObject<OrnamentBeam> purpur_beam = HELPER.beam(UDBuilders.PURPUR);
+    public static final RegistryObject<OrnamentBeam> tuff_beam = HELPER.beam(UDBuilders.TUFF);
 
 	public static final RegistryObject<OrnamentWall> oak_wall = HELPER.wall(UDBuilders.OAK_PLANKS);
 	public static final RegistryObject<OrnamentWall> spruce_wall = HELPER.wall(UDBuilders.SPRUCE_PLANKS);
@@ -284,6 +292,7 @@ public class ModBlocks {
 	public static final RegistryObject<OrnamentWall> prismarine_brick_wall = HELPER.wall(UDBuilders.PRISMARINE_BRICKS);
 	public static final RegistryObject<OrnamentWall> dark_prismarine_wall = HELPER.wall(UDBuilders.DARK_PRISMARINE);
 	public static final RegistryObject<OrnamentWall> purpur_wall = HELPER.wall(UDBuilders.PURPUR);
+    public static final RegistryObject<OrnamentWall> tuff_wall = HELPER.wall(UDBuilders.TUFF);
 
     public static final RegistryObject<OrnamentSaddleDoor> oak_saddle_door = HELPER.saddledoor(UDBuilders.OAK_PLANKS);
     public static final RegistryObject<OrnamentSaddleDoor> spruce_saddle_door = HELPER.saddledoor(UDBuilders.SPRUCE_PLANKS);
@@ -326,4 +335,5 @@ public class ModBlocks {
     public static final RegistryObject<OrnamentSaddleDoor> prismarine_brick_saddle_door = HELPER.saddledoor(UDBuilders.PRISMARINE_BRICKS);
     public static final RegistryObject<OrnamentSaddleDoor> dark_prismarine_saddle_door = HELPER.saddledoor(UDBuilders.DARK_PRISMARINE);
     public static final RegistryObject<OrnamentSaddleDoor> purpur_saddle_door = HELPER.saddledoor(UDBuilders.PURPUR);
+    public static final RegistryObject<OrnamentSaddleDoor> tuff_saddle_door = HELPER.saddledoor(UDBuilders.TUFF);
 }

@@ -55,6 +55,7 @@ public class UDBuilders {
     public static final OrnamentBuilder PRISMARINE_BRICKS = createStoneOrnament("prismarine_brick", MaterialColor.DIAMOND, Blocks.PRISMARINE_BRICKS);
     public static final OrnamentBuilder DARK_PRISMARINE = createStoneOrnament("dark_prismarine", MaterialColor.DIAMOND, Blocks.DARK_PRISMARINE);
     public static final OrnamentBuilder PURPUR = createStoneOrnament("purpur", MaterialColor.COLOR_MAGENTA, Blocks.PURPUR_BLOCK);
+    public static final OrnamentBuilder TUFF = createStoneOrnament("tuff", MaterialColor.TERRACOTTA_GRAY, SoundType.TUFF, Blocks.TUFF);
 
     private static OrnamentBuilder createPlankOrnament(String name, Material material, MaterialColor color, Block base, BlockSetType type) {
         return new OrnamentBuilder(name)
@@ -68,7 +69,11 @@ public class UDBuilders {
     }
 
     private static OrnamentBuilder createStoneOrnament(String name, MaterialColor color, Block base) {
-        BlockSetType blockset = BlockSetType.register(new BlockSetType(name, SoundType.STONE, SoundEvents.IRON_DOOR_CLOSE, SoundEvents.IRON_DOOR_OPEN, SoundEvents.IRON_TRAPDOOR_CLOSE, SoundEvents.IRON_TRAPDOOR_OPEN, SoundEvents.STONE_PRESSURE_PLATE_CLICK_OFF, SoundEvents.STONE_PRESSURE_PLATE_CLICK_ON, SoundEvents.STONE_BUTTON_CLICK_OFF, SoundEvents.STONE_BUTTON_CLICK_ON));
+        return createStoneOrnament(name, color, SoundType.STONE, base);
+    }
+
+    private static OrnamentBuilder createStoneOrnament(String name, MaterialColor color, SoundType sound, Block base) {
+        BlockSetType blockset = BlockSetType.register(new BlockSetType(name, sound, SoundEvents.IRON_DOOR_CLOSE, SoundEvents.IRON_DOOR_OPEN, SoundEvents.IRON_TRAPDOOR_CLOSE, SoundEvents.IRON_TRAPDOOR_OPEN, SoundEvents.STONE_PRESSURE_PLATE_CLICK_OFF, SoundEvents.STONE_PRESSURE_PLATE_CLICK_ON, SoundEvents.STONE_BUTTON_CLICK_OFF, SoundEvents.STONE_BUTTON_CLICK_ON));
         return createStoneOrnament(name, color, base, blockset);
     }
 

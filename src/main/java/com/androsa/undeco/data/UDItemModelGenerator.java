@@ -29,6 +29,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItem(ModBlocks.warped_stem_stairs);
         blockItem(ModBlocks.smooth_stone_stairs);
         blockItem(ModBlocks.cracked_stone_brick_stairs);
+        blockItem(ModBlocks.tuff_stairs);
 
         blockItem(ModBlocks.oak_log_slab);
         blockItem(ModBlocks.spruce_log_slab);
@@ -40,6 +41,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItem(ModBlocks.crimson_stem_slab);
         blockItem(ModBlocks.warped_stem_slab);
         blockItem(ModBlocks.cracked_stone_brick_slab);
+        blockItem(ModBlocks.tuff_slab);
 
         blockItemFence(ModBlocks.granite_fence, "granite");
         blockItemFence(ModBlocks.polished_granite_fence, "polished_granite");
@@ -73,6 +75,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemFence(ModBlocks.prismarine_brick_fence, "prismarine_bricks");
         blockItemFence(ModBlocks.dark_prismarine_fence, "dark_prismarine");
         blockItemFence(ModBlocks.purpur_fence, "purpur_block");
+        blockItemFence(ModBlocks.tuff_fence, "tuff");
 
         blockItemTrapdoor(ModBlocks.granite_trapdoor);
         blockItemTrapdoor(ModBlocks.polished_granite_trapdoor);
@@ -106,6 +109,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemTrapdoor(ModBlocks.prismarine_brick_trapdoor);
         blockItemTrapdoor(ModBlocks.dark_prismarine_trapdoor);
         blockItemTrapdoor(ModBlocks.purpur_trapdoor);
+        blockItemTrapdoor(ModBlocks.tuff_trapdoor);
 
         blockItem(ModBlocks.granite_fence_gate);
         blockItem(ModBlocks.polished_granite_fence_gate);
@@ -139,6 +143,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItem(ModBlocks.prismarine_brick_fence_gate);
         blockItem(ModBlocks.dark_prismarine_fence_gate);
         blockItem(ModBlocks.purpur_fence_gate);
+        blockItem(ModBlocks.tuff_fence_gate);
 
         blockItemModel(ModBlocks.granite_door);
         blockItemModel(ModBlocks.polished_granite_door);
@@ -172,6 +177,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemModel(ModBlocks.prismarine_brick_door);
         blockItemModel(ModBlocks.dark_prismarine_door);
         blockItemModel(ModBlocks.purpur_door);
+        blockItemModel(ModBlocks.tuff_door);
 
         blockItemPole(ModBlocks.oak_pole, "oak_planks");
         blockItemPole(ModBlocks.spruce_pole, "spruce_planks");
@@ -214,6 +220,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemPole(ModBlocks.prismarine_brick_pole, "prismarine_bricks");
         blockItemPole(ModBlocks.dark_prismarine_pole, "dark_prismarine");
         blockItemPole(ModBlocks.purpur_pole, "purpur_block");
+        blockItemPole(ModBlocks.tuff_pole, "tuff");
 
         blockItemBeam(ModBlocks.oak_beam, "oak_planks");
         blockItemBeam(ModBlocks.spruce_beam, "spruce_planks");
@@ -256,6 +263,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemBeam(ModBlocks.prismarine_brick_beam, "prismarine_bricks");
         blockItemBeam(ModBlocks.dark_prismarine_beam, "dark_prismarine");
         blockItemBeam(ModBlocks.purpur_beam, "purpur_block");
+        blockItemBeam(ModBlocks.tuff_beam, "tuff");
 
 		blockItemWall(ModBlocks.oak_wall, "oak_planks");
 		blockItemWall(ModBlocks.spruce_wall, "spruce_planks");
@@ -286,6 +294,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
 		blockItemWall(ModBlocks.prismarine_brick_wall, "prismarine_bricks");
 		blockItemWall(ModBlocks.dark_prismarine_wall, "dark_prismarine");
 		blockItemWall(ModBlocks.purpur_wall, "purpur_block");
+        blockItemWall(ModBlocks.tuff_wall, "tuff");
 
         blockItemSaddleDoorV(ModBlocks.oak_saddle_door, "oak_trapdoor");
         blockItemSaddleDoorV(ModBlocks.spruce_saddle_door, "spruce_trapdoor");
@@ -328,6 +337,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemSaddleDoor(ModBlocks.prismarine_brick_saddle_door, "prismarine_brick");
         blockItemSaddleDoor(ModBlocks.dark_prismarine_saddle_door, "dark_prismarine");
         blockItemSaddleDoor(ModBlocks.purpur_saddle_door, "purpur");
+        blockItemSaddleDoor(ModBlocks.tuff_saddle_door, "tuff");
     }
 
     public void blockItemFence(Supplier<? extends Block> block, String bottom, String top, String side) {

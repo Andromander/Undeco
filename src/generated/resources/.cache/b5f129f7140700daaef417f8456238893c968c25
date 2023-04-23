@@ -1,4 +1,4 @@
-// 1.19.4	2023-04-19T21:37:08.0724758	Item Models: undeco
+// 1.19.4	2023-04-23T20:17:35.1229918	Item Models: undeco
 52fdd52cf6bd57603b33905f13c7760025b51970 assets/undeco/models/item/acacia_beam.json
 e1e7986ce44d74e89506449a1573d40e91e3261b assets/undeco/models/item/acacia_log_beam.json
 c0628a9671633bb8b3671c621d5ff7c29ed4f25e assets/undeco/models/item/acacia_log_door.json
@@ -286,6 +286,16 @@ d42ad2eea62e7bdbb44bc12c69002002bfbfae92 assets/undeco/models/item/stone_brick_t
 bc09416f40481546aafcc64f9e024d096c6109ca assets/undeco/models/item/stone_saddle_door.json
 5ad10bc944664147f0aaf536591cc8f6ee18b0fb assets/undeco/models/item/stone_trapdoor.json
 1852724ad76f7642e3681b9003e2960f52e14d11 assets/undeco/models/item/stone_wall.json
+dbb1d14735fd7d0157394c2fce2fd8e6bf125405 assets/undeco/models/item/tuff_beam.json
+43af429a7856ef68befb6fee7a86cc65af693b43 assets/undeco/models/item/tuff_door.json
+42327c7ef33e1c7b8257cbdb0e18b2c787e3ccd3 assets/undeco/models/item/tuff_fence.json
+aaa561195d8d5345dcb27746209edaa56b44eb76 assets/undeco/models/item/tuff_fence_gate.json
+5141ed7332a051c31b127683a73df5242add7d46 assets/undeco/models/item/tuff_pole.json
+b1e2d283a4c450774879d5af589e1fae1d41c74d assets/undeco/models/item/tuff_saddle_door.json
+6214cef0bfcfeb4b562b61a9b6ca5efb53dab932 assets/undeco/models/item/tuff_slab.json
+d7b185395c177cf362bcdcfce90ed451c7ffbdce assets/undeco/models/item/tuff_stairs.json
+91fa1298df8642ab1e6004125b3cbda238773714 assets/undeco/models/item/tuff_trapdoor.json
+6068b3dc76e03c8af38455a8362c0e5d6f9ce932 assets/undeco/models/item/tuff_wall.json
 e8a4933dfcfcfca9728a07e7e1cffca4de925ebb assets/undeco/models/item/warped_beam.json
 8383549f166fe9daff2d80b84bea6c0a385dd912 assets/undeco/models/item/warped_pole.json
 6d7d3e9cbcc1dd33da62a0ee7d8b13cc0137a1ff assets/undeco/models/item/warped_saddle_door.json

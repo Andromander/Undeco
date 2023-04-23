@@ -10,6 +10,7 @@
   "block.undeco.warped_stem_stairs": "Warped Stem Stairs",
   "block.undeco.smooth_stone_stairs": "Smooth Stone Stairs",
   "block.undeco.cracked_stone_brick_stairs": "Cracked Stone Brick Stairs",
+  "block.undeco.tuff_brick_stairs": "Tuff Stairs",
 
   "block.undeco.oak_log_slab": "Oak Log Slab",
   "block.undeco.spruce_log_slab": "Spruce Log Slab",
@@ -21,6 +22,7 @@
   "block.undeco.crimson_stem_slab": "Crimson Stem Slab",
   "block.undeco.warped_stem_slab": "Warped Stem Slab",
   "block.undeco.cracked_stone_brick_slab": "Cracked Stone Brick Slab",
+  "block.undeco.tuff_slab": "Tuff Slab",
 
   "block.undeco.granite_fence": "Granite Fence",
   "block.undeco.polished_granite_fence": "Polished Granite Fence",
@@ -54,6 +56,7 @@
   "block.undeco.prismarine_brick_fence": "Prismarine Brick Fence",
   "block.undeco.dark_prismarine_fence": "Dark Prismarine Fence",
   "block.undeco.purpur_fence": "Purpur Fence",
+  "block.undeco.tuff_fence": "Tuff Fence",
 
   "block.undeco.granite_trapdoor": "Granite Trapdoor",
   "block.undeco.polished_granite_trapdoor": "Polished Granite Trapdoor",
@@ -87,6 +90,7 @@
   "block.undeco.prismarine_brick_trapdoor": "Prismarine Brick Trapdoor",
   "block.undeco.dark_prismarine_trapdoor": "Dark Prismarine Trapdoor",
   "block.undeco.purpur_trapdoor": "Purpur Trapdoor",
+  "block.undeco.tuff_trapdoor": "Tuff Trapdoor",
 
   "block.undeco.granite_fence_gate": "Granite Fence Gate",
   "block.undeco.polished_granite_fence_gate": "Polished Granite Fence Gate",
@@ -120,6 +124,7 @@
   "block.undeco.prismarine_brick_fence_gate": "Prismarine Brick Fence Gate",
   "block.undeco.dark_prismarine_fence_gate": "Dark Prismarine Fence Gate",
   "block.undeco.purpur_fence_gate": "Purpur Fence Gate",
+  "block.undeco.tuff_fence_gate": "Tuff Fence Gate",
 
   "block.undeco.granite_door": "Granite Door",
   "block.undeco.polished_granite_door": "Polished Granite Door",
@@ -153,6 +158,7 @@
   "block.undeco.prismarine_brick_door": "Prismarine Brick Door",
   "block.undeco.dark_prismarine_door": "Dark Prismarine Door",
   "block.undeco.purpur_door": "Purpur Door",
+  "block.undeco.tuff_door": "Tuff Door",
 
   "block.undeco.oak_pole": "Oak Pole",
   "block.undeco.spruce_pole": "Spruce Pole",
@@ -195,6 +201,7 @@
   "block.undeco.prismarine_brick_pole": "Prismarine Brick Pole",
   "block.undeco.dark_prismarine_pole": "Dark Prismarine Pole",
   "block.undeco.purpur_pole": "Purpur Pole",
+  "block.undeco.tuff_pole": "Tuff Pole",
 
   "block.undeco.oak_beam": "Oak Beam",
   "block.undeco.spruce_beam": "Spruce Beam",
@@ -237,6 +244,7 @@
   "block.undeco.prismarine_brick_beam": "Prismarine Brick Beam",
   "block.undeco.dark_prismarine_beam": "Dark Prismarine Beam",
   "block.undeco.purpur_beam": "Purpur Beam",
+  "block.undeco.tuff_beam": "Tuff Beam",
 
   "block.undeco.oak_wall": "Oak Wall",
   "block.undeco.spruce_wall": "Spruce Wall",
@@ -267,6 +275,7 @@
   "block.undeco.prismarine_brick_wall": "Prismarine Brick Wall",
   "block.undeco.dark_prismarine_wall": "Dark Prismarine Wall",
   "block.undeco.purpur_wall": "Purpur Wall",
+  "block.undeco.tuff_wall": "Tuff Wall",
 
   "block.undeco.oak_saddle_door": "Oak Saddle Door",
   "block.undeco.spruce_saddle_door": "Spruce Saddle Door",
@@ -308,5 +317,6 @@
   "block.undeco.prismarine_saddle_door": "Prismarine Saddle Door",
   "block.undeco.prismarine_brick_saddle_door": "Prismarine Brick Saddle Door",
   "block.undeco.dark_prismarine_saddle_door": "Dark Prismarine Saddle Door",
-  "block.undeco.purpur_saddle_door": "Purpur Saddle Door"
+  "block.undeco.purpur_saddle_door": "Purpur Saddle Door",
+  "block.undeco.tuff_saddle_door": "Tuff Saddle Door"
 }

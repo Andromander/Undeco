@@ -1,0 +1,8 @@
+{
+  "parent": "ornamental:block/util/saddle_door_inventory",
+  "textures": {
+    "bottom": "undeco:block/tuff_trapdoor",
+    "side": "undeco:block/tuff_trapdoor",
+    "top": "undeco:block/tuff_trapdoor"
+  }
+}

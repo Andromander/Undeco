@@ -40,6 +40,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         stairsColumn(ModBlocks.warped_stem_stairs, "warped_stem", "warped_stem_top");
         stairsBasic(ModBlocks.smooth_stone_stairs, "smooth_stone");
         stairsBasic(ModBlocks.cracked_stone_brick_stairs, "cracked_stone_bricks");
+        stairsBasic(ModBlocks.tuff_stairs, "tuff");
 
         slabColumn(ModBlocks.oak_log_slab, "oak_log", "oak_log", "oak_log_top");
         slabColumn(ModBlocks.spruce_log_slab, "spruce_log", "spruce_log", "spruce_log_top");
@@ -51,6 +52,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         slabColumn(ModBlocks.crimson_stem_slab, "crimson_stem", "crimson_stem", "crimson_stem_top");
         slabColumn(ModBlocks.warped_stem_slab, "warped_stem", "warped_stem", "warped_stem_top");
         slabBasic(ModBlocks.cracked_stone_brick_slab, "cracked_stone_bricks");
+        slabBasic(ModBlocks.tuff_slab, "tuff");
 
         fenceBasic(ModBlocks.granite_fence, "granite");
         fenceBasic(ModBlocks.polished_granite_fence, "polished_granite");
@@ -84,6 +86,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         fenceBasic(ModBlocks.prismarine_brick_fence, "prismarine_bricks");
         fenceBasic(ModBlocks.dark_prismarine_fence, "dark_prismarine");
         fenceBasic(ModBlocks.purpur_fence, "purpur_block");
+        fenceBasic(ModBlocks.tuff_fence, "tuff");
 
         trapdoorVanilla(ModBlocks.granite_trapdoor, "granite");
         trapdoorBasic(ModBlocks.polished_granite_trapdoor, "polished_granite");
@@ -117,6 +120,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         trapdoorBasic(ModBlocks.prismarine_brick_trapdoor, "prismarine_brick");
         trapdoorBasic(ModBlocks.dark_prismarine_trapdoor, "dark_prismarine");
         trapdoorBasic(ModBlocks.purpur_trapdoor, "purpur");
+        trapdoorBasic(ModBlocks.tuff_trapdoor, "tuff");
 
         fenceGateBasic(ModBlocks.granite_fence_gate, "granite");
         fenceGateBasic(ModBlocks.polished_granite_fence_gate, "polished_granite");
@@ -150,6 +154,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         fenceGateBasic(ModBlocks.prismarine_brick_fence_gate, "prismarine_bricks");
         fenceGateBasic(ModBlocks.dark_prismarine_fence_gate, "dark_prismarine");
         fenceGateBasic(ModBlocks.purpur_fence_gate, "purpur_block");
+        fenceGateBasic(ModBlocks.tuff_fence_gate, "tuff");
 
         doorBasicVanilla(ModBlocks.granite_door, "granite");
         doorBasic(ModBlocks.polished_granite_door, "polished_granite");
@@ -183,6 +188,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         doorBasic(ModBlocks.prismarine_brick_door, "prismarine_brick");
         doorBasic(ModBlocks.dark_prismarine_door, "dark_prismarine");
         doorBasic(ModBlocks.purpur_door, "purpur");
+        doorBasic(ModBlocks.tuff_door, "tuff");
 
         poleBasic(ModBlocks.oak_pole, "oak_planks");
         poleBasic(ModBlocks.spruce_pole, "spruce_planks");
@@ -225,6 +231,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         poleBasic(ModBlocks.prismarine_brick_pole, "prismarine_bricks");
         poleBasic(ModBlocks.dark_prismarine_pole, "dark_prismarine");
         poleBasic(ModBlocks.purpur_pole, "purpur_block");
+        poleBasic(ModBlocks.tuff_pole, "tuff");
 
         beamBasic(ModBlocks.oak_beam, "oak_planks");
         beamBasic(ModBlocks.spruce_beam, "spruce_planks");
@@ -267,6 +274,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         beamBasic(ModBlocks.prismarine_brick_beam, "prismarine_bricks");
         beamBasic(ModBlocks.dark_prismarine_beam, "dark_prismarine");
         beamBasic(ModBlocks.purpur_beam, "purpur_block");
+        beamBasic(ModBlocks.tuff_beam, "tuff");
 
 		wallBasic(ModBlocks.oak_wall, "oak_planks");
 		wallBasic(ModBlocks.spruce_wall, "spruce_planks");
@@ -297,6 +305,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
 		wallBasic(ModBlocks.prismarine_brick_wall, "prismarine_bricks");
 		wallBasic(ModBlocks.dark_prismarine_wall, "dark_prismarine");
 		wallBasic(ModBlocks.purpur_wall, "purpur_block");
+        wallBasic(ModBlocks.tuff_wall, "tuff");
 
         saddleDoorVanilla(ModBlocks.oak_saddle_door, "oak_trapdoor");
         saddleDoorVanilla(ModBlocks.spruce_saddle_door, "spruce_trapdoor");
@@ -339,6 +348,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         saddleDoorBasic(ModBlocks.prismarine_brick_saddle_door, "prismarine_brick");
         saddleDoorBasic(ModBlocks.dark_prismarine_saddle_door, "dark_prismarine");
         saddleDoorBasic(ModBlocks.purpur_saddle_door, "purpur");
+        saddleDoorBasic(ModBlocks.tuff_saddle_door, "tuff");
     }
 
     public void fenceTopBottom(RegistryObject<? extends FenceBlock> block, String side, String top, String bottom) {
