@@ -26,6 +26,7 @@ public class UDItemTags extends OrnamentalItemTagProvider {
     public static final List<RegistryObject<? extends Block>> SADDLE_DOORS = Lists.newArrayList();
     public static final List<RegistryObject<? extends Block>> SLABS = Lists.newArrayList();
     public static final List<RegistryObject<? extends Block>> STAIRS = Lists.newArrayList();
+    public static final List<RegistryObject<? extends Block>> TRAPDOORS = Lists.newArrayList();
     public static final List<RegistryObject<? extends Block>> WALLS = Lists.newArrayList();
     public static final List<RegistryObject<? extends Block>> WOODEN_DOORS = Lists.newArrayList();
     public static final List<RegistryObject<? extends Block>> WOODEN_FENCES = Lists.newArrayList();
@@ -50,6 +51,7 @@ public class UDItemTags extends OrnamentalItemTagProvider {
         addToTag(ModTags.Items.POLES, POLES);
         addToTag(ItemTags.SLABS, SLABS);
         addToTag(ItemTags.STAIRS, STAIRS);
+        addToTag(ItemTags.TRAPDOORS, TRAPDOORS);
         addToTag(ItemTags.WALLS, WALLS);
         addToTag(ItemTags.WOODEN_DOORS, WOODEN_DOORS);
         addToTag(ItemTags.WOODEN_FENCES, WOODEN_FENCES);

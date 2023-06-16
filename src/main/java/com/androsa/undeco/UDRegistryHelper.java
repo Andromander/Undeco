@@ -1,114 +1,185 @@
 package com.androsa.undeco;
 
-import com.androsa.ornamental.registry.helper.RegistryHelper;
+import com.androsa.ornamental.blocks.*;
+import com.androsa.ornamental.builder.OrnamentBuilder;
+import com.androsa.ornamental.registry.helper.MasterRegistryHelper;
+import com.androsa.undeco.block.*;
 import com.androsa.undeco.data.UDBlockTags;
 import com.androsa.undeco.data.UDItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
+import org.apache.commons.compress.utils.Lists;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class UDRegistryHelper extends RegistryHelper {
+public class UDRegistryHelper extends MasterRegistryHelper {
 
     public UDRegistryHelper(DeferredRegister<Block> blockreg, DeferredRegister<Item> itemreg) {
         super(blockreg, itemreg);
     }
 
     @Override
-    protected ArrayList<List<RegistryObject<? extends Block>>> stairBlockTags() {
-        return array(UDBlockTags.STAIRS);
+    protected BlockBehaviour.Properties poleProperties(OrnamentBuilder builder) {
+        BlockBehaviour.Properties props = super.poleProperties(builder);
+
+        if (builder instanceof UDOrnamentBuilder undeco) {
+            if (undeco.canIgnite) props.ignitedByLava();
+        }
+
+        return props;
     }
 
     @Override
-    protected ArrayList<List<RegistryObject<? extends Block>>> stairItemTags() {
-        return array(UDItemTags.STAIRS);
+    protected TagHelper stairTags() {
+        return new TagHelper(
+                array(UDBlockTags.STAIRS),
+                array(UDItemTags.STAIRS));
     }
 
     @Override
-    protected ArrayList<List<RegistryObject<? extends Block>>> slabBlockTags() {
-        return array(UDBlockTags.SLABS);
+    protected TagHelper slabTags() {
+        return new TagHelper(
+                array(UDBlockTags.SLABS),
+                array(UDItemTags.SLABS));
     }
 
     @Override
-    protected ArrayList<List<RegistryObject<? extends Block>>> slabItemTags() {
-        return array(UDItemTags.SLABS);
+    protected TagHelper fenceTags() {
+        return new TagHelper(
+                array(UDBlockTags.FENCES),
+                array(UDItemTags.FENCES));
     }
 
     @Override
-    protected ArrayList<List<RegistryObject<? extends Block>>> fenceBlockTags() {
-        return array(UDBlockTags.FENCES);
+    protected TagHelper trapdoorTags() {
+        return new TagHelper(
+                array(UDBlockTags.TRAPDOORS),
+                array(UDItemTags.TRAPDOORS));
     }
 
     @Override
-    protected ArrayList<List<RegistryObject<? extends Block>>> fenceItemTags() {
-        return array(UDItemTags.FENCES);
+    protected TagHelper fencegateTags() {
+        return new TagHelper(
+                array(UDBlockTags.FENCE_GATES),
+                array(UDItemTags.FENCE_GATES));
     }
 
     @Override
-    protected ArrayList<List<RegistryObject<? extends Block>>> trapdoorBlockTags() {
-        return array(UDBlockTags.TRAPDOORS);
+    protected TagHelper doorTags() {
+        return new TagHelper(
+                array(UDBlockTags.DOORS),
+                array(UDItemTags.DOORS));
     }
 
     @Override
-    protected ArrayList<List<RegistryObject<? extends Block>>> fencegateBlockTags() {
-        return array(UDBlockTags.FENCE_GATES);
+    protected TagHelper poleTags() {
+        return new TagHelper(
+                array(UDBlockTags.POLES),
+                array(UDItemTags.POLES));
     }
 
     @Override
-    protected ArrayList<List<RegistryObject<? extends Block>>> fencegateItemTags() {
-        return array(UDItemTags.FENCE_GATES);
+    protected TagHelper beamTags() {
+        return new TagHelper(
+                array(UDBlockTags.BEAMS),
+                array(UDItemTags.BEAMS));
     }
 
     @Override
-    protected ArrayList<List<RegistryObject<? extends Block>>> doorBlockTags() {
-        return array(UDBlockTags.DOORS);
+    protected TagHelper wallTags() {
+        return new TagHelper(
+                array(UDBlockTags.WALLS),
+                array(UDItemTags.WALLS));
     }
 
     @Override
-    protected ArrayList<List<RegistryObject<? extends Block>>> doorItemTags() {
-        return array(UDItemTags.DOORS);
+    protected TagHelper saddledoorTags() {
+        return new TagHelper(
+                array(UDBlockTags.SADDLE_DOORS),
+                array(UDItemTags.SADDLE_DOORS));
     }
 
-    @Override
-    protected ArrayList<List<RegistryObject<? extends Block>>> poleBlockTags() {
-        return array(UDBlockTags.POLES);
+    public RegistryObject<UDOrnamentStair> stairs(UDOrnamentBuilder builder) {
+        return this.stairs(builder, Lists.newArrayList(), Lists.newArrayList());
     }
 
-    @Override
-    protected ArrayList<List<RegistryObject<? extends Block>>> poleItemTags() {
-        return array(UDItemTags.POLES);
+    public RegistryObject<UDOrnamentStair> stairs(UDOrnamentBuilder builder, ArrayList<List<RegistryObject<? extends Block>>> blocktags, ArrayList<List<RegistryObject<? extends Block>>> itemtags) {
+        return super.stairs(builder, blocktags, itemtags, UDOrnamentStair::new);
     }
 
-    @Override
-    protected ArrayList<List<RegistryObject<? extends Block>>> beamBlockTags() {
-        return array(UDBlockTags.BEAMS);
+    public RegistryObject<UDOrnamentSlab> slab(UDOrnamentBuilder builder) {
+        return this.slab(builder, Lists.newArrayList(), Lists.newArrayList());
     }
 
-    @Override
-    protected ArrayList<List<RegistryObject<? extends Block>>> beamItemTags() {
-        return array(UDItemTags.BEAMS);
+    public RegistryObject<UDOrnamentSlab> slab(UDOrnamentBuilder builder, ArrayList<List<RegistryObject<? extends Block>>> blocktags, ArrayList<List<RegistryObject<? extends Block>>> itemtags) {
+        return super.slab(builder, blocktags, itemtags, UDOrnamentSlab::new);
     }
 
-    @Override
-    protected ArrayList<List<RegistryObject<? extends Block>>> wallBlockTags() {
-        return array(UDBlockTags.WALLS);
+    public RegistryObject<UDOrnamentFence> fence(UDOrnamentBuilder builder) {
+        return this.fence(builder, Lists.newArrayList(), Lists.newArrayList());
     }
 
-    @Override
-    protected ArrayList<List<RegistryObject<? extends Block>>> wallItemTags() {
-        return array(UDItemTags.WALLS);
+    public RegistryObject<UDOrnamentFence> fence(UDOrnamentBuilder builder, ArrayList<List<RegistryObject<? extends Block>>> blocktags, ArrayList<List<RegistryObject<? extends Block>>> itemtags) {
+        return super.fence(builder, blocktags, itemtags, UDOrnamentFence::new);
     }
 
-    @Override
-    protected ArrayList<List<RegistryObject<? extends Block>>> saddledoorBlockTags() {
-        return array(UDBlockTags.SADDLE_DOORS);
+    public RegistryObject<UDOrnamentTrapDoor> trapdoor(UDOrnamentBuilder builder) {
+        return this.trapdoor(builder, Lists.newArrayList(), Lists.newArrayList());
     }
 
-    @Override
-    protected ArrayList<List<RegistryObject<? extends Block>>> saddledoorItemTags() {
-        return array(UDItemTags.SADDLE_DOORS);
+    public RegistryObject<UDOrnamentTrapDoor> trapdoor(UDOrnamentBuilder builder, ArrayList<List<RegistryObject<? extends Block>>> blocktags, ArrayList<List<RegistryObject<? extends Block>>> itemtags) {
+        return super.trapdoor(builder, blocktags, itemtags, UDOrnamentTrapDoor::new);
+    }
+
+    public RegistryObject<UDOrnamentFenceGate> fencegate(UDOrnamentBuilder builder) {
+        return this.fencegate(builder, Lists.newArrayList(), Lists.newArrayList());
+    }
+
+    public RegistryObject<UDOrnamentFenceGate> fencegate(UDOrnamentBuilder builder, ArrayList<List<RegistryObject<? extends Block>>> blocktags, ArrayList<List<RegistryObject<? extends Block>>> itemtags) {
+        return super.fencegate(builder, blocktags, itemtags, UDOrnamentFenceGate::new);
+    }
+
+    public RegistryObject<UDOrnamentDoor> door(UDOrnamentBuilder builder) {
+        return this.door(builder, Lists.newArrayList(), Lists.newArrayList());
+    }
+
+    public RegistryObject<UDOrnamentDoor> door(UDOrnamentBuilder builder, ArrayList<List<RegistryObject<? extends Block>>> blocktags, ArrayList<List<RegistryObject<? extends Block>>> itemtags) {
+        return super.door(builder, blocktags, itemtags, UDOrnamentDoor::new);
+    }
+
+    public RegistryObject<UDOrnamentPole> pole(UDOrnamentBuilder builder) {
+        return this.pole(builder, Lists.newArrayList(), Lists.newArrayList());
+    }
+
+    public RegistryObject<UDOrnamentPole> pole(UDOrnamentBuilder builder, ArrayList<List<RegistryObject<? extends Block>>> blocktags, ArrayList<List<RegistryObject<? extends Block>>> itemtags) {
+        return super.pole(builder, blocktags, itemtags, UDOrnamentPole::new);
+    }
+
+    public RegistryObject<UDOrnamentBeam> beam(UDOrnamentBuilder builder) {
+        return this.beam(builder, Lists.newArrayList(), Lists.newArrayList());
+    }
+
+    public RegistryObject<UDOrnamentBeam> beam(UDOrnamentBuilder builder, ArrayList<List<RegistryObject<? extends Block>>> blocktags, ArrayList<List<RegistryObject<? extends Block>>> itemtags) {
+        return super.beam(builder, blocktags, itemtags, UDOrnamentBeam::new);
+    }
+
+    public RegistryObject<UDOrnamentWall> wall(UDOrnamentBuilder builder) {
+        return this.wall(builder, Lists.newArrayList(), Lists.newArrayList());
+    }
+
+    public RegistryObject<UDOrnamentWall> wall(UDOrnamentBuilder builder, ArrayList<List<RegistryObject<? extends Block>>> blocktags, ArrayList<List<RegistryObject<? extends Block>>> itemtags) {
+        return super.wall(builder, blocktags, itemtags, UDOrnamentWall::new);
+    }
+
+    public RegistryObject<UDOrnamentSaddleDoor> saddledoor(UDOrnamentBuilder builder) {
+        return this.saddledoor(builder, Lists.newArrayList(), Lists.newArrayList());
+    }
+
+    public RegistryObject<UDOrnamentSaddleDoor> saddledoor(UDOrnamentBuilder builder, ArrayList<List<RegistryObject<? extends Block>>> blocktags, ArrayList<List<RegistryObject<? extends Block>>> itemtags) {
+        return super.saddledoor(builder, blocktags, itemtags, UDOrnamentSaddleDoor::new);
     }
 }
