@@ -30,5 +30,6 @@
     "recipes": [
       "undeco:jungle_pole"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

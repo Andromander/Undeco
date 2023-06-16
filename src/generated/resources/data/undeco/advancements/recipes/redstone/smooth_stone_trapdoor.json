@@ -30,5 +30,6 @@
     "recipes": [
       "undeco:smooth_stone_trapdoor"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

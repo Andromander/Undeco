@@ -30,5 +30,6 @@
     "recipes": [
       "undeco:red_sandstone_pole"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

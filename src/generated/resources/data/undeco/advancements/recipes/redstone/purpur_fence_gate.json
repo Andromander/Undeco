@@ -30,5 +30,6 @@
     "recipes": [
       "undeco:purpur_fence_gate"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

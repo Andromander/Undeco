@@ -30,5 +30,6 @@
     "recipes": [
       "undeco:tuff_wall"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

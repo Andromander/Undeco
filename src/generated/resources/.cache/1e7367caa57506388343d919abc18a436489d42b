@@ -1,4 +1,4 @@
-// 1.19.4	2023-04-23T20:17:35.1340022	Tags for minecraft:item mod id undeco
+// 1.20	2023-06-16T22:48:41.8125284	Tags for minecraft:item mod id undeco
 744ac40dc2217a05771e7057da942af3507c92fe data/forge/tags/items/fences.json
 70f02039c9cde47117f58187bf81afaa33cb3a34 data/forge/tags/items/fences/wooden.json
 2d67326e97d7ca2877af2ed4a07bc09cff08c644 data/forge/tags/items/fence_gates.json
@@ -8,6 +8,7 @@
 2d67326e97d7ca2877af2ed4a07bc09cff08c644 data/minecraft/tags/items/fence_gates.json
 931113ddd768a63a5e0a993b9d290ca78e8cb2c9 data/minecraft/tags/items/slabs.json
 1f96b71c30ad9703bb5b098a29f2533e63f562e2 data/minecraft/tags/items/stairs.json
+918ba2eb5a2f9ed4f6d4443c50add7c27cbdf096 data/minecraft/tags/items/trapdoors.json
 08f9d30ec1e491c2d98093dfa188551b8991566a data/minecraft/tags/items/walls.json
 2fab3652eb1191287fe9a462b7b2fa8299a5c620 data/minecraft/tags/items/wooden_doors.json
 70f02039c9cde47117f58187bf81afaa33cb3a34 data/minecraft/tags/items/wooden_fences.json

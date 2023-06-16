@@ -30,5 +30,6 @@
     "recipes": [
       "undeco:polished_blackstone_door"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

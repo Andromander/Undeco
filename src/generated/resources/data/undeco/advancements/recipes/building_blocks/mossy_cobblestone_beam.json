@@ -30,5 +30,6 @@
     "recipes": [
       "undeco:mossy_cobblestone_beam"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

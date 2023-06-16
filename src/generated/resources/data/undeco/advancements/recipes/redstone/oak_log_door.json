@@ -30,5 +30,6 @@
     "recipes": [
       "undeco:oak_log_door"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

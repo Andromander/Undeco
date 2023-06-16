@@ -30,5 +30,6 @@
     "recipes": [
       "undeco:warped_stem_beam"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

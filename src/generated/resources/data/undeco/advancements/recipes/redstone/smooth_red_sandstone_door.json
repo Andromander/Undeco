@@ -30,5 +30,6 @@
     "recipes": [
       "undeco:smooth_red_sandstone_door"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

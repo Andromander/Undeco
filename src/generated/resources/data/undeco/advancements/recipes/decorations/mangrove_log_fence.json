@@ -30,5 +30,6 @@
     "recipes": [
       "undeco:mangrove_log_fence"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }
