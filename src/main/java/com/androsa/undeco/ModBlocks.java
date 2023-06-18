@@ -181,6 +181,7 @@ public class ModBlocks {
     public static final RegistryObject<UDOrnamentPole> birch_pole = HELPER.pole(UDBuilders.BIRCH_PLANKS);
     public static final RegistryObject<UDOrnamentPole> jungle_pole = HELPER.pole(UDBuilders.JUNGLE_PLANKS);
     public static final RegistryObject<UDOrnamentPole> acacia_pole = HELPER.pole(UDBuilders.ACACIA_PLANKS);
+    public static final RegistryObject<UDOrnamentPole> cherry_pole = HELPER.pole(UDBuilders.CHERRY_PLANKS);
     public static final RegistryObject<UDOrnamentPole> dark_oak_pole = HELPER.pole(UDBuilders.DARK_OAK_PLANKS);
     public static final RegistryObject<UDOrnamentPole> mangrove_pole = HELPER.pole(UDBuilders.MANGROVE_PLANKS);
     public static final RegistryObject<UDOrnamentPole> crimson_pole = HELPER.pole(UDBuilders.CRIMSON_PLANKS);
@@ -224,6 +225,7 @@ public class ModBlocks {
     public static final RegistryObject<UDOrnamentBeam> birch_beam = HELPER.beam(UDBuilders.BIRCH_PLANKS);
     public static final RegistryObject<UDOrnamentBeam> jungle_beam = HELPER.beam(UDBuilders.JUNGLE_PLANKS);
     public static final RegistryObject<UDOrnamentBeam> acacia_beam = HELPER.beam(UDBuilders.ACACIA_PLANKS);
+    public static final RegistryObject<UDOrnamentBeam> cherry_beam = HELPER.beam(UDBuilders.CHERRY_PLANKS);
     public static final RegistryObject<UDOrnamentBeam> dark_oak_beam = HELPER.beam(UDBuilders.DARK_OAK_PLANKS);
     public static final RegistryObject<UDOrnamentBeam> mangrove_beam = HELPER.beam(UDBuilders.MANGROVE_PLANKS);
     public static final RegistryObject<UDOrnamentBeam> crimson_beam = HELPER.beam(UDBuilders.CRIMSON_PLANKS);
@@ -267,6 +269,7 @@ public class ModBlocks {
 	public static final RegistryObject<UDOrnamentWall> birch_wall = HELPER.wall(UDBuilders.BIRCH_PLANKS);
 	public static final RegistryObject<UDOrnamentWall> jungle_wall = HELPER.wall(UDBuilders.JUNGLE_PLANKS);
 	public static final RegistryObject<UDOrnamentWall> acacia_wall = HELPER.wall(UDBuilders.ACACIA_PLANKS);
+    public static final RegistryObject<UDOrnamentWall> cherry_wall = HELPER.wall(UDBuilders.CHERRY_PLANKS);
 	public static final RegistryObject<UDOrnamentWall> dark_oak_wall = HELPER.wall(UDBuilders.DARK_OAK_PLANKS);
     public static final RegistryObject<UDOrnamentWall> mangrove_wall = HELPER.wall(UDBuilders.MANGROVE_PLANKS);
 	public static final RegistryObject<UDOrnamentWall> crimson_wall = HELPER.wall(UDBuilders.CRIMSON_PLANKS);
@@ -298,6 +301,7 @@ public class ModBlocks {
     public static final RegistryObject<UDOrnamentSaddleDoor> birch_saddle_door = HELPER.saddledoor(UDBuilders.BIRCH_PLANKS);
     public static final RegistryObject<UDOrnamentSaddleDoor> jungle_saddle_door = HELPER.saddledoor(UDBuilders.JUNGLE_PLANKS);
     public static final RegistryObject<UDOrnamentSaddleDoor> acacia_saddle_door = HELPER.saddledoor(UDBuilders.ACACIA_PLANKS);
+    public static final RegistryObject<UDOrnamentSaddleDoor> cherry_saddle_door = HELPER.saddledoor(UDBuilders.CHERRY_PLANKS);
     public static final RegistryObject<UDOrnamentSaddleDoor> dark_oak_saddle_door = HELPER.saddledoor(UDBuilders.DARK_OAK_PLANKS);
     public static final RegistryObject<UDOrnamentSaddleDoor> mangrove_saddle_door = HELPER.saddledoor(UDBuilders.MANGROVE_PLANKS);
     public static final RegistryObject<UDOrnamentSaddleDoor> crimson_saddle_door = HELPER.saddledoor(UDBuilders.CRIMSON_PLANKS);

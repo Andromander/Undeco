@@ -184,6 +184,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemPole(ModBlocks.birch_pole, "birch_planks");
         blockItemPole(ModBlocks.jungle_pole, "jungle_planks");
         blockItemPole(ModBlocks.acacia_pole, "acacia_planks");
+        blockItemPole(ModBlocks.cherry_pole, "cherry_planks");
         blockItemPole(ModBlocks.dark_oak_pole, "dark_oak_planks");
         blockItemPole(ModBlocks.mangrove_pole, "mangrove_planks");
         blockItemPole(ModBlocks.crimson_pole, "crimson_planks");
@@ -227,6 +228,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemBeam(ModBlocks.birch_beam, "birch_planks");
         blockItemBeam(ModBlocks.jungle_beam, "jungle_planks");
         blockItemBeam(ModBlocks.acacia_beam, "acacia_planks");
+        blockItemBeam(ModBlocks.cherry_beam, "cherry_planks");
         blockItemBeam(ModBlocks.dark_oak_beam, "dark_oak_planks");
         blockItemBeam(ModBlocks.mangrove_beam, "mangrove_planks");
         blockItemBeam(ModBlocks.crimson_beam, "crimson_planks");
@@ -270,6 +272,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
 		blockItemWall(ModBlocks.birch_wall, "birch_planks");
 		blockItemWall(ModBlocks.jungle_wall, "jungle_planks");
 		blockItemWall(ModBlocks.acacia_wall, "acacia_planks");
+        blockItemWall(ModBlocks.cherry_wall, "cherry_planks");
 		blockItemWall(ModBlocks.dark_oak_wall, "dark_oak_planks");
 		blockItemWall(ModBlocks.mangrove_wall, "mangrove_planks");
 		blockItemWall(ModBlocks.crimson_wall, "crimson_planks");
@@ -301,6 +304,7 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemSaddleDoorV(ModBlocks.birch_saddle_door, "birch_trapdoor");
         blockItemSaddleDoorV(ModBlocks.jungle_saddle_door, "jungle_trapdoor");
         blockItemSaddleDoorV(ModBlocks.acacia_saddle_door, "acacia_trapdoor");
+        blockItemSaddleDoorV(ModBlocks.cherry_saddle_door, "cherry_trapdoor");
         blockItemSaddleDoorV(ModBlocks.dark_oak_saddle_door, "dark_oak_trapdoor");
         blockItemSaddleDoorV(ModBlocks.mangrove_saddle_door, "mangrove_trapdoor");
         blockItemSaddleDoorV(ModBlocks.crimson_saddle_door, "crimson_trapdoor");

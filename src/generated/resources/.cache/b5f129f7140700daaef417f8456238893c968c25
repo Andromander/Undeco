@@ -1,4 +1,4 @@
-// 1.20	2023-06-16T22:48:41.7970098	Item Models: undeco
+// 1.20	2023-06-18T11:49:29.5964951	Item Models: undeco
 52fdd52cf6bd57603b33905f13c7760025b51970 assets/undeco/models/item/acacia_beam.json
 e1e7986ce44d74e89506449a1573d40e91e3261b assets/undeco/models/item/acacia_log_beam.json
 c0628a9671633bb8b3671c621d5ff7c29ed4f25e assets/undeco/models/item/acacia_log_door.json
@@ -41,6 +41,10 @@ e5546c212827c8a5557dfe0b73d0aea4df2bb954 assets/undeco/models/item/blackstone_fe
 7e6291a0bacb707216957bb4efa18abf161f420c assets/undeco/models/item/blackstone_pole.json
 547e3712c03f0396a3d8a7d2dcfc18b397f93781 assets/undeco/models/item/blackstone_saddle_door.json
 e4b19e366a6a1083789fc1c040a6b06431165f15 assets/undeco/models/item/blackstone_trapdoor.json
+d59080859f808512ce7ae6829e515f56bc6462e8 assets/undeco/models/item/cherry_beam.json
+81e95236d43866f8c97ee3f72d4ae437341d1767 assets/undeco/models/item/cherry_pole.json
+55eacf7f8dbbf40201c75233411a16ee4807e03c assets/undeco/models/item/cherry_saddle_door.json
+7a6a6ce0150bcd01632c296a67be888d193434a6 assets/undeco/models/item/cherry_wall.json
 bc6ddcd958319a2427f8fd1b5b7a86fa6297c6e8 assets/undeco/models/item/cobblestone_beam.json
 0d8b4f94ee32b3cb9435be69ed998471cf991c9a assets/undeco/models/item/cobblestone_door.json
 be730fa9cfb4f7f705166b52a3502433c327a65b assets/undeco/models/item/cobblestone_fence.json

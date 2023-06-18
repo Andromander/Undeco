@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:cherry_planks"
+    },
+    "/": {
+      "tag": "minecraft:walls"
+    }
+  },
+  "pattern": [
+    " / ",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "undeco:cherry_wall"
+  },
+  "show_notification": true
+}

@@ -1,4 +1,4 @@
-// 1.20	2023-06-16T22:48:41.8115279	Tags for minecraft:block mod id undeco
+// 1.20	2023-06-18T11:49:29.6045027	Tags for minecraft:block mod id undeco
 744ac40dc2217a05771e7057da942af3507c92fe data/forge/tags/blocks/fences.json
 70f02039c9cde47117f58187bf81afaa33cb3a34 data/forge/tags/blocks/fences/wooden.json
 2d67326e97d7ca2877af2ed4a07bc09cff08c644 data/forge/tags/blocks/fence_gates.json
@@ -6,17 +6,17 @@
 22bb50f43f224d1fb789c0b2b4ea254600bd3479 data/minecraft/tags/blocks/doors.json
 744ac40dc2217a05771e7057da942af3507c92fe data/minecraft/tags/blocks/fences.json
 2d67326e97d7ca2877af2ed4a07bc09cff08c644 data/minecraft/tags/blocks/fence_gates.json
-2011bf35b2ba4450f34af5aa07200997f13abfe4 data/minecraft/tags/blocks/mineable/axe.json
+a50815bf0c3d137cf798a50c81703ca8a1caf066 data/minecraft/tags/blocks/mineable/axe.json
 844529b77df6843336fe1415bbc919d7c5a5b1ab data/minecraft/tags/blocks/mineable/pickaxe.json
 931113ddd768a63a5e0a993b9d290ca78e8cb2c9 data/minecraft/tags/blocks/slabs.json
 1f96b71c30ad9703bb5b098a29f2533e63f562e2 data/minecraft/tags/blocks/stairs.json
 918ba2eb5a2f9ed4f6d4443c50add7c27cbdf096 data/minecraft/tags/blocks/trapdoors.json
-08f9d30ec1e491c2d98093dfa188551b8991566a data/minecraft/tags/blocks/walls.json
+e9819afa7ed517b7f1e1f9d1aa9ae317a92b399a data/minecraft/tags/blocks/walls.json
 2fab3652eb1191287fe9a462b7b2fa8299a5c620 data/minecraft/tags/blocks/wooden_doors.json
 70f02039c9cde47117f58187bf81afaa33cb3a34 data/minecraft/tags/blocks/wooden_fences.json
 3d0850cc77c5b7b8c719efde66d79cbb02fa9320 data/minecraft/tags/blocks/wooden_slabs.json
 9355b2ce9adea2fea2da06a8ac7f9ae8bc017e3b data/minecraft/tags/blocks/wooden_stairs.json
 506cba560b26ed4ba759610702da11c6df51992b data/minecraft/tags/blocks/wooden_trapdoors.json
-7038c0f977abbe7e6adb69af74c12bbf00367779 data/ornamental/tags/blocks/beams.json
-5beacf924185dbd78afa375145dd759937b7fa8d data/ornamental/tags/blocks/poles.json
-38755952d84d98864d640f502dd5dd6f8fe691c5 data/ornamental/tags/blocks/saddle_doors.json
+2f0b8674e7412ec719579faf4710933664161e0c data/ornamental/tags/blocks/beams.json
+0e2187bac9d9cab8eb4c0a6bb59cc228929a4bb0 data/ornamental/tags/blocks/poles.json
+af4f3d7c244552650d3d33617f942911ca0324c1 data/ornamental/tags/blocks/saddle_doors.json

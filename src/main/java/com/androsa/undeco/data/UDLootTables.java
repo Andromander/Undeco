@@ -202,6 +202,7 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.birch_pole);
             dropSelf(ModBlocks.jungle_pole);
             dropSelf(ModBlocks.acacia_pole);
+            dropSelf(ModBlocks.cherry_pole);
             dropSelf(ModBlocks.dark_oak_pole);
             dropSelf(ModBlocks.mangrove_pole);
             dropSelf(ModBlocks.crimson_pole);
@@ -245,6 +246,7 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.birch_beam);
             dropSelf(ModBlocks.jungle_beam);
             dropSelf(ModBlocks.acacia_beam);
+            dropSelf(ModBlocks.cherry_beam);
             dropSelf(ModBlocks.dark_oak_beam);
             dropSelf(ModBlocks.mangrove_beam);
             dropSelf(ModBlocks.crimson_beam);
@@ -288,6 +290,7 @@ public class UDLootTables extends LootTableProvider {
 			dropSelf(ModBlocks.birch_wall);
 			dropSelf(ModBlocks.jungle_wall);
 			dropSelf(ModBlocks.acacia_wall);
+			dropSelf(ModBlocks.cherry_wall);
 			dropSelf(ModBlocks.dark_oak_wall);
 			dropSelf(ModBlocks.mangrove_wall);
 			dropSelf(ModBlocks.crimson_wall);
@@ -319,6 +322,7 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.birch_saddle_door);
             dropSelf(ModBlocks.jungle_saddle_door);
             dropSelf(ModBlocks.acacia_saddle_door);
+            dropSelf(ModBlocks.cherry_saddle_door);
             dropSelf(ModBlocks.dark_oak_saddle_door);
             dropSelf(ModBlocks.mangrove_saddle_door);
             dropSelf(ModBlocks.crimson_saddle_door);

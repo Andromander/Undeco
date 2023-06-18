@@ -195,6 +195,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         poleBasic(ModBlocks.birch_pole, "birch_planks");
         poleBasic(ModBlocks.jungle_pole, "jungle_planks");
         poleBasic(ModBlocks.acacia_pole, "acacia_planks");
+        poleBasic(ModBlocks.cherry_pole, "cherry_planks");
         poleBasic(ModBlocks.dark_oak_pole, "dark_oak_planks");
         poleBasic(ModBlocks.mangrove_pole, "mangrove_planks");
         poleBasic(ModBlocks.crimson_pole, "crimson_planks");
@@ -238,6 +239,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         beamBasic(ModBlocks.birch_beam, "birch_planks");
         beamBasic(ModBlocks.jungle_beam, "jungle_planks");
         beamBasic(ModBlocks.acacia_beam, "acacia_planks");
+        beamBasic(ModBlocks.cherry_beam, "cherry_planks");
         beamBasic(ModBlocks.dark_oak_beam, "dark_oak_planks");
         beamBasic(ModBlocks.mangrove_beam, "mangrove_planks");
         beamBasic(ModBlocks.crimson_beam, "crimson_planks");
@@ -281,6 +283,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
 		wallBasic(ModBlocks.birch_wall, "birch_planks");
 		wallBasic(ModBlocks.jungle_wall, "jungle_planks");
 		wallBasic(ModBlocks.acacia_wall, "acacia_planks");
+        wallBasic(ModBlocks.cherry_wall, "cherry_planks");
 		wallBasic(ModBlocks.dark_oak_wall, "dark_oak_planks");
 		wallBasic(ModBlocks.mangrove_wall, "mangrove_planks");
 		wallBasic(ModBlocks.crimson_wall, "crimson_planks");
@@ -312,6 +315,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         saddleDoorVanilla(ModBlocks.birch_saddle_door, "birch_trapdoor");
         saddleDoorVanilla(ModBlocks.jungle_saddle_door, "jungle_trapdoor");
         saddleDoorVanilla(ModBlocks.acacia_saddle_door, "acacia_trapdoor");
+        saddleDoorVanilla(ModBlocks.cherry_saddle_door, "cherry_trapdoor");
         saddleDoorVanilla(ModBlocks.dark_oak_saddle_door, "dark_oak_trapdoor");
         saddleDoorVanilla(ModBlocks.mangrove_saddle_door, "mangrove_trapdoor");
         saddleDoorVanilla(ModBlocks.crimson_saddle_door, "crimson_trapdoor");

@@ -1,4 +1,4 @@
-// 1.20	2023-06-16T22:48:41.8000125	Loot Tables
+// 1.20	2023-06-18T11:49:29.5984968	Loot Tables
 035d56dc52a6c17c74ba08662d2398323f4b282c data/undeco/loot_tables/blocks/acacia_beam.json
 32c7bc1bcb3b50ad38648bd9bdb708f8faadf20b data/undeco/loot_tables/blocks/acacia_log_beam.json
 15f4dd00771cdd7b360d3a3d143dec7e0d2fe1a8 data/undeco/loot_tables/blocks/acacia_log_door.json
@@ -41,6 +41,10 @@ c1dd0223cb1795ed634fa06e978ced29025e9ea6 data/undeco/loot_tables/blocks/blacksto
 523726d81df1bcb9e0e08726df9dbbbe5eefecd4 data/undeco/loot_tables/blocks/blackstone_pole.json
 08fff5e2f7f4d4d649574058981446833f669249 data/undeco/loot_tables/blocks/blackstone_saddle_door.json
 bfbd43e43b66a91af681b07fddf58f8195734ec8 data/undeco/loot_tables/blocks/blackstone_trapdoor.json
+8478004ceec6fbf49ce5c780d5de8664981a2698 data/undeco/loot_tables/blocks/cherry_beam.json
+a78101e4f67bc92ce6137ab6123c9c02f742e592 data/undeco/loot_tables/blocks/cherry_pole.json
+3aa17e0cbbe56e291995a4e370d2b6b639491cea data/undeco/loot_tables/blocks/cherry_saddle_door.json
+38dd1274ac715d0c0739f53ba27077a88f7ce638 data/undeco/loot_tables/blocks/cherry_wall.json
 e6915ca69b6dd6db1cb5151b460f9d8b6c9cdf42 data/undeco/loot_tables/blocks/cobblestone_beam.json
 c92ce97ce31550a52034007119866275a920f170 data/undeco/loot_tables/blocks/cobblestone_door.json
 361082d61806e560ab8bad7feeb0a2be1136bf27 data/undeco/loot_tables/blocks/cobblestone_fence.json
