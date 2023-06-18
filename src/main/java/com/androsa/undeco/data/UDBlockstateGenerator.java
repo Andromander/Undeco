@@ -198,6 +198,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         poleBasic(ModBlocks.cherry_pole, "cherry_planks");
         poleBasic(ModBlocks.dark_oak_pole, "dark_oak_planks");
         poleBasic(ModBlocks.mangrove_pole, "mangrove_planks");
+        poleBasic(ModBlocks.bamboo_pole, "bamboo_planks");
         poleBasic(ModBlocks.crimson_pole, "crimson_planks");
         poleBasic(ModBlocks.warped_pole, "warped_planks");
         poleBasic(ModBlocks.granite_pole, "granite");
@@ -242,6 +243,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         beamBasic(ModBlocks.cherry_beam, "cherry_planks");
         beamBasic(ModBlocks.dark_oak_beam, "dark_oak_planks");
         beamBasic(ModBlocks.mangrove_beam, "mangrove_planks");
+        beamBasic(ModBlocks.bamboo_beam, "bamboo_planks");
         beamBasic(ModBlocks.crimson_beam, "crimson_planks");
         beamBasic(ModBlocks.warped_beam, "warped_planks");
         beamBasic(ModBlocks.granite_beam, "granite");
@@ -286,6 +288,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         wallBasic(ModBlocks.cherry_wall, "cherry_planks");
 		wallBasic(ModBlocks.dark_oak_wall, "dark_oak_planks");
 		wallBasic(ModBlocks.mangrove_wall, "mangrove_planks");
+		wallBasic(ModBlocks.bamboo_wall, "bamboo_planks");
 		wallBasic(ModBlocks.crimson_wall, "crimson_planks");
 		wallBasic(ModBlocks.warped_wall, "warped_planks");
 		wallBasic(ModBlocks.polished_granite_wall, "polished_granite");
@@ -318,6 +321,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         saddleDoorVanilla(ModBlocks.cherry_saddle_door, "cherry_trapdoor");
         saddleDoorVanilla(ModBlocks.dark_oak_saddle_door, "dark_oak_trapdoor");
         saddleDoorVanilla(ModBlocks.mangrove_saddle_door, "mangrove_trapdoor");
+        saddleDoorVanilla(ModBlocks.bamboo_saddle_door, "bamboo_trapdoor");
         saddleDoorVanilla(ModBlocks.crimson_saddle_door, "crimson_trapdoor");
         saddleDoorVanilla(ModBlocks.warped_saddle_door, "warped_trapdoor");
         saddleDoorVanilla(ModBlocks.granite_saddle_door, "granite");

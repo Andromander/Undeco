@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo_planks"
+    },
+    "/": {
+      "tag": "minecraft:walls"
+    }
+  },
+  "pattern": [
+    " / ",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "undeco:bamboo_wall"
+  },
+  "show_notification": true
+}

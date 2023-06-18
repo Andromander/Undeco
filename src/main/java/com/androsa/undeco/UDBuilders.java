@@ -23,6 +23,7 @@ public class UDBuilders {
     public static final UDOrnamentBuilder CHERRY_PLANKS = createFirePlankOrnament("cherry", MapColor.TERRACOTTA_WHITE, Blocks.CHERRY_PLANKS, BlockSetType.CHERRY);
     public static final UDOrnamentBuilder DARK_OAK_PLANKS = createFirePlankOrnament("dark_oak", MapColor.COLOR_BROWN, Blocks.DARK_OAK_PLANKS, BlockSetType.DARK_OAK);
     public static final UDOrnamentBuilder MANGROVE_PLANKS = createFirePlankOrnament("mangrove", MapColor.COLOR_RED, Blocks.MANGROVE_PLANKS, BlockSetType.MANGROVE);
+    public static final UDOrnamentBuilder BAMBOO_PLANKS = createFirePlankOrnament("bamboo", MapColor.COLOR_YELLOW, Blocks.BAMBOO_PLANKS, BlockSetType.BAMBOO);
     public static final UDOrnamentBuilder CRIMSON_PLANKS = createPlankOrnament("crimson", MapColor.CRIMSON_STEM, Blocks.CRIMSON_PLANKS, BlockSetType.CRIMSON);
     public static final UDOrnamentBuilder WARPED_PLANKS = createPlankOrnament("warped", MapColor.WARPED_STEM, Blocks.WARPED_PLANKS, BlockSetType.WARPED);
     public static final UDOrnamentBuilder GRANITE = createStoneOrnament("granite", MapColor.DIRT, Blocks.GRANITE);

@@ -187,6 +187,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         pole(consumer, ModBlocks.cherry_pole, Blocks.CHERRY_SLAB);
         pole(consumer, ModBlocks.dark_oak_pole, Blocks.DARK_OAK_SLAB);
         pole(consumer, ModBlocks.mangrove_pole, Blocks.MANGROVE_SLAB);
+        pole(consumer, ModBlocks.bamboo_pole, Blocks.BAMBOO_SLAB);
         pole(consumer, ModBlocks.crimson_pole, Blocks.CRIMSON_SLAB);
         pole(consumer, ModBlocks.warped_pole, Blocks.WARPED_SLAB);
         pole(consumer, ModBlocks.granite_pole, Blocks.GRANITE_SLAB);
@@ -231,6 +232,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         beam(consumer, ModBlocks.cherry_beam, Blocks.CHERRY_SLAB);
         beam(consumer, ModBlocks.dark_oak_beam, Blocks.DARK_OAK_SLAB);
         beam(consumer, ModBlocks.mangrove_beam, Blocks.MANGROVE_SLAB);
+        beam(consumer, ModBlocks.bamboo_beam, Blocks.BAMBOO_SLAB);
         beam(consumer, ModBlocks.crimson_beam, Blocks.CRIMSON_SLAB);
         beam(consumer, ModBlocks.warped_beam, Blocks.WARPED_SLAB);
         beam(consumer, ModBlocks.granite_beam, Blocks.GRANITE_SLAB);
@@ -275,6 +277,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         convertPoleBeam(consumer, ModBlocks.cherry_pole, ModBlocks.cherry_beam);
         convertPoleBeam(consumer, ModBlocks.dark_oak_pole, ModBlocks.dark_oak_beam);
         convertPoleBeam(consumer, ModBlocks.mangrove_pole, ModBlocks.mangrove_beam);
+        convertPoleBeam(consumer, ModBlocks.bamboo_pole, ModBlocks.bamboo_beam);
         convertPoleBeam(consumer, ModBlocks.crimson_pole, ModBlocks.crimson_beam);
         convertPoleBeam(consumer, ModBlocks.warped_pole, ModBlocks.warped_beam);
         convertPoleBeam(consumer, ModBlocks.granite_pole, ModBlocks.granite_beam);
@@ -318,6 +321,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
 		wallOverride(consumer, ModBlocks.cherry_wall, Blocks.CHERRY_PLANKS);
 		wallOverride(consumer, ModBlocks.dark_oak_wall, Blocks.DARK_OAK_PLANKS);
 		wallOverride(consumer, ModBlocks.mangrove_wall, Blocks.MANGROVE_PLANKS);
+		wallOverride(consumer, ModBlocks.bamboo_wall, Blocks.BAMBOO_PLANKS);
 		wallOverride(consumer, ModBlocks.crimson_wall, Blocks.CRIMSON_PLANKS);
 		wallOverride(consumer, ModBlocks.warped_wall, Blocks.WARPED_PLANKS);
 		wall(consumer, ModBlocks.polished_granite_wall, Blocks.POLISHED_GRANITE);
@@ -350,6 +354,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         saddleDoor(consumer, ModBlocks.cherry_saddle_door, Blocks.CHERRY_TRAPDOOR);
         saddleDoor(consumer, ModBlocks.dark_oak_saddle_door, Blocks.DARK_OAK_TRAPDOOR);
         saddleDoor(consumer, ModBlocks.mangrove_saddle_door, Blocks.MANGROVE_TRAPDOOR);
+        saddleDoor(consumer, ModBlocks.bamboo_saddle_door, Blocks.BAMBOO_TRAPDOOR);
         saddleDoor(consumer, ModBlocks.crimson_saddle_door, Blocks.CRIMSON_TRAPDOOR);
         saddleDoor(consumer, ModBlocks.warped_saddle_door, Blocks.WARPED_TRAPDOOR);
         saddleDoor(consumer, ModBlocks.granite_saddle_door, ModBlocks.granite_trapdoor);
@@ -391,8 +396,10 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         saddleDoorFromDoor(consumer, ModBlocks.birch_saddle_door, Blocks.BIRCH_TRAPDOOR);
         saddleDoorFromDoor(consumer, ModBlocks.jungle_saddle_door, Blocks.JUNGLE_TRAPDOOR);
         saddleDoorFromDoor(consumer, ModBlocks.acacia_saddle_door, Blocks.ACACIA_TRAPDOOR);
+        saddleDoorFromDoor(consumer, ModBlocks.cherry_saddle_door, Blocks.CHERRY_TRAPDOOR);
         saddleDoorFromDoor(consumer, ModBlocks.dark_oak_saddle_door, Blocks.DARK_OAK_TRAPDOOR);
         saddleDoorFromDoor(consumer, ModBlocks.mangrove_saddle_door, Blocks.MANGROVE_TRAPDOOR);
+        saddleDoorFromDoor(consumer, ModBlocks.bamboo_saddle_door, Blocks.BAMBOO_TRAPDOOR);
         saddleDoorFromDoor(consumer, ModBlocks.crimson_saddle_door, Blocks.CRIMSON_TRAPDOOR);
         saddleDoorFromDoor(consumer, ModBlocks.warped_saddle_door, Blocks.WARPED_TRAPDOOR);
         saddleDoorFromDoor(consumer, ModBlocks.granite_saddle_door, ModBlocks.granite_door);
