@@ -95,6 +95,7 @@ public class UDBuilders {
                 .stairBaseBlock(() -> base)
                 .blockSetType(blockset)
                 .saddledoorSounds(SoundEvents.IRON_TRAPDOOR_OPEN, SoundEvents.IRON_TRAPDOOR_CLOSE)
+                .instrument(NoteBlockInstrument.BASEDRUM)
                 .addBlockTags(new ArrayList<>(List.of(UDBlockTags.PICKAXE_TOOL))));
     }
 
@@ -107,6 +108,7 @@ public class UDBuilders {
                 .blockSetType(type)
                 .canOpen(false)
                 .saddledoorSounds(SoundEvents.IRON_TRAPDOOR_OPEN, SoundEvents.IRON_TRAPDOOR_CLOSE)
+                .instrument(NoteBlockInstrument.BASEDRUM)
                 .addBlockTags(new ArrayList<>(List.of(UDBlockTags.PICKAXE_TOOL))));
     }
 
@@ -118,6 +120,7 @@ public class UDBuilders {
                 .stairBaseBlock(() -> base)
                 .blockSetType(SoundType.STONE, SoundEvents.IRON_DOOR_CLOSE, SoundEvents.IRON_DOOR_OPEN, SoundEvents.IRON_TRAPDOOR_CLOSE, SoundEvents.IRON_TRAPDOOR_OPEN, SoundEvents.STONE_PRESSURE_PLATE_CLICK_OFF, SoundEvents.STONE_PRESSURE_PLATE_CLICK_ON, SoundEvents.STONE_BUTTON_CLICK_OFF, SoundEvents.STONE_BUTTON_CLICK_ON)
                 .saddledoorSounds(SoundEvents.IRON_TRAPDOOR_OPEN, SoundEvents.IRON_TRAPDOOR_CLOSE)
+                .instrument(NoteBlockInstrument.BASEDRUM)
                 .addBlockTags(new ArrayList<>(List.of(UDBlockTags.PICKAXE_TOOL))));
     }
 
@@ -128,7 +131,9 @@ public class UDBuilders {
                 .stairBaseBlock(() -> base)
                 .blockSetTypeByHand(SoundType.WOOD, SoundEvents.WOODEN_DOOR_CLOSE, SoundEvents.WOODEN_DOOR_OPEN, SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundEvents.WOODEN_TRAPDOOR_OPEN, SoundEvents.WOODEN_PRESSURE_PLATE_CLICK_OFF, SoundEvents.WOODEN_PRESSURE_PLATE_CLICK_ON, SoundEvents.WOODEN_BUTTON_CLICK_OFF, SoundEvents.WOODEN_BUTTON_CLICK_ON)
                 .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300, 100)
-                .addBlockTags(new ArrayList<>(List.of(UDBlockTags.AXE_TOOL))));
+                .instrument(NoteBlockInstrument.BASS)
+                .addBlockTags(new ArrayList<>(List.of(UDBlockTags.AXE_TOOL))))
+                .lavaIgnites();
     }
 
     private static UDOrnamentBuilder createStemOrnament(String name, MapColor color, Block base) {
@@ -140,6 +145,7 @@ public class UDBuilders {
                 .fencegateSounds(SoundEvents.NETHER_WOOD_FENCE_GATE_OPEN, SoundEvents.NETHER_WOOD_FENCE_GATE_CLOSE)
                 .saddledoorSounds(SoundEvents.NETHER_WOOD_TRAPDOOR_OPEN, SoundEvents.NETHER_WOOD_TRAPDOOR_CLOSE)
                 .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300, 100)
+                .instrument(NoteBlockInstrument.BASS)
                 .addBlockTags(new ArrayList<>(List.of(UDBlockTags.AXE_TOOL))));
     }
 
@@ -151,6 +157,7 @@ public class UDBuilders {
                 .stairBaseBlock(() -> base)
                 .blockSetType(SoundType.STONE, SoundEvents.IRON_DOOR_CLOSE, SoundEvents.IRON_DOOR_OPEN, SoundEvents.IRON_TRAPDOOR_CLOSE, SoundEvents.IRON_TRAPDOOR_OPEN, SoundEvents.STONE_PRESSURE_PLATE_CLICK_OFF, SoundEvents.STONE_PRESSURE_PLATE_CLICK_ON, SoundEvents.STONE_BUTTON_CLICK_OFF, SoundEvents.STONE_BUTTON_CLICK_ON)
                 .saddledoorSounds(SoundEvents.IRON_TRAPDOOR_OPEN, SoundEvents.IRON_TRAPDOOR_CLOSE)
+                .instrument(NoteBlockInstrument.BASEDRUM)
                 .addBlockTags(new ArrayList<>(List.of(UDBlockTags.PICKAXE_TOOL))));
     }
 }
