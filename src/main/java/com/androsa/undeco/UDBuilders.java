@@ -37,6 +37,7 @@ public class UDBuilders {
     public static final UDOrnamentBuilder BIRCH_LOG = createLogOrnament("birch_log", MapColor.SAND, Blocks.BIRCH_LOG);
     public static final UDOrnamentBuilder JUNGLE_LOG = createLogOrnament("jungle_log", MapColor.DIRT, Blocks.JUNGLE_LOG);
     public static final UDOrnamentBuilder ACACIA_LOG = createLogOrnament("acacia_log", MapColor.COLOR_ORANGE, Blocks.ACACIA_LOG);
+    public static final UDOrnamentBuilder CHERRY_LOG = createLogOrnament("cherry_log", MapColor.TERRACOTTA_WHITE, SoundType.CHERRY_WOOD, Blocks.CHERRY_LOG);
     public static final UDOrnamentBuilder DARK_OAK_LOG = createLogOrnament("dark_oak_log", MapColor.COLOR_BROWN, Blocks.DARK_OAK_LOG);
     public static final UDOrnamentBuilder MANGROVE_LOG = createLogOrnament("mangrove_log", MapColor.COLOR_RED, Blocks.MANGROVE_LOG);
     public static final UDOrnamentBuilder CRIMSON_STEM = createStemOrnament("crimson_stem", MapColor.CRIMSON_STEM, Blocks.CRIMSON_STEM);
@@ -127,11 +128,15 @@ public class UDBuilders {
     }
 
     private static UDOrnamentBuilder createLogOrnament(String name, MapColor color, Block base) {
+        return createLogOrnament(name, color, SoundType.WOOD, base);
+    }
+
+    private static UDOrnamentBuilder createLogOrnament(String name, MapColor color, SoundType sound, Block base) {
         return new UDOrnamentBuilder(new OrnamentBuilder(name)
                 .mapColor(color)
                 .hardnessAndResistance(2.0F)
                 .stairBaseBlock(() -> base)
-                .blockSetTypeByHand(SoundType.WOOD, SoundEvents.WOODEN_DOOR_CLOSE, SoundEvents.WOODEN_DOOR_OPEN, SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundEvents.WOODEN_TRAPDOOR_OPEN, SoundEvents.WOODEN_PRESSURE_PLATE_CLICK_OFF, SoundEvents.WOODEN_PRESSURE_PLATE_CLICK_ON, SoundEvents.WOODEN_BUTTON_CLICK_OFF, SoundEvents.WOODEN_BUTTON_CLICK_ON)
+                .blockSetTypeByHand(sound, SoundEvents.WOODEN_DOOR_CLOSE, SoundEvents.WOODEN_DOOR_OPEN, SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundEvents.WOODEN_TRAPDOOR_OPEN, SoundEvents.WOODEN_PRESSURE_PLATE_CLICK_OFF, SoundEvents.WOODEN_PRESSURE_PLATE_CLICK_ON, SoundEvents.WOODEN_BUTTON_CLICK_OFF, SoundEvents.WOODEN_BUTTON_CLICK_ON)
                 .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300, 100)
                 .instrument(NoteBlockInstrument.BASS)
                 .addBlockTags(new ArrayList<>(List.of(UDBlockTags.AXE_TOOL))))

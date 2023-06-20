@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "undeco:acacia_log_beam"
+    }
+  ],
+  "result": {
+    "item": "undeco:acacia_log_pole"
+  }
+}

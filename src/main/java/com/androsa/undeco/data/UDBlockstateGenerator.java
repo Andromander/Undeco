@@ -34,6 +34,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         stairsColumn(ModBlocks.birch_log_stairs, "birch_log", "birch_log_top");
         stairsColumn(ModBlocks.jungle_log_stairs, "jungle_log", "jungle_log_top");
         stairsColumn(ModBlocks.acacia_log_stairs, "acacia_log", "acacia_log_top");
+        stairsColumn(ModBlocks.cherry_log_stairs, "cherry_log", "cherry_log_top");
         stairsColumn(ModBlocks.dark_oak_log_stairs, "dark_oak_log", "dark_oak_log_top");
         stairsColumn(ModBlocks.mangrove_log_stairs, "mangrove_log", "mangrove_log_top");
         stairsColumn(ModBlocks.crimson_stem_stairs, "crimson_stem", "crimson_stem_top");
@@ -47,6 +48,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         slabColumn(ModBlocks.birch_log_slab, "birch_log", "birch_log", "birch_log_top");
         slabColumn(ModBlocks.jungle_log_slab, "jungle_log", "jungle_log", "jungle_log_top");
         slabColumn(ModBlocks.acacia_log_slab, "acacia_log", "acacia_log", "acacia_log_top");
+        slabColumn(ModBlocks.cherry_log_slab, "cherry_log", "cherry_log", "cherry_log_top");
         slabColumn(ModBlocks.dark_oak_log_slab, "dark_oak_log", "dark_oak_log", "dark_oak_log_top");
         slabColumn(ModBlocks.mangrove_log_slab, "mangrove_log", "mangrove_log", "mangrove_log_top");
         slabColumn(ModBlocks.crimson_stem_slab, "crimson_stem", "crimson_stem", "crimson_stem_top");
@@ -65,6 +67,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         fenceColumn(ModBlocks.birch_log_fence, "birch_log", "birch_log_top");
         fenceColumn(ModBlocks.jungle_log_fence, "jungle_log", "jungle_log_top");
         fenceColumn(ModBlocks.acacia_log_fence, "acacia_log", "acacia_log_top");
+        fenceColumn(ModBlocks.cherry_log_fence, "cherry_log", "cherry_log_top");
         fenceColumn(ModBlocks.dark_oak_log_fence, "dark_oak_log", "dark_oak_log_top");
         fenceColumn(ModBlocks.mangrove_log_fence, "mangrove_log", "mangrove_log_top");
         fenceColumn(ModBlocks.crimson_stem_fence, "crimson_stem", "crimson_stem_top");
@@ -99,6 +102,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         trapdoorVanilla(ModBlocks.birch_log_trapdoor, "birch_log");
         trapdoorVanilla(ModBlocks.jungle_log_trapdoor, "jungle_log");
         trapdoorVanilla(ModBlocks.acacia_log_trapdoor, "acacia_log");
+        trapdoorVanilla(ModBlocks.cherry_log_trapdoor, "cherry_log");
         trapdoorVanilla(ModBlocks.dark_oak_log_trapdoor, "dark_oak_log");
         trapdoorVanilla(ModBlocks.mangrove_log_trapdoor, "mangrove_log");
         trapdoorVanilla(ModBlocks.crimson_stem_trapdoor, "crimson_stem");
@@ -133,6 +137,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         fenceGateColumn(ModBlocks.birch_log_fence_gate, "birch_log", "birch_log_top");
         fenceGateColumn(ModBlocks.jungle_log_fence_gate, "jungle_log", "jungle_log_top");
         fenceGateColumn(ModBlocks.acacia_log_fence_gate, "acacia_log", "acacia_log_top");
+        fenceGateColumn(ModBlocks.cherry_log_fence_gate, "cherry_log", "cherry_log_top");
         fenceGateColumn(ModBlocks.dark_oak_log_fence_gate, "dark_oak_log", "dark_oak_log_top");
         fenceGateColumn(ModBlocks.mangrove_log_fence_gate, "mangrove_log", "mangrove_log_top");
         fenceGateColumn(ModBlocks.crimson_stem_fence_gate, "crimson_stem", "crimson_stem_top");
@@ -167,6 +172,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         doorBasicVanilla(ModBlocks.birch_log_door, "birch_log");
         doorBasicVanilla(ModBlocks.jungle_log_door, "jungle_log");
         doorBasicVanilla(ModBlocks.acacia_log_door, "acacia_log");
+        doorBasicVanilla(ModBlocks.cherry_log_door, "cherry_log");
         doorBasicVanilla(ModBlocks.dark_oak_log_door, "dark_oak_log");
         doorBasicVanilla(ModBlocks.mangrove_log_door, "mangrove_log");
         doorBasicVanilla(ModBlocks.crimson_stem_door, "crimson_stem");
@@ -212,6 +218,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         poleLog(ModBlocks.birch_log_pole, "birch_log");
         poleLog(ModBlocks.jungle_log_pole, "jungle_log");
         poleLog(ModBlocks.acacia_log_pole, "acacia_log");
+        poleLog(ModBlocks.cherry_log_pole, "cherry_log");
         poleLog(ModBlocks.dark_oak_log_pole, "dark_oak_log");
         poleLog(ModBlocks.mangrove_log_pole, "mangrove_log");
         poleLog(ModBlocks.crimson_stem_pole, "crimson_stem");
@@ -257,6 +264,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         beamLog(ModBlocks.birch_log_beam, "birch_log");
         beamLog(ModBlocks.jungle_log_beam, "jungle_log");
         beamLog(ModBlocks.acacia_log_beam, "acacia_log");
+        beamLog(ModBlocks.cherry_log_beam, "cherry_log");
         beamLog(ModBlocks.dark_oak_log_beam, "dark_oak_log");
         beamLog(ModBlocks.mangrove_log_beam, "mangrove_log");
         beamLog(ModBlocks.crimson_stem_beam, "crimson_stem");
@@ -299,6 +307,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
 		wallColumn(ModBlocks.birch_log_wall, "birch_log", "birch_log_top");
 		wallColumn(ModBlocks.jungle_log_wall, "jungle_log", "jungle_log_top");
 		wallColumn(ModBlocks.acacia_log_wall, "acacia_log", "acacia_log_top");
+		wallColumn(ModBlocks.cherry_log_wall, "cherry_log", "cherry_log_top");
 		wallColumn(ModBlocks.dark_oak_log_wall, "dark_oak_log", "dark_oak_log_top");
 		wallColumn(ModBlocks.mangrove_log_wall, "mangrove_log", "mangrove_log_top");
 		wallColumn(ModBlocks.crimson_stem_wall, "crimson_stem", "crimson_stem_top");
@@ -335,6 +344,7 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         saddleDoorVanilla(ModBlocks.birch_log_saddle_door, "birch_log");
         saddleDoorVanilla(ModBlocks.jungle_log_saddle_door, "jungle_log");
         saddleDoorVanilla(ModBlocks.acacia_log_saddle_door, "acacia_log");
+        saddleDoorVanilla(ModBlocks.cherry_log_saddle_door, "cherry_log");
         saddleDoorVanilla(ModBlocks.dark_oak_log_saddle_door, "dark_oak_log");
         saddleDoorVanilla(ModBlocks.mangrove_log_saddle_door, "mangrove_log");
         saddleDoorVanilla(ModBlocks.crimson_stem_saddle_door, "crimson_stem");
