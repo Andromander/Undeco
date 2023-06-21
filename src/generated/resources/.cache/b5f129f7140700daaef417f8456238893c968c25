@@ -1,4 +1,4 @@
-// 1.20	2023-06-20T11:23:03.6590344	Item Models: undeco
+// 1.20	2023-06-21T17:25:20.1061954	Item Models: undeco
 52fdd52cf6bd57603b33905f13c7760025b51970 assets/undeco/models/item/acacia_beam.json
 e1e7986ce44d74e89506449a1573d40e91e3261b assets/undeco/models/item/acacia_log_beam.json
 c0628a9671633bb8b3671c621d5ff7c29ed4f25e assets/undeco/models/item/acacia_log_door.json
@@ -21,6 +21,16 @@ f58f24d9c672c1a287647bba7a901e0fd18b15de assets/undeco/models/item/andesite_door
 2cf81b91b6a74c3ac63ae42b523d93fe9b20a156 assets/undeco/models/item/andesite_saddle_door.json
 b9654493622b3ba205a0761aac97df279026c6b5 assets/undeco/models/item/andesite_trapdoor.json
 e036dd47453a13e41f4652931a5c16ae20e0fb6e assets/undeco/models/item/bamboo_beam.json
+7ea2280b48061196a107a2ea6d99dfc491abf58b assets/undeco/models/item/bamboo_block_beam.json
+177b70c86f78e176667659990002c06a5173c5d8 assets/undeco/models/item/bamboo_block_door.json
+e7ad7902c02aabb62f8186a086d003020a19028a assets/undeco/models/item/bamboo_block_fence.json
+f3776c70890819b857a13e773be2ed3c42232552 assets/undeco/models/item/bamboo_block_fence_gate.json
+84a7bce12ac60ccb1ff0831907c40bf5737d244e assets/undeco/models/item/bamboo_block_pole.json
+6170b26691a844284fb18f4d642c05e4617f98c1 assets/undeco/models/item/bamboo_block_saddle_door.json
+cb5af01b794e20edcebeb0c0c73e1765d5963b5e assets/undeco/models/item/bamboo_block_slab.json
+a136b07498fb018e9e344d16e9546c9624e9ce43 assets/undeco/models/item/bamboo_block_stairs.json
+04411279fa0cdf335029fe2d91c2a355fbc99a0f assets/undeco/models/item/bamboo_block_trapdoor.json
+d02fe6a0a13f192432a4112d540ea82dcda99ce6 assets/undeco/models/item/bamboo_block_wall.json
 937b008c18a3f7a750791f839136231728e67711 assets/undeco/models/item/bamboo_pole.json
 6141c0de52c565733352b7a5c0d5c085df357152 assets/undeco/models/item/bamboo_saddle_door.json
 c66f44d856241540fa22147d25e9f019e22d08fa assets/undeco/models/item/bamboo_wall.json

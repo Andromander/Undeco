@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo_block"
+    },
+    "/": {
+      "item": "minecraft:bamboo"
+    }
+  },
+  "pattern": [
+    "#/#",
+    "#/#"
+  ],
+  "result": {
+    "count": 3,
+    "item": "undeco:bamboo_block_fence"
+  },
+  "show_notification": true
+}

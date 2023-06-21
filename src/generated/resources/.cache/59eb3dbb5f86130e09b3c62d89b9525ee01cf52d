@@ -1,4 +1,4 @@
-// 1.20	2023-06-20T11:23:03.6610363	Loot Tables
+// 1.20	2023-06-21T17:25:20.1081975	Loot Tables
 035d56dc52a6c17c74ba08662d2398323f4b282c data/undeco/loot_tables/blocks/acacia_beam.json
 32c7bc1bcb3b50ad38648bd9bdb708f8faadf20b data/undeco/loot_tables/blocks/acacia_log_beam.json
 15f4dd00771cdd7b360d3a3d143dec7e0d2fe1a8 data/undeco/loot_tables/blocks/acacia_log_door.json
@@ -21,6 +21,16 @@ cecd907661523381e46089a5ddbe565b45712eb6 data/undeco/loot_tables/blocks/andesite
 ea76e3068db3b09f2e13834bea8695dc0e2e9bdc data/undeco/loot_tables/blocks/andesite_saddle_door.json
 e3671b20f83fbef1b7dab9433035ef4adf3919e5 data/undeco/loot_tables/blocks/andesite_trapdoor.json
 2262e4fa40b9597b6ab0b3e661a864a87dce5c88 data/undeco/loot_tables/blocks/bamboo_beam.json
+a4633a743ebdaa100127219b3bd11c687bed4e00 data/undeco/loot_tables/blocks/bamboo_block_beam.json
+0ea20630aaf0a59b131afd0450086428fb92f8b9 data/undeco/loot_tables/blocks/bamboo_block_door.json
+f06e22b08f26dde46a37ffa90eadf12646e7d9f2 data/undeco/loot_tables/blocks/bamboo_block_fence.json
+0d8d7872f09b89a1ccf1ab4efb1824457dff1b24 data/undeco/loot_tables/blocks/bamboo_block_fence_gate.json
+ea4978ee2658fbf8ab90eb923cdde74e83c1d5b4 data/undeco/loot_tables/blocks/bamboo_block_pole.json
+1e37cb0f2c98f6ee2c29d43a2fdbb69b97c18e59 data/undeco/loot_tables/blocks/bamboo_block_saddle_door.json
+f2244297d1b7d79d2cbfd01a20acbbefae3f9b01 data/undeco/loot_tables/blocks/bamboo_block_slab.json
+77e48dc69f4b598b66963726b16a577e7d064d3a data/undeco/loot_tables/blocks/bamboo_block_stairs.json
+686ac0be590ff385d6ecc63e1d8330b9fd8f8ceb data/undeco/loot_tables/blocks/bamboo_block_trapdoor.json
+5e01dbf7f3f61eea86a05bf230257cb5cfac5871 data/undeco/loot_tables/blocks/bamboo_block_wall.json
 e9d43b327f6c4c9b0c14ec6e6987639266e86d1f data/undeco/loot_tables/blocks/bamboo_pole.json
 9a3dec230b8bc0472ad1f418b389f7d8bb1e84e9 data/undeco/loot_tables/blocks/bamboo_saddle_door.json
 7e027ca395296fb941823db50653d990ec78c5b8 data/undeco/loot_tables/blocks/bamboo_wall.json

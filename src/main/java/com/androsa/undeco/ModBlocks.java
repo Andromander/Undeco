@@ -23,6 +23,7 @@ public class ModBlocks {
     public static final RegistryObject<UDOrnamentStair> cherry_log_stairs = HELPER.stairs(UDBuilders.CHERRY_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
     public static final RegistryObject<UDOrnamentStair> dark_oak_log_stairs = HELPER.stairs(UDBuilders.DARK_OAK_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
     public static final RegistryObject<UDOrnamentStair> mangrove_log_stairs = HELPER.stairs(UDBuilders.MANGROVE_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
+    public static final RegistryObject<UDOrnamentStair> bamboo_block_stairs = HELPER.stairs(UDBuilders.BAMBOO_BLOCK, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
     public static final RegistryObject<UDOrnamentStair> crimson_stem_stairs = HELPER.stairs(UDBuilders.CRIMSON_STEM, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
     public static final RegistryObject<UDOrnamentStair> warped_stem_stairs = HELPER.stairs(UDBuilders.WARPED_STEM, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
     public static final RegistryObject<UDOrnamentStair> smooth_stone_stairs = HELPER.stairs(UDBuilders.SMOOTH_STONE);
@@ -37,6 +38,7 @@ public class ModBlocks {
     public static final RegistryObject<UDOrnamentSlab> cherry_log_slab = HELPER.slab(UDBuilders.CHERRY_LOG, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
     public static final RegistryObject<UDOrnamentSlab> dark_oak_log_slab = HELPER.slab(UDBuilders.DARK_OAK_LOG, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
     public static final RegistryObject<UDOrnamentSlab> mangrove_log_slab = HELPER.slab(UDBuilders.MANGROVE_LOG, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
+    public static final RegistryObject<UDOrnamentSlab> bamboo_block_slab = HELPER.slab(UDBuilders.BAMBOO_BLOCK, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
     public static final RegistryObject<UDOrnamentSlab> crimson_stem_slab = HELPER.slab(UDBuilders.CRIMSON_STEM, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
     public static final RegistryObject<UDOrnamentSlab> warped_stem_slab = HELPER.slab(UDBuilders.WARPED_STEM, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
     public static final RegistryObject<UDOrnamentSlab> cracked_stone_brick_slab = HELPER.slab(UDBuilders.CRACKED_STONE_BRICKS);
@@ -56,6 +58,7 @@ public class ModBlocks {
     public static final RegistryObject<UDOrnamentFence> cherry_log_fence = HELPER.fence(UDBuilders.CHERRY_LOG, HELPER.array(UDBlockTags.WOODEN_FENCE), HELPER.array(UDItemTags.WOODEN_FENCES));
     public static final RegistryObject<UDOrnamentFence> dark_oak_log_fence = HELPER.fence(UDBuilders.DARK_OAK_LOG, HELPER.array(UDBlockTags.WOODEN_FENCE), HELPER.array(UDItemTags.WOODEN_FENCES));
     public static final RegistryObject<UDOrnamentFence> mangrove_log_fence = HELPER.fence(UDBuilders.MANGROVE_LOG, HELPER.array(UDBlockTags.WOODEN_FENCE), HELPER.array(UDItemTags.WOODEN_FENCES));
+    public static final RegistryObject<UDOrnamentFence> bamboo_block_fence = HELPER.fence(UDBuilders.BAMBOO_BLOCK, HELPER.array(UDBlockTags.WOODEN_FENCE), HELPER.array(UDItemTags.WOODEN_FENCES));
     public static final RegistryObject<UDOrnamentFence> crimson_stem_fence = HELPER.fence(UDBuilders.CRIMSON_STEM, HELPER.array(UDBlockTags.WOODEN_FENCE), HELPER.array(UDItemTags.WOODEN_FENCES));
     public static final RegistryObject<UDOrnamentFence> warped_stem_fence = HELPER.fence(UDBuilders.WARPED_STEM, HELPER.array(UDBlockTags.WOODEN_FENCE), HELPER.array(UDItemTags.WOODEN_FENCES));
     public static final RegistryObject<UDOrnamentFence> blackstone_fence = HELPER.fence(UDBuilders.BLACKSTONE);
@@ -91,6 +94,7 @@ public class ModBlocks {
     public static final RegistryObject<UDOrnamentTrapDoor> cherry_log_trapdoor = HELPER.trapdoor(UDBuilders.CHERRY_LOG, HELPER.array(UDBlockTags.WOODEN_TRAPDOOR), HELPER.array(UDItemTags.WOODEN_TRAPDOORS));
     public static final RegistryObject<UDOrnamentTrapDoor> dark_oak_log_trapdoor = HELPER.trapdoor(UDBuilders.DARK_OAK_LOG, HELPER.array(UDBlockTags.WOODEN_TRAPDOOR), HELPER.array(UDItemTags.WOODEN_TRAPDOORS));
     public static final RegistryObject<UDOrnamentTrapDoor> mangrove_log_trapdoor = HELPER.trapdoor(UDBuilders.MANGROVE_LOG, HELPER.array(UDBlockTags.WOODEN_TRAPDOOR), HELPER.array(UDItemTags.WOODEN_TRAPDOORS));
+    public static final RegistryObject<UDOrnamentTrapDoor> bamboo_block_trapdoor = HELPER.trapdoor(UDBuilders.BAMBOO_BLOCK, HELPER.array(UDBlockTags.WOODEN_TRAPDOOR), HELPER.array(UDItemTags.WOODEN_TRAPDOORS));
     public static final RegistryObject<UDOrnamentTrapDoor> crimson_stem_trapdoor = HELPER.trapdoor(UDBuilders.CRIMSON_STEM, HELPER.array(UDBlockTags.WOODEN_TRAPDOOR), HELPER.array(UDItemTags.WOODEN_TRAPDOORS));
     public static final RegistryObject<UDOrnamentTrapDoor> warped_stem_trapdoor = HELPER.trapdoor(UDBuilders.WARPED_STEM, HELPER.array(UDBlockTags.WOODEN_TRAPDOOR), HELPER.array(UDItemTags.WOODEN_TRAPDOORS));
     public static final RegistryObject<UDOrnamentTrapDoor> blackstone_trapdoor = HELPER.trapdoor(UDBuilders.BLACKSTONE);
@@ -126,6 +130,7 @@ public class ModBlocks {
     public static final RegistryObject<UDOrnamentFenceGate> cherry_log_fence_gate = HELPER.fencegate(UDBuilders.CHERRY_LOG, HELPER.array(UDBlockTags.WOODEN_FENCE_GATE), HELPER.array(UDItemTags.WOODEN_FENCE_GATES));
     public static final RegistryObject<UDOrnamentFenceGate> dark_oak_log_fence_gate = HELPER.fencegate(UDBuilders.DARK_OAK_LOG, HELPER.array(UDBlockTags.WOODEN_FENCE_GATE), HELPER.array(UDItemTags.WOODEN_FENCE_GATES));
     public static final RegistryObject<UDOrnamentFenceGate> mangrove_log_fence_gate = HELPER.fencegate(UDBuilders.MANGROVE_LOG, HELPER.array(UDBlockTags.WOODEN_FENCE_GATE), HELPER.array(UDItemTags.WOODEN_FENCE_GATES));
+    public static final RegistryObject<UDOrnamentFenceGate> bamboo_block_fence_gate = HELPER.fencegate(UDBuilders.BAMBOO_BLOCK, HELPER.array(UDBlockTags.WOODEN_FENCE_GATE), HELPER.array(UDItemTags.WOODEN_FENCE_GATES));
     public static final RegistryObject<UDOrnamentFenceGate> crimson_stem_fence_gate = HELPER.fencegate(UDBuilders.CRIMSON_STEM, HELPER.array(UDBlockTags.WOODEN_FENCE_GATE), HELPER.array(UDItemTags.WOODEN_FENCE_GATES));
     public static final RegistryObject<UDOrnamentFenceGate> warped_stem_fence_gate = HELPER.fencegate(UDBuilders.WARPED_STEM, HELPER.array(UDBlockTags.WOODEN_FENCE_GATE), HELPER.array(UDItemTags.WOODEN_FENCE_GATES));
     public static final RegistryObject<UDOrnamentFenceGate> blackstone_fence_gate = HELPER.fencegate(UDBuilders.BLACKSTONE);
@@ -161,6 +166,7 @@ public class ModBlocks {
     public static final RegistryObject<UDOrnamentDoor> cherry_log_door = HELPER.door(UDBuilders.CHERRY_LOG, HELPER.array(UDBlockTags.WOODEN_DOOR), HELPER.array(UDItemTags.WOODEN_DOORS));
     public static final RegistryObject<UDOrnamentDoor> dark_oak_log_door = HELPER.door(UDBuilders.DARK_OAK_LOG, HELPER.array(UDBlockTags.WOODEN_DOOR), HELPER.array(UDItemTags.WOODEN_DOORS));
     public static final RegistryObject<UDOrnamentDoor> mangrove_log_door = HELPER.door(UDBuilders.MANGROVE_LOG, HELPER.array(UDBlockTags.WOODEN_DOOR), HELPER.array(UDItemTags.WOODEN_DOORS));
+    public static final RegistryObject<UDOrnamentDoor> bamboo_block_door = HELPER.door(UDBuilders.BAMBOO_BLOCK, HELPER.array(UDBlockTags.WOODEN_DOOR), HELPER.array(UDItemTags.WOODEN_DOORS));
     public static final RegistryObject<UDOrnamentDoor> crimson_stem_door = HELPER.door(UDBuilders.CRIMSON_STEM, HELPER.array(UDBlockTags.WOODEN_DOOR), HELPER.array(UDItemTags.WOODEN_DOORS));
     public static final RegistryObject<UDOrnamentDoor> warped_stem_door = HELPER.door(UDBuilders.WARPED_STEM, HELPER.array(UDBlockTags.WOODEN_DOOR), HELPER.array(UDItemTags.WOODEN_DOORS));
     public static final RegistryObject<UDOrnamentDoor> blackstone_door = HELPER.door(UDBuilders.BLACKSTONE);
@@ -207,6 +213,7 @@ public class ModBlocks {
     public static final RegistryObject<UDOrnamentPole> cherry_log_pole = HELPER.pole(UDBuilders.CHERRY_LOG);
     public static final RegistryObject<UDOrnamentPole> dark_oak_log_pole = HELPER.pole(UDBuilders.DARK_OAK_LOG);
     public static final RegistryObject<UDOrnamentPole> mangrove_log_pole = HELPER.pole(UDBuilders.MANGROVE_LOG);
+    public static final RegistryObject<UDOrnamentPole> bamboo_block_pole = HELPER.pole(UDBuilders.BAMBOO_BLOCK);
     public static final RegistryObject<UDOrnamentPole> crimson_stem_pole = HELPER.pole(UDBuilders.CRIMSON_STEM);
     public static final RegistryObject<UDOrnamentPole> warped_stem_pole = HELPER.pole(UDBuilders.WARPED_STEM);
     public static final RegistryObject<UDOrnamentPole> blackstone_pole = HELPER.pole(UDBuilders.BLACKSTONE);
@@ -253,6 +260,7 @@ public class ModBlocks {
     public static final RegistryObject<UDOrnamentBeam> cherry_log_beam = HELPER.beam(UDBuilders.CHERRY_LOG);
     public static final RegistryObject<UDOrnamentBeam> dark_oak_log_beam = HELPER.beam(UDBuilders.DARK_OAK_LOG);
     public static final RegistryObject<UDOrnamentBeam> mangrove_log_beam = HELPER.beam(UDBuilders.MANGROVE_LOG);
+    public static final RegistryObject<UDOrnamentBeam> bamboo_block_beam = HELPER.beam(UDBuilders.BAMBOO_BLOCK);
     public static final RegistryObject<UDOrnamentBeam> crimson_stem_beam = HELPER.beam(UDBuilders.CRIMSON_STEM);
     public static final RegistryObject<UDOrnamentBeam> warped_stem_beam = HELPER.beam(UDBuilders.WARPED_STEM);
     public static final RegistryObject<UDOrnamentBeam> blackstone_beam = HELPER.beam(UDBuilders.BLACKSTONE);
@@ -296,6 +304,7 @@ public class ModBlocks {
 	public static final RegistryObject<UDOrnamentWall> cherry_log_wall = HELPER.wall(UDBuilders.CHERRY_LOG);
 	public static final RegistryObject<UDOrnamentWall> dark_oak_log_wall = HELPER.wall(UDBuilders.DARK_OAK_LOG);
     public static final RegistryObject<UDOrnamentWall> mangrove_log_wall = HELPER.wall(UDBuilders.MANGROVE_LOG);
+    public static final RegistryObject<UDOrnamentWall> bamboo_block_wall = HELPER.wall(UDBuilders.BAMBOO_BLOCK);
 	public static final RegistryObject<UDOrnamentWall> crimson_stem_wall = HELPER.wall(UDBuilders.CRIMSON_STEM);
 	public static final RegistryObject<UDOrnamentWall> warped_stem_wall = HELPER.wall(UDBuilders.WARPED_STEM);
 	public static final RegistryObject<UDOrnamentWall> stone_wall = HELPER.wall(UDBuilders.STONE);
@@ -333,6 +342,7 @@ public class ModBlocks {
     public static final RegistryObject<UDOrnamentSaddleDoor> cherry_log_saddle_door = HELPER.saddledoor(UDBuilders.CHERRY_LOG);
     public static final RegistryObject<UDOrnamentSaddleDoor> dark_oak_log_saddle_door = HELPER.saddledoor(UDBuilders.DARK_OAK_LOG);
     public static final RegistryObject<UDOrnamentSaddleDoor> mangrove_log_saddle_door = HELPER.saddledoor(UDBuilders.MANGROVE_LOG);
+    public static final RegistryObject<UDOrnamentSaddleDoor> bamboo_block_saddle_door = HELPER.saddledoor(UDBuilders.BAMBOO_BLOCK);
     public static final RegistryObject<UDOrnamentSaddleDoor> crimson_stem_saddle_door = HELPER.saddledoor(UDBuilders.CRIMSON_STEM);
     public static final RegistryObject<UDOrnamentSaddleDoor> warped_stem_saddle_door = HELPER.saddledoor(UDBuilders.WARPED_STEM);
     public static final RegistryObject<UDOrnamentSaddleDoor> blackstone_saddle_door = HELPER.saddledoor(UDBuilders.BLACKSTONE);

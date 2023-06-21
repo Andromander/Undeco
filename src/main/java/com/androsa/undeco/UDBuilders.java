@@ -40,6 +40,7 @@ public class UDBuilders {
     public static final UDOrnamentBuilder CHERRY_LOG = createLogOrnament("cherry_log", MapColor.TERRACOTTA_WHITE, SoundType.CHERRY_WOOD, Blocks.CHERRY_LOG);
     public static final UDOrnamentBuilder DARK_OAK_LOG = createLogOrnament("dark_oak_log", MapColor.COLOR_BROWN, Blocks.DARK_OAK_LOG);
     public static final UDOrnamentBuilder MANGROVE_LOG = createLogOrnament("mangrove_log", MapColor.COLOR_RED, Blocks.MANGROVE_LOG);
+    public static final UDOrnamentBuilder BAMBOO_BLOCK = createLogOrnament("bamboo_block", MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, Blocks.BAMBOO_BLOCK);
     public static final UDOrnamentBuilder CRIMSON_STEM = createStemOrnament("crimson_stem", MapColor.CRIMSON_STEM, Blocks.CRIMSON_STEM);
     public static final UDOrnamentBuilder WARPED_STEM = createStemOrnament("warped_stem", MapColor.WARPED_STEM, Blocks.WARPED_STEM);
     public static final UDOrnamentBuilder BLACKSTONE = createStoneOrnament("blackstone", MapColor.COLOR_BLACK, Blocks.BLACKSTONE);

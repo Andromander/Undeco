@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "undeco:bamboo_block_pole"
+    }
+  ],
+  "result": {
+    "item": "undeco:bamboo_block_beam"
+  }
+}
