@@ -19,6 +19,9 @@
   "1.19.4": {
     "1.3.5": "Ported to 1.19.4. Requires Ornamental 4.11.56.\n • Added Tuff ornaments.\n • Fixed all stone material ornaments being mineable without a pickaxe."
   },
+  "1.20": {
+    "1.3.6": "Ported to 1.20. Requires Ornamental 4.12.76.\n • Added Cherry Plank ornaments.\n • Added Bamboo Plank ornaments.\n • Added Cherry Log ornaments.\n • Added Bamboo Block ornaments."
+  },
 
   "promos": {
     "1.16.5-latest": "1.1.0",
@@ -30,6 +33,8 @@
     "1.19.3-latest": "1.3.4",
     "1.19.3-recommended": "1.3.4",
     "1.19.4-latest": "1.3.5",
-    "1.19.4-recommended": "1.3.5"
+    "1.19.4-recommended": "1.3.5",
+    "1.20-latest": "1.3.6",
+    "1.20-recommended": "1.3.6"
   }
 }

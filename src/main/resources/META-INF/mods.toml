@@ -1,5 +1,5 @@
 modLoader="javafml" #mandatory
-loaderVersion="[45,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+loaderVersion="[46,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
 license="GNU Lesser General Public v3"
 issueTrackerURL="https://github.com/Andromander/Undeco/issues"
 
@@ -7,7 +7,7 @@ issueTrackerURL="https://github.com/Andromander/Undeco/issues"
 modId="undeco" #mandatory
 version="${file.jarVersion}" #mandatory
 displayName="Ornamental: Unusually Decorative" #mandatory
-updateJSONURL="https://raw.githubusercontent.com/Andromander/Undeco/main/update.json"
+updateJSONURL="https://raw.githubusercontent.com/Andromander/Undeco/1.20.x/update.json"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/ornamental-unusually-decorative"
 authors="Androsa" #optional
 description='''
@@ -22,7 +22,7 @@ See new materials such as Logs, Stone, Planks, and anything else that you might 
     # Does this dependency have to exist - if not, ordering below must be specified
     mandatory=true #mandatory
     # The version range of the dependency
-    versionRange="[45.1,)" #mandatory
+    versionRange="[46,)" #mandatory
     # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
     ordering="NONE"
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
@@ -32,12 +32,12 @@ See new materials such as Logs, Stone, Planks, and anything else that you might 
     modId="minecraft"
     mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
-    versionRange="[1.19.4,)"
+    versionRange="[1.20,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.undeco]]
     modId="ornamental"
     mandatory=true
-    versionRange="[1.19.4-4.11.56,]"
+    versionRange="[1.20-4.12.76,]"
     ordering="NONE"
     side="BOTH"
