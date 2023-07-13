@@ -3,7 +3,7 @@
   "category": "redstone",
   "key": {
     "#": {
-      "item": "minecraft:warped_stem"
+      "item": "undeco:warped_stem_slab"
     }
   },
   "pattern": [

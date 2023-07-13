@@ -3,7 +3,7 @@
   "category": "redstone",
   "key": {
     "#": {
-      "item": "minecraft:birch_log"
+      "item": "undeco:birch_log_slab"
     }
   },
   "pattern": [

@@ -3,7 +3,7 @@
   "category": "redstone",
   "key": {
     "#": {
-      "item": "minecraft:crimson_stem"
+      "item": "undeco:crimson_stem_slab"
     }
   },
   "pattern": [

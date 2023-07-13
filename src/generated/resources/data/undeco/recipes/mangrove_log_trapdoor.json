@@ -3,7 +3,7 @@
   "category": "redstone",
   "key": {
     "#": {
-      "item": "minecraft:mangrove_log"
+      "item": "undeco:mangrove_log_slab"
     }
   },
   "pattern": [
