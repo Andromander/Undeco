@@ -1,6 +1,5 @@
 package com.androsa.undeco;
 
-import com.androsa.ornamental.blocks.*;
 import com.androsa.ornamental.builder.OrnamentBuilder;
 import com.androsa.ornamental.registry.helper.MasterRegistryHelper;
 import com.androsa.undeco.block.*;
@@ -23,8 +22,107 @@ public class UDRegistryHelper extends MasterRegistryHelper {
     }
 
     @Override
+    protected BlockBehaviour.Properties stairProperties(OrnamentBuilder builder) {
+        BlockBehaviour.Properties props = super.stairProperties(builder);
+
+        if (builder instanceof UDOrnamentBuilder undeco) {
+            if (undeco.canIgnite) props.ignitedByLava();
+        }
+
+        return props;
+    }
+
+    @Override
+    protected BlockBehaviour.Properties slabProperties(OrnamentBuilder builder) {
+        BlockBehaviour.Properties props = super.slabProperties(builder);
+
+        if (builder instanceof UDOrnamentBuilder undeco) {
+            if (undeco.canIgnite) props.ignitedByLava();
+        }
+
+        return props;
+    }
+
+    @Override
+    protected BlockBehaviour.Properties fenceProperties(OrnamentBuilder builder) {
+        BlockBehaviour.Properties props = super.fenceProperties(builder);
+
+        if (builder instanceof UDOrnamentBuilder undeco) {
+            if (undeco.canIgnite) props.ignitedByLava();
+        }
+
+        return props;
+    }
+
+    @Override
+    protected BlockBehaviour.Properties trapdoorProperties(OrnamentBuilder builder) {
+        BlockBehaviour.Properties props = super.trapdoorProperties(builder);
+
+        if (builder instanceof UDOrnamentBuilder undeco) {
+            if (undeco.canIgnite) props.ignitedByLava();
+        }
+
+        return props;
+    }
+
+    @Override
+    protected BlockBehaviour.Properties fencegateProperties(OrnamentBuilder builder) {
+        BlockBehaviour.Properties props = super.fencegateProperties(builder);
+
+        if (builder instanceof UDOrnamentBuilder undeco) {
+            if (undeco.canIgnite) props.ignitedByLava();
+        }
+
+        return props;
+    }
+
+    @Override
+    protected BlockBehaviour.Properties doorProperties(OrnamentBuilder builder) {
+        BlockBehaviour.Properties props = super.doorProperties(builder);
+
+        if (builder instanceof UDOrnamentBuilder undeco) {
+            if (undeco.canIgnite) props.ignitedByLava();
+        }
+
+        return props;
+    }
+
+    @Override
     protected BlockBehaviour.Properties poleProperties(OrnamentBuilder builder) {
         BlockBehaviour.Properties props = super.poleProperties(builder);
+
+        if (builder instanceof UDOrnamentBuilder undeco) {
+            if (undeco.canIgnite) props.ignitedByLava();
+        }
+
+        return props;
+    }
+
+    @Override
+    protected BlockBehaviour.Properties beamProperties(OrnamentBuilder builder) {
+        BlockBehaviour.Properties props = super.beamProperties(builder);
+
+        if (builder instanceof UDOrnamentBuilder undeco) {
+            if (undeco.canIgnite) props.ignitedByLava();
+        }
+
+        return props;
+    }
+
+    @Override
+    protected BlockBehaviour.Properties wallProperties(OrnamentBuilder builder) {
+        BlockBehaviour.Properties props = super.wallProperties(builder);
+
+        if (builder instanceof UDOrnamentBuilder undeco) {
+            if (undeco.canIgnite) props.ignitedByLava();
+        }
+
+        return props;
+    }
+
+    @Override
+    protected BlockBehaviour.Properties saddledoorProperties(OrnamentBuilder builder) {
+        BlockBehaviour.Properties props = super.saddledoorProperties(builder);
 
         if (builder instanceof UDOrnamentBuilder undeco) {
             if (undeco.canIgnite) props.ignitedByLava();
