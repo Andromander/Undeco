@@ -21,7 +21,8 @@
   },
   "1.20": {
     "1.3.6": "Ported to 1.20. Requires Ornamental 4.12.76.\n • Added Cherry Plank ornaments.\n • Added Bamboo Plank ornaments.\n • Added Cherry Log ornaments.\n • Added Bamboo Block ornaments.",
-    "1.3.7": "Fixed all ornaments except Pole missing certain properties."
+    "1.3.7": "Fixed all ornaments except Pole missing certain properties.",
+    "1.3.8": "Fixed a crash. Thanks to absolutely nobody for reporting this bug for weeks until another dev reported it to me."
   },
 
   "promos": {
