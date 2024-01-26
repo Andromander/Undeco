@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "minecraft:mangrove_trapdoor"
+              "minecraft:mangrove_door"
             ]
           }
         ]
@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_mangrove",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_mangrove"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:mangrove_saddle_door_from_door"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

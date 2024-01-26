@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_purpur",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_purpur"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:purpur_beam"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

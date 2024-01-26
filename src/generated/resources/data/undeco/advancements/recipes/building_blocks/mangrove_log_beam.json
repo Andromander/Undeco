@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_mangrove_log",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_mangrove_log"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:mangrove_log_beam"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

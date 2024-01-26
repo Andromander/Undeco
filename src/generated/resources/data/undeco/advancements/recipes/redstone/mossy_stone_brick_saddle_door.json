@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_mossy_stone_brick",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_mossy_stone_brick"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:mossy_stone_brick_saddle_door"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

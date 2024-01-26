@@ -11,8 +11,8 @@ public class UDOrnamentSaddleDoor extends OrnamentSaddleDoor {
 
     private final UDOrnamentBuilder undeco;
 
-    public UDOrnamentSaddleDoor(Properties props, UDOrnamentBuilder builder) {
-        super(props, builder);
+    public UDOrnamentSaddleDoor(UDOrnamentBuilder builder, Properties props) {
+        super(builder, props);
         this.undeco = builder;
     }
 

@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_acacia",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_acacia"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:acacia_saddle_door"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

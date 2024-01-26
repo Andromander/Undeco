@@ -11,8 +11,8 @@ public class UDOrnamentTrapDoor extends OrnamentTrapDoor {
 
     private final UDOrnamentBuilder undeco;
 
-    public UDOrnamentTrapDoor(Properties props, UDOrnamentBuilder builder) {
-        super(props, builder);
+    public UDOrnamentTrapDoor(UDOrnamentBuilder builder, Properties props) {
+        super(builder, props);
         this.undeco = builder;
     }
 

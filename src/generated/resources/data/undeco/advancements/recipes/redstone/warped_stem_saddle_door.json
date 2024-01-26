@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_warped_stem",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_warped_stem"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:warped_stem_saddle_door"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

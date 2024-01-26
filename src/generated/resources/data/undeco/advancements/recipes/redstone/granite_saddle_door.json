@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_granite",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_granite"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:granite_saddle_door"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_cracked_stone_brick",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cracked_stone_brick"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:cracked_stone_brick_pole_to_beam"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

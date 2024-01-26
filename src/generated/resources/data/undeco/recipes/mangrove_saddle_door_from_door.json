@@ -3,7 +3,7 @@
   "category": "redstone",
   "ingredients": [
     {
-      "item": "minecraft:mangrove_trapdoor"
+      "item": "minecraft:mangrove_door"
     }
   ],
   "result": {

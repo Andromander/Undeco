@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "minecraft:birch_log"
+              "undeco:birch_log_slab"
             ]
           }
         ]
@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_birch_log",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_birch_log"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:birch_log_door"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

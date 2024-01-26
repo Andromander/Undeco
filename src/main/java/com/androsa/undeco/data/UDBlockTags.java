@@ -8,34 +8,35 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.*;
-import net.minecraftforge.common.Tags;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.common.Tags;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
+import java.util.function.Supplier;
 
 public class UDBlockTags extends OrnamentalBlockTagProvider {
 
-    public static final List<RegistryObject<? extends Block>> BEAMS = Lists.newArrayList();
-    public static final List<RegistryObject<? extends Block>> DOORS = Lists.newArrayList();
-    public static final List<RegistryObject<? extends Block>> FENCES = Lists.newArrayList();
-    public static final List<RegistryObject<? extends Block>> FENCE_GATES = Lists.newArrayList();
-    public static final List<RegistryObject<? extends Block>> POLES = Lists.newArrayList();
-    public static final List<RegistryObject<? extends Block>> SADDLE_DOORS = Lists.newArrayList();
-    public static final List<RegistryObject<? extends Block>> SLABS = Lists.newArrayList();
-    public static final List<RegistryObject<? extends Block>> STAIRS = Lists.newArrayList();
-    public static final List<RegistryObject<? extends Block>> TRAPDOORS = Lists.newArrayList();
-    public static final List<RegistryObject<? extends Block>> WALLS = Lists.newArrayList();
-    public static final List<RegistryObject<? extends Block>> WOODEN_DOOR = Lists.newArrayList();
-    public static final List<RegistryObject<? extends Block>> WOODEN_FENCE = Lists.newArrayList();
-    public static final List<RegistryObject<? extends Block>> WOODEN_SLAB = Lists.newArrayList();
-    public static final List<RegistryObject<? extends Block>> WOODEN_STAIRS = Lists.newArrayList();
-    public static final List<RegistryObject<? extends Block>> WOODEN_TRAPDOOR = Lists.newArrayList();
-    public static final List<RegistryObject<? extends Block>> WOODEN_FENCE_GATE = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> BEAMS = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> DOORS = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> FENCES = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> FENCE_GATES = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> POLES = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> SADDLE_DOORS = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> SLABS = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> STAIRS = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> SUPPORTS = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> TRAPDOORS = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> WALLS = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> WOODEN_DOOR = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> WOODEN_FENCE = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> WOODEN_SLAB = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> WOODEN_STAIRS = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> WOODEN_TRAPDOOR = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> WOODEN_FENCE_GATE = Lists.newArrayList();
 
-    public static final List<RegistryObject<? extends Block>> AXE_TOOL = Lists.newArrayList();
-    public static final List<RegistryObject<? extends Block>> PICKAXE_TOOL = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> AXE_TOOL = Lists.newArrayList();
+    public static final List<Supplier<? extends Block>> PICKAXE_TOOL = Lists.newArrayList();
 
     public UDBlockTags(PackOutput output, CompletableFuture<HolderLookup.Provider> provider, ExistingFileHelper helper) {
         super(output, provider, UnusuallyDecorative.MODID, helper);
@@ -53,6 +54,7 @@ public class UDBlockTags extends OrnamentalBlockTagProvider {
         addToTag(ModTags.Blocks.SADDLE_DOORS, SADDLE_DOORS);
         addToTag(BlockTags.SLABS, SLABS);
         addToTag(BlockTags.STAIRS, STAIRS);
+        addToTag(ModTags.Blocks.SUPPORTS, SUPPORTS);
         addToTag(BlockTags.TRAPDOORS, TRAPDOORS);
         addToTag(BlockTags.WALLS, WALLS);
         addToTag(BlockTags.WOODEN_DOORS, WOODEN_DOOR);

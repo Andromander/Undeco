@@ -1,75 +1,49 @@
-buildscript {
-    repositories {
-        maven { url = 'https://files.minecraftforge.net/maven' }
-        mavenCentral()
-    }
-    dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
-    }
+plugins {
+    id 'java-library'
+    id 'eclipse'
+    id 'idea'
+    id 'maven-publish'
+    id 'net.neoforged.gradle.userdev' version '7.0.61'
 }
-apply plugin: 'net.minecraftforge.gradle'
-// Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
-apply plugin: 'eclipse'
-apply plugin: 'maven-publish'
 
 version = project.mc_version + "-" + project.mod_version
 group = project.mod_group
-archivesBaseName = project.archives_base_name
+
+repositories {
+    mavenLocal()
+    maven {
+        url 'https://maven.tamaized.com/releases/'
+    }
+}
+
+base {
+    archivesName = project.archives_base_name
+}
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17) // Need this here so eclipse task generates correctly.
 
-println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
-minecraft {
-    mappings channel: project.forge_channel, version: project.forge_mappings
-    // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
-    
-    // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+runs {
+    configureEach {
+        // Recommended logging data for a userdev environment
+        systemProperty 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
 
-    // Default run configurations.
-    // These can be tweaked, removed, or duplicated as needed.
-    runs {
-        client {
-            workingDirectory project.file('run')
+        // Recommended logging level for the console
+        systemProperty 'forge.logging.console.level', 'debug'
 
-            // Recommended logging data for a userdev environment
-            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+        modSource project.sourceSets.main
+    }
 
-            // Recommended logging level for the console
-            property 'forge.logging.console.level', 'debug'
+    client {
+        systemProperty 'forge.enabledGameTesetNamespaces', project.mod_id
+    }
 
-            mods {
-                undeco {
-                    source sourceSets.main
-                }
-            }
-        }
+    server {
+        systemProperty 'forge.enabledGameTesetNamespaces', project.mod_id
+    }
 
-        server {
-            workingDirectory project.file('run')
-
-            // Recommended logging data for a userdev environment
-            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
-
-            // Recommended logging level for the console
-            property 'forge.logging.console.level', 'debug'
-
-            mods {
-                undeco {
-                    source sourceSets.main
-                }
-            }
-        }
-
-        data {
-            workingDirectory project.file('run')
-            args '--mod', 'undeco', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/'), '--existing-mod', 'ornamental'
-
-            mods {
-                undeco {
-                    source sourceSets.main
-                }
-            }
-        }
+    data {
+        workingDirectory project.file('run-data')
+        programArguments.addAll '--mod', 'undeco', '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath(), '--existing-mod', 'ornamental'
     }
 }
 
@@ -78,48 +52,38 @@ sourceSets.main.resources {
     srcDir 'src/generated/resources'
 }
 
-repositories {
-    maven {
-        url 'https://maven.tamaized.com/releases/'
-    }
-}
-
 dependencies {
-    implementation fg.deobf("androsa:ornamental:${ornamental_version}")
+    implementation "androsa:ornamental:${ornamental_version}"
 
-    minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
+    implementation "net.neoforged:neoforge:${neo_version}"
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
 jar {
     manifest {
         attributes([
-            "Specification-Title": "undeco",
-            "Specification-Vendor": "Androsa",
-            "Specification-Version": "1", // We are version 1 of ourselves
-            "Implementation-Title": project.name,
-            "Implementation-Version": "${version}",
-            "Implementation-Vendor" :"Androsa",
-            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+                "Specification-Title": "undeco",
+                "Specification-Vendor": "Androsa",
+                "Specification-Version": "1", // We are version 1 of ourselves
+                "Implementation-Title": project.name,
+                "Implementation-Version": "${version}",
+                "Implementation-Vendor" :"Androsa",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
 }
 
-// Example configuration to allow publishing using the maven-publish task
-// This is the preferred method to reobfuscate your jar file
-//jar.finalizedBy('reobfJar')
-// However if you are in a multi-project build, dev time needs unobfed jar files, so you can delay the obfuscation until publishing by doing
-//publish.dependsOn('reobfJar')
+tasks.withType(ProcessResources).configureEach {
+    var replaceProperties = [
+            mc_version          : mc_version, mc_version_range: mc_version_range,
+            neo_version         : neo_version, neo_version_range: neo_version_range,
+            loader_version_range: loader_version_range,
+            mod_id              : mod_id, mod_version: mod_version,
+            ornamental_version  : ornamental_version, ornamental_version_range: ornamental_version_range
+    ]
+    inputs.properties replaceProperties
 
-//publishing {
-//    publications {
-//        mavenJava(MavenPublication) {
-//            artifact jar
-//        }
-//    }
-//    repositories {
-//        maven {
-//            url "file:///${project.projectDir}/mcmodsrepo"
-//        }
-//    }
-//}
+    filesMatching(['META-INF/mods.toml', 'pack.mcmeta']) {
+        expand replaceProperties + [project: project]
+    }
+}

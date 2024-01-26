@@ -3,7 +3,7 @@
   "category": "redstone",
   "ingredients": [
     {
-      "item": "minecraft:warped_trapdoor"
+      "item": "minecraft:warped_slab"
     }
   ],
   "result": {

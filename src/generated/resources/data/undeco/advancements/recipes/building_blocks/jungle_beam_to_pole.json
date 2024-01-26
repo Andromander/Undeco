@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_jungle",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_jungle"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:jungle_beam_to_pole"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

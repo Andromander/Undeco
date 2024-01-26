@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "undeco:dark_prismarine_pole"
+    },
+    {
+      "item": "undeco:dark_prismarine_beam"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "undeco:dark_prismarine_support"
+  }
+}

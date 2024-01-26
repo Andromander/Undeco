@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "minecraft:spruce_trapdoor"
+              "minecraft:spruce_door"
             ]
           }
         ]
@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_spruce",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_spruce"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:spruce_saddle_door_from_door"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

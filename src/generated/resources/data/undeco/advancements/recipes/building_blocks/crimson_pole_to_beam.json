@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_crimson",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_crimson"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:crimson_pole_to_beam"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

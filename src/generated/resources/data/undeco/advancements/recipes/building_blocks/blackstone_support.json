@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blackstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "undeco:blackstone_pole",
+              "undeco:blackstone_beam"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "undeco:blackstone_support"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_blackstone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "undeco:blackstone_support"
+    ]
+  }
+}

@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_diorite",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_diorite"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:diorite_fence"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

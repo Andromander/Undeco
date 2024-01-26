@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_tuff",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_tuff"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:tuff_fence_gate"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

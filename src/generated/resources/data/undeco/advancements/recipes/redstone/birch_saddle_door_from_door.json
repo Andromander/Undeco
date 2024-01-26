@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "minecraft:birch_trapdoor"
+              "minecraft:birch_door"
             ]
           }
         ]
@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_birch",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_birch"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:birch_saddle_door_from_door"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

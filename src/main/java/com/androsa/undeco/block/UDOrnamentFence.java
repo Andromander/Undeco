@@ -11,8 +11,8 @@ public class UDOrnamentFence extends OrnamentFence {
 
     private final UDOrnamentBuilder undeco;
 
-    public UDOrnamentFence(Properties props, UDOrnamentBuilder builder) {
-        super(props, builder);
+    public UDOrnamentFence(UDOrnamentBuilder builder, Properties props) {
+        super(builder, props);
         this.undeco = builder;
     }
 

@@ -5,7 +5,7 @@ import com.androsa.undeco.ModBlocks;
 import com.androsa.undeco.UnusuallyDecorative;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 import java.util.Optional;
 import java.util.function.Supplier;
@@ -366,6 +366,53 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemSaddleDoor(ModBlocks.dark_prismarine_saddle_door, "dark_prismarine");
         blockItemSaddleDoor(ModBlocks.purpur_saddle_door, "purpur");
         blockItemSaddleDoor(ModBlocks.tuff_saddle_door, "tuff");
+
+        blockItemSupport(ModBlocks.oak_support, "oak_planks");
+        blockItemSupport(ModBlocks.spruce_support, "spruce_planks");
+        blockItemSupport(ModBlocks.birch_support, "birch_planks");
+        blockItemSupport(ModBlocks.jungle_support, "jungle_planks");
+        blockItemSupport(ModBlocks.acacia_support, "acacia_planks");
+        blockItemSupport(ModBlocks.cherry_support, "cherry_planks");
+        blockItemSupport(ModBlocks.dark_oak_support, "dark_oak_planks");
+        blockItemSupport(ModBlocks.mangrove_support, "mangrove_planks");
+        blockItemSupport(ModBlocks.bamboo_support, "bamboo_planks");
+        blockItemSupport(ModBlocks.crimson_support, "crimson_planks");
+        blockItemSupport(ModBlocks.warped_support, "warped_planks");
+        blockItemSupport(ModBlocks.granite_support, "granite");
+        blockItemSupport(ModBlocks.polished_granite_support, "polished_granite");
+        blockItemSupport(ModBlocks.diorite_support, "diorite");
+        blockItemSupport(ModBlocks.polished_diorite_support, "polished_diorite");
+        blockItemSupport(ModBlocks.andesite_support, "andesite");
+        blockItemSupport(ModBlocks.polished_andesite_support, "polished_andesite");
+        blockItemSupport(ModBlocks.oak_log_support, "oak_log_top", "oak_log");
+        blockItemSupport(ModBlocks.spruce_log_support, "spruce_log_top", "spruce_log");
+        blockItemSupport(ModBlocks.birch_log_support, "birch_log_top", "birch_log");
+        blockItemSupport(ModBlocks.jungle_log_support, "jungle_log_top", "jungle_log");
+        blockItemSupport(ModBlocks.acacia_log_support, "acacia_log_top", "acacia_log");
+        blockItemSupport(ModBlocks.cherry_log_support, "cherry_log_top", "cherry_log");
+        blockItemSupport(ModBlocks.dark_oak_log_support, "dark_oak_log_top", "dark_oak_log");
+        blockItemSupport(ModBlocks.mangrove_log_support, "mangrove_log_top", "mangrove_log");
+        blockItemSupport(ModBlocks.bamboo_block_support, "bamboo_block_top", "bamboo_block");
+        blockItemSupport(ModBlocks.crimson_stem_support, "crimson_stem_top", "crimson_stem");
+        blockItemSupport(ModBlocks.warped_stem_support, "warped_stem_top", "warped_stem");
+        blockItemSupport(ModBlocks.blackstone_support, "blackstone");
+        blockItemSupport(ModBlocks.polished_blackstone_support, "polished_blackstone");
+        blockItemSupport(ModBlocks.stone_support, "stone");
+        blockItemSupport(ModBlocks.smooth_stone_support, "smooth_stone");
+        blockItemSupport(ModBlocks.cobblestone_support, "cobblestone");
+        blockItemSupport(ModBlocks.mossy_cobblestone_support, "mossy_cobblestone");
+        blockItemSupport(ModBlocks.sandstone_support, "sandstone_bottom", "sandstone_top", "sandstone");
+        blockItemSupport(ModBlocks.smooth_sandstone_support, "sandstone_top");
+        blockItemSupport(ModBlocks.red_sandstone_support, "red_sandstone_bottom", "red_sandstone_top", "red_sandstone");
+        blockItemSupport(ModBlocks.smooth_red_sandstone_support, "red_sandstone_top");
+        blockItemSupport(ModBlocks.stone_brick_support, "stone_bricks");
+        blockItemSupport(ModBlocks.cracked_stone_brick_support, "cracked_stone_bricks");
+        blockItemSupport(ModBlocks.mossy_stone_brick_support, "mossy_stone_bricks");
+        blockItemSupport(ModBlocks.prismarine_support, "prismarine");
+        blockItemSupport(ModBlocks.prismarine_brick_support, "prismarine_bricks");
+        blockItemSupport(ModBlocks.dark_prismarine_support, "dark_prismarine");
+        blockItemSupport(ModBlocks.purpur_support, "purpur_block");
+        blockItemSupport(ModBlocks.tuff_support, "tuff");
     }
 
     public void blockItemFence(Supplier<? extends Block> block, String bottom, String top, String side) {
@@ -378,5 +425,9 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
 
     public void blockItemBeam(Supplier<? extends Block> block, String bottom, String top, String side) {
         blockItemBeam(block, mcLoc("block/" + top), mcLoc("block/" + bottom), mcLoc("block/" + side));
+    }
+
+    public void blockItemSupport(Supplier<? extends Block> block, String bottom, String top, String side) {
+        blockItemSupport(block, mcLoc("block/" + top), mcLoc("block/" + bottom), mcLoc("block/" + side));
     }
 }

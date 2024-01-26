@@ -3,7 +3,7 @@
   "category": "redstone",
   "key": {
     "#": {
-      "item": "minecraft:bamboo_block"
+      "item": "undeco:bamboo_block_slab"
     }
   },
   "pattern": [
@@ -13,6 +13,5 @@
   ],
   "result": {
     "item": "undeco:bamboo_block_door"
-  },
-  "show_notification": true
+  }
 }

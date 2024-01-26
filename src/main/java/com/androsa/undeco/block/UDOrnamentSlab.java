@@ -11,8 +11,8 @@ public class UDOrnamentSlab extends OrnamentSlab {
 
     private final UDOrnamentBuilder undeco;
 
-    public UDOrnamentSlab(Properties props, UDOrnamentBuilder builder) {
-        super(props, builder);
+    public UDOrnamentSlab(UDOrnamentBuilder builder, Properties props) {
+        super(builder, props);
         this.undeco = builder;
     }
 

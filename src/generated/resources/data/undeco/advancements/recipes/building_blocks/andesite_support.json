@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_andesite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "undeco:andesite_pole",
+              "undeco:andesite_beam"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "undeco:andesite_support"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_andesite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "undeco:andesite_support"
+    ]
+  }
+}

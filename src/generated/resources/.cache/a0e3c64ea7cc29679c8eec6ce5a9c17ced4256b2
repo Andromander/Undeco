@@ -1,4 +1,4 @@
-// 1.20	2023-06-21T17:25:20.1167237	Tags for minecraft:block mod id undeco
+// 1.20.4	2024-01-23T14:47:15.0081569	Tags for minecraft:block mod id undeco
 a850c38925a69091436c66f9d2351f43ffe4182f data/forge/tags/blocks/fences.json
 252b2321309e6ec4ed4324252295a41d022320b8 data/forge/tags/blocks/fences/wooden.json
 23c7d22331e33472c421d3d2bd0bcd4df453ea12 data/forge/tags/blocks/fence_gates.json
@@ -6,8 +6,8 @@ a850c38925a69091436c66f9d2351f43ffe4182f data/forge/tags/blocks/fences.json
 5a6c85c73f1ab2ee7b782e5facc137ec712ba4aa data/minecraft/tags/blocks/doors.json
 a850c38925a69091436c66f9d2351f43ffe4182f data/minecraft/tags/blocks/fences.json
 23c7d22331e33472c421d3d2bd0bcd4df453ea12 data/minecraft/tags/blocks/fence_gates.json
-ff08e00b0f67898372daf94b0d12a9e55e3bfb6f data/minecraft/tags/blocks/mineable/axe.json
-844529b77df6843336fe1415bbc919d7c5a5b1ab data/minecraft/tags/blocks/mineable/pickaxe.json
+44998fccaa380274b09ac08577f6a589a6244b52 data/minecraft/tags/blocks/mineable/axe.json
+3937430ec82647f753453a2d4a59b447046ba97e data/minecraft/tags/blocks/mineable/pickaxe.json
 15cf514352d1104c38cd23fe6dee236dabb8970c data/minecraft/tags/blocks/slabs.json
 92bdace5079e4c6c041972fa64dddfebc07bb6f5 data/minecraft/tags/blocks/stairs.json
 2f9b0d56c876e8473c120ab46aeb0fbc24370328 data/minecraft/tags/blocks/trapdoors.json
@@ -20,3 +20,4 @@ fb0902075cfe88699bb3a7998cf02a2318948dca data/minecraft/tags/blocks/wooden_trapd
 d308573b54e666be7ca8527942b27f0105722f82 data/ornamental/tags/blocks/beams.json
 282461a4efde2e1ad4491df05d9b8783375b77bf data/ornamental/tags/blocks/poles.json
 db60628100dc833616b64da1e19f514a4791d47a data/ornamental/tags/blocks/saddle_doors.json
+b8724968b5d71dddcd0b70479c660fd60a147e42 data/ornamental/tags/blocks/supports.json

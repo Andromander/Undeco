@@ -11,8 +11,8 @@ public class UDOrnamentPole extends OrnamentPole {
 
     private final UDOrnamentBuilder undeco;
 
-    public UDOrnamentPole(Properties props, UDOrnamentBuilder builder) {
-        super(props, builder);
+    public UDOrnamentPole(UDOrnamentBuilder builder, Properties props) {
+        super(builder, props);
         this.undeco = builder;
     }
 

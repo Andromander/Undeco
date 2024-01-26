@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_cobblestone",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cobblestone"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:cobblestone_saddle_door_from_door"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

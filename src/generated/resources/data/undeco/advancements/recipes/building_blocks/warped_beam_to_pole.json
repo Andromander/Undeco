@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_warped",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_warped"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:warped_beam_to_pole"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

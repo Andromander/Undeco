@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_spruce_log",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_spruce_log"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:spruce_log_saddle_door"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

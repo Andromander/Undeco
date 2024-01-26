@@ -11,8 +11,8 @@ public class UDOrnamentBeam extends OrnamentBeam {
 
     private final UDOrnamentBuilder undeco;
 
-    public UDOrnamentBeam(Properties props, UDOrnamentBuilder builder) {
-        super(props, builder);
+    public UDOrnamentBeam(UDOrnamentBuilder builder, Properties props) {
+        super(builder, props);
         this.undeco = builder;
     }
 

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_acacia": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "undeco:acacia_pole",
+              "undeco:acacia_beam"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "undeco:acacia_support"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_acacia"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "undeco:acacia_support"
+    ]
+  }
+}

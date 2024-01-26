@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_smooth_stone",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_smooth_stone"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:smooth_stone_stairs"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

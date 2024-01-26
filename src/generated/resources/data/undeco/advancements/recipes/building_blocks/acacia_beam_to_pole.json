@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_acacia",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_acacia"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:acacia_beam_to_pole"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

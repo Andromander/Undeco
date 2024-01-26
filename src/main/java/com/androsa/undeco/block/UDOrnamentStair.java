@@ -11,8 +11,8 @@ public class UDOrnamentStair extends OrnamentStair {
 
     private final UDOrnamentBuilder undeco;
 
-    public UDOrnamentStair(Properties props, UDOrnamentBuilder builder) {
-        super(props, builder);
+    public UDOrnamentStair(UDOrnamentBuilder builder, Properties props) {
+        super(builder, props);
         this.undeco = builder;
     }
 

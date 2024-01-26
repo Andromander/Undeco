@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_andesite",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_andesite"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:andesite_fence_gate"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

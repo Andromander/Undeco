@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "minecraft:dark_oak_trapdoor"
+              "minecraft:dark_oak_door"
             ]
           }
         ]
@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_dark_oak",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_dark_oak"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:dark_oak_saddle_door_from_door"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

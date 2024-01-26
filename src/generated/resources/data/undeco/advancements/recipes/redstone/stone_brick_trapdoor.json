@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_stone_brick",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_stone_brick"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:stone_brick_trapdoor"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

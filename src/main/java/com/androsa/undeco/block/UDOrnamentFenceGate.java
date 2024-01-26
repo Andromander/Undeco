@@ -11,8 +11,8 @@ public class UDOrnamentFenceGate extends OrnamentFenceGate {
 
     private final UDOrnamentBuilder undeco;
 
-    public UDOrnamentFenceGate(Properties props, UDOrnamentBuilder builder) {
-        super(props, builder);
+    public UDOrnamentFenceGate(UDOrnamentBuilder builder, Properties props) {
+        super(builder, props);
         this.undeco = builder;
     }
 

@@ -11,8 +11,8 @@ public class UDOrnamentWall extends OrnamentWall {
 
     private final UDOrnamentBuilder undeco;
 
-    public UDOrnamentWall(Properties props, UDOrnamentBuilder builder) {
-        super(props, builder);
+    public UDOrnamentWall(UDOrnamentBuilder builder, Properties props) {
+        super(builder, props);
         this.undeco = builder;
     }
 

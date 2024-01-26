@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "minecraft:bamboo_block"
+              "undeco:bamboo_block_slab"
             ]
           }
         ]
@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_bamboo_block",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_bamboo_block"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:bamboo_block_door"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

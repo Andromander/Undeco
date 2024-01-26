@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_crimson_stem",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_crimson_stem"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:crimson_stem_fence"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

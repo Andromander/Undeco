@@ -384,6 +384,53 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.dark_prismarine_saddle_door);
             dropSelf(ModBlocks.purpur_saddle_door);
             dropSelf(ModBlocks.tuff_saddle_door);
+
+            dropSelf(ModBlocks.oak_support);
+            dropSelf(ModBlocks.spruce_support);
+            dropSelf(ModBlocks.birch_support);
+            dropSelf(ModBlocks.jungle_support);
+            dropSelf(ModBlocks.acacia_support);
+            dropSelf(ModBlocks.cherry_support);
+            dropSelf(ModBlocks.dark_oak_support);
+            dropSelf(ModBlocks.mangrove_support);
+            dropSelf(ModBlocks.bamboo_support);
+            dropSelf(ModBlocks.crimson_support);
+            dropSelf(ModBlocks.warped_support);
+            dropSelf(ModBlocks.granite_support);
+            dropSelf(ModBlocks.polished_granite_support);
+            dropSelf(ModBlocks.diorite_support);
+            dropSelf(ModBlocks.polished_diorite_support);
+            dropSelf(ModBlocks.andesite_support);
+            dropSelf(ModBlocks.polished_andesite_support);
+            dropSelf(ModBlocks.oak_log_support);
+            dropSelf(ModBlocks.spruce_log_support);
+            dropSelf(ModBlocks.birch_log_support);
+            dropSelf(ModBlocks.jungle_log_support);
+            dropSelf(ModBlocks.acacia_log_support);
+            dropSelf(ModBlocks.cherry_log_support);
+            dropSelf(ModBlocks.dark_oak_log_support);
+            dropSelf(ModBlocks.mangrove_log_support);
+            dropSelf(ModBlocks.bamboo_block_support);
+            dropSelf(ModBlocks.crimson_stem_support);
+            dropSelf(ModBlocks.warped_stem_support);
+            dropSelf(ModBlocks.blackstone_support);
+            dropSelf(ModBlocks.polished_blackstone_support);
+            dropSelf(ModBlocks.stone_support);
+            dropSelf(ModBlocks.smooth_stone_support);
+            dropSelf(ModBlocks.cobblestone_support);
+            dropSelf(ModBlocks.mossy_cobblestone_support);
+            dropSelf(ModBlocks.sandstone_support);
+            dropSelf(ModBlocks.smooth_sandstone_support);
+            dropSelf(ModBlocks.red_sandstone_support);
+            dropSelf(ModBlocks.smooth_red_sandstone_support);
+            dropSelf(ModBlocks.stone_brick_support);
+            dropSelf(ModBlocks.cracked_stone_brick_support);
+            dropSelf(ModBlocks.mossy_stone_brick_support);
+            dropSelf(ModBlocks.prismarine_support);
+            dropSelf(ModBlocks.prismarine_brick_support);
+            dropSelf(ModBlocks.dark_prismarine_support);
+            dropSelf(ModBlocks.purpur_support);
+            dropSelf(ModBlocks.tuff_support);
         }
 
         @Override

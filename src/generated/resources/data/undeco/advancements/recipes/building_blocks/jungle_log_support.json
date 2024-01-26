@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_jungle_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "undeco:jungle_log_pole",
+              "undeco:jungle_log_beam"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "undeco:jungle_log_support"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_jungle_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "undeco:jungle_log_support"
+    ]
+  }
+}

@@ -3,6 +3,7 @@ package com.androsa.undeco.data;
 import com.androsa.ornamental.blocks.OrnamentBeam;
 import com.androsa.ornamental.blocks.OrnamentPole;
 import com.androsa.ornamental.blocks.OrnamentSaddleDoor;
+import com.androsa.ornamental.blocks.OrnamentSupport;
 import com.androsa.ornamental.data.provider.OrnamentalBlockStateProvider;
 import com.androsa.undeco.ModBlocks;
 import com.androsa.undeco.UnusuallyDecorative;
@@ -10,10 +11,10 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.FenceGateBlock;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 import javax.annotation.Nonnull;
+import java.util.function.Supplier;
 
 public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
 
@@ -377,29 +378,80 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         saddleDoorBasic(ModBlocks.dark_prismarine_saddle_door, "dark_prismarine");
         saddleDoorBasic(ModBlocks.purpur_saddle_door, "purpur");
         saddleDoorBasic(ModBlocks.tuff_saddle_door, "tuff");
+
+        supportBasic(ModBlocks.oak_support, "oak_planks");
+        supportBasic(ModBlocks.spruce_support, "spruce_planks");
+        supportBasic(ModBlocks.birch_support, "birch_planks");
+        supportBasic(ModBlocks.jungle_support, "jungle_planks");
+        supportBasic(ModBlocks.acacia_support, "acacia_planks");
+        supportBasic(ModBlocks.cherry_support, "cherry_planks");
+        supportBasic(ModBlocks.dark_oak_support, "dark_oak_planks");
+        supportBasic(ModBlocks.mangrove_support, "mangrove_planks");
+        supportBasic(ModBlocks.bamboo_support, "bamboo_planks");
+        supportBasic(ModBlocks.crimson_support, "crimson_planks");
+        supportBasic(ModBlocks.warped_support, "warped_planks");
+        supportBasic(ModBlocks.granite_support, "granite");
+        supportBasic(ModBlocks.polished_granite_support, "polished_granite");
+        supportBasic(ModBlocks.diorite_support, "diorite");
+        supportBasic(ModBlocks.polished_diorite_support, "polished_diorite");
+        supportBasic(ModBlocks.andesite_support, "andesite");
+        supportBasic(ModBlocks.polished_andesite_support, "polished_andesite");
+        supportColumn(ModBlocks.oak_log_support, "oak_log", "oak_log_top");
+        supportColumn(ModBlocks.spruce_log_support, "spruce_log", "spruce_log_top");
+        supportColumn(ModBlocks.birch_log_support, "birch_log", "birch_log_top");
+        supportColumn(ModBlocks.jungle_log_support, "jungle_log", "jungle_log_top");
+        supportColumn(ModBlocks.acacia_log_support, "acacia_log", "acacia_log_top");
+        supportColumn(ModBlocks.cherry_log_support, "cherry_log", "cherry_log_top");
+        supportColumn(ModBlocks.dark_oak_log_support, "dark_oak_log", "dark_oak_log_top");
+        supportColumn(ModBlocks.mangrove_log_support, "mangrove_log", "mangrove_log_top");
+        supportColumn(ModBlocks.bamboo_block_support, "bamboo_block", "bamboo_block_top");
+        supportColumn(ModBlocks.crimson_stem_support, "crimson_stem", "crimson_stem_top");
+        supportColumn(ModBlocks.warped_stem_support, "warped_stem", "warped_stem_top");
+        supportBasic(ModBlocks.blackstone_support, "blackstone");
+        supportBasic(ModBlocks.polished_blackstone_support, "polished_blackstone");
+        supportBasic(ModBlocks.stone_support, "stone");
+        supportBasic(ModBlocks.smooth_stone_support, "smooth_stone");
+        supportBasic(ModBlocks.cobblestone_support, "cobblestone");
+        supportBasic(ModBlocks.mossy_cobblestone_support, "mossy_cobblestone");
+        supportTopBottom(ModBlocks.sandstone_support, "sandstone", "sandstone_top", "sandstone_bottom");
+        supportBasic(ModBlocks.smooth_sandstone_support, "sandstone_top");
+        supportTopBottom(ModBlocks.red_sandstone_support, "red_sandstone", "red_sandstone_top", "red_sandstone_bottom");
+        supportBasic(ModBlocks.smooth_red_sandstone_support, "red_sandstone_top");
+        supportBasic(ModBlocks.stone_brick_support, "stone_bricks");
+        supportBasic(ModBlocks.cracked_stone_brick_support, "cracked_stone_bricks");
+        supportBasic(ModBlocks.mossy_stone_brick_support, "mossy_stone_bricks");
+        supportBasic(ModBlocks.prismarine_support, "prismarine");
+        supportBasic(ModBlocks.prismarine_brick_support, "prismarine_bricks");
+        supportBasic(ModBlocks.dark_prismarine_support, "dark_prismarine");
+        supportBasic(ModBlocks.purpur_support, "purpur_block");
+        supportBasic(ModBlocks.tuff_support, "tuff");
     }
 
-    public void fenceTopBottom(RegistryObject<? extends FenceBlock> block, String side, String top, String bottom) {
+    public void fenceTopBottom(Supplier<? extends FenceBlock> block, String side, String top, String bottom) {
         fence(block, this.locParent(side), this.locParent(top), this.locParent(bottom), SOLID);
     }
 
-    public void fenceGateTopBottom(RegistryObject<? extends FenceGateBlock> block, String side, String top, String bottom) {
+    public void fenceGateTopBottom(Supplier<? extends FenceGateBlock> block, String side, String top, String bottom) {
         fenceGate(block, locParent(side), locParent(top), locParent(bottom), SOLID);
     }
 
-    public void doorBlockTopBottom(RegistryObject<? extends DoorBlock> block, String side, String top, String bottom) {
+    public void doorBlockTopBottom(Supplier<? extends DoorBlock> block, String side, String top, String bottom) {
         door(block, locParent(side), locParent(bottom), locParent(top), locParent(side), CUTOUT);
     }
 
-    public void poleTopBottom(RegistryObject<? extends OrnamentPole> block, String side, String top, String bottom) {
+    public void poleTopBottom(Supplier<? extends OrnamentPole> block, String side, String top, String bottom) {
         this.pole(block, locParent(side), locParent(top), locParent(bottom), locParent(side), SOLID);
     }
 
-    public void beamTopBottom(RegistryObject<? extends OrnamentBeam> block, String name) {
+    public void beamTopBottom(Supplier<? extends OrnamentBeam> block, String name) {
         beam(block, locParent(name), locParent(name + "_top"), locParent(name + "_bottom"), locParent(name), SOLID);
     }
 
-    public void saddleDoorTopBottom(RegistryObject<? extends OrnamentSaddleDoor> block, String side, String top, String bottom) {
+    public void saddleDoorTopBottom(Supplier<? extends OrnamentSaddleDoor> block, String side, String top, String bottom) {
         saddleDoor(block, locParent(side), locParent(bottom), locParent(top), CUTOUT);
+    }
+
+    public void supportTopBottom(Supplier<? extends OrnamentSupport> block, String side, String top, String bottom) {
+        support(block, locParent(side), locParent(bottom), locParent(top), SOLID);
     }
 }

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crimson": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "undeco:crimson_pole",
+              "undeco:crimson_beam"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "undeco:crimson_support"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_crimson"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "undeco:crimson_support"
+    ]
+  }
+}

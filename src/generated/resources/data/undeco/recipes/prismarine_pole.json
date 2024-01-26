@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "minecraft:prismarine_shard"
+      "item": "minecraft:prismarine_slab"
     }
   },
   "pattern": [
@@ -14,6 +14,5 @@
   "result": {
     "count": 6,
     "item": "undeco:prismarine_pole"
-  },
-  "show_notification": true
+  }
 }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "undeco:diorite_pole"
+    },
+    {
+      "item": "undeco:diorite_beam"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "undeco:diorite_support"
+  }
+}

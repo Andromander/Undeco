@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "minecraft:cherry_log"
+              "undeco:cherry_log_slab"
             ]
           }
         ]
@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_cherry_log",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_cherry_log"
     ]
   ],
   "rewards": {
     "recipes": [
       "undeco:cherry_log_door"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

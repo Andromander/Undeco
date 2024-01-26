@@ -3,7 +3,7 @@
   "category": "redstone",
   "ingredients": [
     {
-      "item": "minecraft:oak_trapdoor"
+      "item": "minecraft:oak_door"
     }
   ],
   "result": {

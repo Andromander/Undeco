@@ -3,7 +3,7 @@
   "category": "redstone",
   "ingredients": [
     {
-      "item": "minecraft:crimson_trapdoor"
+      "item": "minecraft:crimson_door"
     }
   ],
   "result": {

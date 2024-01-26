@@ -12,8 +12,7 @@
     "###"
   ],
   "result": {
-    "count": 8,
+    "count": 4,
     "item": "undeco:smooth_stone_stairs"
-  },
-  "show_notification": true
+  }
 }

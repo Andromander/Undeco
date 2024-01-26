@@ -3,7 +3,7 @@
   "category": "redstone",
   "ingredients": [
     {
-      "item": "minecraft:bamboo_trapdoor"
+      "item": "minecraft:bamboo_door"
     }
   ],
   "result": {

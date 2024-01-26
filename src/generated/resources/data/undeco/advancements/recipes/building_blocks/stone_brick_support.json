@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stone_brick": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "undeco:stone_brick_pole",
+              "undeco:stone_brick_beam"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "undeco:stone_brick_support"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stone_brick"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "undeco:stone_brick_support"
+    ]
+  }
+}

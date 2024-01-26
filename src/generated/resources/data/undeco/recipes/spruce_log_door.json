@@ -3,7 +3,7 @@
   "category": "redstone",
   "key": {
     "#": {
-      "item": "minecraft:spruce_log"
+      "item": "undeco:spruce_log_slab"
     }
   },
   "pattern": [
@@ -13,6 +13,5 @@
   ],
   "result": {
     "item": "undeco:spruce_log_door"
-  },
-  "show_notification": true
+  }
 }
