@@ -3,19 +3,17 @@ package com.androsa.undeco.data;
 import com.androsa.ornamental.data.provider.OrnamentalRecipeProvider;
 import com.androsa.undeco.ModBlocks;
 import com.androsa.undeco.UnusuallyDecorative;
-import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 
 import java.util.Optional;
-import java.util.concurrent.CompletableFuture;
 
 public class UDRecipes extends OrnamentalRecipeProvider {
 
-    public UDRecipes(PackOutput output, CompletableFuture<HolderLookup.Provider> provider) {
-        super(output, provider, UnusuallyDecorative.MODID);
+    public UDRecipes(PackOutput output) {
+        super(output, UnusuallyDecorative.MODID);
     }
 
     @Override

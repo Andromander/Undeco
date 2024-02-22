@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "Undeco Resources",
+    "pack_format": 22,
+    "supported_formats": [
+      0,
+      2147483647
+    ]
+  }
+}
