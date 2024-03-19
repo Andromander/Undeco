@@ -1,14 +1,13 @@
 package com.androsa.undeco;
 
+import com.androsa.ornamental.blocks.*;
 import com.androsa.ornamental.builder.OrnamentBuilder;
 import com.androsa.ornamental.registry.helper.MasterRegistryHelper;
-import com.androsa.undeco.block.*;
 import com.androsa.undeco.data.UDBlockTags;
 import com.androsa.undeco.data.UDItemTags;
 import com.google.common.collect.Lists;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.ArrayList;
@@ -19,127 +18,6 @@ public class UDRegistryHelper extends MasterRegistryHelper {
 
     public UDRegistryHelper(DeferredRegister<Block> blockreg, DeferredRegister<Item> itemreg) {
         super(blockreg, itemreg);
-    }
-
-    @Override
-    protected BlockBehaviour.Properties stairProperties(OrnamentBuilder builder) {
-        BlockBehaviour.Properties props = super.stairProperties(builder);
-
-        if (builder instanceof UDOrnamentBuilder undeco) {
-            if (undeco.canIgnite) props.ignitedByLava();
-        }
-
-        return props;
-    }
-
-    @Override
-    protected BlockBehaviour.Properties slabProperties(OrnamentBuilder builder) {
-        BlockBehaviour.Properties props = super.slabProperties(builder);
-
-        if (builder instanceof UDOrnamentBuilder undeco) {
-            if (undeco.canIgnite) props.ignitedByLava();
-        }
-
-        return props;
-    }
-
-    @Override
-    protected BlockBehaviour.Properties fenceProperties(OrnamentBuilder builder) {
-        BlockBehaviour.Properties props = super.fenceProperties(builder);
-
-        if (builder instanceof UDOrnamentBuilder undeco) {
-            if (undeco.canIgnite) props.ignitedByLava();
-        }
-
-        return props;
-    }
-
-    @Override
-    protected BlockBehaviour.Properties trapdoorProperties(OrnamentBuilder builder) {
-        BlockBehaviour.Properties props = super.trapdoorProperties(builder);
-
-        if (builder instanceof UDOrnamentBuilder undeco) {
-            if (undeco.canIgnite) props.ignitedByLava();
-        }
-
-        return props;
-    }
-
-    @Override
-    protected BlockBehaviour.Properties fencegateProperties(OrnamentBuilder builder) {
-        BlockBehaviour.Properties props = super.fencegateProperties(builder);
-
-        if (builder instanceof UDOrnamentBuilder undeco) {
-            if (undeco.canIgnite) props.ignitedByLava();
-        }
-
-        return props;
-    }
-
-    @Override
-    protected BlockBehaviour.Properties doorProperties(OrnamentBuilder builder) {
-        BlockBehaviour.Properties props = super.doorProperties(builder);
-
-        if (builder instanceof UDOrnamentBuilder undeco) {
-            if (undeco.canIgnite) props.ignitedByLava();
-        }
-
-        return props;
-    }
-
-    @Override
-    protected BlockBehaviour.Properties poleProperties(OrnamentBuilder builder) {
-        BlockBehaviour.Properties props = super.poleProperties(builder);
-
-        if (builder instanceof UDOrnamentBuilder undeco) {
-            if (undeco.canIgnite) props.ignitedByLava();
-        }
-
-        return props;
-    }
-
-    @Override
-    protected BlockBehaviour.Properties beamProperties(OrnamentBuilder builder) {
-        BlockBehaviour.Properties props = super.beamProperties(builder);
-
-        if (builder instanceof UDOrnamentBuilder undeco) {
-            if (undeco.canIgnite) props.ignitedByLava();
-        }
-
-        return props;
-    }
-
-    @Override
-    protected BlockBehaviour.Properties wallProperties(OrnamentBuilder builder) {
-        BlockBehaviour.Properties props = super.wallProperties(builder);
-
-        if (builder instanceof UDOrnamentBuilder undeco) {
-            if (undeco.canIgnite) props.ignitedByLava();
-        }
-
-        return props;
-    }
-
-    @Override
-    protected BlockBehaviour.Properties saddledoorProperties(OrnamentBuilder builder) {
-        BlockBehaviour.Properties props = super.saddledoorProperties(builder);
-
-        if (builder instanceof UDOrnamentBuilder undeco) {
-            if (undeco.canIgnite) props.ignitedByLava();
-        }
-
-        return props;
-    }
-
-    @Override
-    protected BlockBehaviour.Properties supportProperties(OrnamentBuilder builder) {
-        BlockBehaviour.Properties props = super.saddledoorProperties(builder);
-
-        if (builder instanceof UDOrnamentBuilder undeco) {
-            if (undeco.canIgnite) props.ignitedByLava();
-        }
-
-        return props;
     }
 
     @Override
@@ -219,91 +97,91 @@ public class UDRegistryHelper extends MasterRegistryHelper {
                 array(UDItemTags.SUPPORTS));
     }
 
-    public Supplier<UDOrnamentStair> stairs(UDOrnamentBuilder builder) {
+    public Supplier<OrnamentStair> stairs(OrnamentBuilder builder) {
         return this.stairs(builder, Lists.newArrayList(), Lists.newArrayList());
     }
 
-    public Supplier<UDOrnamentStair> stairs(UDOrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
-        return super.stairs(builder, blocktags, itemtags, UDOrnamentStair::new);
+    public Supplier<OrnamentStair> stairs(OrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
+        return super.stairs(builder, blocktags, itemtags, OrnamentStair::new);
     }
 
-    public Supplier<UDOrnamentSlab> slab(UDOrnamentBuilder builder) {
+    public Supplier<OrnamentSlab> slab(OrnamentBuilder builder) {
         return this.slab(builder, Lists.newArrayList(), Lists.newArrayList());
     }
 
-    public Supplier<UDOrnamentSlab> slab(UDOrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
-        return super.slab(builder, blocktags, itemtags, UDOrnamentSlab::new);
+    public Supplier<OrnamentSlab> slab(OrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
+        return super.slab(builder, blocktags, itemtags, OrnamentSlab::new);
     }
 
-    public Supplier<UDOrnamentFence> fence(UDOrnamentBuilder builder) {
+    public Supplier<OrnamentFence> fence(OrnamentBuilder builder) {
         return this.fence(builder, Lists.newArrayList(), Lists.newArrayList());
     }
 
-    public Supplier<UDOrnamentFence> fence(UDOrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
-        return super.fence(builder, blocktags, itemtags, UDOrnamentFence::new);
+    public Supplier<OrnamentFence> fence(OrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
+        return super.fence(builder, blocktags, itemtags, OrnamentFence::new);
     }
 
-    public Supplier<UDOrnamentTrapDoor> trapdoor(UDOrnamentBuilder builder) {
+    public Supplier<OrnamentTrapDoor> trapdoor(OrnamentBuilder builder) {
         return this.trapdoor(builder, Lists.newArrayList(), Lists.newArrayList());
     }
 
-    public Supplier<UDOrnamentTrapDoor> trapdoor(UDOrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
-        return super.trapdoor(builder, blocktags, itemtags, UDOrnamentTrapDoor::new);
+    public Supplier<OrnamentTrapDoor> trapdoor(OrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
+        return super.trapdoor(builder, blocktags, itemtags, OrnamentTrapDoor::new);
     }
 
-    public Supplier<UDOrnamentFenceGate> fencegate(UDOrnamentBuilder builder) {
+    public Supplier<OrnamentFenceGate> fencegate(OrnamentBuilder builder) {
         return this.fencegate(builder, Lists.newArrayList(), Lists.newArrayList());
     }
 
-    public Supplier<UDOrnamentFenceGate> fencegate(UDOrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
-        return super.fencegate(builder, blocktags, itemtags, UDOrnamentFenceGate::new);
+    public Supplier<OrnamentFenceGate> fencegate(OrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
+        return super.fencegate(builder, blocktags, itemtags, OrnamentFenceGate::new);
     }
 
-    public Supplier<UDOrnamentDoor> door(UDOrnamentBuilder builder) {
+    public Supplier<OrnamentDoor> door(OrnamentBuilder builder) {
         return this.door(builder, Lists.newArrayList(), Lists.newArrayList());
     }
 
-    public Supplier<UDOrnamentDoor> door(UDOrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
-        return super.door(builder, blocktags, itemtags, UDOrnamentDoor::new);
+    public Supplier<OrnamentDoor> door(OrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
+        return super.door(builder, blocktags, itemtags, OrnamentDoor::new);
     }
 
-    public Supplier<UDOrnamentPole> pole(UDOrnamentBuilder builder) {
+    public Supplier<OrnamentPole> pole(OrnamentBuilder builder) {
         return this.pole(builder, Lists.newArrayList(), Lists.newArrayList());
     }
 
-    public Supplier<UDOrnamentPole> pole(UDOrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
-        return super.pole(builder, blocktags, itemtags, UDOrnamentPole::new);
+    public Supplier<OrnamentPole> pole(OrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
+        return super.pole(builder, blocktags, itemtags, OrnamentPole::new);
     }
 
-    public Supplier<UDOrnamentBeam> beam(UDOrnamentBuilder builder) {
+    public Supplier<OrnamentBeam> beam(OrnamentBuilder builder) {
         return this.beam(builder, Lists.newArrayList(), Lists.newArrayList());
     }
 
-    public Supplier<UDOrnamentBeam> beam(UDOrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
-        return super.beam(builder, blocktags, itemtags, UDOrnamentBeam::new);
+    public Supplier<OrnamentBeam> beam(OrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
+        return super.beam(builder, blocktags, itemtags, OrnamentBeam::new);
     }
 
-    public Supplier<UDOrnamentWall> wall(UDOrnamentBuilder builder) {
+    public Supplier<OrnamentWall> wall(OrnamentBuilder builder) {
         return this.wall(builder, Lists.newArrayList(), Lists.newArrayList());
     }
 
-    public Supplier<UDOrnamentWall> wall(UDOrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
-        return super.wall(builder, blocktags, itemtags, UDOrnamentWall::new);
+    public Supplier<OrnamentWall> wall(OrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
+        return super.wall(builder, blocktags, itemtags, OrnamentWall::new);
     }
 
-    public Supplier<UDOrnamentSaddleDoor> saddledoor(UDOrnamentBuilder builder) {
+    public Supplier<OrnamentSaddleDoor> saddledoor(OrnamentBuilder builder) {
         return this.saddledoor(builder, Lists.newArrayList(), Lists.newArrayList());
     }
 
-    public Supplier<UDOrnamentSaddleDoor> saddledoor(UDOrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
-        return super.saddledoor(builder, blocktags, itemtags, UDOrnamentSaddleDoor::new);
+    public Supplier<OrnamentSaddleDoor> saddledoor(OrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
+        return super.saddledoor(builder, blocktags, itemtags, OrnamentSaddleDoor::new);
     }
 
-    public Supplier<UDOrnamentSupport> support(UDOrnamentBuilder builder) {
+    public Supplier<OrnamentSupport> support(OrnamentBuilder builder) {
         return this.support(builder, Lists.newArrayList(), Lists.newArrayList());
     }
 
-    public Supplier<UDOrnamentSupport> support(UDOrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
-        return super.support(builder, blocktags, itemtags, UDOrnamentSupport::new);
+    public Supplier<OrnamentSupport> support(OrnamentBuilder builder, ArrayList<List<Supplier<? extends Block>>> blocktags, ArrayList<List<Supplier<? extends Block>>> itemtags) {
+        return super.support(builder, blocktags, itemtags, OrnamentSupport::new);
     }
 }
