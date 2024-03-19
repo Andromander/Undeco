@@ -51,7 +51,6 @@ public class UnusuallyDecorative {
                 PackMetadataSection.TYPE,
                 new PackMetadataSection(
                         Component.literal("Undeco Resources"),
-                        DetectedVersion.BUILT_IN.getPackVersion(PackType.CLIENT_RESOURCES),
-                        Optional.of(new InclusiveRange<>(0, Integer.MAX_VALUE)))));
+                        DetectedVersion.BUILT_IN.getPackVersion(PackType.CLIENT_RESOURCES))));
     }
 }
