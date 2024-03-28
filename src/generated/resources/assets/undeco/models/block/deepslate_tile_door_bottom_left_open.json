@@ -1,0 +1,8 @@
+{
+  "parent": "ornamental:block/util/door_bottom_left_open",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "undeco:block/deepslate_tile_door_bottom",
+    "side": "undeco:block/deepslate_tile_door_bottom"
+  }
+}

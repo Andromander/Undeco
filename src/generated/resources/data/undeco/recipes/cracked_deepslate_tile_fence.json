@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:cracked_deepslate_tiles"
+    },
+    "/": {
+      "item": "undeco:cracked_deepslate_tile_slab"
+    }
+  },
+  "pattern": [
+    "#/#",
+    "#/#"
+  ],
+  "result": {
+    "count": 3,
+    "item": "undeco:cracked_deepslate_tile_fence"
+  }
+}

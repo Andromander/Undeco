@@ -34,6 +34,13 @@
     "undeco:prismarine_brick_trapdoor",
     "undeco:dark_prismarine_trapdoor",
     "undeco:purpur_trapdoor",
-    "undeco:tuff_trapdoor"
+    "undeco:tuff_trapdoor",
+    "undeco:deepslate_trapdoor",
+    "undeco:cobbled_deepslate_trapdoor",
+    "undeco:polished_deepslate_trapdoor",
+    "undeco:deepslate_tile_trapdoor",
+    "undeco:deepslate_brick_trapdoor",
+    "undeco:cracked_deepslate_brick_trapdoor",
+    "undeco:cracked_deepslate_tile_trapdoor"
   ]
 }

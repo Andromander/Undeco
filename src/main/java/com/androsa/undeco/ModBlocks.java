@@ -30,6 +30,9 @@ public class ModBlocks {
     public static final Supplier<OrnamentStair> smooth_stone_stairs = HELPER.stairs(UDBuilders.SMOOTH_STONE);
     public static final Supplier<OrnamentStair> cracked_stone_brick_stairs = HELPER.stairs(UDBuilders.CRACKED_STONE_BRICKS);
     public static final Supplier<OrnamentStair> tuff_stairs = HELPER.stairs(UDBuilders.TUFF);
+    public static final Supplier<OrnamentStair> deepslate_stairs = HELPER.stairs(UDBuilders.DEEPSLATE);
+    public static final Supplier<OrnamentStair> cracked_deepslate_brick_stairs = HELPER.stairs(UDBuilders.CRACKED_DEEPSLATE_BRICK);
+    public static final Supplier<OrnamentStair> cracked_deepslate_tile_stairs = HELPER.stairs(UDBuilders.CRACKED_DEEPSLATE_TILE);
 
     public static final Supplier<OrnamentSlab> oak_log_slab = HELPER.slab(UDBuilders.OAK_LOG, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
     public static final Supplier<OrnamentSlab> spruce_log_slab = HELPER.slab(UDBuilders.SPRUCE_LOG, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
@@ -44,6 +47,9 @@ public class ModBlocks {
     public static final Supplier<OrnamentSlab> warped_stem_slab = HELPER.slab(UDBuilders.WARPED_STEM, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
     public static final Supplier<OrnamentSlab> cracked_stone_brick_slab = HELPER.slab(UDBuilders.CRACKED_STONE_BRICKS);
     public static final Supplier<OrnamentSlab> tuff_slab = HELPER.slab(UDBuilders.TUFF);
+    public static final Supplier<OrnamentSlab> deepslate_slab = HELPER.slab(UDBuilders.DEEPSLATE);
+    public static final Supplier<OrnamentSlab> cracked_deepslate_brick_slab = HELPER.slab(UDBuilders.CRACKED_DEEPSLATE_BRICK);
+    public static final Supplier<OrnamentSlab> cracked_deepslate_tile_slab = HELPER.slab(UDBuilders.CRACKED_DEEPSLATE_TILE);
 
     public static final Supplier<OrnamentFence> granite_fence = HELPER.fence(UDBuilders.GRANITE);
     public static final Supplier<OrnamentFence> polished_granite_fence = HELPER.fence(UDBuilders.POLISHED_GRANITE);
@@ -80,6 +86,13 @@ public class ModBlocks {
     public static final Supplier<OrnamentFence> dark_prismarine_fence = HELPER.fence(UDBuilders.DARK_PRISMARINE);
     public static final Supplier<OrnamentFence> purpur_fence = HELPER.fence(UDBuilders.PURPUR);
     public static final Supplier<OrnamentFence> tuff_fence = HELPER.fence(UDBuilders.TUFF);
+    public static final Supplier<OrnamentFence> deepslate_fence = HELPER.fence(UDBuilders.DEEPSLATE);
+    public static final Supplier<OrnamentFence> cobbled_deepslate_fence = HELPER.fence(UDBuilders.COBBLED_DEEPSLATE);
+    public static final Supplier<OrnamentFence> polished_deepslate_fence = HELPER.fence(UDBuilders.POLISHED_DEEPSLATE);
+    public static final Supplier<OrnamentFence> deepslate_tile_fence = HELPER.fence(UDBuilders.DEEPSLATE_TILE);
+    public static final Supplier<OrnamentFence> deepslate_brick_fence = HELPER.fence(UDBuilders.DEEPSLATE_BRICK);
+    public static final Supplier<OrnamentFence> cracked_deepslate_brick_fence = HELPER.fence(UDBuilders.CRACKED_DEEPSLATE_BRICK);
+    public static final Supplier<OrnamentFence> cracked_deepslate_tile_fence = HELPER.fence(UDBuilders.CRACKED_DEEPSLATE_TILE);
 
     public static final Supplier<OrnamentTrapDoor> granite_trapdoor = HELPER.trapdoor(UDBuilders.GRANITE);
     public static final Supplier<OrnamentTrapDoor> polished_granite_trapdoor = HELPER.trapdoor(UDBuilders.POLISHED_GRANITE);
@@ -116,6 +129,13 @@ public class ModBlocks {
     public static final Supplier<OrnamentTrapDoor> dark_prismarine_trapdoor = HELPER.trapdoor(UDBuilders.DARK_PRISMARINE);
     public static final Supplier<OrnamentTrapDoor> purpur_trapdoor = HELPER.trapdoor(UDBuilders.PURPUR);
     public static final Supplier<OrnamentTrapDoor> tuff_trapdoor = HELPER.trapdoor(UDBuilders.TUFF);
+    public static final Supplier<OrnamentTrapDoor> deepslate_trapdoor = HELPER.trapdoor(UDBuilders.DEEPSLATE);
+    public static final Supplier<OrnamentTrapDoor> cobbled_deepslate_trapdoor = HELPER.trapdoor(UDBuilders.COBBLED_DEEPSLATE);
+    public static final Supplier<OrnamentTrapDoor> polished_deepslate_trapdoor = HELPER.trapdoor(UDBuilders.POLISHED_DEEPSLATE);
+    public static final Supplier<OrnamentTrapDoor> deepslate_tile_trapdoor = HELPER.trapdoor(UDBuilders.DEEPSLATE_TILE);
+    public static final Supplier<OrnamentTrapDoor> deepslate_brick_trapdoor = HELPER.trapdoor(UDBuilders.DEEPSLATE_BRICK);
+    public static final Supplier<OrnamentTrapDoor> cracked_deepslate_brick_trapdoor = HELPER.trapdoor(UDBuilders.CRACKED_DEEPSLATE_BRICK);
+    public static final Supplier<OrnamentTrapDoor> cracked_deepslate_tile_trapdoor = HELPER.trapdoor(UDBuilders.CRACKED_DEEPSLATE_TILE);
 
     public static final Supplier<OrnamentFenceGate> granite_fence_gate = HELPER.fencegate(UDBuilders.GRANITE);
     public static final Supplier<OrnamentFenceGate> polished_granite_fence_gate = HELPER.fencegate(UDBuilders.POLISHED_GRANITE);
@@ -152,6 +172,13 @@ public class ModBlocks {
     public static final Supplier<OrnamentFenceGate> dark_prismarine_fence_gate = HELPER.fencegate(UDBuilders.DARK_PRISMARINE);
     public static final Supplier<OrnamentFenceGate> purpur_fence_gate = HELPER.fencegate(UDBuilders.PURPUR);
     public static final Supplier<OrnamentFenceGate> tuff_fence_gate = HELPER.fencegate(UDBuilders.TUFF);
+    public static final Supplier<OrnamentFenceGate> deepslate_fence_gate = HELPER.fencegate(UDBuilders.DEEPSLATE);
+    public static final Supplier<OrnamentFenceGate> cobbled_deepslate_fence_gate = HELPER.fencegate(UDBuilders.COBBLED_DEEPSLATE);
+    public static final Supplier<OrnamentFenceGate> polished_deepslate_fence_gate = HELPER.fencegate(UDBuilders.POLISHED_DEEPSLATE);
+    public static final Supplier<OrnamentFenceGate> deepslate_tile_fence_gate = HELPER.fencegate(UDBuilders.DEEPSLATE_TILE);
+    public static final Supplier<OrnamentFenceGate> deepslate_brick_fence_gate = HELPER.fencegate(UDBuilders.DEEPSLATE_BRICK);
+    public static final Supplier<OrnamentFenceGate> cracked_deepslate_brick_fence_gate = HELPER.fencegate(UDBuilders.CRACKED_DEEPSLATE_BRICK);
+    public static final Supplier<OrnamentFenceGate> cracked_deepslate_tile_fence_gate = HELPER.fencegate(UDBuilders.CRACKED_DEEPSLATE_TILE);
 
     public static final Supplier<OrnamentDoor> granite_door = HELPER.door(UDBuilders.GRANITE);
     public static final Supplier<OrnamentDoor> polished_granite_door = HELPER.door(UDBuilders.POLISHED_GRANITE);
@@ -188,6 +215,13 @@ public class ModBlocks {
     public static final Supplier<OrnamentDoor> dark_prismarine_door = HELPER.door(UDBuilders.DARK_PRISMARINE);
     public static final Supplier<OrnamentDoor> purpur_door = HELPER.door(UDBuilders.PURPUR);
     public static final Supplier<OrnamentDoor> tuff_door = HELPER.door(UDBuilders.TUFF);
+    public static final Supplier<OrnamentDoor> deepslate_door = HELPER.door(UDBuilders.DEEPSLATE);
+    public static final Supplier<OrnamentDoor> cobbled_deepslate_door = HELPER.door(UDBuilders.COBBLED_DEEPSLATE);
+    public static final Supplier<OrnamentDoor> polished_deepslate_door = HELPER.door(UDBuilders.POLISHED_DEEPSLATE);
+    public static final Supplier<OrnamentDoor> deepslate_tile_door = HELPER.door(UDBuilders.DEEPSLATE_TILE);
+    public static final Supplier<OrnamentDoor> deepslate_brick_door = HELPER.door(UDBuilders.DEEPSLATE_BRICK);
+    public static final Supplier<OrnamentDoor> cracked_deepslate_brick_door = HELPER.door(UDBuilders.CRACKED_DEEPSLATE_BRICK);
+    public static final Supplier<OrnamentDoor> cracked_deepslate_tile_door = HELPER.door(UDBuilders.CRACKED_DEEPSLATE_TILE);
 
     public static final Supplier<OrnamentPole> oak_pole = HELPER.pole(UDBuilders.OAK_PLANKS);
     public static final Supplier<OrnamentPole> spruce_pole = HELPER.pole(UDBuilders.SPRUCE_PLANKS);
@@ -235,6 +269,13 @@ public class ModBlocks {
     public static final Supplier<OrnamentPole> dark_prismarine_pole = HELPER.pole(UDBuilders.DARK_PRISMARINE);
     public static final Supplier<OrnamentPole> purpur_pole = HELPER.pole(UDBuilders.PURPUR);
     public static final Supplier<OrnamentPole> tuff_pole = HELPER.pole(UDBuilders.TUFF);
+    public static final Supplier<OrnamentPole> deepslate_pole = HELPER.pole(UDBuilders.DEEPSLATE);
+    public static final Supplier<OrnamentPole> cobbled_deepslate_pole = HELPER.pole(UDBuilders.COBBLED_DEEPSLATE);
+    public static final Supplier<OrnamentPole> polished_deepslate_pole = HELPER.pole(UDBuilders.POLISHED_DEEPSLATE);
+    public static final Supplier<OrnamentPole> deepslate_tile_pole = HELPER.pole(UDBuilders.DEEPSLATE_TILE);
+    public static final Supplier<OrnamentPole> deepslate_brick_pole = HELPER.pole(UDBuilders.DEEPSLATE_BRICK);
+    public static final Supplier<OrnamentPole> cracked_deepslate_brick_pole = HELPER.pole(UDBuilders.CRACKED_DEEPSLATE_BRICK);
+    public static final Supplier<OrnamentPole> cracked_deepslate_tile_pole = HELPER.pole(UDBuilders.CRACKED_DEEPSLATE_TILE);
 
     public static final Supplier<OrnamentBeam> oak_beam = HELPER.beam(UDBuilders.OAK_PLANKS);
     public static final Supplier<OrnamentBeam> spruce_beam = HELPER.beam(UDBuilders.SPRUCE_PLANKS);
@@ -282,6 +323,13 @@ public class ModBlocks {
     public static final Supplier<OrnamentBeam> dark_prismarine_beam = HELPER.beam(UDBuilders.DARK_PRISMARINE);
     public static final Supplier<OrnamentBeam> purpur_beam = HELPER.beam(UDBuilders.PURPUR);
     public static final Supplier<OrnamentBeam> tuff_beam = HELPER.beam(UDBuilders.TUFF);
+    public static final Supplier<OrnamentBeam> deepslate_beam = HELPER.beam(UDBuilders.DEEPSLATE);
+    public static final Supplier<OrnamentBeam> cobbled_deepslate_beam = HELPER.beam(UDBuilders.COBBLED_DEEPSLATE);
+    public static final Supplier<OrnamentBeam> polished_deepslate_beam = HELPER.beam(UDBuilders.POLISHED_DEEPSLATE);
+    public static final Supplier<OrnamentBeam> deepslate_tile_beam = HELPER.beam(UDBuilders.DEEPSLATE_TILE);
+    public static final Supplier<OrnamentBeam> deepslate_brick_beam = HELPER.beam(UDBuilders.DEEPSLATE_BRICK);
+    public static final Supplier<OrnamentBeam> cracked_deepslate_brick_beam = HELPER.beam(UDBuilders.CRACKED_DEEPSLATE_BRICK);
+    public static final Supplier<OrnamentBeam> cracked_deepslate_tile_beam = HELPER.beam(UDBuilders.CRACKED_DEEPSLATE_TILE);
 
 	public static final Supplier<OrnamentWall> oak_wall = HELPER.wall(UDBuilders.OAK_PLANKS);
 	public static final Supplier<OrnamentWall> spruce_wall = HELPER.wall(UDBuilders.SPRUCE_PLANKS);
@@ -317,6 +365,9 @@ public class ModBlocks {
 	public static final Supplier<OrnamentWall> dark_prismarine_wall = HELPER.wall(UDBuilders.DARK_PRISMARINE);
 	public static final Supplier<OrnamentWall> purpur_wall = HELPER.wall(UDBuilders.PURPUR);
     public static final Supplier<OrnamentWall> tuff_wall = HELPER.wall(UDBuilders.TUFF);
+    public static final Supplier<OrnamentWall> deepslate_wall = HELPER.wall(UDBuilders.DEEPSLATE);
+    public static final Supplier<OrnamentWall> cracked_deepslate_brick_wall = HELPER.wall(UDBuilders.CRACKED_DEEPSLATE_BRICK);
+    public static final Supplier<OrnamentWall> cracked_deepslate_tile_wall = HELPER.wall(UDBuilders.CRACKED_DEEPSLATE_TILE);
 
     public static final Supplier<OrnamentSaddleDoor> oak_saddle_door = HELPER.saddledoor(UDBuilders.OAK_PLANKS);
     public static final Supplier<OrnamentSaddleDoor> spruce_saddle_door = HELPER.saddledoor(UDBuilders.SPRUCE_PLANKS);
@@ -364,6 +415,13 @@ public class ModBlocks {
     public static final Supplier<OrnamentSaddleDoor> dark_prismarine_saddle_door = HELPER.saddledoor(UDBuilders.DARK_PRISMARINE);
     public static final Supplier<OrnamentSaddleDoor> purpur_saddle_door = HELPER.saddledoor(UDBuilders.PURPUR);
     public static final Supplier<OrnamentSaddleDoor> tuff_saddle_door = HELPER.saddledoor(UDBuilders.TUFF);
+    public static final Supplier<OrnamentSaddleDoor> deepslate_saddle_door = HELPER.saddledoor(UDBuilders.DEEPSLATE);
+    public static final Supplier<OrnamentSaddleDoor> cobbled_deepslate_saddle_door = HELPER.saddledoor(UDBuilders.COBBLED_DEEPSLATE);
+    public static final Supplier<OrnamentSaddleDoor> polished_deepslate_saddle_door = HELPER.saddledoor(UDBuilders.POLISHED_DEEPSLATE);
+    public static final Supplier<OrnamentSaddleDoor> deepslate_tile_saddle_door = HELPER.saddledoor(UDBuilders.DEEPSLATE_TILE);
+    public static final Supplier<OrnamentSaddleDoor> deepslate_brick_saddle_door = HELPER.saddledoor(UDBuilders.DEEPSLATE_BRICK);
+    public static final Supplier<OrnamentSaddleDoor> cracked_deepslate_brick_saddle_door = HELPER.saddledoor(UDBuilders.CRACKED_DEEPSLATE_BRICK);
+    public static final Supplier<OrnamentSaddleDoor> cracked_deepslate_tile_saddle_door = HELPER.saddledoor(UDBuilders.CRACKED_DEEPSLATE_TILE);
 
     public static final Supplier<OrnamentSupport> oak_support = HELPER.support(UDBuilders.OAK_PLANKS);
     public static final Supplier<OrnamentSupport> spruce_support = HELPER.support(UDBuilders.SPRUCE_PLANKS);
@@ -411,4 +469,12 @@ public class ModBlocks {
     public static final Supplier<OrnamentSupport> dark_prismarine_support = HELPER.support(UDBuilders.DARK_PRISMARINE);
     public static final Supplier<OrnamentSupport> purpur_support = HELPER.support(UDBuilders.PURPUR);
     public static final Supplier<OrnamentSupport> tuff_support = HELPER.support(UDBuilders.TUFF);
+    public static final Supplier<OrnamentSupport> deepslate_support = HELPER.support(UDBuilders.DEEPSLATE);
+    public static final Supplier<OrnamentSupport> cobbled_deepslate_support = HELPER.support(UDBuilders.COBBLED_DEEPSLATE);
+    public static final Supplier<OrnamentSupport> polished_deepslate_support = HELPER.support(UDBuilders.POLISHED_DEEPSLATE);
+    public static final Supplier<OrnamentSupport> deepslate_tile_support = HELPER.support(UDBuilders.DEEPSLATE_TILE);
+    public static final Supplier<OrnamentSupport> deepslate_brick_support = HELPER.support(UDBuilders.DEEPSLATE_BRICK);
+    public static final Supplier<OrnamentSupport> cracked_deepslate_brick_support = HELPER.support(UDBuilders.CRACKED_DEEPSLATE_BRICK);
+    public static final Supplier<OrnamentSupport> cracked_deepslate_tile_support = HELPER.support(UDBuilders.CRACKED_DEEPSLATE_TILE);
+
 }

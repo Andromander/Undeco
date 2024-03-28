@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepslate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "undeco:deepslate_pole",
+              "undeco:deepslate_beam"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "undeco:deepslate_support"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_deepslate"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "undeco:deepslate_support"
+    ]
+  }
+}

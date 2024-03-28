@@ -45,6 +45,13 @@
     "undeco:prismarine_brick_pole",
     "undeco:dark_prismarine_pole",
     "undeco:purpur_pole",
-    "undeco:tuff_pole"
+    "undeco:tuff_pole",
+    "undeco:deepslate_pole",
+    "undeco:cobbled_deepslate_pole",
+    "undeco:polished_deepslate_pole",
+    "undeco:deepslate_tile_pole",
+    "undeco:deepslate_brick_pole",
+    "undeco:cracked_deepslate_brick_pole",
+    "undeco:cracked_deepslate_tile_pole"
   ]
 }

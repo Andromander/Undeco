@@ -1,0 +1,8 @@
+{
+  "parent": "ornamental:block/util/saddle_door_inventory",
+  "textures": {
+    "bottom": "undeco:block/deepslate_tile_trapdoor",
+    "side": "undeco:block/deepslate_tile_trapdoor",
+    "top": "undeco:block/deepslate_tile_trapdoor"
+  }
+}

@@ -45,6 +45,13 @@
     "undeco:prismarine_brick_support",
     "undeco:dark_prismarine_support",
     "undeco:purpur_support",
-    "undeco:tuff_support"
+    "undeco:tuff_support",
+    "undeco:deepslate_support",
+    "undeco:cobbled_deepslate_support",
+    "undeco:polished_deepslate_support",
+    "undeco:deepslate_tile_support",
+    "undeco:deepslate_brick_support",
+    "undeco:cracked_deepslate_brick_support",
+    "undeco:cracked_deepslate_tile_support"
   ]
 }

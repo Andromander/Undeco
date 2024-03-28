@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "undeco:cobbled_deepslate_beam"
+    }
+  ],
+  "result": {
+    "item": "undeco:cobbled_deepslate_pole"
+  }
+}

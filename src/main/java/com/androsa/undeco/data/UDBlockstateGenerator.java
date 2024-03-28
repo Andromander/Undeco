@@ -1,11 +1,9 @@
 package com.androsa.undeco.data;
 
-import com.androsa.ornamental.blocks.OrnamentBeam;
-import com.androsa.ornamental.blocks.OrnamentPole;
-import com.androsa.ornamental.blocks.OrnamentSaddleDoor;
-import com.androsa.ornamental.blocks.OrnamentSupport;
+import com.androsa.ornamental.blocks.*;
 import com.androsa.ornamental.data.provider.OrnamentalBlockStateProvider;
 import com.androsa.undeco.ModBlocks;
+import com.androsa.undeco.UDBuilders;
 import com.androsa.undeco.UnusuallyDecorative;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.DoorBlock;
@@ -44,6 +42,9 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         stairsBasic(ModBlocks.smooth_stone_stairs, "smooth_stone");
         stairsBasic(ModBlocks.cracked_stone_brick_stairs, "cracked_stone_bricks");
         stairsBasic(ModBlocks.tuff_stairs, "tuff");
+        stairsBasic(ModBlocks.deepslate_stairs, "deepslate");
+        stairsBasic(ModBlocks.cracked_deepslate_brick_stairs, "cracked_deepslate_bricks");
+        stairsBasic(ModBlocks.cracked_deepslate_tile_stairs, "cracked_deepslate_tiles");
 
         slabColumn(ModBlocks.oak_log_slab, "oak_log", "oak_log", "oak_log_top");
         slabColumn(ModBlocks.spruce_log_slab, "spruce_log", "spruce_log", "spruce_log_top");
@@ -58,6 +59,9 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         slabColumn(ModBlocks.warped_stem_slab, "warped_stem", "warped_stem", "warped_stem_top");
         slabBasic(ModBlocks.cracked_stone_brick_slab, "cracked_stone_bricks");
         slabBasic(ModBlocks.tuff_slab, "tuff");
+        slabBasic(ModBlocks.deepslate_slab, "deepslate");
+        slabBasic(ModBlocks.cracked_deepslate_brick_slab, "cracked_deepslate_bricks");
+        slabBasic(ModBlocks.cracked_deepslate_tile_slab, "cracked_deepslate_tiles");
 
         fenceBasic(ModBlocks.granite_fence, "granite");
         fenceBasic(ModBlocks.polished_granite_fence, "polished_granite");
@@ -94,6 +98,13 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         fenceBasic(ModBlocks.dark_prismarine_fence, "dark_prismarine");
         fenceBasic(ModBlocks.purpur_fence, "purpur_block");
         fenceBasic(ModBlocks.tuff_fence, "tuff");
+        fenceBasic(ModBlocks.deepslate_fence, "deepslate");
+        fenceBasic(ModBlocks.cobbled_deepslate_fence, "cobbled_deepslate");
+        fenceBasic(ModBlocks.polished_deepslate_fence, "polished_deepslate");
+        fenceBasic(ModBlocks.deepslate_tile_fence, "deepslate_tiles");
+        fenceBasic(ModBlocks.deepslate_brick_fence, "deepslate_bricks");
+        fenceBasic(ModBlocks.cracked_deepslate_brick_fence, "cracked_deepslate_bricks");
+        fenceBasic(ModBlocks.cracked_deepslate_tile_fence, "cracked_deepslate_tiles");
 
         trapdoorParent(ModBlocks.granite_trapdoor, "granite");
         trapdoorBasic(ModBlocks.polished_granite_trapdoor, "polished_granite");
@@ -130,6 +141,13 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         trapdoorBasic(ModBlocks.dark_prismarine_trapdoor, "dark_prismarine");
         trapdoorBasic(ModBlocks.purpur_trapdoor, "purpur");
         trapdoorBasic(ModBlocks.tuff_trapdoor, "tuff");
+        trapdoorParent(ModBlocks.deepslate_trapdoor, "deepslate");
+        trapdoorParent(ModBlocks.cobbled_deepslate_trapdoor, "cobbled_deepslate");
+        trapdoorBasic(ModBlocks.polished_deepslate_trapdoor, "polished_deepslate");
+        trapdoorBasic(ModBlocks.deepslate_tile_trapdoor, "deepslate_tile");
+        trapdoorParent(ModBlocks.deepslate_brick_trapdoor, "deepslate_bricks");
+        trapdoorParent(ModBlocks.cracked_deepslate_brick_trapdoor, "cracked_deepslate_bricks");
+        trapdoorParent(ModBlocks.cracked_deepslate_tile_trapdoor, "cracked_deepslate_tiles");
 
         fenceGateBasic(ModBlocks.granite_fence_gate, "granite");
         fenceGateBasic(ModBlocks.polished_granite_fence_gate, "polished_granite");
@@ -166,6 +184,13 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         fenceGateBasic(ModBlocks.dark_prismarine_fence_gate, "dark_prismarine");
         fenceGateBasic(ModBlocks.purpur_fence_gate, "purpur_block");
         fenceGateBasic(ModBlocks.tuff_fence_gate, "tuff");
+        fenceGateBasic(ModBlocks.deepslate_fence_gate, "deepslate");
+        fenceGateBasic(ModBlocks.cobbled_deepslate_fence_gate, "cobbled_deepslate");
+        fenceGateBasic(ModBlocks.polished_deepslate_fence_gate, "polished_deepslate");
+        fenceGateBasic(ModBlocks.deepslate_tile_fence_gate, "deepslate_tiles");
+        fenceGateBasic(ModBlocks.deepslate_brick_fence_gate, "deepslate_bricks");
+        fenceGateBasic(ModBlocks.cracked_deepslate_brick_fence_gate, "cracked_deepslate_bricks");
+        fenceGateBasic(ModBlocks.cracked_deepslate_tile_fence_gate, "cracked_deepslate_tiles");
 
         doorHidden(ModBlocks.granite_door, "granite");
         doorBasic(ModBlocks.polished_granite_door, "polished_granite");
@@ -202,6 +227,13 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         doorBasic(ModBlocks.dark_prismarine_door, "dark_prismarine");
         doorBasic(ModBlocks.purpur_door, "purpur");
         doorBasic(ModBlocks.tuff_door, "tuff");
+        doorHidden(ModBlocks.deepslate_door, "deepslate");
+        doorHidden(ModBlocks.cobbled_deepslate_door, "cobbled_deepslate");
+        doorBasic(ModBlocks.polished_deepslate_door, "polished_deepslate");
+        doorBasic(ModBlocks.deepslate_tile_door, "deepslate_tile");
+        doorHidden(ModBlocks.deepslate_brick_door, "deepslate_bricks");
+        doorHidden(ModBlocks.cracked_deepslate_brick_door, "cracked_deepslate_bricks");
+        doorHidden(ModBlocks.cracked_deepslate_tile_door, "cracked_deepslate_tiles");
 
         poleBasic(ModBlocks.oak_pole, "oak_planks");
         poleBasic(ModBlocks.spruce_pole, "spruce_planks");
@@ -249,6 +281,13 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         poleBasic(ModBlocks.dark_prismarine_pole, "dark_prismarine");
         poleBasic(ModBlocks.purpur_pole, "purpur_block");
         poleBasic(ModBlocks.tuff_pole, "tuff");
+        poleBasic(ModBlocks.deepslate_pole, "deepslate");
+        poleBasic(ModBlocks.cobbled_deepslate_pole, "cobbled_deepslate");
+        poleBasic(ModBlocks.polished_deepslate_pole, "polished_deepslate");
+        poleBasic(ModBlocks.deepslate_tile_pole, "deepslate_tiles");
+        poleBasic(ModBlocks.deepslate_brick_pole, "deepslate_bricks");
+        poleBasic(ModBlocks.cracked_deepslate_brick_pole, "cracked_deepslate_bricks");
+        poleBasic(ModBlocks.cracked_deepslate_tile_pole, "cracked_deepslate_tiles");
 
         beamBasic(ModBlocks.oak_beam, "oak_planks");
         beamBasic(ModBlocks.spruce_beam, "spruce_planks");
@@ -296,6 +335,13 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         beamBasic(ModBlocks.dark_prismarine_beam, "dark_prismarine");
         beamBasic(ModBlocks.purpur_beam, "purpur_block");
         beamBasic(ModBlocks.tuff_beam, "tuff");
+        beamBasic(ModBlocks.deepslate_beam, "deepslate");
+        beamBasic(ModBlocks.cobbled_deepslate_beam, "cobbled_deepslate");
+        beamBasic(ModBlocks.polished_deepslate_beam, "polished_deepslate");
+        beamBasic(ModBlocks.deepslate_tile_beam, "deepslate_tiles");
+        beamBasic(ModBlocks.deepslate_brick_beam, "deepslate_bricks");
+        beamBasic(ModBlocks.cracked_deepslate_brick_beam, "cracked_deepslate_bricks");
+        beamBasic(ModBlocks.cracked_deepslate_tile_beam, "cracked_deepslate_tiles");
 
 		wallBasic(ModBlocks.oak_wall, "oak_planks");
 		wallBasic(ModBlocks.spruce_wall, "spruce_planks");
@@ -331,6 +377,9 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
 		wallBasic(ModBlocks.dark_prismarine_wall, "dark_prismarine");
 		wallBasic(ModBlocks.purpur_wall, "purpur_block");
         wallBasic(ModBlocks.tuff_wall, "tuff");
+        wallBasic(ModBlocks.deepslate_wall, "deepslate");
+        wallBasic(ModBlocks.cracked_deepslate_brick_wall, "cracked_deepslate_bricks");
+        wallBasic(ModBlocks.cracked_deepslate_tile_wall, "cracked_deepslate_tiles");
 
         saddleDoorHidden(ModBlocks.oak_saddle_door, "oak_trapdoor");
         saddleDoorHidden(ModBlocks.spruce_saddle_door, "spruce_trapdoor");
@@ -378,6 +427,13 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         saddleDoorBasic(ModBlocks.dark_prismarine_saddle_door, "dark_prismarine");
         saddleDoorBasic(ModBlocks.purpur_saddle_door, "purpur");
         saddleDoorBasic(ModBlocks.tuff_saddle_door, "tuff");
+        saddleDoorHidden(ModBlocks.deepslate_saddle_door, "deepslate");
+        saddleDoorHidden(ModBlocks.cobbled_deepslate_saddle_door, "cobbled_deepslate");
+        saddleDoorBasic(ModBlocks.polished_deepslate_saddle_door, "polished_deepslate");
+        saddleDoorBasic(ModBlocks.deepslate_tile_saddle_door, "deepslate_tile");
+        saddleDoorHidden(ModBlocks.deepslate_brick_saddle_door, "deepslate_bricks");
+        saddleDoorHidden(ModBlocks.cracked_deepslate_brick_saddle_door, "cracked_deepslate_bricks");
+        saddleDoorHidden(ModBlocks.cracked_deepslate_tile_saddle_door, "cracked_deepslate_tiles");
 
         supportBasic(ModBlocks.oak_support, "oak_planks");
         supportBasic(ModBlocks.spruce_support, "spruce_planks");
@@ -425,6 +481,13 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         supportBasic(ModBlocks.dark_prismarine_support, "dark_prismarine");
         supportBasic(ModBlocks.purpur_support, "purpur_block");
         supportBasic(ModBlocks.tuff_support, "tuff");
+        supportBasic(ModBlocks.deepslate_support, "deepslate");
+        supportBasic(ModBlocks.cobbled_deepslate_support, "cobbled_deepslate");
+        supportBasic(ModBlocks.polished_deepslate_support, "polished_deepslate");
+        supportBasic(ModBlocks.deepslate_tile_support, "deepslate_tiles");
+        supportBasic(ModBlocks.deepslate_brick_support, "deepslate_bricks");
+        supportBasic(ModBlocks.cracked_deepslate_brick_support, "cracked_deepslate_bricks");
+        supportBasic(ModBlocks.cracked_deepslate_tile_support, "cracked_deepslate_tiles");
     }
 
     public void fenceTopBottom(Supplier<? extends FenceBlock> block, String side, String top, String bottom) {

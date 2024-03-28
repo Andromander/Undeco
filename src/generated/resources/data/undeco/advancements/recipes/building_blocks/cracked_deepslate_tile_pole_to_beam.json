@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cracked_deepslate_tile": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "undeco:cracked_deepslate_tile_pole"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "undeco:cracked_deepslate_tile_pole_to_beam"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cracked_deepslate_tile"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "undeco:cracked_deepslate_tile_pole_to_beam"
+    ]
+  }
+}

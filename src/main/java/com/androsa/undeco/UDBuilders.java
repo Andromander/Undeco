@@ -62,6 +62,13 @@ public class UDBuilders {
     public static final OrnamentBuilder DARK_PRISMARINE = createStoneOrnament("dark_prismarine", MapColor.DIAMOND, Blocks.DARK_PRISMARINE);
     public static final OrnamentBuilder PURPUR = createStoneOrnament("purpur", MapColor.COLOR_MAGENTA, Blocks.PURPUR_BLOCK);
     public static final OrnamentBuilder TUFF = createStoneOrnament("tuff", MapColor.TERRACOTTA_GRAY, SoundType.TUFF, Blocks.TUFF);
+    public static final OrnamentBuilder DEEPSLATE = createDeepslateOrnament("deepslate", 3.0F, SoundType.DEEPSLATE, Blocks.DEEPSLATE);
+    public static final OrnamentBuilder COBBLED_DEEPSLATE = createDeepslateOrnament("cobbled_deepslate", 3.5F, SoundType.DEEPSLATE, Blocks.COBBLED_DEEPSLATE);
+    public static final OrnamentBuilder POLISHED_DEEPSLATE = createDeepslateOrnament("polished_deepslate", 3.5F, SoundType.POLISHED_DEEPSLATE, Blocks.POLISHED_DEEPSLATE);
+    public static final OrnamentBuilder DEEPSLATE_TILE = createDeepslateOrnament("deepslate_tile", 3.5F, SoundType.DEEPSLATE_TILES, Blocks.DEEPSLATE_TILES);
+    public static final OrnamentBuilder DEEPSLATE_BRICK = createDeepslateOrnament("deepslate_brick", 3.5F, SoundType.DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICKS);
+    public static final OrnamentBuilder CRACKED_DEEPSLATE_BRICK = createDeepslateOrnament("cracked_deepslate_brick", 3.5F, SoundType.DEEPSLATE_BRICKS, Blocks.CRACKED_DEEPSLATE_BRICKS);
+    public static final OrnamentBuilder CRACKED_DEEPSLATE_TILE = createDeepslateOrnament("cracked_deepslate_tile", 3.5F, SoundType.DEEPSLATE_TILES, Blocks.CRACKED_DEEPSLATE_TILES);
 
     private static OrnamentBuilder createFirePlankOrnament(String name, MapColor color, Block base, BlockSetType type) {
         return new OrnamentBuilder(name)
@@ -101,15 +108,7 @@ public class UDBuilders {
                 .openByHand()
                 .openByBreeze()
                 .build();
-        return new OrnamentBuilder(name)
-                .mapColor(color)
-                .hardnessAndResistance(1.5F, 6.0F)
-                .requiresTool()
-                .stairBaseBlock(() -> base)
-                .blockSetType(blockset)
-                .saddledoorSounds(SoundEvents.IRON_TRAPDOOR_OPEN, SoundEvents.IRON_TRAPDOOR_CLOSE)
-                .instrument(NoteBlockInstrument.BASEDRUM)
-                .addBlockTags(new ArrayList<>(List.of(UDBlockTags.PICKAXE_TOOL)));
+        return createStoneOrnament(name, color, base, blockset);
     }
 
     private static OrnamentBuilder createStoneOrnament(String name, MapColor color, Block base, BlockSetType type) {
@@ -135,6 +134,27 @@ public class UDBuilders {
                         .openByBreeze()
                         .pressureSensitivity(BlockSetType.PressurePlateSensitivity.MOBS)
                         .soundType(SoundType.STONE)
+                        .trapdoorSounds(SoundEvents.IRON_TRAPDOOR_CLOSE, SoundEvents.IRON_TRAPDOOR_OPEN)
+                        .doorSounds(SoundEvents.IRON_DOOR_CLOSE, SoundEvents.IRON_DOOR_OPEN)
+                        .pressurePlateSounds(SoundEvents.STONE_PRESSURE_PLATE_CLICK_OFF, SoundEvents.STONE_PRESSURE_PLATE_CLICK_ON)
+                        .buttonSounds(SoundEvents.STONE_BUTTON_CLICK_OFF, SoundEvents.STONE_BUTTON_CLICK_ON)
+                        .build())
+                .saddledoorSounds(SoundEvents.IRON_TRAPDOOR_OPEN, SoundEvents.IRON_TRAPDOOR_CLOSE)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .addBlockTags(new ArrayList<>(List.of(UDBlockTags.PICKAXE_TOOL)));
+    }
+
+    private static OrnamentBuilder createDeepslateOrnament(String name, float hardness, SoundType sound, Block base) {
+        return new OrnamentBuilder(name)
+                .mapColor(MapColor.DEEPSLATE)
+                .hardnessAndResistance(hardness, 6.0F)
+                .requiresTool()
+                .stairBaseBlock(() -> base)
+                .blockSetType(new BlockSetBuilder(name)
+                        .openByHand()
+                        .openByBreeze()
+                        .pressureSensitivity(BlockSetType.PressurePlateSensitivity.MOBS)
+                        .soundType(sound)
                         .trapdoorSounds(SoundEvents.IRON_TRAPDOOR_CLOSE, SoundEvents.IRON_TRAPDOOR_OPEN)
                         .doorSounds(SoundEvents.IRON_DOOR_CLOSE, SoundEvents.IRON_DOOR_OPEN)
                         .pressurePlateSounds(SoundEvents.STONE_PRESSURE_PLATE_CLICK_OFF, SoundEvents.STONE_PRESSURE_PLATE_CLICK_ON)

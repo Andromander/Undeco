@@ -33,6 +33,9 @@
     "undeco:prismarine_brick_wall",
     "undeco:dark_prismarine_wall",
     "undeco:purpur_wall",
-    "undeco:tuff_wall"
+    "undeco:tuff_wall",
+    "undeco:deepslate_wall",
+    "undeco:cracked_deepslate_brick_wall",
+    "undeco:cracked_deepslate_tile_wall"
   ]
 }

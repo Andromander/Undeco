@@ -1,7 +1,10 @@
 package com.androsa.undeco.data;
 
+import com.androsa.ornamental.blocks.OrnamentFence;
+import com.androsa.ornamental.blocks.OrnamentStair;
 import com.androsa.ornamental.data.provider.OrnamentalItemModelProvider;
 import com.androsa.undeco.ModBlocks;
+import com.androsa.undeco.UDBuilders;
 import com.androsa.undeco.UnusuallyDecorative;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
@@ -32,6 +35,9 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItem(ModBlocks.smooth_stone_stairs);
         blockItem(ModBlocks.cracked_stone_brick_stairs);
         blockItem(ModBlocks.tuff_stairs);
+        blockItem(ModBlocks.deepslate_stairs);
+        blockItem(ModBlocks.cracked_deepslate_brick_stairs);
+        blockItem(ModBlocks.cracked_deepslate_tile_stairs);
 
         blockItem(ModBlocks.oak_log_slab);
         blockItem(ModBlocks.spruce_log_slab);
@@ -46,6 +52,9 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItem(ModBlocks.warped_stem_slab);
         blockItem(ModBlocks.cracked_stone_brick_slab);
         blockItem(ModBlocks.tuff_slab);
+        blockItem(ModBlocks.deepslate_slab);
+        blockItem(ModBlocks.cracked_deepslate_brick_slab);
+        blockItem(ModBlocks.cracked_deepslate_tile_slab);
 
         blockItemFence(ModBlocks.granite_fence, "granite");
         blockItemFence(ModBlocks.polished_granite_fence, "polished_granite");
@@ -82,6 +91,13 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemFence(ModBlocks.dark_prismarine_fence, "dark_prismarine");
         blockItemFence(ModBlocks.purpur_fence, "purpur_block");
         blockItemFence(ModBlocks.tuff_fence, "tuff");
+        blockItemFence(ModBlocks.deepslate_fence, "deepslate");
+        blockItemFence(ModBlocks.cobbled_deepslate_fence, "cobbled_deepslate");
+        blockItemFence(ModBlocks.polished_deepslate_fence, "polished_deepslate");
+        blockItemFence(ModBlocks.deepslate_tile_fence, "deepslate_tiles");
+        blockItemFence(ModBlocks.deepslate_brick_fence, "deepslate_bricks");
+        blockItemFence(ModBlocks.cracked_deepslate_brick_fence, "cracked_deepslate_bricks");
+        blockItemFence(ModBlocks.cracked_deepslate_tile_fence, "cracked_deepslate_tiles");
 
         blockItemTrapdoor(ModBlocks.granite_trapdoor);
         blockItemTrapdoor(ModBlocks.polished_granite_trapdoor);
@@ -118,6 +134,13 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemTrapdoor(ModBlocks.dark_prismarine_trapdoor);
         blockItemTrapdoor(ModBlocks.purpur_trapdoor);
         blockItemTrapdoor(ModBlocks.tuff_trapdoor);
+        blockItemTrapdoor(ModBlocks.deepslate_trapdoor);
+        blockItemTrapdoor(ModBlocks.cobbled_deepslate_trapdoor);
+        blockItemTrapdoor(ModBlocks.polished_deepslate_trapdoor);
+        blockItemTrapdoor(ModBlocks.deepslate_tile_trapdoor);
+        blockItemTrapdoor(ModBlocks.deepslate_brick_trapdoor);
+        blockItemTrapdoor(ModBlocks.cracked_deepslate_brick_trapdoor);
+        blockItemTrapdoor(ModBlocks.cracked_deepslate_tile_trapdoor);
 
         blockItem(ModBlocks.granite_fence_gate);
         blockItem(ModBlocks.polished_granite_fence_gate);
@@ -154,6 +177,13 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItem(ModBlocks.dark_prismarine_fence_gate);
         blockItem(ModBlocks.purpur_fence_gate);
         blockItem(ModBlocks.tuff_fence_gate);
+        blockItem(ModBlocks.deepslate_fence_gate);
+        blockItem(ModBlocks.cobbled_deepslate_fence_gate);
+        blockItem(ModBlocks.polished_deepslate_fence_gate);
+        blockItem(ModBlocks.deepslate_tile_fence_gate);
+        blockItem(ModBlocks.deepslate_brick_fence_gate);
+        blockItem(ModBlocks.cracked_deepslate_brick_fence_gate);
+        blockItem(ModBlocks.cracked_deepslate_tile_fence_gate);
 
         blockItemModel(ModBlocks.granite_door);
         blockItemModel(ModBlocks.polished_granite_door);
@@ -190,6 +220,13 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemModel(ModBlocks.dark_prismarine_door);
         blockItemModel(ModBlocks.purpur_door);
         blockItemModel(ModBlocks.tuff_door);
+        blockItemModel(ModBlocks.deepslate_door);
+        blockItemModel(ModBlocks.cobbled_deepslate_door);
+        blockItemModel(ModBlocks.polished_deepslate_door);
+        blockItemModel(ModBlocks.deepslate_tile_door);
+        blockItemModel(ModBlocks.deepslate_brick_door);
+        blockItemModel(ModBlocks.cracked_deepslate_brick_door);
+        blockItemModel(ModBlocks.cracked_deepslate_tile_door);
 
         blockItemPole(ModBlocks.oak_pole, "oak_planks");
         blockItemPole(ModBlocks.spruce_pole, "spruce_planks");
@@ -237,6 +274,13 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemPole(ModBlocks.dark_prismarine_pole, "dark_prismarine");
         blockItemPole(ModBlocks.purpur_pole, "purpur_block");
         blockItemPole(ModBlocks.tuff_pole, "tuff");
+        blockItemPole(ModBlocks.deepslate_pole, "deepslate");
+        blockItemPole(ModBlocks.cobbled_deepslate_pole, "cobbled_deepslate");
+        blockItemPole(ModBlocks.polished_deepslate_pole, "polished_deepslate");
+        blockItemPole(ModBlocks.deepslate_tile_pole, "deepslate_tiles");
+        blockItemPole(ModBlocks.deepslate_brick_pole, "deepslate_bricks");
+        blockItemPole(ModBlocks.cracked_deepslate_brick_pole, "cracked_deepslate_bricks");
+        blockItemPole(ModBlocks.cracked_deepslate_tile_pole, "cracked_deepslate_tiles");
 
         blockItemBeam(ModBlocks.oak_beam, "oak_planks");
         blockItemBeam(ModBlocks.spruce_beam, "spruce_planks");
@@ -284,6 +328,13 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemBeam(ModBlocks.dark_prismarine_beam, "dark_prismarine");
         blockItemBeam(ModBlocks.purpur_beam, "purpur_block");
         blockItemBeam(ModBlocks.tuff_beam, "tuff");
+        blockItemBeam(ModBlocks.deepslate_beam, "deepslate");
+        blockItemBeam(ModBlocks.cobbled_deepslate_beam, "cobbled_deepslate");
+        blockItemBeam(ModBlocks.polished_deepslate_beam, "polished_deepslate");
+        blockItemBeam(ModBlocks.deepslate_tile_beam, "deepslate_tiles");
+        blockItemBeam(ModBlocks.deepslate_brick_beam, "deepslate_bricks");
+        blockItemBeam(ModBlocks.cracked_deepslate_brick_beam, "cracked_deepslate_bricks");
+        blockItemBeam(ModBlocks.cracked_deepslate_tile_beam, "cracked_deepslate_tiles");
 
 		blockItemWall(ModBlocks.oak_wall, "oak_planks");
 		blockItemWall(ModBlocks.spruce_wall, "spruce_planks");
@@ -319,6 +370,9 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
 		blockItemWall(ModBlocks.dark_prismarine_wall, "dark_prismarine");
 		blockItemWall(ModBlocks.purpur_wall, "purpur_block");
         blockItemWall(ModBlocks.tuff_wall, "tuff");
+        blockItemWall(ModBlocks.deepslate_wall, "deepslate");
+        blockItemWall(ModBlocks.cracked_deepslate_brick_wall, "cracked_deepslate_bricks");
+        blockItemWall(ModBlocks.cracked_deepslate_tile_wall, "cracked_deepslate_tiles");
 
         blockItemSaddleDoorV(ModBlocks.oak_saddle_door, "oak_trapdoor");
         blockItemSaddleDoorV(ModBlocks.spruce_saddle_door, "spruce_trapdoor");
@@ -366,6 +420,13 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemSaddleDoor(ModBlocks.dark_prismarine_saddle_door, "dark_prismarine");
         blockItemSaddleDoor(ModBlocks.purpur_saddle_door, "purpur");
         blockItemSaddleDoor(ModBlocks.tuff_saddle_door, "tuff");
+        blockItemSaddleDoorV(ModBlocks.deepslate_saddle_door, "deepslate");
+        blockItemSaddleDoorV(ModBlocks.cobbled_deepslate_saddle_door, "cobbled_deepslate");
+        blockItemSaddleDoor(ModBlocks.polished_deepslate_saddle_door, "polished_deepslate");
+        blockItemSaddleDoor(ModBlocks.deepslate_tile_saddle_door, "deepslate_tile");
+        blockItemSaddleDoorV(ModBlocks.deepslate_brick_saddle_door, "deepslate_bricks");
+        blockItemSaddleDoorV(ModBlocks.cracked_deepslate_brick_saddle_door, "cracked_deepslate_bricks");
+        blockItemSaddleDoorV(ModBlocks.cracked_deepslate_tile_saddle_door, "cracked_deepslate_tiles");
 
         blockItemSupport(ModBlocks.oak_support, "oak_planks");
         blockItemSupport(ModBlocks.spruce_support, "spruce_planks");
@@ -413,6 +474,13 @@ public class UDItemModelGenerator extends OrnamentalItemModelProvider {
         blockItemSupport(ModBlocks.dark_prismarine_support, "dark_prismarine");
         blockItemSupport(ModBlocks.purpur_support, "purpur_block");
         blockItemSupport(ModBlocks.tuff_support, "tuff");
+        blockItemSupport(ModBlocks.deepslate_support, "deepslate");
+        blockItemSupport(ModBlocks.cobbled_deepslate_support, "cobbled_deepslate");
+        blockItemSupport(ModBlocks.polished_deepslate_support, "polished_deepslate");
+        blockItemSupport(ModBlocks.deepslate_tile_support, "deepslate_tiles");
+        blockItemSupport(ModBlocks.deepslate_brick_support, "deepslate_bricks");
+        blockItemSupport(ModBlocks.cracked_deepslate_brick_support, "cracked_deepslate_bricks");
+        blockItemSupport(ModBlocks.cracked_deepslate_tile_support, "cracked_deepslate_tiles");
     }
 
     public void blockItemFence(Supplier<? extends Block> block, String bottom, String top, String side) {

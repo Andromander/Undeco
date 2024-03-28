@@ -13,6 +13,9 @@
     "undeco:warped_stem_stairs",
     "undeco:smooth_stone_stairs",
     "undeco:cracked_stone_brick_stairs",
-    "undeco:tuff_stairs"
+    "undeco:tuff_stairs",
+    "undeco:deepslate_stairs",
+    "undeco:cracked_deepslate_brick_stairs",
+    "undeco:cracked_deepslate_tile_stairs"
   ]
 }

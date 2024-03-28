@@ -1,7 +1,10 @@
 package com.androsa.undeco.data;
 
+import com.androsa.ornamental.blocks.OrnamentFence;
+import com.androsa.ornamental.blocks.OrnamentStair;
 import com.androsa.ornamental.data.provider.OrnamentLootTableProvider;
 import com.androsa.undeco.ModBlocks;
+import com.androsa.undeco.UDBuilders;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.resources.ResourceLocation;
@@ -50,6 +53,9 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.smooth_stone_stairs);
             dropSelf(ModBlocks.cracked_stone_brick_stairs);
             dropSelf(ModBlocks.tuff_stairs);
+            dropSelf(ModBlocks.deepslate_stairs);
+            dropSelf(ModBlocks.cracked_deepslate_brick_stairs);
+            dropSelf(ModBlocks.cracked_deepslate_tile_stairs);
 
             dropSlab(ModBlocks.oak_log_slab);
             dropSlab(ModBlocks.spruce_log_slab);
@@ -64,6 +70,9 @@ public class UDLootTables extends LootTableProvider {
             dropSlab(ModBlocks.warped_stem_slab);
             dropSlab(ModBlocks.cracked_stone_brick_slab);
             dropSlab(ModBlocks.tuff_slab);
+            dropSlab(ModBlocks.deepslate_slab);
+            dropSlab(ModBlocks.cracked_deepslate_brick_slab);
+            dropSlab(ModBlocks.cracked_deepslate_tile_slab);
 
             dropSelf(ModBlocks.granite_fence);
             dropSelf(ModBlocks.polished_granite_fence);
@@ -100,6 +109,13 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.dark_prismarine_fence);
             dropSelf(ModBlocks.purpur_fence);
             dropSelf(ModBlocks.tuff_fence);
+            dropSelf(ModBlocks.deepslate_fence);
+            dropSelf(ModBlocks.cobbled_deepslate_fence);
+            dropSelf(ModBlocks.polished_deepslate_fence);
+            dropSelf(ModBlocks.deepslate_tile_fence);
+            dropSelf(ModBlocks.deepslate_brick_fence);
+            dropSelf(ModBlocks.cracked_deepslate_brick_fence);
+            dropSelf(ModBlocks.cracked_deepslate_tile_fence);
 
             dropSelf(ModBlocks.granite_trapdoor);
             dropSelf(ModBlocks.polished_granite_trapdoor);
@@ -136,6 +152,13 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.dark_prismarine_trapdoor);
             dropSelf(ModBlocks.purpur_trapdoor);
             dropSelf(ModBlocks.tuff_trapdoor);
+            dropSelf(ModBlocks.deepslate_trapdoor);
+            dropSelf(ModBlocks.cobbled_deepslate_trapdoor);
+            dropSelf(ModBlocks.polished_deepslate_trapdoor);
+            dropSelf(ModBlocks.deepslate_tile_trapdoor);
+            dropSelf(ModBlocks.deepslate_brick_trapdoor);
+            dropSelf(ModBlocks.cracked_deepslate_brick_trapdoor);
+            dropSelf(ModBlocks.cracked_deepslate_tile_trapdoor);
 
             dropSelf(ModBlocks.granite_fence_gate);
             dropSelf(ModBlocks.polished_granite_fence_gate);
@@ -172,6 +195,13 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.dark_prismarine_fence_gate);
             dropSelf(ModBlocks.purpur_fence_gate);
             dropSelf(ModBlocks.tuff_fence_gate);
+            dropSelf(ModBlocks.deepslate_fence_gate);
+            dropSelf(ModBlocks.cobbled_deepslate_fence_gate);
+            dropSelf(ModBlocks.polished_deepslate_fence_gate);
+            dropSelf(ModBlocks.deepslate_tile_fence_gate);
+            dropSelf(ModBlocks.deepslate_brick_fence_gate);
+            dropSelf(ModBlocks.cracked_deepslate_brick_fence_gate);
+            dropSelf(ModBlocks.cracked_deepslate_tile_fence_gate);
 
             dropDoor(ModBlocks.granite_door);
             dropDoor(ModBlocks.polished_granite_door);
@@ -208,6 +238,13 @@ public class UDLootTables extends LootTableProvider {
             dropDoor(ModBlocks.dark_prismarine_door);
             dropDoor(ModBlocks.purpur_door);
             dropDoor(ModBlocks.tuff_door);
+            dropSelf(ModBlocks.deepslate_door);
+            dropSelf(ModBlocks.cobbled_deepslate_door);
+            dropSelf(ModBlocks.polished_deepslate_door);
+            dropSelf(ModBlocks.deepslate_tile_door);
+            dropSelf(ModBlocks.deepslate_brick_door);
+            dropSelf(ModBlocks.cracked_deepslate_brick_door);
+            dropSelf(ModBlocks.cracked_deepslate_tile_door);
 
             dropSelf(ModBlocks.oak_pole);
             dropSelf(ModBlocks.spruce_pole);
@@ -255,6 +292,13 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.dark_prismarine_pole);
             dropSelf(ModBlocks.purpur_pole);
             dropSelf(ModBlocks.tuff_pole);
+            dropSelf(ModBlocks.deepslate_pole);
+            dropSelf(ModBlocks.cobbled_deepslate_pole);
+            dropSelf(ModBlocks.polished_deepslate_pole);
+            dropSelf(ModBlocks.deepslate_tile_pole);
+            dropSelf(ModBlocks.deepslate_brick_pole);
+            dropSelf(ModBlocks.cracked_deepslate_brick_pole);
+            dropSelf(ModBlocks.cracked_deepslate_tile_pole);
 
             dropSelf(ModBlocks.oak_beam);
             dropSelf(ModBlocks.spruce_beam);
@@ -302,6 +346,13 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.dark_prismarine_beam);
             dropSelf(ModBlocks.purpur_beam);
             dropSelf(ModBlocks.tuff_beam);
+            dropSelf(ModBlocks.deepslate_beam);
+            dropSelf(ModBlocks.cobbled_deepslate_beam);
+            dropSelf(ModBlocks.polished_deepslate_beam);
+            dropSelf(ModBlocks.deepslate_tile_beam);
+            dropSelf(ModBlocks.deepslate_brick_beam);
+            dropSelf(ModBlocks.cracked_deepslate_brick_beam);
+            dropSelf(ModBlocks.cracked_deepslate_tile_beam);
 
 			dropSelf(ModBlocks.oak_wall);
 			dropSelf(ModBlocks.spruce_wall);
@@ -337,6 +388,9 @@ public class UDLootTables extends LootTableProvider {
 			dropSelf(ModBlocks.dark_prismarine_wall);
 			dropSelf(ModBlocks.purpur_wall);
 			dropSelf(ModBlocks.tuff_wall);
+            dropSelf(ModBlocks.deepslate_wall);
+            dropSelf(ModBlocks.cracked_deepslate_brick_wall);
+            dropSelf(ModBlocks.cracked_deepslate_tile_wall);
 
             dropSelf(ModBlocks.oak_saddle_door);
             dropSelf(ModBlocks.spruce_saddle_door);
@@ -384,6 +438,13 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.dark_prismarine_saddle_door);
             dropSelf(ModBlocks.purpur_saddle_door);
             dropSelf(ModBlocks.tuff_saddle_door);
+            dropSelf(ModBlocks.deepslate_saddle_door);
+            dropSelf(ModBlocks.cobbled_deepslate_saddle_door);
+            dropSelf(ModBlocks.polished_deepslate_saddle_door);
+            dropSelf(ModBlocks.deepslate_tile_saddle_door);
+            dropSelf(ModBlocks.deepslate_brick_saddle_door);
+            dropSelf(ModBlocks.cracked_deepslate_brick_saddle_door);
+            dropSelf(ModBlocks.cracked_deepslate_tile_saddle_door);
 
             dropSelf(ModBlocks.oak_support);
             dropSelf(ModBlocks.spruce_support);
@@ -431,6 +492,13 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.dark_prismarine_support);
             dropSelf(ModBlocks.purpur_support);
             dropSelf(ModBlocks.tuff_support);
+            dropSelf(ModBlocks.deepslate_support);
+            dropSelf(ModBlocks.cobbled_deepslate_support);
+            dropSelf(ModBlocks.polished_deepslate_support);
+            dropSelf(ModBlocks.deepslate_tile_support);
+            dropSelf(ModBlocks.deepslate_brick_support);
+            dropSelf(ModBlocks.cracked_deepslate_brick_support);
+            dropSelf(ModBlocks.cracked_deepslate_tile_support);
         }
 
         @Override

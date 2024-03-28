@@ -45,6 +45,13 @@
     "undeco:prismarine_brick_beam",
     "undeco:dark_prismarine_beam",
     "undeco:purpur_beam",
-    "undeco:tuff_beam"
+    "undeco:tuff_beam",
+    "undeco:deepslate_beam",
+    "undeco:cobbled_deepslate_beam",
+    "undeco:polished_deepslate_beam",
+    "undeco:deepslate_tile_beam",
+    "undeco:deepslate_brick_beam",
+    "undeco:cracked_deepslate_brick_beam",
+    "undeco:cracked_deepslate_tile_beam"
   ]
 }

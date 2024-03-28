@@ -34,6 +34,13 @@
     "undeco:prismarine_brick_fence_gate",
     "undeco:dark_prismarine_fence_gate",
     "undeco:purpur_fence_gate",
-    "undeco:tuff_fence_gate"
+    "undeco:tuff_fence_gate",
+    "undeco:deepslate_fence_gate",
+    "undeco:cobbled_deepslate_fence_gate",
+    "undeco:polished_deepslate_fence_gate",
+    "undeco:deepslate_tile_fence_gate",
+    "undeco:deepslate_brick_fence_gate",
+    "undeco:cracked_deepslate_brick_fence_gate",
+    "undeco:cracked_deepslate_tile_fence_gate"
   ]
 }

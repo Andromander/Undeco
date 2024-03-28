@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "minecraft:deepslate_tiles"
+    },
+    "/": {
+      "item": "minecraft:deepslate_tile_slab"
+    }
+  },
+  "pattern": [
+    "/#/",
+    "/#/"
+  ],
+  "result": {
+    "item": "undeco:deepslate_tile_fence_gate"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "undeco:deepslate_door"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "undeco:deepslate_saddle_door"
+  }
+}

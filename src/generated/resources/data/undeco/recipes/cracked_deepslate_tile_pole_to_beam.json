@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "undeco:cracked_deepslate_tile_pole"
+    }
+  ],
+  "result": {
+    "item": "undeco:cracked_deepslate_tile_beam"
+  }
+}
