@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:deepslate_brick_pole"
-            ]
+            "items": "undeco:deepslate_brick_pole"
           }
         ]
       },

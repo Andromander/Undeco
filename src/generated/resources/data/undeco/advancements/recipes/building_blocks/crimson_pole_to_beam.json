@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:crimson_pole"
-            ]
+            "items": "undeco:crimson_pole"
           }
         ]
       },

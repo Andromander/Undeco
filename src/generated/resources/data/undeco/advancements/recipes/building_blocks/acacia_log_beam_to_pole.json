@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:acacia_log_beam"
-            ]
+            "items": "undeco:acacia_log_beam"
           }
         ]
       },

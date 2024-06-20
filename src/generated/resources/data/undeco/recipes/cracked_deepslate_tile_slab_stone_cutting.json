@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 2,
   "ingredient": {
     "item": "minecraft:cracked_deepslate_tiles"
   },
-  "result": "undeco:cracked_deepslate_tile_slab"
+  "result": {
+    "count": 2,
+    "id": "undeco:cracked_deepslate_tile_slab"
+  }
 }

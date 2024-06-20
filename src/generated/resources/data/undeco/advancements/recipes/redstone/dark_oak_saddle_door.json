@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:dark_oak_trapdoor"
-            ]
+            "items": "minecraft:dark_oak_trapdoor"
           }
         ]
       },

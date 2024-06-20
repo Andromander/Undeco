@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:acacia_pole"
-            ]
+            "items": "undeco:acacia_pole"
           }
         ]
       },

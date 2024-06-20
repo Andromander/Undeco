@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:warped_trapdoor"
-            ]
+            "items": "minecraft:warped_trapdoor"
           }
         ]
       },

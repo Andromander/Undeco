@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:tuff_beam"
-            ]
+            "items": "undeco:tuff_beam"
           }
         ]
       },

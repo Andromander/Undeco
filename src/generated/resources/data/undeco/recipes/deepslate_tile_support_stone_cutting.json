@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:deepslate_tiles"
   },
-  "result": "undeco:deepslate_tile_support"
+  "result": {
+    "count": 1,
+    "id": "undeco:deepslate_tile_support"
+  }
 }

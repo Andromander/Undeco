@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:andesite_pole"
-            ]
+            "items": "undeco:andesite_pole"
           }
         ]
       },

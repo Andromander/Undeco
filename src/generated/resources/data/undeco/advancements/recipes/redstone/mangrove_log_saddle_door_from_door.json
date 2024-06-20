@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:mangrove_log_door"
-            ]
+            "items": "undeco:mangrove_log_door"
           }
         ]
       },

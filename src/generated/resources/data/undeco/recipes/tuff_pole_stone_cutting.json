@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 4,
   "ingredient": {
     "item": "minecraft:tuff"
   },
-  "result": "undeco:tuff_pole"
+  "result": {
+    "count": 4,
+    "id": "undeco:tuff_pole"
+  }
 }

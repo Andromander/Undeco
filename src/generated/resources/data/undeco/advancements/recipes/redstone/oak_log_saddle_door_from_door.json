@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:oak_log_door"
-            ]
+            "items": "undeco:oak_log_door"
           }
         ]
       },

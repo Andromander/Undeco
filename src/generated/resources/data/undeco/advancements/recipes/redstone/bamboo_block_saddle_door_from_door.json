@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:bamboo_block_door"
-            ]
+            "items": "undeco:bamboo_block_door"
           }
         ]
       },

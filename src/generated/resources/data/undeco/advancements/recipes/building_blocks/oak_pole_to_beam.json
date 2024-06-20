@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:oak_pole"
-            ]
+            "items": "undeco:oak_pole"
           }
         ]
       },

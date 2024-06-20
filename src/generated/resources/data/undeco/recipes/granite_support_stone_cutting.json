@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:granite"
   },
-  "result": "undeco:granite_support"
+  "result": {
+    "count": 1,
+    "id": "undeco:granite_support"
+  }
 }

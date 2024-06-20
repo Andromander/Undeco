@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:warped_pole"
-            ]
+            "items": "undeco:warped_pole"
           }
         ]
       },

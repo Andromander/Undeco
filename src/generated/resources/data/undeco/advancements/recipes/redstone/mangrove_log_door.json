@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:mangrove_log_slab"
-            ]
+            "items": "undeco:mangrove_log_slab"
           }
         ]
       },

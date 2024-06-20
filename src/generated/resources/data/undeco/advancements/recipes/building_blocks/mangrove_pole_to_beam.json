@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:mangrove_pole"
-            ]
+            "items": "undeco:mangrove_pole"
           }
         ]
       },

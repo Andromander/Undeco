@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:prismarine_brick_door"
-            ]
+            "items": "undeco:prismarine_brick_door"
           }
         ]
       },

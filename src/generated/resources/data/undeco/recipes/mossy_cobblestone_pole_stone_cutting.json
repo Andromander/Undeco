@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 4,
   "ingredient": {
     "item": "minecraft:mossy_cobblestone"
   },
-  "result": "undeco:mossy_cobblestone_pole"
+  "result": {
+    "count": 4,
+    "id": "undeco:mossy_cobblestone_pole"
+  }
 }

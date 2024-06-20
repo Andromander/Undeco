@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:tuff"
   },
-  "result": "undeco:tuff_wall"
+  "result": {
+    "count": 1,
+    "id": "undeco:tuff_wall"
+  }
 }

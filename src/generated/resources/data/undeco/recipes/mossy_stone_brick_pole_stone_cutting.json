@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 4,
   "ingredient": {
     "item": "minecraft:mossy_stone_bricks"
   },
-  "result": "undeco:mossy_stone_brick_pole"
+  "result": {
+    "count": 4,
+    "id": "undeco:mossy_stone_brick_pole"
+  }
 }

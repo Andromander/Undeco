@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:polished_granite_pole"
-            ]
+            "items": "undeco:polished_granite_pole"
           }
         ]
       },

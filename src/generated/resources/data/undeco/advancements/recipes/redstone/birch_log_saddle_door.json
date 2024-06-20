@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:birch_log_trapdoor"
-            ]
+            "items": "undeco:birch_log_trapdoor"
           }
         ]
       },

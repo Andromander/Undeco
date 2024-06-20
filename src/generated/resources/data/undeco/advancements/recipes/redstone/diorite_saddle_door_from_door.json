@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:diorite_door"
-            ]
+            "items": "undeco:diorite_door"
           }
         ]
       },

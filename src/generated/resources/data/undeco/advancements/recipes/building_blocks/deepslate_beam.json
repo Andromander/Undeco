@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:deepslate_slab"
-            ]
+            "items": "undeco:deepslate_slab"
           }
         ]
       },

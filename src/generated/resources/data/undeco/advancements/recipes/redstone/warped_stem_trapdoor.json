@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:warped_stem_slab"
-            ]
+            "items": "undeco:warped_stem_slab"
           }
         ]
       },

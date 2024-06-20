@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:blackstone"
   },
-  "result": "undeco:blackstone_support"
+  "result": {
+    "count": 1,
+    "id": "undeco:blackstone_support"
+  }
 }

@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:oak_log_slab"
-            ]
+            "items": "undeco:oak_log_slab"
           }
         ]
       },

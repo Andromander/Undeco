@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:jungle_beam"
-            ]
+            "items": "undeco:jungle_beam"
           }
         ]
       },

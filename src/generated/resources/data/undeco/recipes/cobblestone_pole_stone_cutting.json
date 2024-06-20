@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 4,
   "ingredient": {
     "item": "minecraft:cobblestone"
   },
-  "result": "undeco:cobblestone_pole"
+  "result": {
+    "count": 4,
+    "id": "undeco:cobblestone_pole"
+  }
 }

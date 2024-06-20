@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 4,
   "ingredient": {
     "item": "minecraft:smooth_sandstone"
   },
-  "result": "undeco:smooth_sandstone_beam"
+  "result": {
+    "count": 4,
+    "id": "undeco:smooth_sandstone_beam"
+  }
 }

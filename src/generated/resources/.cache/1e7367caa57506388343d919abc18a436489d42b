@@ -1,8 +1,8 @@
-// 1.20.4	2024-03-25T17:27:35.3071719	Tags for minecraft:item mod id undeco
-d5ccc444847935d6c10488e6e1df87c4c15a599e data/forge/tags/items/fences.json
-252b2321309e6ec4ed4324252295a41d022320b8 data/forge/tags/items/fences/wooden.json
-cedb1f2cef8396a63546c546ef658bc05f5667c9 data/forge/tags/items/fence_gates.json
-3180faca56f3658b1309c62397299dbe424c3479 data/forge/tags/items/fence_gates/wooden.json
+// 1.20.6	2024-06-20T20:02:45.498493	Tags for minecraft:item mod id undeco
+d5ccc444847935d6c10488e6e1df87c4c15a599e data/c/tags/items/fences.json
+252b2321309e6ec4ed4324252295a41d022320b8 data/c/tags/items/fences/wooden.json
+cedb1f2cef8396a63546c546ef658bc05f5667c9 data/c/tags/items/fence_gates.json
+3180faca56f3658b1309c62397299dbe424c3479 data/c/tags/items/fence_gates/wooden.json
 e6b12cd341c1fe3880a8dede8979d3b9ec7fc86c data/minecraft/tags/items/doors.json
 d5ccc444847935d6c10488e6e1df87c4c15a599e data/minecraft/tags/items/fences.json
 cedb1f2cef8396a63546c546ef658bc05f5667c9 data/minecraft/tags/items/fence_gates.json

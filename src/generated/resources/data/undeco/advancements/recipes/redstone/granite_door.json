@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:granite_slab"
-            ]
+            "items": "minecraft:granite_slab"
           }
         ]
       },

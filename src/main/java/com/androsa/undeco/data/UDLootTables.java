@@ -1,13 +1,12 @@
 package com.androsa.undeco.data;
 
-import com.androsa.ornamental.blocks.OrnamentFence;
-import com.androsa.ornamental.blocks.OrnamentStair;
 import com.androsa.ornamental.data.provider.OrnamentLootTableProvider;
 import com.androsa.undeco.ModBlocks;
-import com.androsa.undeco.UDBuilders;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.core.WritableRegistry;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.ProblemReporter;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootTable;
@@ -15,20 +14,19 @@ import net.minecraft.world.level.storage.loot.ValidationContext;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.CompletableFuture;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 public class UDLootTables extends LootTableProvider {
 
-    public UDLootTables(PackOutput output) {
-        super(output, Set.of(), List.of(new SubProviderEntry(BlockTables::new, LootContextParamSets.BLOCK)));
+    public UDLootTables(PackOutput output, CompletableFuture<HolderLookup.Provider> provider) {
+        super(output, Set.of(), List.of(new SubProviderEntry(BlockTables::new, LootContextParamSets.BLOCK)), provider);
     }
 
     @Override
-    protected void validate(Map<ResourceLocation, LootTable> map, ValidationContext validationtracker) {
-
+    protected void validate(WritableRegistry<LootTable> writableregistry, ValidationContext validationcontext, ProblemReporter.Collector problemreporter$collector) {
     }
 
     public static class BlockTables extends OrnamentLootTableProvider {

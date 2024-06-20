@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:birch_pole"
-            ]
+            "items": "undeco:birch_pole"
           }
         ]
       },

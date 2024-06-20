@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 4,
   "ingredient": {
     "item": "minecraft:diorite"
   },
-  "result": "undeco:diorite_beam"
+  "result": {
+    "count": 4,
+    "id": "undeco:diorite_beam"
+  }
 }

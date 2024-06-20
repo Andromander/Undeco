@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:red_sandstone"
   },
-  "result": "undeco:red_sandstone_support"
+  "result": {
+    "count": 1,
+    "id": "undeco:red_sandstone_support"
+  }
 }

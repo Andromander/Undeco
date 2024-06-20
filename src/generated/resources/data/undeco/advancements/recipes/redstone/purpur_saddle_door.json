@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:purpur_trapdoor"
-            ]
+            "items": "undeco:purpur_trapdoor"
           }
         ]
       },

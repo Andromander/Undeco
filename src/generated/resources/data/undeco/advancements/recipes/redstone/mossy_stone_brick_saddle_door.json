@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:mossy_stone_brick_trapdoor"
-            ]
+            "items": "undeco:mossy_stone_brick_trapdoor"
           }
         ]
       },

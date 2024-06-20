@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:cherry_log_door"
-            ]
+            "items": "undeco:cherry_log_door"
           }
         ]
       },

@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:acacia_log_trapdoor"
-            ]
+            "items": "undeco:acacia_log_trapdoor"
           }
         ]
       },

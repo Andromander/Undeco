@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:cracked_deepslate_brick_trapdoor"
-            ]
+            "items": "undeco:cracked_deepslate_brick_trapdoor"
           }
         ]
       },

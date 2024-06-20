@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:polished_blackstone_beam"
-            ]
+            "items": "undeco:polished_blackstone_beam"
           }
         ]
       },

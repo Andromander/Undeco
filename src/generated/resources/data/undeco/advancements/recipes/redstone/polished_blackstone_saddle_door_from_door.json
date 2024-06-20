@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:polished_blackstone_door"
-            ]
+            "items": "undeco:polished_blackstone_door"
           }
         ]
       },

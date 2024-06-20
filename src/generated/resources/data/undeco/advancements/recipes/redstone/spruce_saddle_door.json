@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:spruce_trapdoor"
-            ]
+            "items": "minecraft:spruce_trapdoor"
           }
         ]
       },

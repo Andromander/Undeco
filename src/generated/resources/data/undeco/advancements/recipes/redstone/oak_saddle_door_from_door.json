@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:oak_door"
-            ]
+            "items": "minecraft:oak_door"
           }
         ]
       },

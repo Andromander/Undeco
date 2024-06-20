@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:warped_beam"
-            ]
+            "items": "undeco:warped_beam"
           }
         ]
       },

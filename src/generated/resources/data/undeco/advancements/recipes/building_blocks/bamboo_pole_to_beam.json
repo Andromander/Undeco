@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:bamboo_pole"
-            ]
+            "items": "undeco:bamboo_pole"
           }
         ]
       },

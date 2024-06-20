@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:smooth_red_sandstone_beam"
-            ]
+            "items": "undeco:smooth_red_sandstone_beam"
           }
         ]
       },

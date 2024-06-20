@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 4,
   "ingredient": {
     "item": "minecraft:prismarine"
   },
-  "result": "undeco:prismarine_beam"
+  "result": {
+    "count": 4,
+    "id": "undeco:prismarine_beam"
+  }
 }

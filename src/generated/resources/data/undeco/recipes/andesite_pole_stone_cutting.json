@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 4,
   "ingredient": {
     "item": "minecraft:andesite"
   },
-  "result": "undeco:andesite_pole"
+  "result": {
+    "count": 4,
+    "id": "undeco:andesite_pole"
+  }
 }

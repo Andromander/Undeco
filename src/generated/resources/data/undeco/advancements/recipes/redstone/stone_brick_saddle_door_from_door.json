@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "undeco:stone_brick_door"
-            ]
+            "items": "undeco:stone_brick_door"
           }
         ]
       },
