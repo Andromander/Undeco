@@ -77,7 +77,7 @@ public class UDBuilders {
                 .stairBaseBlock(() -> base)
                 .blockSetType(type)
                 .instrument(NoteBlockInstrument.BASS)
-                .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300, 100)
+                .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300, 100, 300)
                 .addBlockTags(new ArrayList<>(List.of(UDBlockTags.AXE_TOOL)))
                 .lavaIgnites()
                 .flammable(20, 5);
@@ -90,7 +90,7 @@ public class UDBuilders {
                 .stairBaseBlock(() -> base)
                 .blockSetType(type)
                 .instrument(NoteBlockInstrument.BASS)
-                .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300, 100)
+                .burnTime(200, 300, 300, 150, 300, 300, 150, 150, 300, 100, 300)
                 .addBlockTags(new ArrayList<>(List.of(UDBlockTags.AXE_TOOL)));
     }
 

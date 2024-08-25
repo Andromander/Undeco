@@ -31,8 +31,8 @@ public class UDLootTables extends LootTableProvider {
 
     public static class BlockTables extends OrnamentLootTableProvider {
 
-        protected BlockTables() {
-            super(Set.of(), FeatureFlags.REGISTRY.allFlags());
+        protected BlockTables(HolderLookup.Provider provider) {
+            super(Set.of(), FeatureFlags.REGISTRY.allFlags(), provider);
         }
 
         @Override
