@@ -1,4 +1,4 @@
-// 1.21	2024-09-24T22:39:19.6279813	Recipes
+// 1.21	2024-09-25T23:43:43.9831718	Recipes
 d0cfaca0b8262fcfbb3ff71feb3c5cce75f5fef1 data/undeco/advancement/recipes/building_blocks/acacia_beam.json
 ca48495fdc6addcad6d916e0eff1f4ff4a016021 data/undeco/advancement/recipes/building_blocks/acacia_beam_to_pole.json
 5fda279f0f7a63cc31a24422e9dad6b594c62cfc data/undeco/advancement/recipes/building_blocks/acacia_log_beam.json
@@ -705,7 +705,7 @@ f410208553a6194f38d86fe65c18a0597fb097c6 data/undeco/advancement/recipes/redston
 3d85ff3cda7e6fe45e33cfce6a14b293a7646265 data/undeco/advancement/recipes/redstone/tuff_saddle_door_from_door.json
 e86f9905bc587e1f451f1f3c935f0bfb18e1b2d4 data/undeco/advancement/recipes/redstone/tuff_trapdoor.json
 685979c694da4644a7d507db7048099949010065 data/undeco/advancement/recipes/redstone/warped_saddle_door.json
-3f4e935624c9def4fb9d1785fe1893e6542e37f7 data/undeco/advancement/recipes/redstone/warped_saddle_door_from_door.json
+4ed97adf2d81c1a6b9631412ed62a1590b250d6a data/undeco/advancement/recipes/redstone/warped_saddle_door_from_door.json
 467046bb96e0b5d93210f5748ad49d0b8bc404fd data/undeco/advancement/recipes/redstone/warped_stem_door.json
 cb8fb4c0adb9b489e115c6a1ba4906d06f436fa8 data/undeco/advancement/recipes/redstone/warped_stem_fence_gate.json
 f790013e8a8e652c84915c896bf65683e70bcd37 data/undeco/advancement/recipes/redstone/warped_stem_saddle_door.json
@@ -1406,7 +1406,7 @@ cdc72ce30187171f6665a04390d6bb7fbebabb09 data/undeco/recipe/tuff_wall_stone_cutt
 91fcfc5366a52d887eac9a88d46309081fce35c7 data/undeco/recipe/warped_pole.json
 b174e066950394fd078c078d2c8af3c2a2baedc0 data/undeco/recipe/warped_pole_to_beam.json
 515fb9d4146d972dfebfe6555d3974fe6bed7306 data/undeco/recipe/warped_saddle_door.json
-2a632deda59d8e82cf365d2102f5a8072883857a data/undeco/recipe/warped_saddle_door_from_door.json
+cbea7471ca41c0a692ffecc73915f62f81bc29d1 data/undeco/recipe/warped_saddle_door_from_door.json
 17705aa4eb2dcc2c44a9a489aa84614d30c50dd8 data/undeco/recipe/warped_stem_beam.json
 273b03a5e6749094a7492403257b768bf72c9762 data/undeco/recipe/warped_stem_beam_to_pole.json
 82a1c8bcf51b27b5230537404f348b18e0341ae2 data/undeco/recipe/warped_stem_door.json
