@@ -1,0 +1,9 @@
+{
+  "parent": "ornamental:block/util/beam_inventory",
+  "render_type": "minecraft:solid",
+  "textures": {
+    "bottom": "minecraft:block/andesite",
+    "side": "minecraft:block/andesite",
+    "top": "minecraft:block/andesite"
+  }
+}

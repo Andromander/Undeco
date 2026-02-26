@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "key": {
-    "#": {
-      "item": "minecraft:diorite"
-    },
-    "/": {
-      "item": "minecraft:diorite_slab"
-    }
+    "#": "minecraft:diorite",
+    "/": "minecraft:diorite_slab"
   },
   "pattern": [
     "/#/",

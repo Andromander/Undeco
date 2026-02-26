@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "key": {
-    "#": {
-      "item": "undeco:sandstone_trapdoor"
-    }
+    "#": "undeco:sandstone_trapdoor"
   },
   "pattern": [
     "#",

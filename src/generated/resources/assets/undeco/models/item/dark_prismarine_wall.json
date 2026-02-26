@@ -1,8 +1,0 @@
-{
-  "parent": "ornamental:block/util/wall_inventory",
-  "textures": {
-    "bottom": "minecraft:block/dark_prismarine",
-    "side": "minecraft:block/dark_prismarine",
-    "top": "minecraft:block/dark_prismarine"
-  }
-}

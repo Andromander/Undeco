@@ -3,9 +3,13 @@ package com.androsa.undeco.data;
 import com.androsa.ornamental.data.provider.OrnamentalRecipeProvider;
 import com.androsa.undeco.ModBlocks;
 import com.androsa.undeco.UnusuallyDecorative;
+import net.minecraft.core.HolderGetter;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeOutput;
+import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 
@@ -13,13 +17,14 @@ import java.util.concurrent.CompletableFuture;
 
 public class UDRecipes extends OrnamentalRecipeProvider {
 
-    public UDRecipes(PackOutput output, CompletableFuture<HolderLookup.Provider> provider) {
-        super(output, provider, UnusuallyDecorative.MODID);
+    public UDRecipes(HolderLookup.Provider provider, RecipeOutput output) {
+        super(provider, output, UnusuallyDecorative.MODID);
     }
 
     @Override
-    protected void buildRecipes(RecipeOutput consumer) {
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.OAK_PLANKS, Blocks.OAK_SLAB, false)
+    protected void buildRecipes() {
+        HolderGetter<Item> registry = registries.lookupOrThrow(Registries.ITEM);
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.OAK_PLANKS, Blocks.OAK_SLAB, false)
                 .slab(add(() -> Blocks.OAK_SLAB, false))
                 .trapdoor(add(() -> Blocks.OAK_TRAPDOOR, false), false)
                 .door(add(() -> Blocks.OAK_DOOR, false))
@@ -29,7 +34,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.oak_saddle_door, false))
                 .support(add(ModBlocks.oak_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_SLAB, false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_SLAB, false)
                 .slab(add(() -> Blocks.SPRUCE_SLAB, false))
                 .trapdoor(add(() -> Blocks.SPRUCE_TRAPDOOR, false), false)
                 .door(add(() -> Blocks.SPRUCE_DOOR, false))
@@ -39,7 +44,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.spruce_saddle_door, false))
                 .support(add(ModBlocks.spruce_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.BIRCH_PLANKS, Blocks.BIRCH_SLAB, false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.BIRCH_PLANKS, Blocks.BIRCH_SLAB, false)
                 .slab(add(() -> Blocks.BIRCH_SLAB, false))
                 .trapdoor(add(() -> Blocks.BIRCH_TRAPDOOR, false), false)
                 .door(add(() -> Blocks.BIRCH_DOOR, false))
@@ -49,7 +54,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.birch_saddle_door, false))
                 .support(add(ModBlocks.birch_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_SLAB, false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.JUNGLE_PLANKS, Blocks.JUNGLE_SLAB, false)
                 .slab(add(() -> Blocks.JUNGLE_SLAB, false))
                 .trapdoor(add(() -> Blocks.JUNGLE_TRAPDOOR, false), false)
                 .door(add(() -> Blocks.JUNGLE_DOOR, false))
@@ -59,7 +64,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.jungle_saddle_door, false))
                 .support(add(ModBlocks.jungle_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.ACACIA_PLANKS, Blocks.ACACIA_SLAB, false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.ACACIA_PLANKS, Blocks.ACACIA_SLAB, false)
                 .slab(add(() -> Blocks.ACACIA_SLAB, false))
                 .trapdoor(add(() -> Blocks.ACACIA_TRAPDOOR, false), false)
                 .door(add(() -> Blocks.ACACIA_DOOR, false))
@@ -69,7 +74,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.acacia_saddle_door, false))
                 .support(add(ModBlocks.acacia_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.CHERRY_PLANKS, Blocks.CHERRY_SLAB, false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.CHERRY_PLANKS, Blocks.CHERRY_SLAB, false)
                 .slab(add(() -> Blocks.CHERRY_SLAB, false))
                 .trapdoor(add(() -> Blocks.CHERRY_TRAPDOOR, false), false)
                 .door(add(() -> Blocks.CHERRY_DOOR, false))
@@ -79,7 +84,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.cherry_saddle_door, false))
                 .support(add(ModBlocks.cherry_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_SLAB, false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.DARK_OAK_PLANKS, Blocks.DARK_OAK_SLAB, false)
                 .slab(add(() -> Blocks.DARK_OAK_SLAB, false))
                 .trapdoor(add(() -> Blocks.DARK_OAK_TRAPDOOR, false), false)
                 .door(add(() -> Blocks.DARK_OAK_DOOR, false))
@@ -89,7 +94,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.dark_oak_saddle_door, false))
                 .support(add(ModBlocks.dark_oak_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_SLAB, false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_SLAB, false)
                 .slab(add(() -> Blocks.MANGROVE_SLAB, false))
                 .trapdoor(add(() -> Blocks.MANGROVE_TRAPDOOR, false), false)
                 .door(add(() -> Blocks.MANGROVE_DOOR, false))
@@ -99,7 +104,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.mangrove_saddle_door, false))
                 .support(add(ModBlocks.mangrove_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_SLAB, false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_SLAB, false)
                 .slab(add(() -> Blocks.BAMBOO_SLAB, false))
                 .trapdoor(add(() -> Blocks.BAMBOO_TRAPDOOR, false), false)
                 .door(add(() -> Blocks.BAMBOO_DOOR, false))
@@ -109,7 +114,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.bamboo_saddle_door, false))
                 .support(add(ModBlocks.bamboo_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_SLAB, false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.CRIMSON_PLANKS, Blocks.CRIMSON_SLAB, false)
                 .slab(add(() -> Blocks.CRIMSON_SLAB, false))
                 .trapdoor(add(() -> Blocks.CRIMSON_TRAPDOOR, false), false)
                 .door(add(() -> Blocks.CRIMSON_DOOR, false))
@@ -119,7 +124,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.crimson_saddle_door, false))
                 .support(add(ModBlocks.crimson_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.WARPED_PLANKS, Blocks.WARPED_SLAB, false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.WARPED_PLANKS, Blocks.WARPED_SLAB, false)
                 .slab(add(() -> Blocks.WARPED_SLAB, false))
                 .trapdoor(add(() -> Blocks.WARPED_TRAPDOOR, false), false)
                 .door(add(() -> Blocks.WARPED_DOOR, false))
@@ -129,7 +134,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.warped_saddle_door, false))
                 .support(add(ModBlocks.warped_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.GRANITE, Blocks.GRANITE_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.GRANITE, Blocks.GRANITE_SLAB, true)
                 .slab(add(() -> Blocks.GRANITE_SLAB, false))
                 .fence(add(ModBlocks.granite_fence, false))
                 .trapdoor(add(ModBlocks.granite_trapdoor, false), true)
@@ -140,7 +145,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.granite_saddle_door, false))
                 .support(add(ModBlocks.granite_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.POLISHED_GRANITE, Blocks.POLISHED_GRANITE_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.POLISHED_GRANITE, Blocks.POLISHED_GRANITE_SLAB, true)
                 .slab(add(() -> Blocks.POLISHED_GRANITE_SLAB, false))
                 .fence(add(ModBlocks.polished_granite_fence, false))
                 .trapdoor(add(ModBlocks.polished_granite_trapdoor, false), true)
@@ -152,7 +157,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.polished_granite_saddle_door, false))
                 .support(add(ModBlocks.polished_granite_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.DIORITE, Blocks.DIORITE_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.DIORITE, Blocks.DIORITE_SLAB, true)
                 .slab(add(() -> Blocks.DIORITE_SLAB, false))
                 .fence(add(ModBlocks.diorite_fence, false))
                 .trapdoor(add(ModBlocks.diorite_trapdoor, false), true)
@@ -163,7 +168,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.diorite_saddle_door, false))
                 .support(add(ModBlocks.diorite_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.POLISHED_DIORITE, Blocks.POLISHED_DIORITE_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.POLISHED_DIORITE, Blocks.POLISHED_DIORITE_SLAB, true)
                 .slab(add(() -> Blocks.POLISHED_DIORITE_SLAB, false))
                 .fence(add(ModBlocks.polished_diorite_fence, false))
                 .trapdoor(add(ModBlocks.polished_diorite_trapdoor, false), true)
@@ -175,7 +180,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.polished_diorite_saddle_door, false))
                 .support(add(ModBlocks.polished_diorite_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.ANDESITE, Blocks.ANDESITE_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.ANDESITE, Blocks.ANDESITE_SLAB, true)
                 .slab(add(() -> Blocks.ANDESITE_SLAB, false))
                 .fence(add(ModBlocks.andesite_fence, false))
                 .trapdoor(add(ModBlocks.andesite_trapdoor, false), true)
@@ -186,7 +191,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.andesite_saddle_door, false))
                 .support(add(ModBlocks.andesite_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.POLISHED_ANDESITE, Blocks.POLISHED_ANDESITE_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.POLISHED_ANDESITE, Blocks.POLISHED_ANDESITE_SLAB, true)
                 .slab(add(() -> Blocks.POLISHED_ANDESITE_SLAB, false))
                 .fence(add(ModBlocks.polished_andesite_fence, false))
                 .trapdoor(add(ModBlocks.polished_andesite_trapdoor, false), true)
@@ -198,7 +203,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.polished_andesite_saddle_door, false))
                 .support(add(ModBlocks.polished_andesite_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.OAK_LOG, ModBlocks.oak_log_slab.get(), false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.OAK_LOG, ModBlocks.oak_log_slab.get(), false)
                 .stairs(add(ModBlocks.oak_log_stairs, false))
                 .slab(add(ModBlocks.oak_log_slab, false))
                 .trapdoor(add(ModBlocks.oak_log_trapdoor, false), true)
@@ -209,7 +214,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.oak_log_saddle_door, false))
                 .support(add(ModBlocks.oak_log_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.SPRUCE_LOG, ModBlocks.spruce_log_slab.get(), false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.SPRUCE_LOG, ModBlocks.spruce_log_slab.get(), false)
                 .stairs(add(ModBlocks.spruce_log_stairs, false))
                 .slab(add(ModBlocks.spruce_log_slab, false))
                 .trapdoor(add(ModBlocks.spruce_log_trapdoor, false), true)
@@ -220,7 +225,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.spruce_log_saddle_door, false))
                 .support(add(ModBlocks.spruce_log_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.BIRCH_LOG, ModBlocks.birch_log_slab.get(), false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.BIRCH_LOG, ModBlocks.birch_log_slab.get(), false)
                 .stairs(add(ModBlocks.birch_log_stairs, false))
                 .slab(add(ModBlocks.birch_log_slab, false))
                 .trapdoor(add(ModBlocks.birch_log_trapdoor, false), true)
@@ -231,7 +236,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.birch_log_saddle_door, false))
                 .support(add(ModBlocks.birch_log_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.JUNGLE_LOG, ModBlocks.jungle_log_slab.get(), false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.JUNGLE_LOG, ModBlocks.jungle_log_slab.get(), false)
                 .stairs(add(ModBlocks.jungle_log_stairs, false))
                 .slab(add(ModBlocks.jungle_log_slab, false))
                 .trapdoor(add(ModBlocks.jungle_log_trapdoor, false), true)
@@ -242,7 +247,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.jungle_log_saddle_door, false))
                 .support(add(ModBlocks.jungle_log_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.ACACIA_LOG, ModBlocks.acacia_log_slab.get(), false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.ACACIA_LOG, ModBlocks.acacia_log_slab.get(), false)
                 .stairs(add(ModBlocks.acacia_log_stairs, false))
                 .slab(add(ModBlocks.acacia_log_slab, false))
                 .trapdoor(add(ModBlocks.acacia_log_trapdoor, false), true)
@@ -253,7 +258,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.acacia_log_saddle_door, false))
                 .support(add(ModBlocks.acacia_log_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.CHERRY_LOG, ModBlocks.cherry_log_slab.get(), false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.CHERRY_LOG, ModBlocks.cherry_log_slab.get(), false)
                 .stairs(add(ModBlocks.cherry_log_stairs, false))
                 .slab(add(ModBlocks.cherry_log_slab, false))
                 .trapdoor(add(ModBlocks.cherry_log_trapdoor, false), true)
@@ -264,7 +269,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.cherry_log_saddle_door, false))
                 .support(add(ModBlocks.cherry_log_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.DARK_OAK_LOG, ModBlocks.dark_oak_log_slab.get(), false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.DARK_OAK_LOG, ModBlocks.dark_oak_log_slab.get(), false)
                 .stairs(add(ModBlocks.dark_oak_log_stairs, false))
                 .slab(add(ModBlocks.dark_oak_log_slab, false))
                 .trapdoor(add(ModBlocks.dark_oak_log_trapdoor, false), true)
@@ -275,7 +280,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.dark_oak_log_saddle_door, false))
                 .support(add(ModBlocks.dark_oak_log_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.MANGROVE_LOG, ModBlocks.mangrove_log_slab.get(), false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.MANGROVE_LOG, ModBlocks.mangrove_log_slab.get(), false)
                 .stairs(add(ModBlocks.mangrove_log_stairs, false))
                 .slab(add(ModBlocks.mangrove_log_slab, false))
                 .trapdoor(add(ModBlocks.mangrove_log_trapdoor, false), true)
@@ -286,7 +291,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.mangrove_log_saddle_door, false))
                 .support(add(ModBlocks.mangrove_log_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.BAMBOO_BLOCK, ModBlocks.bamboo_block_slab.get(), false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.BAMBOO_BLOCK, ModBlocks.bamboo_block_slab.get(), false)
                 .stairs(add(ModBlocks.bamboo_block_stairs, false))
                 .slab(add(ModBlocks.bamboo_block_slab, false))
                 .trapdoor(add(ModBlocks.bamboo_block_trapdoor, false), true)
@@ -297,7 +302,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.bamboo_block_saddle_door, false))
                 .support(add(ModBlocks.bamboo_block_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.CRIMSON_STEM, ModBlocks.crimson_stem_slab.get(), false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.CRIMSON_STEM, ModBlocks.crimson_stem_slab.get(), false)
                 .stairs(add(ModBlocks.crimson_stem_stairs, false))
                 .slab(add(ModBlocks.crimson_stem_slab, false))
                 .trapdoor(add(ModBlocks.crimson_stem_trapdoor, false), true)
@@ -308,7 +313,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.crimson_stem_saddle_door, false))
                 .support(add(ModBlocks.crimson_stem_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.WARPED_STEM, ModBlocks.warped_stem_slab.get(), false)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.WARPED_STEM, ModBlocks.warped_stem_slab.get(), false)
                 .stairs(add(ModBlocks.warped_stem_stairs, false))
                 .slab(add(ModBlocks.warped_stem_slab, false))
                 .trapdoor(add(ModBlocks.warped_stem_trapdoor, false), true)
@@ -319,7 +324,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.warped_stem_saddle_door, false))
                 .support(add(ModBlocks.warped_stem_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.BLACKSTONE, Blocks.BLACKSTONE_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.BLACKSTONE, Blocks.BLACKSTONE_SLAB, true)
                 .slab(add(() -> Blocks.BLACKSTONE_SLAB, false))
                 .fence(add(ModBlocks.blackstone_fence, false))
                 .trapdoor(add(ModBlocks.blackstone_trapdoor, false), true)
@@ -330,7 +335,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.blackstone_saddle_door, false))
                 .support(add(ModBlocks.blackstone_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.POLISHED_BLACKSTONE, Blocks.POLISHED_BLACKSTONE_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.POLISHED_BLACKSTONE, Blocks.POLISHED_BLACKSTONE_SLAB, true)
                 .slab(add(() -> Blocks.POLISHED_BLACKSTONE_SLAB, false))
                 .fence(add(ModBlocks.polished_blackstone_fence, false))
                 .trapdoor(add(ModBlocks.polished_blackstone_trapdoor, false), true)
@@ -341,7 +346,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.polished_blackstone_saddle_door, false))
                 .support(add(ModBlocks.polished_blackstone_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.STONE, Blocks.STONE_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.STONE, Blocks.STONE_SLAB, true)
                 .slab(add(() -> Blocks.STONE_SLAB, false))
                 .fence(add(ModBlocks.stone_fence, false))
                 .trapdoor(add(ModBlocks.stone_trapdoor, false), true)
@@ -353,7 +358,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.stone_saddle_door, false))
                 .support(add(ModBlocks.stone_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.SMOOTH_STONE, Blocks.SMOOTH_STONE_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.SMOOTH_STONE, Blocks.SMOOTH_STONE_SLAB, true)
                 .stairs(add(ModBlocks.smooth_stone_stairs, false))
                 .slab(add(() -> Blocks.SMOOTH_STONE_SLAB, false))
                 .fence(add(ModBlocks.smooth_stone_fence, false))
@@ -366,7 +371,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.smooth_stone_saddle_door, false))
                 .support(add(ModBlocks.smooth_stone_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.COBBLESTONE, Blocks.COBBLESTONE_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.COBBLESTONE, Blocks.COBBLESTONE_SLAB, true)
                 .slab(add(() -> Blocks.COBBLESTONE_SLAB, false))
                 .fence(add(ModBlocks.cobblestone_fence, false))
                 .trapdoor(add(ModBlocks.cobblestone_trapdoor, false), true)
@@ -377,7 +382,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.cobblestone_saddle_door, false))
                 .support(add(ModBlocks.cobblestone_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.MOSSY_COBBLESTONE, Blocks.MOSSY_COBBLESTONE_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.MOSSY_COBBLESTONE, Blocks.MOSSY_COBBLESTONE_SLAB, true)
                 .slab(add(() -> Blocks.MOSSY_COBBLESTONE_SLAB, false))
                 .fence(add(ModBlocks.mossy_cobblestone_fence, false))
                 .trapdoor(add(ModBlocks.mossy_cobblestone_trapdoor, false), true)
@@ -388,7 +393,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.mossy_cobblestone_saddle_door, false))
                 .support(add(ModBlocks.mossy_cobblestone_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.SANDSTONE, Blocks.SANDSTONE_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.SANDSTONE, Blocks.SANDSTONE_SLAB, true)
                 .slab(add(() -> Blocks.SANDSTONE_SLAB, false))
                 .fence(add(ModBlocks.sandstone_fence, false))
                 .trapdoor(add(ModBlocks.sandstone_trapdoor, false), true)
@@ -399,7 +404,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.sandstone_saddle_door, false))
                 .support(add(ModBlocks.sandstone_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.SMOOTH_SANDSTONE, Blocks.SMOOTH_SANDSTONE_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.SMOOTH_SANDSTONE, Blocks.SMOOTH_SANDSTONE_SLAB, true)
                 .slab(add(() -> Blocks.SMOOTH_SANDSTONE_SLAB, false))
                 .fence(add(ModBlocks.smooth_sandstone_fence, false))
                 .trapdoor(add(ModBlocks.smooth_sandstone_trapdoor, false), true)
@@ -411,7 +416,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.smooth_sandstone_saddle_door, false))
                 .support(add(ModBlocks.smooth_sandstone_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.RED_SANDSTONE, Blocks.RED_SANDSTONE_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.RED_SANDSTONE, Blocks.RED_SANDSTONE_SLAB, true)
                 .slab(add(() -> Blocks.RED_SANDSTONE_SLAB, false))
                 .fence(add(ModBlocks.red_sandstone_fence, false))
                 .trapdoor(add(ModBlocks.red_sandstone_trapdoor, false), true)
@@ -422,7 +427,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.red_sandstone_saddle_door, false))
                 .support(add(ModBlocks.red_sandstone_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.SMOOTH_RED_SANDSTONE, Blocks.SMOOTH_RED_SANDSTONE_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.SMOOTH_RED_SANDSTONE, Blocks.SMOOTH_RED_SANDSTONE_SLAB, true)
                 .slab(add(() -> Blocks.SMOOTH_RED_SANDSTONE_SLAB, false))
                 .fence(add(ModBlocks.smooth_red_sandstone_fence, false))
                 .trapdoor(add(ModBlocks.smooth_red_sandstone_trapdoor, false), true)
@@ -434,7 +439,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.smooth_red_sandstone_saddle_door, false))
                 .support(add(ModBlocks.smooth_red_sandstone_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.STONE_BRICKS, Blocks.STONE_BRICK_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.STONE_BRICKS, Blocks.STONE_BRICK_SLAB, true)
                 .slab(add(() -> Blocks.STONE_BRICK_SLAB, false))
                 .fence(add(ModBlocks.stone_brick_fence, false))
                 .trapdoor(add(ModBlocks.stone_brick_trapdoor, false), true)
@@ -445,7 +450,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.stone_brick_saddle_door, false))
                 .support(add(ModBlocks.stone_brick_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.CRACKED_STONE_BRICKS, ModBlocks.cracked_stone_brick_slab.get(), true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.CRACKED_STONE_BRICKS, ModBlocks.cracked_stone_brick_slab.get(), true)
                 .stairs(add(ModBlocks.cracked_stone_brick_stairs, false))
                 .slab(add(ModBlocks.cracked_stone_brick_slab, false))
                 .fence(add(ModBlocks.cracked_stone_brick_fence, false))
@@ -458,7 +463,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.cracked_stone_brick_saddle_door, false))
                 .support(add(ModBlocks.cracked_stone_brick_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.MOSSY_STONE_BRICKS, Blocks.MOSSY_STONE_BRICK_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.MOSSY_STONE_BRICKS, Blocks.MOSSY_STONE_BRICK_SLAB, true)
                 .slab(add(() -> Blocks.MOSSY_STONE_BRICK_SLAB, false))
                 .fence(add(ModBlocks.mossy_stone_brick_fence, false))
                 .trapdoor(add(ModBlocks.mossy_stone_brick_trapdoor, false), true)
@@ -469,7 +474,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.mossy_stone_brick_saddle_door, false))
                 .support(add(ModBlocks.mossy_stone_brick_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.PRISMARINE, Items.PRISMARINE_SHARD, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.PRISMARINE, Items.PRISMARINE_SHARD, true)
                 .slab(add(() -> Blocks.PRISMARINE_SLAB, false))
                 .fence(add(ModBlocks.prismarine_fence, false))
                 .trapdoor(add(ModBlocks.prismarine_trapdoor, false), true)
@@ -480,7 +485,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.prismarine_saddle_door, false))
                 .support(add(ModBlocks.prismarine_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.PRISMARINE_BRICKS, Blocks.PRISMARINE_BRICK_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.PRISMARINE_BRICKS, Blocks.PRISMARINE_BRICK_SLAB, true)
                 .slab(add(() -> Blocks.PRISMARINE_BRICK_SLAB, false))
                 .trapdoor(add(ModBlocks.prismarine_brick_trapdoor, false), true)
                 .door(add(ModBlocks.prismarine_brick_door, false))
@@ -490,7 +495,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.prismarine_brick_saddle_door, false))
                 .support(add(ModBlocks.prismarine_brick_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.DARK_PRISMARINE, Blocks.DARK_PRISMARINE_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.DARK_PRISMARINE, Blocks.DARK_PRISMARINE_SLAB, true)
                 .slab(add(() -> Blocks.DARK_PRISMARINE_SLAB, false))
                 .trapdoor(add(ModBlocks.dark_prismarine_trapdoor, false), true)
                 .door(add(ModBlocks.dark_prismarine_door, false))
@@ -500,7 +505,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.dark_prismarine_saddle_door, false))
                 .support(add(ModBlocks.dark_prismarine_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.PURPUR_BLOCK, Blocks.PURPUR_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.PURPUR_BLOCK, Blocks.PURPUR_SLAB, true)
                 .slab(add(() -> Blocks.PURPUR_SLAB, false))
                 .fence(add(ModBlocks.purpur_fence, false))
                 .trapdoor(add(ModBlocks.purpur_trapdoor, false), true)
@@ -512,7 +517,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.purpur_saddle_door, false))
                 .support(add(ModBlocks.purpur_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.TUFF, ModBlocks.tuff_slab.get(), true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.TUFF, ModBlocks.tuff_slab.get(), true)
                 .stairs(add(ModBlocks.tuff_stairs, false))
                 .slab(add(ModBlocks.tuff_slab, false))
                 .fence(add(ModBlocks.tuff_fence, false))
@@ -525,7 +530,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.tuff_saddle_door, false))
                 .support(add(ModBlocks.tuff_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.DEEPSLATE, ModBlocks.deepslate_slab.get(), true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.DEEPSLATE, ModBlocks.deepslate_slab.get(), true)
                 .stairs(add(ModBlocks.deepslate_stairs, false))
                 .slab(add(ModBlocks.deepslate_slab, false))
                 .fence(add(ModBlocks.deepslate_fence, false))
@@ -538,7 +543,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.deepslate_saddle_door, false))
                 .support(add(ModBlocks.deepslate_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.COBBLED_DEEPSLATE, Blocks.COBBLED_DEEPSLATE_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.COBBLED_DEEPSLATE, Blocks.COBBLED_DEEPSLATE_SLAB, true)
                 .fence(add(ModBlocks.cobbled_deepslate_fence, false))
                 .trapdoor(add(ModBlocks.cobbled_deepslate_trapdoor, false), true)
                 .fencegate(add(ModBlocks.cobbled_deepslate_fence_gate, false))
@@ -548,7 +553,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.cobbled_deepslate_saddle_door, false))
                 .support(add(ModBlocks.cobbled_deepslate_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.POLISHED_DEEPSLATE, Blocks.POLISHED_DEEPSLATE_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.POLISHED_DEEPSLATE, Blocks.POLISHED_DEEPSLATE_SLAB, true)
                 .fence(add(ModBlocks.polished_deepslate_fence, false))
                 .trapdoor(add(ModBlocks.polished_deepslate_trapdoor, false), true)
                 .fencegate(add(ModBlocks.polished_deepslate_fence_gate, false))
@@ -558,7 +563,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.polished_deepslate_saddle_door, false))
                 .support(add(ModBlocks.polished_deepslate_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.DEEPSLATE_TILES, Blocks.DEEPSLATE_TILE_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.DEEPSLATE_TILES, Blocks.DEEPSLATE_TILE_SLAB, true)
                 .fence(add(ModBlocks.deepslate_tile_fence, false))
                 .trapdoor(add(ModBlocks.deepslate_tile_trapdoor, false), true)
                 .fencegate(add(ModBlocks.deepslate_tile_fence_gate, false))
@@ -568,7 +573,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.deepslate_tile_saddle_door, false))
                 .support(add(ModBlocks.deepslate_tile_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICK_SLAB, true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICK_SLAB, true)
                 .fence(add(ModBlocks.deepslate_brick_fence, false))
                 .trapdoor(add(ModBlocks.deepslate_brick_trapdoor, false), true)
                 .fencegate(add(ModBlocks.deepslate_brick_fence_gate, false))
@@ -578,7 +583,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.deepslate_brick_saddle_door, false))
                 .support(add(ModBlocks.deepslate_brick_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.CRACKED_DEEPSLATE_BRICKS, ModBlocks.cracked_deepslate_brick_slab.get(), true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.CRACKED_DEEPSLATE_BRICKS, ModBlocks.cracked_deepslate_brick_slab.get(), true)
                 .stairs(add(ModBlocks.cracked_deepslate_brick_stairs, false))
                 .slab(add(ModBlocks.cracked_deepslate_brick_slab, false))
                 .fence(add(ModBlocks.cracked_deepslate_brick_fence, false))
@@ -591,7 +596,7 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.cracked_deepslate_brick_saddle_door, false))
                 .support(add(ModBlocks.cracked_deepslate_brick_support, false))
                 .build());
-        autoRecipe(consumer, new AutoRecipeManager.Builder(Blocks.CRACKED_DEEPSLATE_TILES, ModBlocks.cracked_deepslate_tile_slab.get(), true)
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.CRACKED_DEEPSLATE_TILES, ModBlocks.cracked_deepslate_tile_slab.get(), true)
                 .stairs(add(ModBlocks.cracked_deepslate_tile_stairs, false))
                 .slab(add(ModBlocks.cracked_deepslate_tile_slab, false))
                 .fence(add(ModBlocks.cracked_deepslate_tile_fence, false))
@@ -605,31 +610,47 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .support(add(ModBlocks.cracked_deepslate_tile_support, false))
                 .build());
 
-        fence(consumer, ModBlocks.oak_log_fence, Blocks.OAK_LOG, Items.STICK, false);
-        fencegate(consumer, ModBlocks.oak_log_fence_gate, Blocks.OAK_LOG, Items.STICK, false);
-        fence(consumer, ModBlocks.spruce_log_fence, Blocks.SPRUCE_LOG, Items.STICK, false);
-        fencegate(consumer, ModBlocks.spruce_log_fence_gate, Blocks.SPRUCE_LOG, Items.STICK, false);
-        fence(consumer, ModBlocks.birch_log_fence, Blocks.BIRCH_LOG, Items.STICK, false);
-        fencegate(consumer, ModBlocks.birch_log_fence_gate, Blocks.BIRCH_LOG, Items.STICK, false);
-        fence(consumer, ModBlocks.jungle_log_fence, Blocks.JUNGLE_LOG, Items.STICK, false);
-        fencegate(consumer, ModBlocks.jungle_log_fence_gate, Blocks.JUNGLE_LOG, Items.STICK, false);
-        fence(consumer, ModBlocks.acacia_log_fence, Blocks.ACACIA_LOG, Items.STICK, false);
-        fencegate(consumer, ModBlocks.acacia_log_fence_gate, Blocks.ACACIA_LOG, Items.STICK, false);
-        fence(consumer, ModBlocks.cherry_log_fence, Blocks.CHERRY_LOG, Items.STICK, false);
-        fencegate(consumer, ModBlocks.cherry_log_fence_gate, Blocks.CHERRY_LOG, Items.STICK, false);
-        fence(consumer, ModBlocks.dark_oak_log_fence, Blocks.DARK_OAK_LOG, Items.STICK, false);
-        fencegate(consumer, ModBlocks.dark_oak_log_fence_gate, Blocks.DARK_OAK_LOG, Items.STICK, false);
-        fence(consumer, ModBlocks.mangrove_log_fence, Blocks.MANGROVE_LOG, Items.STICK, false);
-        fencegate(consumer, ModBlocks.mangrove_log_fence_gate, Blocks.MANGROVE_LOG, Items.STICK, false);
-        fence(consumer, ModBlocks.bamboo_block_fence, Blocks.BAMBOO_BLOCK, Items.BAMBOO, false);
-        fencegate(consumer, ModBlocks.bamboo_block_fence_gate, Blocks.BAMBOO_BLOCK, Items.BAMBOO, false);
-        fence(consumer, ModBlocks.crimson_stem_fence, Blocks.CRIMSON_STEM, Items.STICK, false);
-        fencegate(consumer, ModBlocks.crimson_stem_fence_gate, Blocks.CRIMSON_STEM, Items.STICK, false);
-        fence(consumer, ModBlocks.warped_stem_fence, Blocks.WARPED_STEM, Items.STICK, false);
-        fencegate(consumer, ModBlocks.warped_stem_fence_gate, Blocks.WARPED_STEM, Items.STICK, false);
-        fence(consumer, ModBlocks.prismarine_brick_fence, Blocks.PRISMARINE_BRICKS, Items.PRISMARINE_SHARD, false);
-        fencegate(consumer, ModBlocks.prismarine_brick_fence_gate, Blocks.PRISMARINE_BRICKS, Items.PRISMARINE_SHARD, false);
-        fence(consumer, ModBlocks.dark_prismarine_fence, Blocks.DARK_PRISMARINE, Items.PRISMARINE_SHARD, false);
-        fencegate(consumer, ModBlocks.dark_prismarine_fence_gate, Blocks.DARK_PRISMARINE, Items.PRISMARINE_SHARD, false);
+        fence(registry, ModBlocks.oak_log_fence, Blocks.OAK_LOG, Items.STICK, false);
+        fencegate(registry, ModBlocks.oak_log_fence_gate, Blocks.OAK_LOG, Items.STICK, false);
+        fence(registry, ModBlocks.spruce_log_fence, Blocks.SPRUCE_LOG, Items.STICK, false);
+        fencegate(registry, ModBlocks.spruce_log_fence_gate, Blocks.SPRUCE_LOG, Items.STICK, false);
+        fence(registry, ModBlocks.birch_log_fence, Blocks.BIRCH_LOG, Items.STICK, false);
+        fencegate(registry, ModBlocks.birch_log_fence_gate, Blocks.BIRCH_LOG, Items.STICK, false);
+        fence(registry, ModBlocks.jungle_log_fence, Blocks.JUNGLE_LOG, Items.STICK, false);
+        fencegate(registry, ModBlocks.jungle_log_fence_gate, Blocks.JUNGLE_LOG, Items.STICK, false);
+        fence(registry, ModBlocks.acacia_log_fence, Blocks.ACACIA_LOG, Items.STICK, false);
+        fencegate(registry, ModBlocks.acacia_log_fence_gate, Blocks.ACACIA_LOG, Items.STICK, false);
+        fence(registry, ModBlocks.cherry_log_fence, Blocks.CHERRY_LOG, Items.STICK, false);
+        fencegate(registry, ModBlocks.cherry_log_fence_gate, Blocks.CHERRY_LOG, Items.STICK, false);
+        fence(registry, ModBlocks.dark_oak_log_fence, Blocks.DARK_OAK_LOG, Items.STICK, false);
+        fencegate(registry, ModBlocks.dark_oak_log_fence_gate, Blocks.DARK_OAK_LOG, Items.STICK, false);
+        fence(registry, ModBlocks.mangrove_log_fence, Blocks.MANGROVE_LOG, Items.STICK, false);
+        fencegate(registry, ModBlocks.mangrove_log_fence_gate, Blocks.MANGROVE_LOG, Items.STICK, false);
+        fence(registry, ModBlocks.bamboo_block_fence, Blocks.BAMBOO_BLOCK, Items.BAMBOO, false);
+        fencegate(registry, ModBlocks.bamboo_block_fence_gate, Blocks.BAMBOO_BLOCK, Items.BAMBOO, false);
+        fence(registry, ModBlocks.crimson_stem_fence, Blocks.CRIMSON_STEM, Items.STICK, false);
+        fencegate(registry, ModBlocks.crimson_stem_fence_gate, Blocks.CRIMSON_STEM, Items.STICK, false);
+        fence(registry, ModBlocks.warped_stem_fence, Blocks.WARPED_STEM, Items.STICK, false);
+        fencegate(registry, ModBlocks.warped_stem_fence_gate, Blocks.WARPED_STEM, Items.STICK, false);
+        fence(registry, ModBlocks.prismarine_brick_fence, Blocks.PRISMARINE_BRICKS, Items.PRISMARINE_SHARD, false);
+        fencegate(registry, ModBlocks.prismarine_brick_fence_gate, Blocks.PRISMARINE_BRICKS, Items.PRISMARINE_SHARD, false);
+        fence(registry, ModBlocks.dark_prismarine_fence, Blocks.DARK_PRISMARINE, Items.PRISMARINE_SHARD, false);
+        fencegate(registry, ModBlocks.dark_prismarine_fence_gate, Blocks.DARK_PRISMARINE, Items.PRISMARINE_SHARD, false);
+    }
+
+    public static class Runner extends RecipeProvider.Runner {
+        public Runner(PackOutput output, CompletableFuture<HolderLookup.Provider> provider) {
+            super(output, provider);
+        }
+
+        @Override
+        protected RecipeProvider createRecipeProvider(HolderLookup.Provider provider, RecipeOutput output) {
+            return new UDRecipes(provider, output);
+        }
+
+        @Override
+        public String getName() {
+            return "Unusually Decorative Recipes";
+        }
     }
 }

@@ -1,5 +1,6 @@
 {
   "parent": "ornamental:block/util/beam_whole",
+  "render_type": "minecraft:solid",
   "textures": {
     "bottom": "minecraft:block/jungle_log_top",
     "side": "minecraft:block/jungle_log",

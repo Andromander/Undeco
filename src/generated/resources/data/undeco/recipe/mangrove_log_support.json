@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:mangrove_log_pole"
-    },
-    {
-      "item": "undeco:mangrove_log_beam"
-    }
+    "undeco:mangrove_log_pole",
+    "undeco:mangrove_log_beam"
   ],
   "result": {
     "count": 2,

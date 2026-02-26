@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:granite_pole"
-    },
-    {
-      "item": "undeco:granite_beam"
-    }
+    "undeco:granite_pole",
+    "undeco:granite_beam"
   ],
   "result": {
     "count": 2,

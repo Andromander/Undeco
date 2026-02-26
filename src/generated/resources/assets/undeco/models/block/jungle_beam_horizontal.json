@@ -1,5 +1,6 @@
 {
   "parent": "ornamental:block/util/beam_horizontal",
+  "render_type": "minecraft:solid",
   "textures": {
     "bottom": "minecraft:block/jungle_planks",
     "side": "minecraft:block/jungle_planks",

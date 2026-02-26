@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "redstone",
   "ingredients": [
-    {
-      "item": "undeco:bamboo_block_door"
-    }
+    "undeco:bamboo_block_door"
   ],
   "result": {
     "count": 2,

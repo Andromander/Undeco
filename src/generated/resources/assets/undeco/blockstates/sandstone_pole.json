@@ -190,7 +190,7 @@
     },
     {
       "apply": {
-        "model": "minecraft:block/sandstone"
+        "model": "undeco:block/sandstone_pole_full"
       },
       "when": {
         "bottom_left": "true",

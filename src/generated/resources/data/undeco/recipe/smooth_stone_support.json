@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:smooth_stone_pole"
-    },
-    {
-      "item": "undeco:smooth_stone_beam"
-    }
+    "undeco:smooth_stone_pole",
+    "undeco:smooth_stone_beam"
   ],
   "result": {
     "count": 2,

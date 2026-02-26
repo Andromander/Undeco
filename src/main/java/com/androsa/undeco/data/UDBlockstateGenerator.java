@@ -4,29 +4,21 @@ import com.androsa.ornamental.blocks.*;
 import com.androsa.ornamental.data.provider.OrnamentalBlockStateProvider;
 import com.androsa.undeco.ModBlocks;
 import com.androsa.undeco.UnusuallyDecorative;
-import net.minecraft.data.PackOutput;
-import net.minecraft.world.level.block.DoorBlock;
-import net.minecraft.world.level.block.FenceBlock;
-import net.minecraft.world.level.block.FenceGateBlock;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import com.mojang.datafixers.util.Either;
+import net.minecraft.client.data.models.BlockModelGenerators;
+import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.world.level.block.*;
 
-import javax.annotation.Nonnull;
 import java.util.function.Supplier;
 
 public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
 
-    public UDBlockstateGenerator(PackOutput output, ExistingFileHelper helper) {
-        super(output, UnusuallyDecorative.MODID, "minecraft", helper);
-    }
-
-    @Nonnull
-    @Override
-    public String getName() {
-        return "Ornamental: Unusually Decorative Blockstates and Block Models";
+    public UDBlockstateGenerator(BlockModelGenerators generators) {
+        super(generators, UnusuallyDecorative.MODID, "minecraft");
     }
 
     @Override
-    protected void registerStatesAndModels() {
+    public void runBlockGen() {
         stairsColumn(ModBlocks.oak_log_stairs, "oak_log", "oak_log_top");
         stairsColumn(ModBlocks.spruce_log_stairs, "spruce_log", "spruce_log_top");
         stairsColumn(ModBlocks.birch_log_stairs, "birch_log", "birch_log_top");
@@ -45,22 +37,22 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         stairsBasic(ModBlocks.cracked_deepslate_brick_stairs, "cracked_deepslate_bricks");
         stairsBasic(ModBlocks.cracked_deepslate_tile_stairs, "cracked_deepslate_tiles");
 
-        slabColumn(ModBlocks.oak_log_slab, "oak_log", "oak_log", "oak_log_top");
-        slabColumn(ModBlocks.spruce_log_slab, "spruce_log", "spruce_log", "spruce_log_top");
-        slabColumn(ModBlocks.birch_log_slab, "birch_log", "birch_log", "birch_log_top");
-        slabColumn(ModBlocks.jungle_log_slab, "jungle_log", "jungle_log", "jungle_log_top");
-        slabColumn(ModBlocks.acacia_log_slab, "acacia_log", "acacia_log", "acacia_log_top");
-        slabColumn(ModBlocks.cherry_log_slab, "cherry_log", "cherry_log", "cherry_log_top");
-        slabColumn(ModBlocks.dark_oak_log_slab, "dark_oak_log", "dark_oak_log", "dark_oak_log_top");
-        slabColumn(ModBlocks.mangrove_log_slab, "mangrove_log", "mangrove_log", "mangrove_log_top");
-        slabColumn(ModBlocks.bamboo_block_slab, "bamboo_block", "bamboo_block", "bamboo_block_top");
-        slabColumn(ModBlocks.crimson_stem_slab, "crimson_stem", "crimson_stem", "crimson_stem_top");
-        slabColumn(ModBlocks.warped_stem_slab, "warped_stem", "warped_stem", "warped_stem_top");
-        slabBasic(ModBlocks.cracked_stone_brick_slab, "cracked_stone_bricks");
-        slabBasic(ModBlocks.tuff_slab, "tuff");
-        slabBasic(ModBlocks.deepslate_slab, "deepslate");
-        slabBasic(ModBlocks.cracked_deepslate_brick_slab, "cracked_deepslate_bricks");
-        slabBasic(ModBlocks.cracked_deepslate_tile_slab, "cracked_deepslate_tiles");
+        slabColumn(ModBlocks.oak_log_slab, () -> Blocks.OAK_LOG, "oak_log", "oak_log_top", SOLID);
+        slabColumn(ModBlocks.spruce_log_slab, () -> Blocks.SPRUCE_LOG, "spruce_log", "spruce_log_top", SOLID);
+        slabColumn(ModBlocks.birch_log_slab, () -> Blocks.BIRCH_LOG, "birch_log", "birch_log_top", SOLID);
+        slabColumn(ModBlocks.jungle_log_slab, () -> Blocks.JUNGLE_LOG, "jungle_log", "jungle_log_top", SOLID);
+        slabColumn(ModBlocks.acacia_log_slab, () -> Blocks.ACACIA_LOG, "acacia_log", "acacia_log_top", SOLID);
+        slabColumn(ModBlocks.cherry_log_slab, () -> Blocks.CHERRY_LOG, "cherry_log", "cherry_log_top", SOLID);
+        slabColumn(ModBlocks.dark_oak_log_slab, () -> Blocks.DARK_OAK_LOG, "dark_oak_log", "dark_oak_log_top", SOLID);
+        slabColumn(ModBlocks.mangrove_log_slab, () -> Blocks.MANGROVE_LOG, "mangrove_log", "mangrove_log_top", SOLID);
+        slabColumn(ModBlocks.bamboo_block_slab, () -> Blocks.BAMBOO_BLOCK, "bamboo_block", "bamboo_block_top", SOLID);
+        slabColumn(ModBlocks.crimson_stem_slab, () -> Blocks.CRIMSON_STEM, "crimson_stem", "crimson_stem_top", SOLID);
+        slabColumn(ModBlocks.warped_stem_slab, () -> Blocks.WARPED_STEM, "warped_stem", "warped_stem_top", SOLID);
+        slabBasic(ModBlocks.cracked_stone_brick_slab, () -> Blocks.CRACKED_STONE_BRICKS);
+        slabBasic(ModBlocks.tuff_slab, () -> Blocks.TUFF);
+        slabBasic(ModBlocks.deepslate_slab, () -> Blocks.DEEPSLATE);
+        slabBasic(ModBlocks.cracked_deepslate_brick_slab, () -> Blocks.CRACKED_DEEPSLATE_BRICKS);
+        slabBasic(ModBlocks.cracked_deepslate_tile_slab, () -> Blocks.CRACKED_DEEPSLATE_TILES);
 
         fenceBasic(ModBlocks.granite_fence, "granite");
         fenceBasic(ModBlocks.polished_granite_fence, "polished_granite");
@@ -154,17 +146,17 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         fenceGateBasic(ModBlocks.polished_diorite_fence_gate, "polished_diorite");
         fenceGateBasic(ModBlocks.andesite_fence_gate, "andesite");
         fenceGateBasic(ModBlocks.polished_andesite_fence_gate, "polished_andesite");
-        fenceGateColumn(ModBlocks.oak_log_fence_gate, "oak_log", "oak_log_top");
-        fenceGateColumn(ModBlocks.spruce_log_fence_gate, "spruce_log", "spruce_log_top");
-        fenceGateColumn(ModBlocks.birch_log_fence_gate, "birch_log", "birch_log_top");
-        fenceGateColumn(ModBlocks.jungle_log_fence_gate, "jungle_log", "jungle_log_top");
-        fenceGateColumn(ModBlocks.acacia_log_fence_gate, "acacia_log", "acacia_log_top");
-        fenceGateColumn(ModBlocks.cherry_log_fence_gate, "cherry_log", "cherry_log_top");
-        fenceGateColumn(ModBlocks.dark_oak_log_fence_gate, "dark_oak_log", "dark_oak_log_top");
-        fenceGateColumn(ModBlocks.mangrove_log_fence_gate, "mangrove_log", "mangrove_log_top");
-        fenceGateColumn(ModBlocks.bamboo_block_fence_gate, "bamboo_block", "bamboo_block_top");
-        fenceGateColumn(ModBlocks.crimson_stem_fence_gate, "crimson_stem", "crimson_stem_top");
-        fenceGateColumn(ModBlocks.warped_stem_fence_gate, "warped_stem", "warped_stem_top");
+        fenceGateColumn(ModBlocks.oak_log_fence_gate, "oak_log", "oak_log_top", SOLID);
+        fenceGateColumn(ModBlocks.spruce_log_fence_gate, "spruce_log", "spruce_log_top", SOLID);
+        fenceGateColumn(ModBlocks.birch_log_fence_gate, "birch_log", "birch_log_top", SOLID);
+        fenceGateColumn(ModBlocks.jungle_log_fence_gate, "jungle_log", "jungle_log_top", SOLID);
+        fenceGateColumn(ModBlocks.acacia_log_fence_gate, "acacia_log", "acacia_log_top", SOLID);
+        fenceGateColumn(ModBlocks.cherry_log_fence_gate, "cherry_log", "cherry_log_top", SOLID);
+        fenceGateColumn(ModBlocks.dark_oak_log_fence_gate, "dark_oak_log", "dark_oak_log_top", SOLID);
+        fenceGateColumn(ModBlocks.mangrove_log_fence_gate, "mangrove_log", "mangrove_log_top", SOLID);
+        fenceGateColumn(ModBlocks.bamboo_block_fence_gate, "bamboo_block", "bamboo_block_top", SOLID);
+        fenceGateColumn(ModBlocks.crimson_stem_fence_gate, "crimson_stem", "crimson_stem_top", SOLID);
+        fenceGateColumn(ModBlocks.warped_stem_fence_gate, "warped_stem", "warped_stem_top", SOLID);
         fenceGateBasic(ModBlocks.blackstone_fence_gate, "blackstone");
         fenceGateBasic(ModBlocks.polished_blackstone_fence_gate, "polished_blackstone");
         fenceGateBasic(ModBlocks.stone_fence_gate, "stone");
@@ -234,113 +226,113 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         doorHidden(ModBlocks.cracked_deepslate_brick_door, "cracked_deepslate_bricks");
         doorHidden(ModBlocks.cracked_deepslate_tile_door, "cracked_deepslate_tiles");
 
-        poleBasic(ModBlocks.oak_pole, "oak_planks");
-        poleBasic(ModBlocks.spruce_pole, "spruce_planks");
-        poleBasic(ModBlocks.birch_pole, "birch_planks");
-        poleBasic(ModBlocks.jungle_pole, "jungle_planks");
-        poleBasic(ModBlocks.acacia_pole, "acacia_planks");
-        poleBasic(ModBlocks.cherry_pole, "cherry_planks");
-        poleBasic(ModBlocks.dark_oak_pole, "dark_oak_planks");
-        poleBasic(ModBlocks.mangrove_pole, "mangrove_planks");
-        poleBasic(ModBlocks.bamboo_pole, "bamboo_planks");
-        poleBasic(ModBlocks.crimson_pole, "crimson_planks");
-        poleBasic(ModBlocks.warped_pole, "warped_planks");
-        poleBasic(ModBlocks.granite_pole, "granite");
-        poleBasic(ModBlocks.polished_granite_pole, "polished_granite");
-        poleBasic(ModBlocks.diorite_pole, "diorite");
-        poleBasic(ModBlocks.polished_diorite_pole, "polished_diorite");
-        poleBasic(ModBlocks.andesite_pole, "andesite");
-        poleBasic(ModBlocks.polished_andesite_pole, "polished_andesite");
-        poleColumn(ModBlocks.oak_log_pole, "oak_log", "oak_log", "oak_log_top");
-        poleColumn(ModBlocks.spruce_log_pole, "spruce_log", "spruce_log", "spruce_log_top");
-        poleColumn(ModBlocks.birch_log_pole, "birch_log", "birch_log", "birch_log_top");
-        poleColumn(ModBlocks.jungle_log_pole, "jungle_log", "jungle_log", "jungle_log_top");
-        poleColumn(ModBlocks.acacia_log_pole, "acacia_log", "acacia_log", "acacia_log_top");
-        poleColumn(ModBlocks.cherry_log_pole, "cherry_log", "cherry_log", "cherry_log_top");
-        poleColumn(ModBlocks.dark_oak_log_pole, "dark_oak_log", "dark_oak_log", "dark_oak_log_top");
-        poleColumn(ModBlocks.mangrove_log_pole, "mangrove_log", "mangrove_log", "mangrove_log_top");
-        poleColumn(ModBlocks.bamboo_block_pole, "bamboo_block", "bamboo_block", "bamboo_block_top");
-        poleColumn(ModBlocks.crimson_stem_pole, "crimson_stem", "crimson_stem", "crimson_stem_top");
-        poleColumn(ModBlocks.warped_stem_pole, "warped_stem", "warped_stem", "warped_stem_top");
-        poleBasic(ModBlocks.blackstone_pole, "blackstone");
-        poleBasic(ModBlocks.polished_blackstone_pole, "polished_blackstone");
-        poleBasic(ModBlocks.stone_pole, "stone");
-        poleBasic(ModBlocks.smooth_stone_pole, "smooth_stone");
-        poleBasic(ModBlocks.cobblestone_pole, "cobblestone");
-        poleBasic(ModBlocks.mossy_cobblestone_pole, "mossy_cobblestone");
-        poleTopBottom(ModBlocks.sandstone_pole, "sandstone", "sandstone_top", "sandstone_bottom");
-        poleBasic(ModBlocks.smooth_sandstone_pole, "smooth_sandstone", "sandstone_top", SOLID);
-        poleTopBottom(ModBlocks.red_sandstone_pole, "red_sandstone", "red_sandstone_top", "red_sandstone_bottom");
-        poleBasic(ModBlocks.smooth_red_sandstone_pole, "smooth_red_sandstone", "red_sandstone_top", SOLID);
-        poleBasic(ModBlocks.stone_brick_pole, "stone_bricks");
-        poleBasic(ModBlocks.cracked_stone_brick_pole, "cracked_stone_bricks");
-        poleBasic(ModBlocks.mossy_stone_brick_pole, "mossy_stone_bricks");
-        poleBasic(ModBlocks.prismarine_pole, "prismarine");
-        poleBasic(ModBlocks.prismarine_brick_pole, "prismarine_bricks");
-        poleBasic(ModBlocks.dark_prismarine_pole, "dark_prismarine");
-        poleBasic(ModBlocks.purpur_pole, "purpur_block");
-        poleBasic(ModBlocks.tuff_pole, "tuff");
-        poleBasic(ModBlocks.deepslate_pole, "deepslate");
-        poleBasic(ModBlocks.cobbled_deepslate_pole, "cobbled_deepslate");
-        poleBasic(ModBlocks.polished_deepslate_pole, "polished_deepslate");
-        poleBasic(ModBlocks.deepslate_tile_pole, "deepslate_tiles");
-        poleBasic(ModBlocks.deepslate_brick_pole, "deepslate_bricks");
-        poleBasic(ModBlocks.cracked_deepslate_brick_pole, "cracked_deepslate_bricks");
-        poleBasic(ModBlocks.cracked_deepslate_tile_pole, "cracked_deepslate_tiles");
+        poleBasic(ModBlocks.oak_pole, () -> Blocks.OAK_PLANKS, "oak_planks");
+        poleBasic(ModBlocks.spruce_pole, () -> Blocks.SPRUCE_PLANKS, "spruce_planks");
+        poleBasic(ModBlocks.birch_pole, () -> Blocks.BIRCH_PLANKS, "birch_planks");
+        poleBasic(ModBlocks.jungle_pole, () -> Blocks.JUNGLE_PLANKS, "jungle_planks");
+        poleBasic(ModBlocks.acacia_pole, () -> Blocks.ACACIA_PLANKS, "acacia_planks");
+        poleBasic(ModBlocks.cherry_pole, () -> Blocks.CHERRY_PLANKS, "cherry_planks");
+        poleBasic(ModBlocks.dark_oak_pole, () -> Blocks.DARK_OAK_PLANKS, "dark_oak_planks");
+        poleBasic(ModBlocks.mangrove_pole, () -> Blocks.MANGROVE_PLANKS, "mangrove_planks");
+        poleBasic(ModBlocks.bamboo_pole, () -> Blocks.BAMBOO_PLANKS, "bamboo_planks");
+        poleBasic(ModBlocks.crimson_pole, () -> Blocks.CRIMSON_PLANKS, "crimson_planks");
+        poleBasic(ModBlocks.warped_pole, () -> Blocks.WARPED_PLANKS, "warped_planks");
+        poleBasic(ModBlocks.granite_pole, () -> Blocks.GRANITE, "granite");
+        poleBasic(ModBlocks.polished_granite_pole, () -> Blocks.POLISHED_GRANITE, "polished_granite");
+        poleBasic(ModBlocks.diorite_pole, () -> Blocks.DIORITE, "diorite");
+        poleBasic(ModBlocks.polished_diorite_pole, () -> Blocks.POLISHED_DIORITE, "polished_diorite");
+        poleBasic(ModBlocks.andesite_pole, () -> Blocks.ANDESITE, "andesite");
+        poleBasic(ModBlocks.polished_andesite_pole, () -> Blocks.POLISHED_ANDESITE, "polished_andesite");
+        poleColumn(ModBlocks.oak_log_pole, Either.right(() -> Blocks.OAK_LOG), "oak_log", "oak_log_top", SOLID);
+        poleColumn(ModBlocks.spruce_log_pole, Either.right(() -> Blocks.SPRUCE_LOG), "spruce_log", "spruce_log_top", SOLID);
+        poleColumn(ModBlocks.birch_log_pole, Either.right(() -> Blocks.BIRCH_LOG), "birch_log", "birch_log_top", SOLID);
+        poleColumn(ModBlocks.jungle_log_pole, Either.right(() -> Blocks.JUNGLE_LOG), "jungle_log", "jungle_log_top", SOLID);
+        poleColumn(ModBlocks.acacia_log_pole, Either.right(() -> Blocks.ACACIA_LOG), "acacia_log", "acacia_log_top", SOLID);
+        poleColumn(ModBlocks.cherry_log_pole, Either.right(() -> Blocks.CHERRY_LOG), "cherry_log", "cherry_log_top", SOLID);
+        poleColumn(ModBlocks.dark_oak_log_pole, Either.right(() -> Blocks.DARK_OAK_LOG), "dark_oak_log", "dark_oak_log_top", SOLID);
+        poleColumn(ModBlocks.mangrove_log_pole, Either.right(() -> Blocks.MANGROVE_LOG), "mangrove_log", "mangrove_log_top", SOLID);
+        poleColumn(ModBlocks.bamboo_block_pole, Either.right(() -> Blocks.BAMBOO_BLOCK), "bamboo_block", "bamboo_block_top", SOLID);
+        poleColumn(ModBlocks.crimson_stem_pole, Either.right(() -> Blocks.CRIMSON_STEM), "crimson_stem", "crimson_stem_top", SOLID);
+        poleColumn(ModBlocks.warped_stem_pole, Either.right(() -> Blocks.WARPED_STEM), "warped_stem", "warped_stem_top", SOLID);
+        poleBasic(ModBlocks.blackstone_pole, () -> Blocks.BLACKSTONE, "blackstone");
+        poleBasic(ModBlocks.polished_blackstone_pole, () -> Blocks.POLISHED_BLACKSTONE, "polished_blackstone");
+        poleBasic(ModBlocks.stone_pole, () -> Blocks.STONE, "stone");
+        poleBasic(ModBlocks.smooth_stone_pole, () -> Blocks.SMOOTH_STONE, "smooth_stone");
+        poleBasic(ModBlocks.cobblestone_pole, () -> Blocks.COBBLESTONE, "cobblestone");
+        poleBasic(ModBlocks.mossy_cobblestone_pole, () -> Blocks.MOSSY_COBBLESTONE, "mossy_cobblestone");
+        poleTopBottom(ModBlocks.sandstone_pole, () -> Blocks.SANDSTONE, "sandstone", "sandstone_top", "sandstone_bottom");
+        poleBasic(ModBlocks.smooth_sandstone_pole, () -> Blocks.SMOOTH_SANDSTONE, "sandstone_top", SOLID);
+        poleTopBottom(ModBlocks.red_sandstone_pole, () -> Blocks.RED_SANDSTONE, "red_sandstone", "red_sandstone_top", "red_sandstone_bottom");
+        poleBasic(ModBlocks.smooth_red_sandstone_pole, () -> Blocks.SMOOTH_RED_SANDSTONE, "red_sandstone_top", SOLID);
+        poleBasic(ModBlocks.stone_brick_pole, () -> Blocks.STONE_BRICKS, "stone_bricks");
+        poleBasic(ModBlocks.cracked_stone_brick_pole, () -> Blocks.CRACKED_STONE_BRICKS, "cracked_stone_bricks");
+        poleBasic(ModBlocks.mossy_stone_brick_pole, () -> Blocks.MOSSY_STONE_BRICKS, "mossy_stone_bricks");
+        poleBasic(ModBlocks.prismarine_pole, () -> Blocks.PRISMARINE, "prismarine");
+        poleBasic(ModBlocks.prismarine_brick_pole, () -> Blocks.PRISMARINE_BRICKS, "prismarine_bricks");
+        poleBasic(ModBlocks.dark_prismarine_pole, () -> Blocks.DARK_PRISMARINE, "dark_prismarine");
+        poleBasic(ModBlocks.purpur_pole, () -> Blocks.PURPUR_BLOCK, "purpur_block");
+        poleBasic(ModBlocks.tuff_pole, () -> Blocks.TUFF, "tuff");
+        poleBasic(ModBlocks.deepslate_pole, () -> Blocks.DEEPSLATE, "deepslate");
+        poleBasic(ModBlocks.cobbled_deepslate_pole, () -> Blocks.COBBLED_DEEPSLATE, "cobbled_deepslate");
+        poleBasic(ModBlocks.polished_deepslate_pole, () -> Blocks.POLISHED_DEEPSLATE, "polished_deepslate");
+        poleBasic(ModBlocks.deepslate_tile_pole, () -> Blocks.DEEPSLATE_TILES, "deepslate_tiles");
+        poleBasic(ModBlocks.deepslate_brick_pole, () -> Blocks.DEEPSLATE_BRICKS, "deepslate_bricks");
+        poleBasic(ModBlocks.cracked_deepslate_brick_pole, () -> Blocks.CRACKED_DEEPSLATE_BRICKS, "cracked_deepslate_bricks");
+        poleBasic(ModBlocks.cracked_deepslate_tile_pole, () -> Blocks.CRACKED_DEEPSLATE_TILES, "cracked_deepslate_tiles");
 
-        beamBasic(ModBlocks.oak_beam, "oak_planks");
-        beamBasic(ModBlocks.spruce_beam, "spruce_planks");
-        beamBasic(ModBlocks.birch_beam, "birch_planks");
-        beamBasic(ModBlocks.jungle_beam, "jungle_planks");
-        beamBasic(ModBlocks.acacia_beam, "acacia_planks");
-        beamBasic(ModBlocks.cherry_beam, "cherry_planks");
-        beamBasic(ModBlocks.dark_oak_beam, "dark_oak_planks");
-        beamBasic(ModBlocks.mangrove_beam, "mangrove_planks");
-        beamBasic(ModBlocks.bamboo_beam, "bamboo_planks");
-        beamBasic(ModBlocks.crimson_beam, "crimson_planks");
-        beamBasic(ModBlocks.warped_beam, "warped_planks");
-        beamBasic(ModBlocks.granite_beam, "granite");
-        beamBasic(ModBlocks.polished_granite_beam, "polished_granite");
-        beamBasic(ModBlocks.diorite_beam, "diorite");
-        beamBasic(ModBlocks.polished_diorite_beam, "polished_diorite");
-        beamBasic(ModBlocks.andesite_beam, "andesite");
-        beamBasic(ModBlocks.polished_andesite_beam, "polished_andesite");
-        beamColumn(ModBlocks.oak_log_beam, "oak_log", "oak_log_top", "oak_log");
-        beamColumn(ModBlocks.spruce_log_beam, "spruce_log", "spruce_log_top", "spruce_log");
-        beamColumn(ModBlocks.birch_log_beam, "birch_log", "birch_log_top", "birch_log");
-        beamColumn(ModBlocks.jungle_log_beam, "jungle_log", "jungle_log_top", "jungle_log");
-        beamColumn(ModBlocks.acacia_log_beam, "acacia_log", "acacia_log_top", "acacia_log");
-        beamColumn(ModBlocks.cherry_log_beam, "cherry_log", "cherry_log_top", "cherry_log");
-        beamColumn(ModBlocks.dark_oak_log_beam, "dark_oak_log", "dark_oak_log_top", "dark_oak_log");
-        beamColumn(ModBlocks.mangrove_log_beam, "mangrove_log", "mangrove_log_top", "mangrove_log");
-        beamColumn(ModBlocks.bamboo_block_beam, "bamboo_block", "bamboo_block_top", "bamboo_block");
-        beamColumn(ModBlocks.crimson_stem_beam, "crimson_stem", "crimson_stem_top", "crimson_stem");
-        beamColumn(ModBlocks.warped_stem_beam, "warped_stem", "warped_stem_top", "warped_stem");
-        beamBasic(ModBlocks.blackstone_beam, "blackstone");
-        beamBasic(ModBlocks.polished_blackstone_beam, "polished_blackstone");
-        beamBasic(ModBlocks.stone_beam, "stone");
-        beamBasic(ModBlocks.smooth_stone_beam, "smooth_stone");
-        beamBasic(ModBlocks.cobblestone_beam, "cobblestone");
-        beamBasic(ModBlocks.mossy_cobblestone_beam, "mossy_cobblestone");
-        beamTopBottom(ModBlocks.sandstone_beam, "sandstone");
-        beamBasic(ModBlocks.smooth_sandstone_beam, "sandstone_top", "smooth_sandstone", SOLID);
-        beamTopBottom(ModBlocks.red_sandstone_beam, "red_sandstone");
-        beamBasic(ModBlocks.smooth_red_sandstone_beam, "red_sandstone_top", "smooth_red_sandstone", SOLID);
-        beamBasic(ModBlocks.stone_brick_beam, "stone_bricks");
-        beamBasic(ModBlocks.cracked_stone_brick_beam, "cracked_stone_bricks");
-        beamBasic(ModBlocks.mossy_stone_brick_beam, "mossy_stone_bricks");
-        beamBasic(ModBlocks.prismarine_beam, "prismarine");
-        beamBasic(ModBlocks.prismarine_brick_beam, "prismarine_bricks");
-        beamBasic(ModBlocks.dark_prismarine_beam, "dark_prismarine");
-        beamBasic(ModBlocks.purpur_beam, "purpur_block");
-        beamBasic(ModBlocks.tuff_beam, "tuff");
-        beamBasic(ModBlocks.deepslate_beam, "deepslate");
-        beamBasic(ModBlocks.cobbled_deepslate_beam, "cobbled_deepslate");
-        beamBasic(ModBlocks.polished_deepslate_beam, "polished_deepslate");
-        beamBasic(ModBlocks.deepslate_tile_beam, "deepslate_tiles");
-        beamBasic(ModBlocks.deepslate_brick_beam, "deepslate_bricks");
-        beamBasic(ModBlocks.cracked_deepslate_brick_beam, "cracked_deepslate_bricks");
-        beamBasic(ModBlocks.cracked_deepslate_tile_beam, "cracked_deepslate_tiles");
+        beamBasic(ModBlocks.oak_beam, () ->  Blocks.OAK_PLANKS, "oak_planks");
+        beamBasic(ModBlocks.spruce_beam, () ->  Blocks.SPRUCE_PLANKS, "spruce_planks");
+        beamBasic(ModBlocks.birch_beam, () ->  Blocks.BIRCH_PLANKS, "birch_planks");
+        beamBasic(ModBlocks.jungle_beam, () ->  Blocks.JUNGLE_PLANKS, "jungle_planks");
+        beamBasic(ModBlocks.acacia_beam, () ->  Blocks.ACACIA_PLANKS, "acacia_planks");
+        beamBasic(ModBlocks.cherry_beam, () ->  Blocks.CHERRY_PLANKS, "cherry_planks");
+        beamBasic(ModBlocks.dark_oak_beam, () ->  Blocks.DARK_OAK_PLANKS, "dark_oak_planks");
+        beamBasic(ModBlocks.mangrove_beam, () ->  Blocks.MANGROVE_PLANKS, "mangrove_planks");
+        beamBasic(ModBlocks.bamboo_beam, () ->  Blocks.BAMBOO_PLANKS, "bamboo_planks");
+        beamBasic(ModBlocks.crimson_beam, () ->  Blocks.CRIMSON_PLANKS, "crimson_planks");
+        beamBasic(ModBlocks.warped_beam, () ->  Blocks.WARPED_PLANKS, "warped_planks");
+        beamBasic(ModBlocks.granite_beam, () ->  Blocks.GRANITE, "granite");
+        beamBasic(ModBlocks.polished_granite_beam, () ->  Blocks.POLISHED_GRANITE, "polished_granite");
+        beamBasic(ModBlocks.diorite_beam, () ->  Blocks.DIORITE, "diorite");
+        beamBasic(ModBlocks.polished_diorite_beam, () ->  Blocks.POLISHED_DIORITE, "polished_diorite");
+        beamBasic(ModBlocks.andesite_beam, () ->  Blocks.ANDESITE, "andesite");
+        beamBasic(ModBlocks.polished_andesite_beam, () ->  Blocks.POLISHED_ANDESITE, "polished_andesite");
+        beamColumn(ModBlocks.oak_log_beam, Either.right(() -> Blocks.OAK_LOG), "oak_log_top", "oak_log", SOLID);
+        beamColumn(ModBlocks.spruce_log_beam, Either.right(() -> Blocks.SPRUCE_LOG), "spruce_log_top", "spruce_log", SOLID);
+        beamColumn(ModBlocks.birch_log_beam, Either.right(() -> Blocks.BIRCH_LOG), "birch_log_top", "birch_log", SOLID);
+        beamColumn(ModBlocks.jungle_log_beam, Either.right(() -> Blocks.JUNGLE_LOG), "jungle_log_top", "jungle_log", SOLID);
+        beamColumn(ModBlocks.acacia_log_beam, Either.right(() -> Blocks.ACACIA_LOG), "acacia_log_top", "acacia_log", SOLID);
+        beamColumn(ModBlocks.cherry_log_beam, Either.right(() -> Blocks.CHERRY_LOG), "cherry_log_top", "cherry_log", SOLID);
+        beamColumn(ModBlocks.dark_oak_log_beam, Either.right(() -> Blocks.DARK_OAK_LOG), "dark_oak_log_top", "dark_oak_log", SOLID);
+        beamColumn(ModBlocks.mangrove_log_beam, Either.right(() -> Blocks.MANGROVE_LOG), "mangrove_log_top", "mangrove_log", SOLID);
+        beamColumn(ModBlocks.bamboo_block_beam, Either.right(() -> Blocks.BAMBOO_BLOCK), "bamboo_block_top", "bamboo_block", SOLID);
+        beamColumn(ModBlocks.crimson_stem_beam, Either.right(() -> Blocks.CRIMSON_STEM), "crimson_stem_top", "crimson_stem", SOLID);
+        beamColumn(ModBlocks.warped_stem_beam, Either.right(() -> Blocks.WARPED_STEM), "warped_stem_top", "warped_stem", SOLID);
+        beamBasic(ModBlocks.blackstone_beam, () ->  Blocks.BLACKSTONE, "blackstone");
+        beamBasic(ModBlocks.polished_blackstone_beam, () ->  Blocks.POLISHED_BLACKSTONE, "polished_blackstone");
+        beamBasic(ModBlocks.stone_beam, () ->  Blocks.STONE, "stone");
+        beamBasic(ModBlocks.smooth_stone_beam, () ->  Blocks.SMOOTH_STONE, "smooth_stone");
+        beamBasic(ModBlocks.cobblestone_beam, () ->  Blocks.COBBLESTONE, "cobblestone");
+        beamBasic(ModBlocks.mossy_cobblestone_beam, () ->  Blocks.MOSSY_COBBLESTONE, "mossy_cobblestone");
+        beamTopBottom(ModBlocks.sandstone_beam, () -> Blocks.SANDSTONE, "sandstone");
+        beamBasic(ModBlocks.smooth_sandstone_beam, () -> Blocks.SMOOTH_SANDSTONE, "sandstone_top", SOLID);
+        beamTopBottom(ModBlocks.red_sandstone_beam, () -> Blocks.RED_SANDSTONE, "red_sandstone");
+        beamBasic(ModBlocks.smooth_red_sandstone_beam, () -> Blocks.SMOOTH_RED_SANDSTONE, "red_sandstone_top", SOLID);
+        beamBasic(ModBlocks.stone_brick_beam, () ->  Blocks.STONE_BRICKS, "stone_bricks");
+        beamBasic(ModBlocks.cracked_stone_brick_beam, () ->  Blocks.CRACKED_STONE_BRICKS, "cracked_stone_bricks");
+        beamBasic(ModBlocks.mossy_stone_brick_beam, () ->  Blocks.MOSSY_STONE_BRICKS, "mossy_stone_bricks");
+        beamBasic(ModBlocks.prismarine_beam, () ->  Blocks.PRISMARINE, "prismarine");
+        beamBasic(ModBlocks.prismarine_brick_beam, () ->  Blocks.PRISMARINE_BRICKS, "prismarine_bricks");
+        beamBasic(ModBlocks.dark_prismarine_beam, () ->  Blocks.DARK_PRISMARINE, "dark_prismarine");
+        beamBasic(ModBlocks.purpur_beam, () ->  Blocks.PURPUR_BLOCK, "purpur_block");
+        beamBasic(ModBlocks.tuff_beam, () ->  Blocks.TUFF, "tuff");
+        beamBasic(ModBlocks.deepslate_beam, () ->  Blocks.DEEPSLATE, "deepslate");
+        beamBasic(ModBlocks.cobbled_deepslate_beam, () ->  Blocks.COBBLED_DEEPSLATE, "cobbled_deepslate");
+        beamBasic(ModBlocks.polished_deepslate_beam, () ->  Blocks.POLISHED_DEEPSLATE, "polished_deepslate");
+        beamBasic(ModBlocks.deepslate_tile_beam, () ->  Blocks.DEEPSLATE_TILES, "deepslate_tiles");
+        beamBasic(ModBlocks.deepslate_brick_beam, () ->  Blocks.DEEPSLATE_BRICKS, "deepslate_bricks");
+        beamBasic(ModBlocks.cracked_deepslate_brick_beam, () ->  Blocks.CRACKED_DEEPSLATE_BRICKS, "cracked_deepslate_bricks");
+        beamBasic(ModBlocks.cracked_deepslate_tile_beam, () ->  Blocks.CRACKED_DEEPSLATE_TILES, "cracked_deepslate_tiles");
 
 		wallBasic(ModBlocks.oak_wall, "oak_planks");
 		wallBasic(ModBlocks.spruce_wall, "spruce_planks");
@@ -356,17 +348,17 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
 		wallBasic(ModBlocks.polished_granite_wall, "polished_granite");
 		wallBasic(ModBlocks.polished_diorite_wall, "polished_diorite");
 		wallBasic(ModBlocks.polished_andesite_wall, "polished_andesite");
-		wallColumn(ModBlocks.oak_log_wall, "oak_log", "oak_log_top");
-		wallColumn(ModBlocks.spruce_log_wall, "spruce_log", "spruce_log_top");
-		wallColumn(ModBlocks.birch_log_wall, "birch_log", "birch_log_top");
-		wallColumn(ModBlocks.jungle_log_wall, "jungle_log", "jungle_log_top");
-		wallColumn(ModBlocks.acacia_log_wall, "acacia_log", "acacia_log_top");
-		wallColumn(ModBlocks.cherry_log_wall, "cherry_log", "cherry_log_top");
-		wallColumn(ModBlocks.dark_oak_log_wall, "dark_oak_log", "dark_oak_log_top");
-		wallColumn(ModBlocks.mangrove_log_wall, "mangrove_log", "mangrove_log_top");
-		wallColumn(ModBlocks.bamboo_block_wall, "bamboo_block", "bamboo_block_top");
-		wallColumn(ModBlocks.crimson_stem_wall, "crimson_stem", "crimson_stem_top");
-		wallColumn(ModBlocks.warped_stem_wall, "warped_stem", "warped_stem_top");
+		wallColumn(ModBlocks.oak_log_wall, "oak_log", "oak_log_top", SOLID);
+		wallColumn(ModBlocks.spruce_log_wall, "spruce_log", "spruce_log_top", SOLID);
+		wallColumn(ModBlocks.birch_log_wall, "birch_log", "birch_log_top", SOLID);
+		wallColumn(ModBlocks.jungle_log_wall, "jungle_log", "jungle_log_top", SOLID);
+		wallColumn(ModBlocks.acacia_log_wall, "acacia_log", "acacia_log_top", SOLID);
+		wallColumn(ModBlocks.cherry_log_wall, "cherry_log", "cherry_log_top", SOLID);
+		wallColumn(ModBlocks.dark_oak_log_wall, "dark_oak_log", "dark_oak_log_top", SOLID);
+		wallColumn(ModBlocks.mangrove_log_wall, "mangrove_log", "mangrove_log_top", SOLID);
+		wallColumn(ModBlocks.bamboo_block_wall, "bamboo_block", "bamboo_block_top", SOLID);
+		wallColumn(ModBlocks.crimson_stem_wall, "crimson_stem", "crimson_stem_top", SOLID);
+		wallColumn(ModBlocks.warped_stem_wall, "warped_stem", "warped_stem_top", SOLID);
 		wallBasic(ModBlocks.stone_wall, "stone");
 		wallBasic(ModBlocks.smooth_stone_wall, "smooth_stone");
 		wallBasic(ModBlocks.smooth_sandstone_wall, "sandstone_top");
@@ -451,17 +443,17 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
         supportBasic(ModBlocks.polished_diorite_support, "polished_diorite");
         supportBasic(ModBlocks.andesite_support, "andesite");
         supportBasic(ModBlocks.polished_andesite_support, "polished_andesite");
-        supportColumn(ModBlocks.oak_log_support, "oak_log", "oak_log_top");
-        supportColumn(ModBlocks.spruce_log_support, "spruce_log", "spruce_log_top");
-        supportColumn(ModBlocks.birch_log_support, "birch_log", "birch_log_top");
-        supportColumn(ModBlocks.jungle_log_support, "jungle_log", "jungle_log_top");
-        supportColumn(ModBlocks.acacia_log_support, "acacia_log", "acacia_log_top");
-        supportColumn(ModBlocks.cherry_log_support, "cherry_log", "cherry_log_top");
-        supportColumn(ModBlocks.dark_oak_log_support, "dark_oak_log", "dark_oak_log_top");
-        supportColumn(ModBlocks.mangrove_log_support, "mangrove_log", "mangrove_log_top");
-        supportColumn(ModBlocks.bamboo_block_support, "bamboo_block", "bamboo_block_top");
-        supportColumn(ModBlocks.crimson_stem_support, "crimson_stem", "crimson_stem_top");
-        supportColumn(ModBlocks.warped_stem_support, "warped_stem", "warped_stem_top");
+        supportColumn(ModBlocks.oak_log_support, "oak_log", "oak_log_top", SOLID);
+        supportColumn(ModBlocks.spruce_log_support, "spruce_log", "spruce_log_top", SOLID);
+        supportColumn(ModBlocks.birch_log_support, "birch_log", "birch_log_top", SOLID);
+        supportColumn(ModBlocks.jungle_log_support, "jungle_log", "jungle_log_top", SOLID);
+        supportColumn(ModBlocks.acacia_log_support, "acacia_log", "acacia_log_top", SOLID);
+        supportColumn(ModBlocks.cherry_log_support, "cherry_log", "cherry_log_top", SOLID);
+        supportColumn(ModBlocks.dark_oak_log_support, "dark_oak_log", "dark_oak_log_top", SOLID);
+        supportColumn(ModBlocks.mangrove_log_support, "mangrove_log", "mangrove_log_top", SOLID);
+        supportColumn(ModBlocks.bamboo_block_support, "bamboo_block", "bamboo_block_top", SOLID);
+        supportColumn(ModBlocks.crimson_stem_support, "crimson_stem", "crimson_stem_top", SOLID);
+        supportColumn(ModBlocks.warped_stem_support, "warped_stem", "warped_stem_top", SOLID);
         supportBasic(ModBlocks.blackstone_support, "blackstone");
         supportBasic(ModBlocks.polished_blackstone_support, "polished_blackstone");
         supportBasic(ModBlocks.stone_support, "stone");
@@ -490,30 +482,30 @@ public class UDBlockstateGenerator extends OrnamentalBlockStateProvider {
     }
 
     public void fenceTopBottom(Supplier<? extends FenceBlock> block, String side, String top, String bottom) {
-        fence(block, this.locParent(side), this.locParent(top), this.locParent(bottom), SOLID);
+        fence(block, FENCE_POST, ModelTemplates.CUSTOM_FENCE_SIDE_NORTH, ModelTemplates.CUSTOM_FENCE_SIDE_EAST, ModelTemplates.CUSTOM_FENCE_SIDE_SOUTH, ModelTemplates.CUSTOM_FENCE_SIDE_WEST, FENCE_INVENTORY, this.locParent(side), this.locParent(top), this.locParent(bottom));
     }
 
     public void fenceGateTopBottom(Supplier<? extends FenceGateBlock> block, String side, String top, String bottom) {
-        fenceGate(block, locParent(side), locParent(top), locParent(bottom), SOLID);
+        fenceGate(block, FENCE_GATE_CLOSED, FENCE_GATE_OPEN, FENCE_GATE_WALL_CLOSED, FENCE_GATE_WALL_OPEN, locParent(side), locParent(top), locParent(bottom), SOLID);
     }
 
     public void doorBlockTopBottom(Supplier<? extends DoorBlock> block, String side, String top, String bottom) {
-        door(block, locParent(side), locParent(bottom), locParent(top), locParent(side), CUTOUT);
+        door(block, DOOR_BOTTOM_LEFT, DOOR_BOTTOM_LEFT_OPEN, DOOR_BOTTOM_RIGHT, DOOR_BOTTOM_RIGHT_OPEN, DOOR_TOP_LEFT, DOOR_TOP_LEFT_OPEN, DOOR_TOP_RIGHT, DOOR_TOP_RIGHT_OPEN, locParent(side), locParent(bottom), locParent(top), locParent(side), CUTOUT);
     }
 
-    public void poleTopBottom(Supplier<? extends OrnamentPole> block, String side, String top, String bottom) {
-        this.pole(block, locParent(side), locParent(top), locParent(bottom), locParent(side), SOLID);
+    public void poleTopBottom(Supplier<? extends OrnamentPole> block, Supplier<? extends Block> fullblock, String side, String top, String bottom) {
+        pole(block, POLE_WHOLE, POLE_HORIZONTAL, POLE_VERTICAL, POLE_CORNER, Either.right(fullblock), locParent(side), locParent(top), locParent(bottom), locParent(side));
     }
 
-    public void beamTopBottom(Supplier<? extends OrnamentBeam> block, String name) {
-        beam(block, locParent(name), locParent(name + "_top"), locParent(name + "_bottom"), locParent(name), SOLID);
+    public void beamTopBottom(Supplier<? extends OrnamentBeam> block, Supplier<? extends Block> fullblock, String name) {
+        beam(block, BEAM_WHOLE, BEAM_HORIZONTAL, BEAM_VERTICAL, BEAM_CORNER, Either.right(fullblock), locParent(name), locParent(name + "_top"), locParent(name + "_bottom"), locParent(name));
     }
 
     public void saddleDoorTopBottom(Supplier<? extends OrnamentSaddleDoor> block, String side, String top, String bottom) {
-        saddleDoor(block, locParent(side), locParent(bottom), locParent(top), CUTOUT);
+        saddleDoor(block, SADDLE_DOOR_LEFT, SADDLE_DOOR_LEFT_OPEN, SADDLE_DOOR_RIGHT, SADDLE_DOOR_RIGHT_OPEN, locParent(side), locParent(bottom), locParent(top), CUTOUT);
     }
 
     public void supportTopBottom(Supplier<? extends OrnamentSupport> block, String side, String top, String bottom) {
-        support(block, locParent(side), locParent(bottom), locParent(top), SOLID);
+        support(block, SUPPORT_BASE, SUPPORT_BASE_TOP, SUPPORT_Y, SUPPORT_Y_TOP, SUPPORT_X, SUPPORT_X_TOP, SUPPORT_Z, SUPPORT_Z_TOP, locParent(side), locParent(bottom), locParent(top), SOLID);
     }
 }

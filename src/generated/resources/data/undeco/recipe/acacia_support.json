@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:acacia_pole"
-    },
-    {
-      "item": "undeco:acacia_beam"
-    }
+    "undeco:acacia_pole",
+    "undeco:acacia_beam"
   ],
   "result": {
     "count": 2,

@@ -1,8 +1,0 @@
-{
-  "parent": "ornamental:block/util/wall_inventory",
-  "textures": {
-    "bottom": "minecraft:block/oak_planks",
-    "side": "minecraft:block/oak_planks",
-    "top": "minecraft:block/oak_planks"
-  }
-}

@@ -1,5 +1,6 @@
 {
   "parent": "ornamental:block/util/beam_horizontal",
+  "render_type": "minecraft:solid",
   "textures": {
     "bottom": "minecraft:block/prismarine_bricks",
     "side": "minecraft:block/prismarine_bricks",

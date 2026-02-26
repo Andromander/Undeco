@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:andesite_pole"
-    },
-    {
-      "item": "undeco:andesite_beam"
-    }
+    "undeco:andesite_pole",
+    "undeco:andesite_beam"
   ],
   "result": {
     "count": 2,

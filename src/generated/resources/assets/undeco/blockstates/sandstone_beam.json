@@ -430,7 +430,7 @@
     },
     {
       "apply": {
-        "model": "minecraft:block/sandstone"
+        "model": "undeco:block/sandstone_beam_full"
       },
       "when": {
         "bottom_left": "true",

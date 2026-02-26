@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:oak_pole"
-    },
-    {
-      "item": "undeco:oak_beam"
-    }
+    "undeco:oak_pole",
+    "undeco:oak_beam"
   ],
   "result": {
     "count": 2,

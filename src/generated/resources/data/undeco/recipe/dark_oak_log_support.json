@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:dark_oak_log_pole"
-    },
-    {
-      "item": "undeco:dark_oak_log_beam"
-    }
+    "undeco:dark_oak_log_pole",
+    "undeco:dark_oak_log_beam"
   ],
   "result": {
     "count": 2,

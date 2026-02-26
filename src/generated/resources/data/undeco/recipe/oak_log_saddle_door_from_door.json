@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "redstone",
   "ingredients": [
-    {
-      "item": "undeco:oak_log_door"
-    }
+    "undeco:oak_log_door"
   ],
   "result": {
     "count": 2,

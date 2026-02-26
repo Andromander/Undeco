@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:jungle_pole"
-    }
+    "undeco:jungle_pole"
   ],
   "result": {
     "count": 1,

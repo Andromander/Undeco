@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:tuff_beam"
-    }
+    "undeco:tuff_beam"
   ],
   "result": {
     "count": 1,

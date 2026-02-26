@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:crimson_pole"
-    },
-    {
-      "item": "undeco:crimson_beam"
-    }
+    "undeco:crimson_pole",
+    "undeco:crimson_beam"
   ],
   "result": {
     "count": 2,

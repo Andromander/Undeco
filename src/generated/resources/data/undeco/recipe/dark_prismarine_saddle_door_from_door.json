@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "redstone",
   "ingredients": [
-    {
-      "item": "undeco:dark_prismarine_door"
-    }
+    "undeco:dark_prismarine_door"
   ],
   "result": {
     "count": 2,

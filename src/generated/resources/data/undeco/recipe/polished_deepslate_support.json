@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:polished_deepslate_pole"
-    },
-    {
-      "item": "undeco:polished_deepslate_beam"
-    }
+    "undeco:polished_deepslate_pole",
+    "undeco:polished_deepslate_beam"
   ],
   "result": {
     "count": 2,

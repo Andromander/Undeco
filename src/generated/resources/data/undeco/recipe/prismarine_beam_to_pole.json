@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:prismarine_beam"
-    }
+    "undeco:prismarine_beam"
   ],
   "result": {
     "count": 1,

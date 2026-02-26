@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:bamboo_block_beam"
-    }
+    "undeco:bamboo_block_beam"
   ],
   "result": {
     "count": 1,

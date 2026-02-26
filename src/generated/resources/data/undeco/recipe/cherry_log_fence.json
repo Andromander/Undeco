@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:cherry_log"
-    },
-    "/": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:cherry_log",
+    "/": "minecraft:stick"
   },
   "pattern": [
     "#/#",

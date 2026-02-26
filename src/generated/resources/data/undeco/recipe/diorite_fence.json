@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:diorite"
-    },
-    "/": {
-      "item": "minecraft:diorite_slab"
-    }
+    "#": "minecraft:diorite",
+    "/": "minecraft:diorite_slab"
   },
   "pattern": [
     "#/#",

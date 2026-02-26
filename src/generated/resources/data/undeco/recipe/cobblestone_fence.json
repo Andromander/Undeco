@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:cobblestone"
-    },
-    "/": {
-      "item": "minecraft:cobblestone_slab"
-    }
+    "#": "minecraft:cobblestone",
+    "/": "minecraft:cobblestone_slab"
   },
   "pattern": [
     "#/#",

@@ -1,0 +1,9 @@
+{
+  "parent": "ornamental:block/util/pole_inventory",
+  "render_type": "minecraft:block/red_sandstone",
+  "textures": {
+    "bottom": "minecraft:block/red_sandstone_top",
+    "side": "minecraft:block/red_sandstone_bottom",
+    "top": "minecraft:block/red_sandstone"
+  }
+}

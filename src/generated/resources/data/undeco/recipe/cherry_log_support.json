@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:cherry_log_pole"
-    },
-    {
-      "item": "undeco:cherry_log_beam"
-    }
+    "undeco:cherry_log_pole",
+    "undeco:cherry_log_beam"
   ],
   "result": {
     "count": 2,

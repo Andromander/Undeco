@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:cobbled_deepslate_pole"
-    }
+    "undeco:cobbled_deepslate_pole"
   ],
   "result": {
     "count": 1,

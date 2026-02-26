@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "key": {
-    "#": {
-      "item": "undeco:cherry_log_trapdoor"
-    }
+    "#": "undeco:cherry_log_trapdoor"
   },
   "pattern": [
     "#",

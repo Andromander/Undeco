@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "redstone",
   "ingredients": [
-    {
-      "item": "undeco:andesite_door"
-    }
+    "undeco:andesite_door"
   ],
   "result": {
     "count": 2,

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "undeco:cracked_deepslate_tile_slab"
-    }
+    "#": "undeco:cracked_deepslate_tile_slab"
   },
   "pattern": [
     "#",

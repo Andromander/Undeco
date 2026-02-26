@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:jungle_beam"
-    }
+    "undeco:jungle_beam"
   ],
   "result": {
     "count": 1,

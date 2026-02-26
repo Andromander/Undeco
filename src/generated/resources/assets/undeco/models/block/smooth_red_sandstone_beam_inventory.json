@@ -1,0 +1,9 @@
+{
+  "parent": "ornamental:block/util/beam_inventory",
+  "render_type": "minecraft:solid",
+  "textures": {
+    "bottom": "minecraft:block/red_sandstone_top",
+    "side": "minecraft:block/red_sandstone_top",
+    "top": "minecraft:block/red_sandstone_top"
+  }
+}

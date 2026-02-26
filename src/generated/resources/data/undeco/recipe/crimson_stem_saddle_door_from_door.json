@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "redstone",
   "ingredients": [
-    {
-      "item": "undeco:crimson_stem_door"
-    }
+    "undeco:crimson_stem_door"
   ],
   "result": {
     "count": 2,

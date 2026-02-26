@@ -9,7 +9,6 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.*;
 import net.neoforged.neoforge.common.Tags;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -38,8 +37,8 @@ public class UDBlockTags extends OrnamentalBlockTagProvider {
     public static final List<Supplier<? extends Block>> AXE_TOOL = Lists.newArrayList();
     public static final List<Supplier<? extends Block>> PICKAXE_TOOL = Lists.newArrayList();
 
-    public UDBlockTags(PackOutput output, CompletableFuture<HolderLookup.Provider> provider, ExistingFileHelper helper) {
-        super(output, provider, UnusuallyDecorative.MODID, helper);
+    public UDBlockTags(PackOutput output, CompletableFuture<HolderLookup.Provider> provider) {
+        super(output, provider, UnusuallyDecorative.MODID);
     }
 
     @Override

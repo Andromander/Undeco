@@ -3,17 +3,14 @@ package com.androsa.undeco;
 import com.androsa.ornamental.blocks.*;
 import com.androsa.undeco.data.UDBlockTags;
 import com.androsa.undeco.data.UDItemTags;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
 public class ModBlocks {
 
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(BuiltInRegistries.BLOCK, UnusuallyDecorative.MODID);
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(BuiltInRegistries.ITEM, UnusuallyDecorative.MODID);
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(UnusuallyDecorative.MODID);
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(UnusuallyDecorative.MODID);
     public static final UDRegistryHelper HELPER = new UDRegistryHelper(BLOCKS, ITEMS);
 
     public static final Supplier<OrnamentStair> oak_log_stairs = HELPER.stairs(UDBuilders.OAK_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));

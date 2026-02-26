@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:purpur_beam"
-    }
+    "undeco:purpur_beam"
   ],
   "result": {
     "count": 1,

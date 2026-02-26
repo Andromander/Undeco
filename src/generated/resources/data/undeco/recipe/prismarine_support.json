@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:prismarine_pole"
-    },
-    {
-      "item": "undeco:prismarine_beam"
-    }
+    "undeco:prismarine_pole",
+    "undeco:prismarine_beam"
   ],
   "result": {
     "count": 2,

@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:smooth_sandstone_pole"
-    },
-    {
-      "item": "undeco:smooth_sandstone_beam"
-    }
+    "undeco:smooth_sandstone_pole",
+    "undeco:smooth_sandstone_beam"
   ],
   "result": {
     "count": 2,

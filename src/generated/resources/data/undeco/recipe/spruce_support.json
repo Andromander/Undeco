@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:spruce_pole"
-    },
-    {
-      "item": "undeco:spruce_beam"
-    }
+    "undeco:spruce_pole",
+    "undeco:spruce_beam"
   ],
   "result": {
     "count": 2,

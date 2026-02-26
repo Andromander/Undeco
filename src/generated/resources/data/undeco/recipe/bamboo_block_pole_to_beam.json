@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:bamboo_block_pole"
-    }
+    "undeco:bamboo_block_pole"
   ],
   "result": {
     "count": 1,

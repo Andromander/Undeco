@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "undeco:deepslate_slab"
-    }
+    "#": "undeco:deepslate_slab"
   },
   "pattern": [
     "#",

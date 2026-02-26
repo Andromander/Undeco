@@ -10,7 +10,6 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -36,8 +35,8 @@ public class UDItemTags extends OrnamentalItemTagProvider {
     public static final List<Supplier<? extends Block>> WOODEN_STAIRS = Lists.newArrayList();
     public static final List<Supplier<? extends Block>> WOODEN_TRAPDOORS = Lists.newArrayList();
 
-    public UDItemTags(PackOutput output, CompletableFuture<HolderLookup.Provider> provider, BlockTagsProvider blockTags, ExistingFileHelper helper) {
-        super(output, provider, UnusuallyDecorative.MODID, helper, blockTags);
+    public UDItemTags(PackOutput output, CompletableFuture<HolderLookup.Provider> provider, BlockTagsProvider blockTags) {
+        super(output, provider, UnusuallyDecorative.MODID, blockTags);
     }
 
     @Override

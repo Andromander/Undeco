@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "key": {
-    "#": {
-      "item": "undeco:spruce_log_slab"
-    }
+    "#": "undeco:spruce_log_slab"
   },
   "pattern": [
     "###",

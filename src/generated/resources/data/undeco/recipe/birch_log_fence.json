@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:birch_log"
-    },
-    "/": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:birch_log",
+    "/": "minecraft:stick"
   },
   "pattern": [
     "#/#",

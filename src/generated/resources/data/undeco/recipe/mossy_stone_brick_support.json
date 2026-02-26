@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:mossy_stone_brick_pole"
-    },
-    {
-      "item": "undeco:mossy_stone_brick_beam"
-    }
+    "undeco:mossy_stone_brick_pole",
+    "undeco:mossy_stone_brick_beam"
   ],
   "result": {
     "count": 2,

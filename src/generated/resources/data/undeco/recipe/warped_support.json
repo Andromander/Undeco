@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:warped_pole"
-    },
-    {
-      "item": "undeco:warped_beam"
-    }
+    "undeco:warped_pole",
+    "undeco:warped_beam"
   ],
   "result": {
     "count": 2,

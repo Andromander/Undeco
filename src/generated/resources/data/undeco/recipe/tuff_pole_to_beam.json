@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:tuff_pole"
-    }
+    "undeco:tuff_pole"
   ],
   "result": {
     "count": 1,

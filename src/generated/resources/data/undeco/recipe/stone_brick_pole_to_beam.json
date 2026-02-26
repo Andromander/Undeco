@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:stone_brick_pole"
-    }
+    "undeco:stone_brick_pole"
   ],
   "result": {
     "count": 1,

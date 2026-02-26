@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:jungle_log_pole"
-    },
-    {
-      "item": "undeco:jungle_log_beam"
-    }
+    "undeco:jungle_log_pole",
+    "undeco:jungle_log_beam"
   ],
   "result": {
     "count": 2,

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "key": {
-    "#": {
-      "item": "undeco:warped_stem_slab"
-    }
+    "#": "undeco:warped_stem_slab"
   },
   "pattern": [
     "###",

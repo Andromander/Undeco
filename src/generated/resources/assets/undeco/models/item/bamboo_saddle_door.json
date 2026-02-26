@@ -1,8 +1,0 @@
-{
-  "parent": "ornamental:block/util/saddle_door_inventory",
-  "textures": {
-    "bottom": "minecraft:block/bamboo_trapdoor",
-    "side": "minecraft:block/bamboo_trapdoor",
-    "top": "minecraft:block/bamboo_trapdoor"
-  }
-}

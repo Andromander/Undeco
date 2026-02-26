@@ -1,5 +1,6 @@
 {
   "parent": "ornamental:block/util/beam_corner",
+  "render_type": "minecraft:solid",
   "textures": {
     "bottom": "minecraft:block/deepslate_bricks",
     "side": "minecraft:block/deepslate_bricks",

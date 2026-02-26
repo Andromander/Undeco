@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:cracked_stone_brick_pole"
-    },
-    {
-      "item": "undeco:cracked_stone_brick_beam"
-    }
+    "undeco:cracked_stone_brick_pole",
+    "undeco:cracked_stone_brick_beam"
   ],
   "result": {
     "count": 2,

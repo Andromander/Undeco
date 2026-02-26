@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:mossy_cobblestone_pole"
-    },
-    {
-      "item": "undeco:mossy_cobblestone_beam"
-    }
+    "undeco:mossy_cobblestone_pole",
+    "undeco:mossy_cobblestone_beam"
   ],
   "result": {
     "count": 2,

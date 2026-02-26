@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:birch_pole"
-    },
-    {
-      "item": "undeco:birch_beam"
-    }
+    "undeco:birch_pole",
+    "undeco:birch_beam"
   ],
   "result": {
     "count": 2,

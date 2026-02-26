@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:purpur_pole"
-    },
-    {
-      "item": "undeco:purpur_beam"
-    }
+    "undeco:purpur_pole",
+    "undeco:purpur_beam"
   ],
   "result": {
     "count": 2,

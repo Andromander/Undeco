@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:polished_granite_beam"
-    }
+    "undeco:polished_granite_beam"
   ],
   "result": {
     "count": 1,

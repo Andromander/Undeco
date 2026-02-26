@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:deepslate_tile_beam"
-    }
+    "undeco:deepslate_tile_beam"
   ],
   "result": {
     "count": 1,

@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:blackstone_pole"
-    },
-    {
-      "item": "undeco:blackstone_beam"
-    }
+    "undeco:blackstone_pole",
+    "undeco:blackstone_beam"
   ],
   "result": {
     "count": 2,

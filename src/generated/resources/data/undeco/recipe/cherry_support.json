@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:cherry_pole"
-    },
-    {
-      "item": "undeco:cherry_beam"
-    }
+    "undeco:cherry_pole",
+    "undeco:cherry_beam"
   ],
   "result": {
     "count": 2,

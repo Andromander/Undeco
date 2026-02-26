@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:smooth_red_sandstone_pole"
-    }
+    "undeco:smooth_red_sandstone_pole"
   ],
   "result": {
     "count": 1,

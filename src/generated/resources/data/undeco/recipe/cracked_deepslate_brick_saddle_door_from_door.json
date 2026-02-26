@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "redstone",
   "ingredients": [
-    {
-      "item": "undeco:cracked_deepslate_brick_door"
-    }
+    "undeco:cracked_deepslate_brick_door"
   ],
   "result": {
     "count": 2,

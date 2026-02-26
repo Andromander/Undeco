@@ -6,7 +6,6 @@ import com.androsa.ornamental.registry.helper.MasterRegistryHelper;
 import com.androsa.undeco.data.UDBlockTags;
 import com.androsa.undeco.data.UDItemTags;
 import com.google.common.collect.Lists;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -16,7 +15,7 @@ import java.util.function.Supplier;
 
 public class UDRegistryHelper extends MasterRegistryHelper {
 
-    public UDRegistryHelper(DeferredRegister<Block> blockreg, DeferredRegister<Item> itemreg) {
+    public UDRegistryHelper(DeferredRegister.Blocks blockreg, DeferredRegister.Items itemreg) {
         super(blockreg, itemreg);
     }
 

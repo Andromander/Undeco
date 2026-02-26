@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:cobblestone_pole"
-    },
-    {
-      "item": "undeco:cobblestone_beam"
-    }
+    "undeco:cobblestone_pole",
+    "undeco:cobblestone_beam"
   ],
   "result": {
     "count": 2,

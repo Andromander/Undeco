@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "undeco:polished_diorite_beam"
-    }
+    "undeco:polished_diorite_beam"
   ],
   "result": {
     "count": 1,

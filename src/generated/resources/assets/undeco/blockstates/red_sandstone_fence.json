@@ -7,8 +7,7 @@
     },
     {
       "apply": {
-        "model": "undeco:block/red_sandstone_fence_side",
-        "uvlock": true
+        "model": "undeco:block/red_sandstone_fence_side_north"
       },
       "when": {
         "north": "true"
@@ -16,9 +15,15 @@
     },
     {
       "apply": {
-        "model": "undeco:block/red_sandstone_fence_side",
-        "uvlock": true,
-        "y": 180
+        "model": "undeco:block/red_sandstone_fence_side_east"
+      },
+      "when": {
+        "east": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "undeco:block/red_sandstone_fence_side_south"
       },
       "when": {
         "south": "true"
@@ -26,22 +31,10 @@
     },
     {
       "apply": {
-        "model": "undeco:block/red_sandstone_fence_side",
-        "uvlock": true,
-        "y": 270
+        "model": "undeco:block/red_sandstone_fence_side_west"
       },
       "when": {
         "west": "true"
-      }
-    },
-    {
-      "apply": {
-        "model": "undeco:block/red_sandstone_fence_side",
-        "uvlock": true,
-        "y": 90
-      },
-      "when": {
-        "east": "true"
       }
     }
   ]

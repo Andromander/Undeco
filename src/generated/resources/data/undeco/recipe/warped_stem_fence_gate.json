@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "key": {
-    "#": {
-      "item": "minecraft:warped_stem"
-    },
-    "/": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:warped_stem",
+    "/": "minecraft:stick"
   },
   "pattern": [
     "/#/",
