@@ -1,6 +1,5 @@
 {
   "parent": "ornamental:block/util/wall_inventory",
-  "render_type": "minecraft:solid",
   "textures": {
     "bottom": "minecraft:block/cherry_planks",
     "side": "minecraft:block/cherry_planks",

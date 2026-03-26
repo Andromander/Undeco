@@ -1,6 +1,5 @@
 {
   "parent": "ornamental:block/util/wall_inventory",
-  "render_type": "minecraft:solid",
   "textures": {
     "bottom": "minecraft:block/warped_stem_top",
     "side": "minecraft:block/warped_stem",
