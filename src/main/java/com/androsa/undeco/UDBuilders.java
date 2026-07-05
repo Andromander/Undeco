@@ -23,6 +23,7 @@ public class UDBuilders {
     public static final OrnamentBuilder ACACIA_PLANKS = createFirePlankOrnament("acacia", MapColor.COLOR_ORANGE, Blocks.ACACIA_PLANKS, BlockSetType.ACACIA);
     public static final OrnamentBuilder CHERRY_PLANKS = createFirePlankOrnament("cherry", MapColor.TERRACOTTA_WHITE, Blocks.CHERRY_PLANKS, BlockSetType.CHERRY);
     public static final OrnamentBuilder DARK_OAK_PLANKS = createFirePlankOrnament("dark_oak", MapColor.COLOR_BROWN, Blocks.DARK_OAK_PLANKS, BlockSetType.DARK_OAK);
+    public static final OrnamentBuilder PALE_OAK_PLANKS = createFirePlankOrnament("pale_oak", MapColor.COLOR_BROWN, Blocks.DARK_OAK_PLANKS, BlockSetType.DARK_OAK);
     public static final OrnamentBuilder MANGROVE_PLANKS = createFirePlankOrnament("mangrove", MapColor.COLOR_RED, Blocks.MANGROVE_PLANKS, BlockSetType.MANGROVE);
     public static final OrnamentBuilder BAMBOO_PLANKS = createFirePlankOrnament("bamboo", MapColor.COLOR_YELLOW, Blocks.BAMBOO_PLANKS, BlockSetType.BAMBOO);
     public static final OrnamentBuilder CRIMSON_PLANKS = createPlankOrnament("crimson", MapColor.CRIMSON_STEM, Blocks.CRIMSON_PLANKS, BlockSetType.CRIMSON);
@@ -40,6 +41,7 @@ public class UDBuilders {
     public static final OrnamentBuilder ACACIA_LOG = createLogOrnament("acacia_log", MapColor.COLOR_ORANGE, Blocks.ACACIA_LOG);
     public static final OrnamentBuilder CHERRY_LOG = createLogOrnament("cherry_log", MapColor.TERRACOTTA_WHITE, SoundType.CHERRY_WOOD, Blocks.CHERRY_LOG);
     public static final OrnamentBuilder DARK_OAK_LOG = createLogOrnament("dark_oak_log", MapColor.COLOR_BROWN, Blocks.DARK_OAK_LOG);
+    public static final OrnamentBuilder PALE_OAK_LOG = createLogOrnament("pale_oak_log", MapColor.QUARTZ, Blocks.PALE_OAK_LOG);
     public static final OrnamentBuilder MANGROVE_LOG = createLogOrnament("mangrove_log", MapColor.COLOR_RED, Blocks.MANGROVE_LOG);
     public static final OrnamentBuilder BAMBOO_BLOCK = createLogOrnament("bamboo_block", MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, Blocks.BAMBOO_BLOCK);
     public static final OrnamentBuilder CRIMSON_STEM = createStemOrnament("crimson_stem", MapColor.CRIMSON_STEM, Blocks.CRIMSON_STEM);

@@ -44,6 +44,7 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.acacia_log_stairs);
             dropSelf(ModBlocks.cherry_log_stairs);
             dropSelf(ModBlocks.dark_oak_log_stairs);
+            dropSelf(ModBlocks.pale_oak_log_stairs);
             dropSelf(ModBlocks.mangrove_log_stairs);
             dropSelf(ModBlocks.bamboo_block_stairs);
             dropSelf(ModBlocks.crimson_stem_stairs);
@@ -62,6 +63,7 @@ public class UDLootTables extends LootTableProvider {
             dropSlab(ModBlocks.acacia_log_slab);
             dropSlab(ModBlocks.cherry_log_slab);
             dropSlab(ModBlocks.dark_oak_log_slab);
+            dropSlab(ModBlocks.pale_oak_log_slab);
             dropSlab(ModBlocks.mangrove_log_slab);
             dropSlab(ModBlocks.bamboo_block_slab);
             dropSlab(ModBlocks.crimson_stem_slab);
@@ -85,6 +87,7 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.acacia_log_fence);
             dropSelf(ModBlocks.cherry_log_fence);
             dropSelf(ModBlocks.dark_oak_log_fence);
+            dropSelf(ModBlocks.pale_oak_log_fence);
             dropSelf(ModBlocks.mangrove_log_fence);
             dropSelf(ModBlocks.bamboo_block_fence);
             dropSelf(ModBlocks.crimson_stem_fence);
@@ -128,6 +131,7 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.acacia_log_trapdoor);
             dropSelf(ModBlocks.cherry_log_trapdoor);
             dropSelf(ModBlocks.dark_oak_log_trapdoor);
+            dropSelf(ModBlocks.pale_oak_log_trapdoor);
             dropSelf(ModBlocks.mangrove_log_trapdoor);
             dropSelf(ModBlocks.bamboo_block_trapdoor);
             dropSelf(ModBlocks.crimson_stem_trapdoor);
@@ -171,6 +175,7 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.acacia_log_fence_gate);
             dropSelf(ModBlocks.cherry_log_fence_gate);
             dropSelf(ModBlocks.dark_oak_log_fence_gate);
+            dropSelf(ModBlocks.pale_oak_log_fence_gate);
             dropSelf(ModBlocks.mangrove_log_fence_gate);
             dropSelf(ModBlocks.bamboo_block_fence_gate);
             dropSelf(ModBlocks.crimson_stem_fence_gate);
@@ -214,6 +219,7 @@ public class UDLootTables extends LootTableProvider {
             dropDoor(ModBlocks.acacia_log_door);
             dropDoor(ModBlocks.cherry_log_door);
             dropDoor(ModBlocks.dark_oak_log_door);
+            dropDoor(ModBlocks.pale_oak_log_door);
             dropDoor(ModBlocks.mangrove_log_door);
             dropDoor(ModBlocks.bamboo_block_door);
             dropDoor(ModBlocks.crimson_stem_door);
@@ -251,6 +257,7 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.acacia_pole);
             dropSelf(ModBlocks.cherry_pole);
             dropSelf(ModBlocks.dark_oak_pole);
+            dropSelf(ModBlocks.pale_oak_pole);
             dropSelf(ModBlocks.mangrove_pole);
             dropSelf(ModBlocks.bamboo_pole);
             dropSelf(ModBlocks.crimson_pole);
@@ -268,6 +275,7 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.acacia_log_pole);
             dropSelf(ModBlocks.cherry_log_pole);
             dropSelf(ModBlocks.dark_oak_log_pole);
+            dropSelf(ModBlocks.pale_oak_log_pole);
             dropSelf(ModBlocks.mangrove_log_pole);
             dropSelf(ModBlocks.bamboo_block_pole);
             dropSelf(ModBlocks.crimson_stem_pole);
@@ -305,6 +313,7 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.acacia_beam);
             dropSelf(ModBlocks.cherry_beam);
             dropSelf(ModBlocks.dark_oak_beam);
+            dropSelf(ModBlocks.pale_oak_beam);
             dropSelf(ModBlocks.mangrove_beam);
             dropSelf(ModBlocks.bamboo_beam);
             dropSelf(ModBlocks.crimson_beam);
@@ -322,6 +331,7 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.acacia_log_beam);
             dropSelf(ModBlocks.cherry_log_beam);
             dropSelf(ModBlocks.dark_oak_log_beam);
+            dropSelf(ModBlocks.pale_oak_log_beam);
             dropSelf(ModBlocks.mangrove_log_beam);
             dropSelf(ModBlocks.bamboo_block_beam);
             dropSelf(ModBlocks.crimson_stem_beam);
@@ -359,6 +369,7 @@ public class UDLootTables extends LootTableProvider {
 			dropSelf(ModBlocks.acacia_wall);
 			dropSelf(ModBlocks.cherry_wall);
 			dropSelf(ModBlocks.dark_oak_wall);
+			dropSelf(ModBlocks.pale_oak_wall);
 			dropSelf(ModBlocks.mangrove_wall);
 			dropSelf(ModBlocks.bamboo_wall);
 			dropSelf(ModBlocks.crimson_wall);
@@ -373,6 +384,7 @@ public class UDLootTables extends LootTableProvider {
 			dropSelf(ModBlocks.acacia_log_wall);
 			dropSelf(ModBlocks.cherry_log_wall);
 			dropSelf(ModBlocks.dark_oak_log_wall);
+			dropSelf(ModBlocks.pale_oak_log_wall);
 			dropSelf(ModBlocks.mangrove_log_wall);
 			dropSelf(ModBlocks.bamboo_block_wall);
 			dropSelf(ModBlocks.crimson_stem_wall);
@@ -397,6 +409,7 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.acacia_saddle_door);
             dropSelf(ModBlocks.cherry_saddle_door);
             dropSelf(ModBlocks.dark_oak_saddle_door);
+            dropSelf(ModBlocks.pale_oak_saddle_door);
             dropSelf(ModBlocks.mangrove_saddle_door);
             dropSelf(ModBlocks.bamboo_saddle_door);
             dropSelf(ModBlocks.crimson_saddle_door);
@@ -414,6 +427,7 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.acacia_log_saddle_door);
             dropSelf(ModBlocks.cherry_log_saddle_door);
             dropSelf(ModBlocks.dark_oak_log_saddle_door);
+            dropSelf(ModBlocks.pale_oak_log_saddle_door);
             dropSelf(ModBlocks.mangrove_log_saddle_door);
             dropSelf(ModBlocks.bamboo_block_saddle_door);
             dropSelf(ModBlocks.crimson_stem_saddle_door);
@@ -451,6 +465,7 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.acacia_support);
             dropSelf(ModBlocks.cherry_support);
             dropSelf(ModBlocks.dark_oak_support);
+            dropSelf(ModBlocks.pale_oak_support);
             dropSelf(ModBlocks.mangrove_support);
             dropSelf(ModBlocks.bamboo_support);
             dropSelf(ModBlocks.crimson_support);
@@ -468,6 +483,7 @@ public class UDLootTables extends LootTableProvider {
             dropSelf(ModBlocks.acacia_log_support);
             dropSelf(ModBlocks.cherry_log_support);
             dropSelf(ModBlocks.dark_oak_log_support);
+            dropSelf(ModBlocks.pale_oak_log_support);
             dropSelf(ModBlocks.mangrove_log_support);
             dropSelf(ModBlocks.bamboo_block_support);
             dropSelf(ModBlocks.crimson_stem_support);

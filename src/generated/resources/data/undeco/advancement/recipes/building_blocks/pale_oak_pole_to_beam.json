@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pale_oak": {
+      "conditions": {
+        "items": [
+          {
+            "items": "undeco:pale_oak_pole"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "undeco:pale_oak_pole_to_beam"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pale_oak"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "undeco:pale_oak_pole_to_beam"
+    ]
+  }
+}

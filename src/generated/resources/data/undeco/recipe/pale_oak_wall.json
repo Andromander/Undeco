@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:pale_oak_planks",
+    "/": "#minecraft:walls"
+  },
+  "pattern": [
+    " / ",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "undeco:pale_oak_wall"
+  }
+}

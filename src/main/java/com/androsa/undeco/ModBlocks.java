@@ -20,6 +20,7 @@ public class ModBlocks {
     public static final Supplier<OrnamentStair> acacia_log_stairs = HELPER.stairs(UDBuilders.ACACIA_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
     public static final Supplier<OrnamentStair> cherry_log_stairs = HELPER.stairs(UDBuilders.CHERRY_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
     public static final Supplier<OrnamentStair> dark_oak_log_stairs = HELPER.stairs(UDBuilders.DARK_OAK_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
+    public static final Supplier<OrnamentStair> pale_oak_log_stairs = HELPER.stairs(UDBuilders.PALE_OAK_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
     public static final Supplier<OrnamentStair> mangrove_log_stairs = HELPER.stairs(UDBuilders.MANGROVE_LOG, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
     public static final Supplier<OrnamentStair> bamboo_block_stairs = HELPER.stairs(UDBuilders.BAMBOO_BLOCK, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
     public static final Supplier<OrnamentStair> crimson_stem_stairs = HELPER.stairs(UDBuilders.CRIMSON_STEM, HELPER.array(UDBlockTags.WOODEN_STAIRS), HELPER.array(UDItemTags.WOODEN_STAIRS));
@@ -38,6 +39,7 @@ public class ModBlocks {
     public static final Supplier<OrnamentSlab> acacia_log_slab = HELPER.slab(UDBuilders.ACACIA_LOG, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
     public static final Supplier<OrnamentSlab> cherry_log_slab = HELPER.slab(UDBuilders.CHERRY_LOG, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
     public static final Supplier<OrnamentSlab> dark_oak_log_slab = HELPER.slab(UDBuilders.DARK_OAK_LOG, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
+    public static final Supplier<OrnamentSlab> pale_oak_log_slab = HELPER.slab(UDBuilders.PALE_OAK_LOG, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
     public static final Supplier<OrnamentSlab> mangrove_log_slab = HELPER.slab(UDBuilders.MANGROVE_LOG, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
     public static final Supplier<OrnamentSlab> bamboo_block_slab = HELPER.slab(UDBuilders.BAMBOO_BLOCK, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
     public static final Supplier<OrnamentSlab> crimson_stem_slab = HELPER.slab(UDBuilders.CRIMSON_STEM, HELPER.array(UDBlockTags.WOODEN_SLAB), HELPER.array(UDItemTags.WOODEN_SLABS));
@@ -61,6 +63,7 @@ public class ModBlocks {
     public static final Supplier<OrnamentFence> acacia_log_fence = HELPER.fence(UDBuilders.ACACIA_LOG, HELPER.array(UDBlockTags.WOODEN_FENCE), HELPER.array(UDItemTags.WOODEN_FENCES));
     public static final Supplier<OrnamentFence> cherry_log_fence = HELPER.fence(UDBuilders.CHERRY_LOG, HELPER.array(UDBlockTags.WOODEN_FENCE), HELPER.array(UDItemTags.WOODEN_FENCES));
     public static final Supplier<OrnamentFence> dark_oak_log_fence = HELPER.fence(UDBuilders.DARK_OAK_LOG, HELPER.array(UDBlockTags.WOODEN_FENCE), HELPER.array(UDItemTags.WOODEN_FENCES));
+    public static final Supplier<OrnamentFence> pale_oak_log_fence = HELPER.fence(UDBuilders.PALE_OAK_LOG, HELPER.array(UDBlockTags.WOODEN_FENCE), HELPER.array(UDItemTags.WOODEN_FENCES));
     public static final Supplier<OrnamentFence> mangrove_log_fence = HELPER.fence(UDBuilders.MANGROVE_LOG, HELPER.array(UDBlockTags.WOODEN_FENCE), HELPER.array(UDItemTags.WOODEN_FENCES));
     public static final Supplier<OrnamentFence> bamboo_block_fence = HELPER.fence(UDBuilders.BAMBOO_BLOCK, HELPER.array(UDBlockTags.WOODEN_FENCE), HELPER.array(UDItemTags.WOODEN_FENCES));
     public static final Supplier<OrnamentFence> crimson_stem_fence = HELPER.fence(UDBuilders.CRIMSON_STEM, HELPER.array(UDBlockTags.WOODEN_FENCE), HELPER.array(UDItemTags.WOODEN_FENCES));
@@ -104,6 +107,7 @@ public class ModBlocks {
     public static final Supplier<OrnamentTrapDoor> acacia_log_trapdoor = HELPER.trapdoor(UDBuilders.ACACIA_LOG, HELPER.array(UDBlockTags.WOODEN_TRAPDOOR), HELPER.array(UDItemTags.WOODEN_TRAPDOORS));
     public static final Supplier<OrnamentTrapDoor> cherry_log_trapdoor = HELPER.trapdoor(UDBuilders.CHERRY_LOG, HELPER.array(UDBlockTags.WOODEN_TRAPDOOR), HELPER.array(UDItemTags.WOODEN_TRAPDOORS));
     public static final Supplier<OrnamentTrapDoor> dark_oak_log_trapdoor = HELPER.trapdoor(UDBuilders.DARK_OAK_LOG, HELPER.array(UDBlockTags.WOODEN_TRAPDOOR), HELPER.array(UDItemTags.WOODEN_TRAPDOORS));
+    public static final Supplier<OrnamentTrapDoor> pale_oak_log_trapdoor = HELPER.trapdoor(UDBuilders.PALE_OAK_LOG, HELPER.array(UDBlockTags.WOODEN_TRAPDOOR), HELPER.array(UDItemTags.WOODEN_TRAPDOORS));
     public static final Supplier<OrnamentTrapDoor> mangrove_log_trapdoor = HELPER.trapdoor(UDBuilders.MANGROVE_LOG, HELPER.array(UDBlockTags.WOODEN_TRAPDOOR), HELPER.array(UDItemTags.WOODEN_TRAPDOORS));
     public static final Supplier<OrnamentTrapDoor> bamboo_block_trapdoor = HELPER.trapdoor(UDBuilders.BAMBOO_BLOCK, HELPER.array(UDBlockTags.WOODEN_TRAPDOOR), HELPER.array(UDItemTags.WOODEN_TRAPDOORS));
     public static final Supplier<OrnamentTrapDoor> crimson_stem_trapdoor = HELPER.trapdoor(UDBuilders.CRIMSON_STEM, HELPER.array(UDBlockTags.WOODEN_TRAPDOOR), HELPER.array(UDItemTags.WOODEN_TRAPDOORS));
@@ -147,6 +151,7 @@ public class ModBlocks {
     public static final Supplier<OrnamentFenceGate> acacia_log_fence_gate = HELPER.fencegate(UDBuilders.ACACIA_LOG, HELPER.array(UDBlockTags.WOODEN_FENCE_GATE), HELPER.array(UDItemTags.WOODEN_FENCE_GATES));
     public static final Supplier<OrnamentFenceGate> cherry_log_fence_gate = HELPER.fencegate(UDBuilders.CHERRY_LOG, HELPER.array(UDBlockTags.WOODEN_FENCE_GATE), HELPER.array(UDItemTags.WOODEN_FENCE_GATES));
     public static final Supplier<OrnamentFenceGate> dark_oak_log_fence_gate = HELPER.fencegate(UDBuilders.DARK_OAK_LOG, HELPER.array(UDBlockTags.WOODEN_FENCE_GATE), HELPER.array(UDItemTags.WOODEN_FENCE_GATES));
+    public static final Supplier<OrnamentFenceGate> pale_oak_log_fence_gate = HELPER.fencegate(UDBuilders.PALE_OAK_LOG, HELPER.array(UDBlockTags.WOODEN_FENCE_GATE), HELPER.array(UDItemTags.WOODEN_FENCE_GATES));
     public static final Supplier<OrnamentFenceGate> mangrove_log_fence_gate = HELPER.fencegate(UDBuilders.MANGROVE_LOG, HELPER.array(UDBlockTags.WOODEN_FENCE_GATE), HELPER.array(UDItemTags.WOODEN_FENCE_GATES));
     public static final Supplier<OrnamentFenceGate> bamboo_block_fence_gate = HELPER.fencegate(UDBuilders.BAMBOO_BLOCK, HELPER.array(UDBlockTags.WOODEN_FENCE_GATE), HELPER.array(UDItemTags.WOODEN_FENCE_GATES));
     public static final Supplier<OrnamentFenceGate> crimson_stem_fence_gate = HELPER.fencegate(UDBuilders.CRIMSON_STEM, HELPER.array(UDBlockTags.WOODEN_FENCE_GATE), HELPER.array(UDItemTags.WOODEN_FENCE_GATES));
@@ -190,6 +195,7 @@ public class ModBlocks {
     public static final Supplier<OrnamentDoor> acacia_log_door = HELPER.door(UDBuilders.ACACIA_LOG, HELPER.array(UDBlockTags.WOODEN_DOOR), HELPER.array(UDItemTags.WOODEN_DOORS));
     public static final Supplier<OrnamentDoor> cherry_log_door = HELPER.door(UDBuilders.CHERRY_LOG, HELPER.array(UDBlockTags.WOODEN_DOOR), HELPER.array(UDItemTags.WOODEN_DOORS));
     public static final Supplier<OrnamentDoor> dark_oak_log_door = HELPER.door(UDBuilders.DARK_OAK_LOG, HELPER.array(UDBlockTags.WOODEN_DOOR), HELPER.array(UDItemTags.WOODEN_DOORS));
+    public static final Supplier<OrnamentDoor> pale_oak_log_door = HELPER.door(UDBuilders.PALE_OAK_LOG, HELPER.array(UDBlockTags.WOODEN_DOOR), HELPER.array(UDItemTags.WOODEN_DOORS));
     public static final Supplier<OrnamentDoor> mangrove_log_door = HELPER.door(UDBuilders.MANGROVE_LOG, HELPER.array(UDBlockTags.WOODEN_DOOR), HELPER.array(UDItemTags.WOODEN_DOORS));
     public static final Supplier<OrnamentDoor> bamboo_block_door = HELPER.door(UDBuilders.BAMBOO_BLOCK, HELPER.array(UDBlockTags.WOODEN_DOOR), HELPER.array(UDItemTags.WOODEN_DOORS));
     public static final Supplier<OrnamentDoor> crimson_stem_door = HELPER.door(UDBuilders.CRIMSON_STEM, HELPER.array(UDBlockTags.WOODEN_DOOR), HELPER.array(UDItemTags.WOODEN_DOORS));
@@ -227,6 +233,7 @@ public class ModBlocks {
     public static final Supplier<OrnamentPole> acacia_pole = HELPER.pole(UDBuilders.ACACIA_PLANKS);
     public static final Supplier<OrnamentPole> cherry_pole = HELPER.pole(UDBuilders.CHERRY_PLANKS);
     public static final Supplier<OrnamentPole> dark_oak_pole = HELPER.pole(UDBuilders.DARK_OAK_PLANKS);
+    public static final Supplier<OrnamentPole> pale_oak_pole = HELPER.pole(UDBuilders.PALE_OAK_PLANKS);
     public static final Supplier<OrnamentPole> mangrove_pole = HELPER.pole(UDBuilders.MANGROVE_PLANKS);
     public static final Supplier<OrnamentPole> bamboo_pole = HELPER.pole(UDBuilders.BAMBOO_PLANKS);
     public static final Supplier<OrnamentPole> crimson_pole = HELPER.pole(UDBuilders.CRIMSON_PLANKS);
@@ -244,6 +251,7 @@ public class ModBlocks {
     public static final Supplier<OrnamentPole> acacia_log_pole = HELPER.pole(UDBuilders.ACACIA_LOG);
     public static final Supplier<OrnamentPole> cherry_log_pole = HELPER.pole(UDBuilders.CHERRY_LOG);
     public static final Supplier<OrnamentPole> dark_oak_log_pole = HELPER.pole(UDBuilders.DARK_OAK_LOG);
+    public static final Supplier<OrnamentPole> pale_oak_log_pole = HELPER.pole(UDBuilders.PALE_OAK_LOG);
     public static final Supplier<OrnamentPole> mangrove_log_pole = HELPER.pole(UDBuilders.MANGROVE_LOG);
     public static final Supplier<OrnamentPole> bamboo_block_pole = HELPER.pole(UDBuilders.BAMBOO_BLOCK);
     public static final Supplier<OrnamentPole> crimson_stem_pole = HELPER.pole(UDBuilders.CRIMSON_STEM);
@@ -281,6 +289,7 @@ public class ModBlocks {
     public static final Supplier<OrnamentBeam> acacia_beam = HELPER.beam(UDBuilders.ACACIA_PLANKS);
     public static final Supplier<OrnamentBeam> cherry_beam = HELPER.beam(UDBuilders.CHERRY_PLANKS);
     public static final Supplier<OrnamentBeam> dark_oak_beam = HELPER.beam(UDBuilders.DARK_OAK_PLANKS);
+    public static final Supplier<OrnamentBeam> pale_oak_beam = HELPER.beam(UDBuilders.PALE_OAK_PLANKS);
     public static final Supplier<OrnamentBeam> mangrove_beam = HELPER.beam(UDBuilders.MANGROVE_PLANKS);
     public static final Supplier<OrnamentBeam> bamboo_beam = HELPER.beam(UDBuilders.BAMBOO_PLANKS);
     public static final Supplier<OrnamentBeam> crimson_beam = HELPER.beam(UDBuilders.CRIMSON_PLANKS);
@@ -298,6 +307,7 @@ public class ModBlocks {
     public static final Supplier<OrnamentBeam> acacia_log_beam = HELPER.beam(UDBuilders.ACACIA_LOG);
     public static final Supplier<OrnamentBeam> cherry_log_beam = HELPER.beam(UDBuilders.CHERRY_LOG);
     public static final Supplier<OrnamentBeam> dark_oak_log_beam = HELPER.beam(UDBuilders.DARK_OAK_LOG);
+    public static final Supplier<OrnamentBeam> pale_oak_log_beam = HELPER.beam(UDBuilders.PALE_OAK_LOG);
     public static final Supplier<OrnamentBeam> mangrove_log_beam = HELPER.beam(UDBuilders.MANGROVE_LOG);
     public static final Supplier<OrnamentBeam> bamboo_block_beam = HELPER.beam(UDBuilders.BAMBOO_BLOCK);
     public static final Supplier<OrnamentBeam> crimson_stem_beam = HELPER.beam(UDBuilders.CRIMSON_STEM);
@@ -335,6 +345,7 @@ public class ModBlocks {
 	public static final Supplier<OrnamentWall> acacia_wall = HELPER.wall(UDBuilders.ACACIA_PLANKS);
     public static final Supplier<OrnamentWall> cherry_wall = HELPER.wall(UDBuilders.CHERRY_PLANKS);
 	public static final Supplier<OrnamentWall> dark_oak_wall = HELPER.wall(UDBuilders.DARK_OAK_PLANKS);
+	public static final Supplier<OrnamentWall> pale_oak_wall = HELPER.wall(UDBuilders.PALE_OAK_PLANKS);
     public static final Supplier<OrnamentWall> mangrove_wall = HELPER.wall(UDBuilders.MANGROVE_PLANKS);
     public static final Supplier<OrnamentWall> bamboo_wall = HELPER.wall(UDBuilders.BAMBOO_PLANKS);
 	public static final Supplier<OrnamentWall> crimson_wall = HELPER.wall(UDBuilders.CRIMSON_PLANKS);
@@ -349,6 +360,7 @@ public class ModBlocks {
 	public static final Supplier<OrnamentWall> acacia_log_wall = HELPER.wall(UDBuilders.ACACIA_LOG);
 	public static final Supplier<OrnamentWall> cherry_log_wall = HELPER.wall(UDBuilders.CHERRY_LOG);
 	public static final Supplier<OrnamentWall> dark_oak_log_wall = HELPER.wall(UDBuilders.DARK_OAK_LOG);
+    public static final Supplier<OrnamentWall> pale_oak_log_wall = HELPER.wall(UDBuilders.PALE_OAK_LOG);
     public static final Supplier<OrnamentWall> mangrove_log_wall = HELPER.wall(UDBuilders.MANGROVE_LOG);
     public static final Supplier<OrnamentWall> bamboo_block_wall = HELPER.wall(UDBuilders.BAMBOO_BLOCK);
 	public static final Supplier<OrnamentWall> crimson_stem_wall = HELPER.wall(UDBuilders.CRIMSON_STEM);
@@ -373,6 +385,7 @@ public class ModBlocks {
     public static final Supplier<OrnamentSaddleDoor> acacia_saddle_door = HELPER.saddledoor(UDBuilders.ACACIA_PLANKS);
     public static final Supplier<OrnamentSaddleDoor> cherry_saddle_door = HELPER.saddledoor(UDBuilders.CHERRY_PLANKS);
     public static final Supplier<OrnamentSaddleDoor> dark_oak_saddle_door = HELPER.saddledoor(UDBuilders.DARK_OAK_PLANKS);
+    public static final Supplier<OrnamentSaddleDoor> pale_oak_saddle_door = HELPER.saddledoor(UDBuilders.PALE_OAK_PLANKS);
     public static final Supplier<OrnamentSaddleDoor> mangrove_saddle_door = HELPER.saddledoor(UDBuilders.MANGROVE_PLANKS);
     public static final Supplier<OrnamentSaddleDoor> bamboo_saddle_door = HELPER.saddledoor(UDBuilders.BAMBOO_PLANKS);
     public static final Supplier<OrnamentSaddleDoor> crimson_saddle_door = HELPER.saddledoor(UDBuilders.CRIMSON_PLANKS);
@@ -390,6 +403,7 @@ public class ModBlocks {
     public static final Supplier<OrnamentSaddleDoor> acacia_log_saddle_door = HELPER.saddledoor(UDBuilders.ACACIA_LOG);
     public static final Supplier<OrnamentSaddleDoor> cherry_log_saddle_door = HELPER.saddledoor(UDBuilders.CHERRY_LOG);
     public static final Supplier<OrnamentSaddleDoor> dark_oak_log_saddle_door = HELPER.saddledoor(UDBuilders.DARK_OAK_LOG);
+    public static final Supplier<OrnamentSaddleDoor> pale_oak_log_saddle_door = HELPER.saddledoor(UDBuilders.PALE_OAK_LOG);
     public static final Supplier<OrnamentSaddleDoor> mangrove_log_saddle_door = HELPER.saddledoor(UDBuilders.MANGROVE_LOG);
     public static final Supplier<OrnamentSaddleDoor> bamboo_block_saddle_door = HELPER.saddledoor(UDBuilders.BAMBOO_BLOCK);
     public static final Supplier<OrnamentSaddleDoor> crimson_stem_saddle_door = HELPER.saddledoor(UDBuilders.CRIMSON_STEM);
@@ -427,6 +441,7 @@ public class ModBlocks {
     public static final Supplier<OrnamentSupport> acacia_support = HELPER.support(UDBuilders.ACACIA_PLANKS);
     public static final Supplier<OrnamentSupport> cherry_support = HELPER.support(UDBuilders.CHERRY_PLANKS);
     public static final Supplier<OrnamentSupport> dark_oak_support = HELPER.support(UDBuilders.DARK_OAK_PLANKS);
+    public static final Supplier<OrnamentSupport> pale_oak_support = HELPER.support(UDBuilders.PALE_OAK_PLANKS);
     public static final Supplier<OrnamentSupport> mangrove_support = HELPER.support(UDBuilders.MANGROVE_PLANKS);
     public static final Supplier<OrnamentSupport> bamboo_support = HELPER.support(UDBuilders.BAMBOO_PLANKS);
     public static final Supplier<OrnamentSupport> crimson_support = HELPER.support(UDBuilders.CRIMSON_PLANKS);
@@ -444,6 +459,7 @@ public class ModBlocks {
     public static final Supplier<OrnamentSupport> acacia_log_support = HELPER.support(UDBuilders.ACACIA_LOG);
     public static final Supplier<OrnamentSupport> cherry_log_support = HELPER.support(UDBuilders.CHERRY_LOG);
     public static final Supplier<OrnamentSupport> dark_oak_log_support = HELPER.support(UDBuilders.DARK_OAK_LOG);
+    public static final Supplier<OrnamentSupport> pale_oak_log_support = HELPER.support(UDBuilders.PALE_OAK_LOG);
     public static final Supplier<OrnamentSupport> mangrove_log_support = HELPER.support(UDBuilders.MANGROVE_LOG);
     public static final Supplier<OrnamentSupport> bamboo_block_support = HELPER.support(UDBuilders.BAMBOO_BLOCK);
     public static final Supplier<OrnamentSupport> crimson_stem_support = HELPER.support(UDBuilders.CRIMSON_STEM);

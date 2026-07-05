@@ -1,0 +1,41 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "undeco:block/pale_oak_log_fence_post"
+      }
+    },
+    {
+      "apply": {
+        "model": "undeco:block/pale_oak_log_fence_side_north"
+      },
+      "when": {
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "undeco:block/pale_oak_log_fence_side_east"
+      },
+      "when": {
+        "east": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "undeco:block/pale_oak_log_fence_side_south"
+      },
+      "when": {
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "undeco:block/pale_oak_log_fence_side_west"
+      },
+      "when": {
+        "west": "true"
+      }
+    }
+  ]
+}

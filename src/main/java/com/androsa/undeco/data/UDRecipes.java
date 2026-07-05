@@ -94,6 +94,16 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .saddledoor(add(ModBlocks.dark_oak_saddle_door, false))
                 .support(add(ModBlocks.dark_oak_support, false))
                 .build());
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.PALE_OAK_PLANKS, Blocks.PALE_OAK_SLAB, false)
+                .slab(add(() -> Blocks.PALE_OAK_SLAB, false))
+                .trapdoor(add(() -> Blocks.PALE_OAK_TRAPDOOR, false), false)
+                .door(add(() -> Blocks.PALE_OAK_DOOR, false))
+                .pole(add(ModBlocks.pale_oak_pole, false))
+                .beam(add(ModBlocks.pale_oak_beam, false))
+                .wall(add(ModBlocks.pale_oak_wall, true))
+                .saddledoor(add(ModBlocks.pale_oak_saddle_door, false))
+                .support(add(ModBlocks.pale_oak_support, false))
+                .build());
         autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.MANGROVE_PLANKS, Blocks.MANGROVE_SLAB, false)
                 .slab(add(() -> Blocks.MANGROVE_SLAB, false))
                 .trapdoor(add(() -> Blocks.MANGROVE_TRAPDOOR, false), false)
@@ -279,6 +289,17 @@ public class UDRecipes extends OrnamentalRecipeProvider {
                 .wall(add(ModBlocks.dark_oak_log_wall, false))
                 .saddledoor(add(ModBlocks.dark_oak_log_saddle_door, false))
                 .support(add(ModBlocks.dark_oak_log_support, false))
+                .build());
+        autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.PALE_OAK_LOG, ModBlocks.pale_oak_log_slab.get(), false)
+                .stairs(add(ModBlocks.pale_oak_log_stairs, false))
+                .slab(add(ModBlocks.pale_oak_log_slab, false))
+                .trapdoor(add(ModBlocks.pale_oak_log_trapdoor, false), true)
+                .door(add(ModBlocks.pale_oak_log_door, false))
+                .pole(add(ModBlocks.pale_oak_log_pole, false))
+                .beam(add(ModBlocks.pale_oak_log_beam, false))
+                .wall(add(ModBlocks.pale_oak_log_wall, false))
+                .saddledoor(add(ModBlocks.pale_oak_log_saddle_door, false))
+                .support(add(ModBlocks.pale_oak_log_support, false))
                 .build());
         autoRecipe(registry, new AutoRecipeManager.Builder(Blocks.MANGROVE_LOG, ModBlocks.mangrove_log_slab.get(), false)
                 .stairs(add(ModBlocks.mangrove_log_stairs, false))
@@ -624,6 +645,8 @@ public class UDRecipes extends OrnamentalRecipeProvider {
         fencegate(registry, ModBlocks.cherry_log_fence_gate, Blocks.CHERRY_LOG, Items.STICK, false);
         fence(registry, ModBlocks.dark_oak_log_fence, Blocks.DARK_OAK_LOG, Items.STICK, false);
         fencegate(registry, ModBlocks.dark_oak_log_fence_gate, Blocks.DARK_OAK_LOG, Items.STICK, false);
+        fence(registry, ModBlocks.pale_oak_log_fence, Blocks.PALE_OAK_LOG, Items.STICK, false);
+        fencegate(registry, ModBlocks.pale_oak_log_fence_gate, Blocks.PALE_OAK_LOG, Items.STICK, false);
         fence(registry, ModBlocks.mangrove_log_fence, Blocks.MANGROVE_LOG, Items.STICK, false);
         fencegate(registry, ModBlocks.mangrove_log_fence_gate, Blocks.MANGROVE_LOG, Items.STICK, false);
         fence(registry, ModBlocks.bamboo_block_fence, Blocks.BAMBOO_BLOCK, Items.BAMBOO, false);
